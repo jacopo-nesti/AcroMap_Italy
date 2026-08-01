@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "Firenze",
+    "slug": "firenze",
+    "region": "Toscana",
+    "province": "Firenze",
+
+    "groups": [
+      {
+        "name": "Acro Firenze",
+        "whatsapp": "https://chat.whatsapp.com/esempio_firenze"
+      }
+    ],
+
+    "jams": [
+      {
+        "day": "Martedì",
+        "time": "19:00",
+        "location": "Parco delle Cascine"
+      }
+    ],
+
+    "courses": [
+      {
+        "name": "Corso Base AcroYoga",
+        "day": "Lunedì",
+        "time": "20:00",
+        "location": "Palestra Fattoria"
+      }
+    ],
+
+    "socials": {
+      "instagram": "@acrofirenze"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Milano",
+    "slug": "milano",
+    "region": "Lombardia",
+    "province": "Milano",
+
+    "groups": [
+      {
+        "name": "Acro Yoga Milano",
+        "whatsapp": "https://chat.whatsapp.com/esempio_milano"
+      }
+    ],
+
+    "jams": [
+      {
+        "day": "Giovedì",
+        "time": "18:30",
+        "location": "Parco Sempione"
+      },
+      {
+        "day": "Domenica",
+        "time": "15:00",
+        "location": "Giardini Pubblici Indro Montanelli"
+      }
+    ],
+
+    "courses": [
+      {
+        "name": "Corso Base AcroYoga",
+        "day": "Lunedì",
+        "time": "20:00",
+        "location": "Palestra Central Gym"
+      }
+    ],
+
+    "socials": {
+      "instagram": "@acroyogamilano"
+    }
+  }
+]
