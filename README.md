@@ -1,16 +1,25 @@
-# React + Vite
+# AcroYoga Communities
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Una mappa snella e intuitiva per scoprire le community di AcroYoga in Italia, trovare dove e quando si fanno le jam nei parchi e consultare i corsi attivi con link diretti ai gruppi social e alle posizioni su Google Maps.
 
-Currently, two official plugins are available:
+## Funzionalità
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Cerca per Città**: Filtra velocemente tra le varie città e regioni.
+- **Jam & Allenamenti**: Orari, giorni della settimana e punti di ritrovo precisi.
+- **Corsi**: Schede sintetiche con orari, location e livello.
+- **Social Direct Link**: Accesso rapido ai canali WhatsApp, Instagram e Facebook delle community.
+- **Powered by Vite**: Sviluppo e build veloci grazie a Vite.
 
-## React Compiler
+## Work in Progress
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Il progetto è attualmente in fase di sviluppo (MVP). Nuove città, funzionalità e dettagli verranno aggiunti a breve!
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Autore
+
+Creato da **Jacopo Nesti**
+
+## Licenza
+
+Questo progetto è distribuito sotto licenza [MIT](LICENSE.md).
