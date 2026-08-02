@@ -1,77 +1,142 @@
 [
   {
     "id": 1,
-    "name": "Firenze",
     "slug": "firenze",
+    "name": "Firenze",
     "region": "Toscana",
     "province": "Firenze",
-
-    "groups": [
+    "communities": [
       {
+        "id": 1,
         "name": "Acro Firenze",
-        "whatsapp": "https://chat.whatsapp.com/esempio_firenze"
+        "description": "Community aperta a tutti con allenamenti settimanali.",
+        "whatsapp": "https://chat.whatsapp.com/firenze",
+        "instagram": "https://instagram.com/acrofirenze",
+        "facebook": "https://facebook.com/acrofirenze",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Martedì",
+            "start_time": "19:00",
+            "end_time": "21:00",
+            "location": "Parco delle Cascine",
+            "maps_url": "https://maps.google.com/?q=Parco+delle+Cascine",
+            "notes": ""
+          },
+          {
+            "id": 2,
+            "day": "Sabato",
+            "start_time": "16:00",
+            "end_time": "19:00",
+            "location": "Parco delle Cascine",
+            "maps_url": "https://maps.google.com/?q=Parco+delle+Cascine",
+            "notes": ""
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Principianti",
+            "day": "Giovedì",
+            "start_time": "20:30",
+            "end_time": "22:00",
+            "location": "Palestra XYZ",
+            "maps_url": "https://maps.google.com/?q=Palestra+XYZ",
+            "level": "Beginner",
+            "notes": ""
+          }
+        ]
       }
-    ],
-
-    "jams": [
-      {
-        "day": "Martedì",
-        "time": "19:00",
-        "location": "Parco delle Cascine"
-      }
-    ],
-
-    "courses": [
-      {
-        "name": "Corso Base AcroYoga",
-        "day": "Lunedì",
-        "time": "20:00",
-        "location": "Palestra Fattoria"
-      }
-    ],
-
-    "socials": {
-      "instagram": "@acrofirenze"
-    }
+    ]
   },
   {
     "id": 2,
-    "name": "Milano",
+    "slug": "pisa",
+    "name": "Pisa",
+    "region": "Toscana",
+    "province": "Pisa",
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Pisa",
+        "description": "Allenamenti liberi e jam aperte a tutti.",
+        "whatsapp": "https://chat.whatsapp.com/pisa",
+        "instagram": "https://instagram.com/acropisa",
+        "facebook": "",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Mercoledì",
+            "start_time": "19:30",
+            "end_time": "21:30",
+            "location": "Parco di San Rossore",
+            "maps_url": "https://maps.google.com/?q=Parco+di+San+Rossore",
+            "notes": ""
+          }
+        ],
+        "courses": []
+      }
+    ]
+  },
+  {
+    "id": 3,
     "slug": "milano",
+    "name": "Milano",
     "region": "Lombardia",
     "province": "Milano",
-
-    "groups": [
+    "communities": [
       {
-        "name": "Acro Yoga Milano",
-        "whatsapp": "https://chat.whatsapp.com/esempio_milano"
-      }
-    ],
-
-    "jams": [
-      {
-        "day": "Giovedì",
-        "time": "18:30",
-        "location": "Parco Sempione"
+        "id": 1,
+        "name": "Acro Milano Centro",
+        "description": "Community storica di Milano.",
+        "whatsapp": "https://chat.whatsapp.com/milano-centro",
+        "instagram": "https://instagram.com/acromilanocentro",
+        "facebook": "",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Lunedì",
+            "start_time": "20:00",
+            "end_time": "22:00",
+            "location": "Parco Sempione",
+            "maps_url": "https://maps.google.com/?q=Parco+Sempione",
+            "notes": ""
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Livello Base",
+            "day": "Giovedì",
+            "start_time": "20:00",
+            "end_time": "21:30",
+            "location": "Centro Sportivo ABC",
+            "maps_url": "https://maps.google.com/?q=Centro+Sportivo+ABC",
+            "level": "Beginner",
+            "notes": ""
+          }
+        ]
       },
       {
-        "day": "Domenica",
-        "time": "15:00",
-        "location": "Giardini Pubblici Indro Montanelli"
+        "id": 2,
+        "name": "Acro Milano Sud",
+        "description": "Community nata nel 2025.",
+        "whatsapp": "https://chat.whatsapp.com/milano-sud",
+        "instagram": "",
+        "facebook": "https://facebook.com/acromilanosud",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Venerdì",
+            "start_time": "19:00",
+            "end_time": "21:00",
+            "location": "Parco Lambro",
+            "maps_url": "https://maps.google.com/?q=Parco+Lambro",
+            "notes": ""
+          }
+        ],
+        "courses": []
       }
-    ],
-
-    "courses": [
-      {
-        "name": "Corso Base AcroYoga",
-        "day": "Lunedì",
-        "time": "20:00",
-        "location": "Palestra Central Gym"
-      }
-    ],
-
-    "socials": {
-      "instagram": "@acroyogamilano"
-    }
+    ]
   }
 ]

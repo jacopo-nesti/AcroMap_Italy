@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router"
 import { getCityBySlug } from "../services/cityService"
+import CommunityCard from "../components/CommunityCard"
 
 function CityPage() {
 
@@ -48,19 +49,11 @@ function CityPage() {
 
             <p>Provincia: {city.province}</p>
 
-            <p>{city.description}</p>
+            <h2>Community presenti</h2>
 
-            <h2>Jam</h2>
-
-            <ul>
-            {city.jams.map((jam, index) => (
-                <li key={index}>
-                <p><strong>Giorno:</strong> {jam.day}</p>
-                <p><strong>Orario:</strong> {jam.time}</p>
-                <p><strong>Luogo:</strong> {jam.location}</p>
-                </li>
+            {city.communities.map((community) => (
+                <CommunityCard key={community.id} community={community}/>
             ))}
-            </ul>
 
         </main>
     )
