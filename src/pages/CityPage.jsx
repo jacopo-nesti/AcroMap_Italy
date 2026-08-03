@@ -29,27 +29,27 @@ function CityPage() {
     }, [slug])
 
     if (isLoading) {
-    return <p>Caricamento...</p>;
+    return <p className="text-center mt-5">Caricamento...</p>;
     }
 
     if (error) {
-        return <p>{error}</p>;
+        return <p className="text-center mt-5 text-danger">{error}</p>;
     }
 
     if (!city) {
-        return <p>Città non trovata.</p>;
+        return <p className="text-center mt-5">Città non trovata.</p>;
     }
 
     return (
-        <main>
+        <main className="container py-4">
 
             <h1>{city.name}</h1>
 
-            <p>Regione: {city.region}</p>
+            <p className="mb-1">Regione: {city.region}</p>
 
             <p>Provincia: {city.province}</p>
 
-            <h2>Community presenti</h2>
+            <h2 className="mt-4 mb-3">Community presenti</h2>
 
             {city.communities.map((community) => (
                 <CommunityCard key={community.id} community={community}/>

@@ -1,20 +1,20 @@
 function CourseCard({ course }) {
 
     return (
-        <li className="course-card">
+        <li className="course-card list-group-item mb-2">
 
-            <p><strong>Corso:</strong> {course.name}</p>
-            <p><strong>Livello:</strong> {course.level}</p>
-            <p><strong>Giorno:</strong> {course.day}</p>
-            <p><strong>Orario:</strong> {course.start_time} - {course.end_time}</p>
-            <p><strong>Luogo:</strong> {course.location}</p>
+            <p className="mb-1"><strong>Corso:</strong> {course.name}</p>
+            <p className="mb-1"><strong>Livello:</strong> {course.level}</p>
+            <p className="mb-1"><strong>Giorno:</strong> {course.day}</p>
+            <p className="mb-1"><strong>Orario:</strong> {course.start_time} - {course.end_time}</p>
+            <p className="mb-1"><strong>Luogo:</strong> {course.location}</p>
 
             {course.maps_url && (
-                <p><strong>Mappa:</strong> <a href={course.maps_url} target="_blank" rel="noreferrer">Vedi su Google Maps</a></p>
+                <p className="mb-1"><strong>Mappa:</strong> <a href={course.maps_url} target="_blank" rel="noreferrer" className="link-primary">Vedi su Google Maps</a></p>
             )}
 
             {course.notes && (
-                <p><strong>Informazioni aggiuntive:</strong> {course.notes}</p>
+                <p className="mb-0"><strong>Informazioni aggiuntive:</strong> {course.notes}</p>
             )}
 
         </li>

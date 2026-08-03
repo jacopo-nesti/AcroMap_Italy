@@ -5,6 +5,10 @@
     "name": "Firenze",
     "region": "Toscana",
     "province": "Firenze",
+    "coordinates": {
+      "lat": 43.7696,
+      "lng": 11.2558
+    },
     "communities": [
       {
         "id": 1,
@@ -55,6 +59,10 @@
     "name": "Pisa",
     "region": "Toscana",
     "province": "Pisa",
+    "coordinates": {
+      "lat": 43.7228,
+      "lng": 10.4017
+    },
     "communities": [
       {
         "id": 1,
@@ -84,6 +92,10 @@
     "name": "Milano",
     "region": "Lombardia",
     "province": "Milano",
+    "coordinates": {
+      "lat": 45.4642,
+      "lng": 9.1900
+    },
     "communities": [
       {
         "id": 1,

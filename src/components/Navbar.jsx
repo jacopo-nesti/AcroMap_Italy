@@ -2,18 +2,18 @@ import { Link } from "react-router"
 
 function Navbar() {
     return (
-        <nav>
-            <Link to="/">AcroMap Italy</Link>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+            <Link to="/" className="navbar-brand">AcroMap Italy</Link>
 
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
+            <ul className="navbar-nav ms-auto d-flex flex-row gap-3 list-unstyled mb-0">
+                <li className="nav-item">
+                    <Link to="/" className="nav-link">Home</Link>
                 </li>
-                <li>
-                    <Link to="/contribute">Contribuisci</Link>
+                <li className="nav-item">
+                    <Link to="/contribute" className="nav-link">Contribuisci</Link>
                 </li>
-                <li>
-                    <Link to="/aboutus">Chi siamo</Link>
+                <li className="nav-item">
+                    <Link to="/aboutus" className="nav-link">Chi siamo</Link>
                 </li>
             </ul>
         </nav>
