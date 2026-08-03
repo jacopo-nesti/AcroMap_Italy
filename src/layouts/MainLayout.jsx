@@ -6,13 +6,15 @@ function MainLayout() {
 
     return (
         <>
-            <Navbar />
+            <div className="d-flex flex-column min-vh-100">
+                <Navbar />
 
-            <main>
-                <Outlet />
-            </main>
+                <main className="flex-grow-1">
+                    <Outlet />
+                </main>
 
-            <Footer />
+                <Footer />
+            </div>
         </>
     )
 }

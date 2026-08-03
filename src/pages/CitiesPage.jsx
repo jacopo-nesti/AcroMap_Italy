@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { getCities } from "../services/cityService"
+import { Link } from "react-router"
 import CityCard from "../components/CityCard"
 
 function CitiesPage() {
@@ -35,11 +36,17 @@ function CitiesPage() {
     }
 
     return (
-        <div>
+        <div className="container mt-4">
             <h1>Città disponibili</h1>
+            <div className="row">
             {cities.map(city => (
-                <CityCard key={city.id} city={city} />
+                <div key={city.id} className="col-md-4 mb-3">
+                    <Link to={`/city/${city.slug}`} className="text-decoration-none">
+                        <CityCard city={city} />
+                    </Link>
+                </div>
             ))}
+            </div>
         </div>
     )
 }

@@ -1,20 +1,21 @@
 function Hero() {
+  return (
+    <section className="bg-light py-5 px-3 text-center rounded-3 shadow-sm my-4">
+      <div className="container">
+        <h1 className="display-4 fw-bold text-dark mb-3">
+          Trova la tua community di Acroyoga
+        </h1>
 
-    return (
-        <section>
-            <h1>
-                Trova la tua community di Acroyoga
-            </h1>
+        <p className="lead text-muted mx-auto mb-4" style={{ maxWidth: '700px' }}>
+          AcroMap Italy raccoglie le community italiane di Acroyoga. Clicca un marker sulla mappa oppure cerca la tua città per trovare allenamenti, jam e corsi.
+        </p>
 
-            <p>
-                Scopri gruppi, jam e corsi in tutta Italia.
-            </p>
-
-            <button>
-                Cerca una città
-            </button>
-        </section>
-    )
+        <a href="#search" className="btn btn-primary btn-lg px-4 gap-3 mb-2">
+          Cerca una città
+        </a>
+      </div>
+    </section>
+  )
 }
 
 export default Hero

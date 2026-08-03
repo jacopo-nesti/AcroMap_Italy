@@ -1,17 +1,16 @@
 function Footer() {
   return (
-    <footer className="bg-dark text-light d-flex flex-wrap justify-content-between p-4 mt-4">
-      <div>
-        <h3>AcroMap Italy</h3>
-        <p className="mb-0">&copy; {new Date().getFullYear()} Tutti i diritti riservati.</p>
+
+    <footer className="bg-dark text-light text-center py-2 px-3 small mt-5">
+
+      <div className="container d-flex justify-content-between align-items-center">
+
+        <span className="fw-bold">AcroMap Italy &copy; {new Date().getFullYear()} Tutti i diritti riservati.</span>
+
       </div>
 
-      <div>
-        <h4>Contatti</h4>
-        <p className="mb-1">Email: jacopo@jacopo.it</p>
-        <p className="mb-0">Telefono: +39 000 000 0000</p>
-      </div>
     </footer>
+    
   )
 }
 
