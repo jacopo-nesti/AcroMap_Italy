@@ -1,7 +1,8 @@
 import { MapContainer, TileLayer } from "react-leaflet"
 import CityMarker from "./CityMarker"
+import ChangeView from "./ChangeView"
 
-function MapItaly({ cities }) {
+function MapItaly({ cities, selectedCity }) {
 
     return (
         <MapContainer
@@ -14,6 +15,8 @@ function MapItaly({ cities }) {
                 attribution='&copy; OpenStreetMap contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
+
+            <ChangeView city={selectedCity} />
 
             {cities.map((city) => (
                 <CityMarker

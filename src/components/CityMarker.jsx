@@ -4,12 +4,7 @@ import { Link } from "react-router"
 function CityMarker({ city }) {
 
     return (
-        <Marker
-            position={[
-                city.coordinates.lat,
-                city.coordinates.lng
-            ]}
-        >
+        <Marker position={[city.coordinates.lat, city.coordinates.lng]}>
 
             <Popup>
 
