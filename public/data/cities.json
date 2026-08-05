@@ -41,6 +41,7 @@
           {
             "id": 1,
             "name": "Corso Principianti",
+            "teachers": ["Marco Rossi", "Giulia Bianchi"],
             "day": "Giovedì",
             "start_time": "20:30",
             "end_time": "22:00",
@@ -119,6 +120,7 @@
           {
             "id": 1,
             "name": "Livello Base",
+            "teachers": ["Elena Verdi"],
             "day": "Giovedì",
             "start_time": "20:00",
             "end_time": "21:30",

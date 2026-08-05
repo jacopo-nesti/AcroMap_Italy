@@ -4,6 +4,7 @@ function CourseCard({ course }) {
         <li className="course-card list-group-item mb-2">
 
             <p className="mb-1"><strong>Corso:</strong> {course.name}</p>
+            <p className="mb-1"><strong>Insegnanti:</strong> {course.teachers?.join(', ')}</p>
             <p className="mb-1"><strong>Livello:</strong> {course.level}</p>
             <p className="mb-1"><strong>Giorno:</strong> {course.day}</p>
             <p className="mb-1"><strong>Orario:</strong> {course.start_time} - {course.end_time}</p>

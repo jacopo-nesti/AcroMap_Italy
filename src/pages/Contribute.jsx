@@ -38,7 +38,7 @@ function Contribute() {
           </div>
 
           <a 
-            href="" 
+            href="https://tally.so/r/zxAD88" 
             target="_blank" 
             rel="noreferrer" 
             className="btn btn-primary btn-lg px-4 mt-3"
