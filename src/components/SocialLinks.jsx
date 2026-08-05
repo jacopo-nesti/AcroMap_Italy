@@ -1,26 +1,55 @@
 function SocialLinks({ community }) {
+  if (!community) return null
 
-    return (
-        <div className="socials d-flex flex-wrap gap-2 mb-3">
-            {community.whatsapp && (
-                <a href={community.whatsapp} target="_blank" rel="noreferrer" className="btn btn-success btn-sm">
-                    WhatsApp
-                </a>
-            )}
+  const { whatsapp, instagram, facebook, website } = community
 
-            {community.instagram && (
-                <a href={community.instagram} target="_blank" rel="noreferrer" className="btn btn-danger btn-sm">
-                    Instagram
-                </a>
-            )}
+  return (
+    <div className="socials d-flex flex-wrap gap-2 mb-3">
+      {whatsapp && (
+        <a 
+          href={whatsapp} 
+          target="_blank" 
+          rel="noreferrer" 
+          className="btn btn-success btn-sm rounded-pill fw-semibold shadow-sm"
+        >
+          <i className="bi bi-whatsapp me-1"></i> WhatsApp
+        </a>
+      )}
 
-            {community.facebook && (
-                <a href={community.facebook} target="_blank" rel="noreferrer" className="btn btn-primary btn-sm">
-                    Facebook
-                </a>
-            )}
-        </div>
-    )
+      {instagram && (
+        <a 
+          href={instagram} 
+          target="_blank" 
+          rel="noreferrer" 
+          className="btn btn-outline-danger btn-sm rounded-pill fw-semibold shadow-sm"
+        >
+          <i className="bi bi-instagram me-1"></i> Instagram
+        </a>
+      )}
+
+      {facebook && (
+        <a 
+          href={facebook} 
+          target="_blank" 
+          rel="noreferrer" 
+          className="btn btn-outline-primary btn-sm rounded-pill fw-semibold shadow-sm"
+        >
+          <i className="bi bi-facebook me-1"></i> Facebook
+        </a>
+      )}
+
+      {website && (
+        <a 
+          href={website} 
+          target="_blank" 
+          rel="noreferrer" 
+          className="btn btn-outline-secondary btn-sm rounded-pill fw-semibold shadow-sm"
+        >
+          <i className="bi bi-globe me-1"></i> Sito Web
+        </a>
+      )}
+    </div>
+  )
 }
 
 export default SocialLinks

@@ -65,7 +65,7 @@ function CommunityFinder() {
         
         <div className="col-12 col-lg-4">
           <div className="card shadow-sm border-0 p-3 bg-light h-100">
-            <h5 className="fw-bold mb-3">🔎 Cerca una città</h5>
+            <h5 className="fw-bold mb-3">Cerca una città</h5>
 
             <div className="input-group mb-3">
               <SearchBar search={search} setSearch={setSearch} />
@@ -91,7 +91,7 @@ function CommunityFinder() {
         </div>
 
         <div className="col-12 col-lg-8">
-          <div className="rounded-3 overflow-hidden shadow-sm border">
+          <div id="mappa" className="rounded-3 overflow-hidden shadow-sm border">
             <MapItaly cities={filteredCities} selectedCity={selectedCity} />
           </div>
         </div>

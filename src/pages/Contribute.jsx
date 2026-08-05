@@ -11,7 +11,8 @@ function Contribute() {
           <div className="row g-4 text-start my-4">
             <div className="col-md-4">
               <div className="card h-100 border-0 shadow-sm p-3">
-                <h5 className="fw-bold">📍 Aggiungi una Città</h5>
+                <i className="bi bi-geo-alt-fill text-success fs-2 mb-2"></i>
+                <h3 className="h5 fw-bold">Aggiungi una Città</h3>
                 <p className="text-muted small mb-0">
                   La tua città o il tuo gruppo non sono ancora presenti sulla mappa? Segnalaceli!
                 </p>
@@ -20,7 +21,8 @@ function Contribute() {
 
             <div className="col-md-4">
               <div className="card h-100 border-0 shadow-sm p-3">
-                <h5 className="fw-bold">🤸 Aggiorna Jam o Corsi</h5>
+                <i className="bi bi-calendar-event-fill text-success fs-2 mb-2"></i>
+                <h3 className="h5 fw-bold">Aggiorna Jam o Corsi</h3>
                 <p className="text-muted small mb-0">
                   Un orario è cambiato o c'è una nuova jam al parco? Faccelo sapere per aggiornare i dati.
                 </p>
@@ -29,7 +31,8 @@ function Contribute() {
 
             <div className="col-md-4">
               <div className="card h-100 border-0 shadow-sm p-3">
-                <h5 className="fw-bold">🐛 Segnala un Errore</h5>
+                <i className="bi bi-bug-fill text-success fs-2 mb-2"></i>
+                <h3 className="h5 fw-bold">Segnala un Errore</h3>
                 <p className="text-muted small mb-0">
                   Hai trovato un link non funzionante o una posizione sbagliata su Google Maps?
                 </p>
@@ -41,7 +44,7 @@ function Contribute() {
             href="https://tally.so/r/zxAD88" 
             target="_blank" 
             rel="noreferrer" 
-            className="btn btn-primary btn-lg px-4 mt-3"
+            className="btn btn-success btn-lg px-4 mt-3 fw-semibold shadow-sm"
           >
             Compila il modulo di segnalazione
           </a>

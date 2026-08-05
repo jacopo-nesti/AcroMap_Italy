@@ -95,7 +95,7 @@
     "province": "Milano",
     "coordinates": {
       "lat": 45.4642,
-      "lng": 9.1900
+      "lng": 9.19
     },
     "communities": [
       {
@@ -150,6 +150,265 @@
           }
         ],
         "courses": []
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "lucca",
+    "name": "Lucca",
+    "region": "Toscana",
+    "province": "Lucca",
+    "coordinates": {
+      "lat": 43.8429,
+      "lng": 10.5027
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Lucca",
+        "description": "Incontri di acroyoga sulle mura e nei parchi della città.",
+        "whatsapp": "https://chat.whatsapp.com/lucca",
+        "instagram": "https://instagram.com/acrolucca",
+        "facebook": "https://facebook.com/acrolucca",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Domenica",
+            "start_time": "15:00",
+            "end_time": "18:00",
+            "location": "Mura di Lucca - Baluardo San Regolo",
+            "maps_url": "https://maps.google.com/?q=Baluardo+San+Regolo+Lucca",
+            "notes": "Portare il proprio tappetino"
+          }
+        ],
+        "courses": []
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "roma",
+    "name": "Roma",
+    "region": "Lazio",
+    "province": "Roma",
+    "coordinates": {
+      "lat": 41.9028,
+      "lng": 12.4964
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Roma Villa Borghese",
+        "description": "Il gruppo principale di AcroYoga nella capitale.",
+        "whatsapp": "https://chat.whatsapp.com/roma-vb",
+        "instagram": "https://instagram.com/acroroma",
+        "facebook": "https://facebook.com/groups/acroroma",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Mercoledì",
+            "start_time": "18:00",
+            "end_time": "20:30",
+            "location": "Villa Borghese",
+            "maps_url": "https://maps.google.com/?q=Villa+Borghese",
+            "notes": "Piazza di Siena"
+          },
+          {
+            "id": 2,
+            "day": "Sabato",
+            "start_time": "15:00",
+            "end_time": "19:00",
+            "location": "Villa Ada",
+            "maps_url": "https://maps.google.com/?q=Villa+Ada",
+            "notes": ""
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Acro Intensive Intermedio",
+            "teachers": ["Matteo Neri", "Sofia Russo"],
+            "day": "Martedì",
+            "start_time": "20:00",
+            "end_time": "21:30",
+            "location": "Palestra Roma Nord",
+            "maps_url": "https://maps.google.com/?q=Palestra+Roma+Nord",
+            "level": "Intermediate",
+            "notes": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "napoli",
+    "name": "Napoli",
+    "region": "Campania",
+    "province": "Napoli",
+    "coordinates": {
+      "lat": 40.8518,
+      "lng": 14.2681
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Napoli",
+        "description": "Community partenopea di acrobazia e movimento conscio.",
+        "whatsapp": "https://chat.whatsapp.com/napoli",
+        "instagram": "https://instagram.com/acronapoli",
+        "facebook": "https://facebook.com/acronapoli",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Giovedì",
+            "start_time": "17:30",
+            "end_time": "20:00",
+            "location": "Parco Virgiliano",
+            "maps_url": "https://maps.google.com/?q=Parco+Virgiliano+Napoli",
+            "notes": "Zona anfiteatro"
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "AcroYoga Fundamentals",
+            "teachers": ["Antonio Esposito"],
+            "day": "Lunedì",
+            "start_time": "19:00",
+            "end_time": "20:30",
+            "location": "Spazio Movimento Napoli",
+            "maps_url": "https://maps.google.com/?q=Spazio+Movimento+Napoli",
+            "level": "Beginner",
+            "notes": "Aperto a tutti"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "torino",
+    "name": "Torino",
+    "region": "Piemonte",
+    "province": "Torino",
+    "coordinates": {
+      "lat": 45.0703,
+      "lng": 7.6869
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Torino",
+        "description": "Allenamenti outdoor e corsi indoor per tutti i livelli.",
+        "whatsapp": "https://chat.whatsapp.com/torino",
+        "instagram": "https://instagram.com/acrotorino",
+        "facebook": "",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Martedì",
+            "start_time": "18:30",
+            "end_time": "21:00",
+            "location": "Parco del Valentino",
+            "maps_url": "https://maps.google.com/?q=Parco+del+Valentino",
+            "notes": "Vicino al Borgo Medievale"
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Avanzato Whips & Pops",
+            "teachers": ["Luca Galli"],
+            "day": "Venerdì",
+            "start_time": "20:00",
+            "end_time": "22:00",
+            "location": "Circo Spazio Torino",
+            "maps_url": "https://maps.google.com/?q=Circo+Spazio+Torino",
+            "level": "Advanced",
+            "notes": "Prerequisiti richiesti"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "padova",
+    "name": "Padova",
+    "region": "Veneto",
+    "province": "Padova",
+    "coordinates": {
+      "lat": 45.4064,
+      "lng": 11.8768
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Padova",
+        "description": "Pratiche settimanali per appassionati di AcroYoga e Standing.",
+        "whatsapp": "https://chat.whatsapp.com/padova",
+        "instagram": "https://instagram.com/acropadova",
+        "facebook": "https://facebook.com/acropadova",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Lunedì",
+            "start_time": "19:00",
+            "end_time": "21:30",
+            "location": "Prato della Valle",
+            "maps_url": "https://maps.google.com/?q=Prato+della+Valle",
+            "notes": ""
+          }
+        ],
+        "courses": []
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "catania",
+    "name": "Catania",
+    "region": "Sicilia",
+    "province": "Catania",
+    "coordinates": {
+      "lat": 37.5079,
+      "lng": 15.083
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Catania",
+        "description": "Community siciliana attiva con jam al parco e in spiaggia.",
+        "whatsapp": "https://chat.whatsapp.com/catania",
+        "instagram": "https://instagram.com/acrocatania",
+        "facebook": "https://facebook.com/acrocatania",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Domenica",
+            "start_time": "16:30",
+            "end_time": "19:30",
+            "location": "Villa Bellini",
+            "maps_url": "https://maps.google.com/?q=Villa+Bellini+Catania",
+            "notes": ""
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Unico Misto",
+            "teachers": ["Davide Costa", "Sara Marino"],
+            "day": "Mercoledì",
+            "start_time": "20:00",
+            "end_time": "21:30",
+            "location": "Studio Movement Catania",
+            "maps_url": "https://maps.google.com/?q=Studio+Movement+Catania",
+            "level": "All Levels",
+            "notes": ""
+          }
+        ]
       }
     ]
   }
