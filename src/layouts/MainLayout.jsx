@@ -1,20 +1,22 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import { Outlet } from "react-router"
+import ScrollToTop from "../components/ScrollToTop"
 
 function MainLayout() {
 
     return (
         <>
-            <div className="d-flex flex-column min-vh-100">
-                <Navbar />
+            <ScrollToTop />
+                <div className="d-flex flex-column min-vh-100">
+                    <Navbar />
 
-                <main className="flex-grow-1">
-                    <Outlet />
-                </main>
+                    <main className="flex-grow-1">
+                        <Outlet />
+                    </main>
 
-                <Footer />
-            </div>
+                    <Footer />
+                </div>
         </>
     )
 }
