@@ -11,7 +11,7 @@ function NotFound() {
           <h2 className="h4 text-secondary mb-3">Oops! Questa pagina non esiste.</h2>
           
           <p className="text-muted mb-4">
-            Sembra che tu ti sia smarrito. Torna alla Home per esplorare la mappa e le community di AcroMap Italy.
+            Sembra che tu ti sia smarrito. Torna alla Home per esplorare le community di AcroMap Italy.
           </p>
 
           <Link to="/" className="btn btn-success btn-lg px-4 fw-semibold shadow-sm rounded-pill">

@@ -9,6 +9,7 @@ import CityPage from "./pages/CityPage"
 import Privacy from "./pages/Privacy"
 import Terms from "./pages/Terms"
 import Donations from "./pages/Donations"
+import ContactPage from "./pages/ContactPage"
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/donations" element={<Donations />} />
+        <Route path="/contactus" element={<ContactPage />} />
 
       </Route>
 

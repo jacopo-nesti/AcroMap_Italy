@@ -18,12 +18,13 @@ function IntroSection () {
             </h1>
 
             <p className="lead text-muted mx-auto mb-4" style={{ maxWidth: '700px' }}>
-            AcroMap Italy raccoglie le community italiane di Acroyoga. Clicca un marker sulla mappa oppure cerca la tua città per trovare allenamenti, jam e corsi.
+            Scopri jam, corsi e gruppi di Acroyoga attivi in tutta Italia
             </p>
 
-            <a href="#mappa" onClick={scrollToMap} className="btn btn-success btn-lg fw-semibold shadow-sm">
+            {/* <a href="#mappa" onClick={scrollToMap} className="btn btn-success btn-lg fw-semibold shadow-sm">
             Esplora la Mappa
-            </a>
+            </a> */}
+
         </div>
     )
 }

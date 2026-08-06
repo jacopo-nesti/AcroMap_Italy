@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 function CityCard({ city }) {
   return (
     <Link 
-      to={`/citta/${city.slug || city.name.toLowerCase()}`}
+      to={`/city/${city.slug || city.name.toLowerCase()}`}
       className="text-decoration-none"
     >
       <div 

@@ -7,17 +7,17 @@ function FeatureCards() {
         
         <article className="col-md-4 bg-light p-4 rounded shadow-sm">
           <i className="bi bi-search text-success fs-1 d-block mb-2"></i>
-          <h2 className="h5 fw-bold text-dark">Cerca</h2>
+          <h2 className="h5 fw-bold text-dark">Trova una community</h2>
           <p className="text-muted small mb-0">
-            Cerca una città o esplora la mappa per trovare la community più vicina.
+            Cerca una città e scopri i gruppi attivi.
           </p>
         </article>
 
         <article className="col-md-4 bg-light p-4 rounded shadow-sm">
           <i className="bi bi-geo-alt-fill text-success fs-1 d-block mb-2"></i>
-          <h2 className="h5 fw-bold text-dark">Scopri</h2>
+          <h2 className="h5 fw-bold text-dark">Esplora l'Italia</h2>
           <p className="text-muted small mb-0">
-            Consulta orari delle jam, corsi, luoghi di allenamento e link ai social.
+            Visualizza tutte le community sulla mappa e le loro informazioni.
           </p>
         </article>
 
