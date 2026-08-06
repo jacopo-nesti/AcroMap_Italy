@@ -114,6 +114,33 @@
             "location": "Parco Sempione",
             "maps_url": "https://maps.google.com/?q=Parco+Sempione",
             "notes": ""
+          },
+          {
+            "id": 2,
+            "day": "Mercoledì",
+            "start_time": "18:30",
+            "end_time": "20:30",
+            "location": "Giardini Indro Montanelli",
+            "maps_url": "https://maps.google.com/?q=Giardini+Indro+Montanelli",
+            "notes": "Jam informale, portare tappetino"
+          },
+          {
+            "id": 3,
+            "day": "Venerdì",
+            "start_time": "19:30",
+            "end_time": "22:00",
+            "location": "Parco Ravizza",
+            "maps_url": "https://maps.google.com/?q=Parco+Ravizza",
+            "notes": ""
+          },
+          {
+            "id": 4,
+            "day": "Domenica",
+            "start_time": "10:00",
+            "end_time": "13:00",
+            "location": "Boscoincittà",
+            "maps_url": "https://maps.google.com/?q=Boscoincitta+Milano",
+            "notes": "Jam mattutina, seguita da pranzo condiviso"
           }
         ],
         "courses": [
@@ -128,6 +155,42 @@
             "maps_url": "https://maps.google.com/?q=Centro+Sportivo+ABC",
             "level": "Beginner",
             "notes": ""
+          },
+          {
+            "id": 2,
+            "name": "Livello Intermedio - Standing Acro",
+            "teachers": ["Elena Verdi", "Paolo Ferrari"],
+            "day": "Martedì",
+            "start_time": "20:30",
+            "end_time": "22:00",
+            "location": "Centro Sportivo ABC",
+            "maps_url": "https://maps.google.com/?q=Centro+Sportivo+ABC",
+            "level": "Intermediate",
+            "notes": "Consigliato aver completato il corso base"
+          },
+          {
+            "id": 3,
+            "name": "Corso Avanzato - Icarian & Washing Machines",
+            "teachers": ["Paolo Ferrari"],
+            "day": "Mercoledì",
+            "start_time": "21:00",
+            "end_time": "22:30",
+            "location": "Palestra CircoMilano",
+            "maps_url": "https://maps.google.com/?q=Palestra+CircoMilano",
+            "level": "Advanced",
+            "notes": "Prerequisiti richiesti, posti limitati"
+          },
+          {
+            "id": 4,
+            "name": "AcroYoga & Thai Massage Fusion",
+            "teachers": ["Chiara Longo"],
+            "day": "Domenica",
+            "start_time": "17:00",
+            "end_time": "19:00",
+            "location": "Spazio Yoga Milano",
+            "maps_url": "https://maps.google.com/?q=Spazio+Yoga+Milano",
+            "level": "All Levels",
+            "notes": "Include sessione di massaggio thailandese a coppie"
           }
         ]
       },
@@ -409,6 +472,471 @@
             "notes": ""
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "bologna",
+    "name": "Bologna",
+    "region": "Emilia-Romagna",
+    "province": "Bologna",
+    "coordinates": {
+      "lat": 44.4949,
+      "lng": 11.3426
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Bologna",
+        "description": "Community universitaria molto attiva, nata nel 2019 tra i portici.",
+        "whatsapp": "https://chat.whatsapp.com/bologna",
+        "instagram": "https://instagram.com/acrobologna",
+        "facebook": "https://facebook.com/acrobologna",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Martedì",
+            "start_time": "19:00",
+            "end_time": "21:30",
+            "location": "Giardini Margherita",
+            "maps_url": "https://maps.google.com/?q=Giardini+Margherita+Bologna",
+            "notes": "Ritrovo vicino al laghetto"
+          },
+          {
+            "id": 2,
+            "day": "Sabato",
+            "start_time": "16:00",
+            "end_time": "19:30",
+            "location": "Parco della Montagnola",
+            "maps_url": "https://maps.google.com/?q=Parco+della+Montagnola+Bologna",
+            "notes": ""
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "AcroYoga Base",
+            "teachers": ["Francesca Moretti"],
+            "day": "Lunedì",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "location": "Palestra San Donato",
+            "maps_url": "https://maps.google.com/?q=Palestra+San+Donato+Bologna",
+            "level": "Beginner",
+            "notes": ""
+          },
+          {
+            "id": 2,
+            "name": "Partner Acrobatics Intermedio",
+            "teachers": ["Francesca Moretti", "Jacopo Fanti"],
+            "day": "Giovedì",
+            "start_time": "20:00",
+            "end_time": "21:30",
+            "location": "Palestra San Donato",
+            "maps_url": "https://maps.google.com/?q=Palestra+San+Donato+Bologna",
+            "level": "Intermediate",
+            "notes": "Richiesta esperienza base di base acro"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "genova",
+    "name": "Genova",
+    "region": "Liguria",
+    "province": "Genova",
+    "coordinates": {
+      "lat": 44.4056,
+      "lng": 8.9463
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Genova",
+        "description": "Piccola ma affiatata community affacciata sul mare.",
+        "whatsapp": "https://chat.whatsapp.com/genova",
+        "instagram": "https://instagram.com/acrogenova",
+        "facebook": "",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Venerdì",
+            "start_time": "18:30",
+            "end_time": "21:00",
+            "location": "Parchi di Nervi",
+            "maps_url": "https://maps.google.com/?q=Parchi+di+Nervi+Genova",
+            "notes": "Vista mare, in caso di pioggia annullata"
+          },
+          {
+            "id": 2,
+            "day": "Domenica",
+            "start_time": "10:30",
+            "end_time": "13:00",
+            "location": "Spianata Castelletto",
+            "maps_url": "https://maps.google.com/?q=Spianata+Castelletto+Genova",
+            "notes": "Jam mattutina con vista panoramica"
+          }
+        ],
+        "courses": []
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "verona",
+    "name": "Verona",
+    "region": "Veneto",
+    "province": "Verona",
+    "coordinates": {
+      "lat": 45.4384,
+      "lng": 10.9916
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Verona",
+        "description": "Community giovane, cresciuta molto negli ultimi due anni.",
+        "whatsapp": "https://chat.whatsapp.com/verona",
+        "instagram": "https://instagram.com/acroverona",
+        "facebook": "https://facebook.com/acroverona",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Mercoledì",
+            "start_time": "19:00",
+            "end_time": "21:00",
+            "location": "Parco Giardino Sigurtà",
+            "maps_url": "https://maps.google.com/?q=Parco+Giardino+Sigurta",
+            "notes": "Solo nei mesi estivi"
+          },
+          {
+            "id": 2,
+            "day": "Sabato",
+            "start_time": "15:30",
+            "end_time": "18:30",
+            "location": "Parco delle Colombare",
+            "maps_url": "https://maps.google.com/?q=Parco+delle+Colombare+Verona",
+            "notes": ""
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Base AcroYoga",
+            "teachers": ["Simone Bertelli"],
+            "day": "Martedì",
+            "start_time": "20:00",
+            "end_time": "21:30",
+            "location": "ASD Movimento Verona",
+            "maps_url": "https://maps.google.com/?q=ASD+Movimento+Verona",
+            "level": "Beginner",
+            "notes": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "bari",
+    "name": "Bari",
+    "region": "Puglia",
+    "province": "Bari",
+    "coordinates": {
+      "lat": 41.1171,
+      "lng": 16.8719
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Bari",
+        "description": "Jam sul lungomare con vista sull'Adriatico.",
+        "whatsapp": "https://chat.whatsapp.com/bari",
+        "instagram": "https://instagram.com/acrobari",
+        "facebook": "https://facebook.com/acrobari",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Giovedì",
+            "start_time": "19:00",
+            "end_time": "21:30",
+            "location": "Lungomare Nazario Sauro",
+            "maps_url": "https://maps.google.com/?q=Lungomare+Nazario+Sauro+Bari",
+            "notes": "Zona pineta, portare telo"
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "AcroYoga per Coppie",
+            "teachers": ["Rosa Palmisano", "Vito Colonna"],
+            "day": "Lunedì",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "location": "Centro Yoga Bari",
+            "maps_url": "https://maps.google.com/?q=Centro+Yoga+Bari",
+            "level": "All Levels",
+            "notes": "Consigliato venire in coppia, ma non obbligatorio"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "palermo",
+    "name": "Palermo",
+    "region": "Sicilia",
+    "province": "Palermo",
+    "coordinates": {
+      "lat": 38.1157,
+      "lng": 13.3615
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Palermo",
+        "description": "Community solare con jam quasi tutto l'anno grazie al clima mite.",
+        "whatsapp": "https://chat.whatsapp.com/palermo",
+        "instagram": "https://instagram.com/acropalermo",
+        "facebook": "",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Martedì",
+            "start_time": "18:00",
+            "end_time": "20:30",
+            "location": "Giardino Inglese",
+            "maps_url": "https://maps.google.com/?q=Giardino+Inglese+Palermo",
+            "notes": ""
+          },
+          {
+            "id": 2,
+            "day": "Domenica",
+            "start_time": "17:00",
+            "end_time": "20:00",
+            "location": "Foro Italico",
+            "maps_url": "https://maps.google.com/?q=Foro+Italico+Palermo",
+            "notes": "Jam serale con tramonto sul mare"
+          }
+        ],
+        "courses": []
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "trieste",
+    "name": "Trieste",
+    "region": "Friuli-Venezia Giulia",
+    "province": "Trieste",
+    "coordinates": {
+      "lat": 45.6495,
+      "lng": 13.7768
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Trieste",
+        "description": "Piccola community affacciata sul golfo, molto legata al mondo del circo.",
+        "whatsapp": "https://chat.whatsapp.com/trieste",
+        "instagram": "https://instagram.com/acrotrieste",
+        "facebook": "https://facebook.com/acrotrieste",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Sabato",
+            "start_time": "16:00",
+            "end_time": "19:00",
+            "location": "Molo Audace",
+            "maps_url": "https://maps.google.com/?q=Molo+Audace+Trieste",
+            "notes": "Solo con bel tempo"
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "AcroYoga & Circo Base",
+            "teachers": ["Nicola Sancin"],
+            "day": "Mercoledì",
+            "start_time": "20:00",
+            "end_time": "21:30",
+            "location": "Scuola di Circo Trieste",
+            "maps_url": "https://maps.google.com/?q=Scuola+di+Circo+Trieste",
+            "level": "Beginner",
+            "notes": "Ingresso con contributo volontario"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "slug": "perugia",
+    "name": "Perugia",
+    "region": "Umbria",
+    "province": "Perugia",
+    "coordinates": {
+      "lat": 43.1122,
+      "lng": 12.3888
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Perugia",
+        "description": "Nata nel campus universitario, ora aperta a tutta la città.",
+        "whatsapp": "https://chat.whatsapp.com/perugia",
+        "instagram": "https://instagram.com/acroperugia",
+        "facebook": "",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Venerdì",
+            "start_time": "18:30",
+            "end_time": "21:00",
+            "location": "Parco di Santa Margherita",
+            "maps_url": "https://maps.google.com/?q=Parco+di+Santa+Margherita+Perugia",
+            "notes": ""
+          }
+        ],
+        "courses": []
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "cagliari",
+    "name": "Cagliari",
+    "region": "Sardegna",
+    "province": "Cagliari",
+    "coordinates": {
+      "lat": 39.2238,
+      "lng": 9.1217
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Cagliari",
+        "description": "Community sarda, jam frequenti in spiaggia durante l'estate.",
+        "whatsapp": "https://chat.whatsapp.com/cagliari",
+        "instagram": "https://instagram.com/acrocagliari",
+        "facebook": "https://facebook.com/acrocagliari",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Mercoledì",
+            "start_time": "19:00",
+            "end_time": "21:00",
+            "location": "Parco della Musica e della Cultura",
+            "maps_url": "https://maps.google.com/?q=Parco+della+Musica+e+della+Cultura+Cagliari",
+            "notes": ""
+          },
+          {
+            "id": 2,
+            "day": "Domenica",
+            "start_time": "18:00",
+            "end_time": "20:30",
+            "location": "Spiaggia del Poetto",
+            "maps_url": "https://maps.google.com/?q=Spiaggia+del+Poetto+Cagliari",
+            "notes": "Da maggio a settembre"
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Base AcroYoga",
+            "teachers": ["Giorgia Deiana"],
+            "day": "Martedì",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "location": "Yoga Studio Cagliari",
+            "maps_url": "https://maps.google.com/?q=Yoga+Studio+Cagliari",
+            "level": "Beginner",
+            "notes": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "slug": "bergamo",
+    "name": "Bergamo",
+    "region": "Lombardia",
+    "province": "Bergamo",
+    "coordinates": {
+      "lat": 45.6983,
+      "lng": 9.6773
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Bergamo",
+        "description": "Community tra Città Alta e Città Bassa, allenamenti fissi tutto l'anno.",
+        "whatsapp": "https://chat.whatsapp.com/bergamo",
+        "instagram": "https://instagram.com/acrobergamo",
+        "facebook": "",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Giovedì",
+            "start_time": "19:00",
+            "end_time": "21:00",
+            "location": "Parco della Trucca",
+            "maps_url": "https://maps.google.com/?q=Parco+della+Trucca+Bergamo",
+            "notes": ""
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "AcroYoga Fundamentals",
+            "teachers": ["Andrea Locatelli"],
+            "day": "Lunedì",
+            "start_time": "20:00",
+            "end_time": "21:30",
+            "location": "Palestra Comunale Bergamo",
+            "maps_url": "https://maps.google.com/?q=Palestra+Comunale+Bergamo",
+            "level": "Beginner",
+            "notes": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "bolzano",
+    "name": "Bolzano",
+    "region": "Trentino-Alto Adige",
+    "province": "Bolzano",
+    "coordinates": {
+      "lat": 46.4983,
+      "lng": 11.3548
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Bolzano",
+        "description": "Piccola community bilingue (italiano/tedesco) tra le montagne.",
+        "whatsapp": "https://chat.whatsapp.com/bolzano",
+        "instagram": "https://instagram.com/acrobolzano",
+        "facebook": "https://facebook.com/acrobolzano",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Sabato",
+            "start_time": "15:00",
+            "end_time": "18:00",
+            "location": "Parco di Talvera",
+            "maps_url": "https://maps.google.com/?q=Parco+di+Talvera+Bolzano",
+            "notes": "In caso di maltempo si sposta indoor, chiedere su WhatsApp"
+          }
+        ],
+        "courses": []
       }
     ]
   }

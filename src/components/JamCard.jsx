@@ -1,30 +1,39 @@
 function JamCard({ jam }) {
   if (!jam) return null
 
-  return (
-    <div className="card border-0 shadow-sm p-3 bg-white rounded-3 mb-2">
-      <div className="d-flex align-items-center justify-content-between mb-2">
-        <div className="fw-bold text-dark">
-          <i className="bi bi-calendar-event text-success me-2"></i>
-          {jam.day}
-        </div>
-        {(jam.start_time || jam.end_time) && (
-          <span className="badge bg-light text-muted border fw-normal">
-            <i className="bi bi-clock me-1"></i>
-            {jam.start_time} - {jam.end_time}
-          </span>
-        )}
-      </div>
+  const hasTime = jam.start_time || jam.end_time
 
+  return (
+    <div className="card border-0 shadow-sm p-3 bg-white rounded-3">
+      {/* Giorno ed Orario */}
+      {(jam.day || hasTime) && (
+        <div className="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+          {jam.day && (
+            <span className="fw-bold text-dark d-flex align-items-center gap-1">
+              <i className="bi bi-calendar-event text-success"></i>
+              {jam.day}
+            </span>
+          )}
+          {hasTime && (
+            <span className="badge bg-success-subtle text-success border border-success-subtle fw-medium">
+              <i className="bi bi-clock me-1"></i>
+              {jam.start_time}{jam.end_time ? ` - ${jam.end_time}` : ''}
+            </span>
+          )}
+        </div>
+      )}
+
+      {/* Luogo */}
       {jam.location && (
         <div className="small text-secondary mb-2">
-          <i className="bi bi-geo-alt-fill text-danger me-1"></i>
+          <i className="bi bi-geo-alt-fill text-success me-1"></i>
           {jam.location}
         </div>
       )}
 
+      {/* Link Maps */}
       {jam.maps_url && (
-        <div className="mb-1">
+        <div className="mt-1">
           <a
             href={jam.maps_url}
             target="_blank"
@@ -37,6 +46,7 @@ function JamCard({ jam }) {
         </div>
       )}
 
+      {/* Note */}
       {jam.notes && (
         <div className="text-muted small mt-2 border-top pt-2 fst-italic">
           <i className="bi bi-info-circle me-1"></i>
