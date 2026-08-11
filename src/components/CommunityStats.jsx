@@ -19,15 +19,31 @@ function CommunityStats() {
   ]
 
   return (
-    <section className="col-12 text-center my-4">
-      <h3 className="fw-bold mb-4">La community italiana in numeri</h3>
+    <section className="col-12 text-center my-5">
+      <h3 className="fw-bold mb-4">La community italiana, in numeri</h3>
 
-      <div className="row justify-content-center g-4">
-        {stats.map(({ label, value }) => (
-          <article key={label} className="col-4 col-md-3">
-            <div className="p-3 bg-white rounded-3 shadow-sm border">
-              <h2 className="fw-bold text-success mb-0">{value}</h2>
-              <p className="text-muted mb-0 small text-uppercase fw-semibold">
+      <div className="row justify-content-center align-items-center g-0">
+        {stats.map(({ label, value }, index) => (
+          <article 
+            key={label} 
+            className={`col-4 col-md-3 ${
+              index < stats.length - 1 ? "border-end border-light-subtle" : ""
+            }`}
+          >
+            <div className="d-flex flex-column align-items-center py-2 px-1">
+              {/* Barretta orizzontale verde */}
+              <div 
+                className="bg-success mb-2" 
+                style={{ width: "32px", height: "4px", borderRadius: "2px" }}
+              ></div>
+
+              {/* Numero grande */}
+              <span className="display-3 fw-bold text-dark lh-1 mb-1">
+                {value}
+              </span>
+
+              {/* Etichetta sotto */}
+              <p className="text-muted small text-uppercase fw-semibold mb-0">
                 {label}
               </p>
             </div>

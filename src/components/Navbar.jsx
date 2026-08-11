@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand" onClick={closeMenu}>
+        <Link to="/" className="navbar-brand text-white" onClick={closeMenu}>
           AcroMap Italy
         </Link>
 
@@ -29,25 +29,25 @@ function Navbar() {
         <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}>
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
             <li className="nav-item">
-              <Link to="/" className="nav-link" onClick={closeMenu}>
+              <Link to="/" className="nav-link text-white" onClick={closeMenu}>
                 Home
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link to="/cities" className="nav-link" onClick={closeMenu}>
+              <Link to="/cities" className="nav-link text-white" onClick={closeMenu}>
                 Città
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link to="/contribute" className="nav-link" onClick={closeMenu}>
+              <Link to="/contribute" className="nav-link text-white" onClick={closeMenu}>
                 Contribuisci
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link to="/aboutus" className="nav-link" onClick={closeMenu}>
+              <Link to="/aboutus" className="nav-link text-white" onClick={closeMenu}>
                 Chi siamo
               </Link>
             </li>

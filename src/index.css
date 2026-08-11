@@ -5,3 +5,12 @@ html {
 section[id] {
   scroll-margin-top: 80px;
 }
+
+.community-card-hover {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.community-card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.12) !important;
+}

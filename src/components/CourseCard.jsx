@@ -8,21 +8,21 @@ function CourseCard({ course }) {
   const hasTime = course.start_time || course.end_time
 
   return (
-    <div className="card border-0 shadow-sm p-3 bg-white rounded-3">
-      {/* Nome Corso + Badge Livello Affiancato */}
-      <div className="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+    <div className="card border-0 shadow-sm p-4 bg-white rounded-4">
+      {/* Nome Corso + Badge Livello */}
+      <div className="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
         {course.name && (
-          <h4 className="h6 fw-bold text-dark mb-0 d-flex align-items-center gap-2">
+          <h4 className="h5 fw-bold mb-0 d-flex align-items-center gap-2" style={{ color: '#0f291e' }}>
             {course.name}
             {course.level && (
-              <span className="badge bg-success text-white rounded-pill px-2 py-1 small fw-normal">
+              <span className="badge bg-success text-white rounded-pill px-3 py-1 small fw-medium">
                 {course.level}
               </span>
             )}
           </h4>
         )}
         {!course.name && course.level && (
-          <span className="badge bg-success text-white rounded-pill px-2 py-1 small fw-normal">
+          <span className="badge bg-success text-white rounded-pill px-3 py-1 small fw-medium">
             {course.level}
           </span>
         )}
@@ -30,41 +30,41 @@ function CourseCard({ course }) {
 
       {/* Insegnanti */}
       {teachersList && (
-        <div className="small text-muted mb-2">
-          <i className="bi bi-person-badge text-success me-1"></i>
-          <strong>Insegnanti:</strong> {teachersList}
+        <div className="d-flex align-items-center gap-2 text-dark fs-6 mb-3">
+          <i className="bi bi-person-badge-fill text-success fs-5"></i>
+          <span className="fw-semibold" style={{ color: '#0f291e' }}>Insegnanti:</span>
+          <span className="text-secondary fw-medium">{teachersList}</span>
         </div>
       )}
 
-      {/* Giorno e Orario */}
       {(course.day || hasTime) && (
-        <div className="d-flex flex-wrap gap-3 text-secondary small mb-2">
+        <div className="d-flex align-items-center flex-wrap gap-2 mb-3">
           {course.day && (
-            <div>
-              <i className="bi bi-calendar3 text-success me-1"></i>
-              {course.day}
-            </div>
+            <span className="fw-bold text-dark d-inline-flex align-items-center gap-2 fs-6 bg-light px-3 py-2 rounded-3 border">
+              <i className="bi bi-calendar-event-fill text-success fs-5"></i>
+              <span className="text-capitalize" style={{ color: '#0f291e' }}>{course.day}</span>
+            </span>
           )}
           {hasTime && (
-            <div>
-              <i className="bi bi-clock text-success me-1"></i>
-              {course.start_time}{course.end_time ? ` - ${course.end_time}` : ''}
-            </div>
+            <span className="fw-bold text-dark d-inline-flex align-items-center gap-2 fs-6 bg-white px-3 py-2 rounded-3 border">
+              <i className="bi bi-clock-fill text-success fs-5"></i>
+              <span>{course.start_time}{course.end_time ? ` - ${course.end_time}` : ''}</span>
+            </span>
           )}
         </div>
       )}
 
       {/* Luogo */}
       {course.location && (
-        <div className="small text-secondary mb-2">
-          <i className="bi bi-geo-alt-fill text-success me-1"></i>
-          {course.location}
+        <div className="text-secondary mb-2 d-flex align-items-center gap-2 fs-6">
+          <i className="bi bi-geo-alt-fill text-success fs-5"></i>
+          <span className="fw-medium">{course.location}</span>
         </div>
       )}
 
       {/* Link Maps */}
       {course.maps_url && (
-        <div className="mt-1">
+        <div className="mt-2">
           <a
             href={course.maps_url}
             target="_blank"
@@ -79,8 +79,8 @@ function CourseCard({ course }) {
 
       {/* Note */}
       {course.notes && (
-        <div className="text-muted small mt-2 border-top pt-2 fst-italic">
-          <i className="bi bi-info-circle me-1"></i>
+        <div className="text-muted small mt-3 border-top pt-3 fst-italic">
+          <i className="bi bi-info-circle me-1 text-success"></i>
           {course.notes}
         </div>
       )}
