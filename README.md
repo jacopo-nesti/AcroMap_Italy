@@ -19,7 +19,3 @@ Il progetto è attualmente in fase di sviluppo (MVP). Nuove città, funzionalit�
 ## Autore
 
 Creato da **Jacopo Nesti**
-
-## Licenza
-
-Questo progetto è distribuito sotto licenza [MIT](LICENSE.md).
