@@ -8,7 +8,7 @@ function CommunityFinderSearchBar() {
 
   return (
     <div className="col-12 col-md-8 col-lg-6">
-      <div className="p-3 bg-white border rounded-3 text-center">
+      <div className="p-3 bg-white border border-2 border-success rounded-3 text-center">
         <h5 className="fw-bold mb-3">Cerca una città</h5>
 
         <div className="input-group mb-3">
