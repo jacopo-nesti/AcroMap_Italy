@@ -21,7 +21,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/contribute" element={<Contribute />} />
         <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/cities" element={<CitiesPage />} />
+        <Route path="/community" element={<CitiesPage />} />
         <Route path="/city/:slug" element={<CityPage />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/privacy" element={<Privacy />} />

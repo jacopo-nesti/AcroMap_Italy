@@ -12,7 +12,7 @@ function IntroSection () {
     }
 
     return (
-        <div className="container">
+        <div className="container text-center">
             <h1 className="display-4 fw-bold text-dark mb-3">
             Trova la tua community di Acroyoga
             </h1>

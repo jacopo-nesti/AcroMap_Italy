@@ -25,40 +25,72 @@ function CommunityCard({ community, isOpen, onToggle }) {
   return (
     <div className="card border-0 shadow-sm rounded-4 bg-white overflow-hidden community-card-hover">
 
-      <div onClick={onToggle} className="card-body p-4 border-0" style={{ cursor: 'pointer' }} role="button" aria-expanded={isOpen}>
-        <div className="d-flex justify-content-between align-items-start gap-3 mb-2">
-          <h3 className="h4 fw-bold mb-0 text-dark" style={{ letterSpacing: '-0.02em', color: '#0f291e' }}>
-            {community.name}
-          </h3>
-          <span className="badge rounded-circle p-2 bg-white text-dark border shadow-sm d-flex align-items-center justify-content-center">
-            <i className={`bi bi-chevron-${isOpen ? 'up' : 'down'}`}></i>
-          </span>
-        </div>
+      <div 
+        onClick={onToggle} 
+        className="card-body p-3" 
+        style={{ cursor: 'pointer' }} 
+        role="button" 
+        aria-expanded={isOpen}
+      >
+        <h3 className="h5 fw-bold mb-1 text-dark" style={{ letterSpacing: '-0.01em', color: '#0f291e' }}>
+          {community.name}
+        </h3>
 
-        {community.description && <p className="text-secondary fs-6 mb-3 mt-2">{community.description}</p>}
-
-        <div onClick={(e) => e.stopPropagation()} className="mt-2">
-          <SocialLinks community={community} />
-        </div>
+        {community.description && (
+          <p className="text-secondary small mb-0 mt-1">
+            {community.description}
+          </p>
+        )}
       </div>
 
+      <button
+        type="button"
+        onClick={onToggle}
+        className="btn bg-success text-white w-100 rounded-0 d-flex align-items-center justify-content-between px-3 py-2 border-0 fw-semibold"
+        style={{ backgroundColor: '#198754' }}
+      >
+        <span className="small">{isOpen ? 'Mostra meno' : 'Scopri di più'}</span>
+        <i className={`bi bi-chevron-${isOpen ? 'up' : 'down'} ms-2`}></i>
+      </button>
+
+      {/* Sezione Espansa */}
       {isOpen && (
-        <div className="card-footer bg-white border-top border-light-subtle px-4 pb-4 pt-3">
-          <DayFilter selectedDay={selectedDay} onSelectDay={setSelectedDay} />
+        <div className="card-footer bg-white border-top border-light-subtle p-3">
+          
+          {/* Social Links spostati all'interno */}
+          <div className="mb-3">
+            <SocialLinks community={community} />
+          </div>
+
+          {/* Filtro per giorno */}
+          <div className="mb-3">
+            <DayFilter selectedDay={selectedDay} onSelectDay={setSelectedDay} />
+          </div>
+
+          {/* Sezioni Jam e Corsi */}
           <div className="row g-3 align-items-start">
             <DetailSection 
-              title="Jam" icon="calendar-event" count={filteredJams.length}
-              isOpen={showJams} onToggle={() => setShowJams(!showJams)}
-              items={filteredJams} renderItem={(jam, idx) => <JamCard key={jam.id || idx} jam={jam} />}
+              title="Mostra le jam" 
+              icon="calendar-event" 
+              count={filteredJams.length}
+              isOpen={showJams} 
+              onToggle={() => setShowJams(!showJams)}
+              items={filteredJams} 
+              renderItem={(jam, idx) => <JamCard key={jam.id || idx} jam={jam} />}
               emptyText={selectedDay === 'Tutti' ? "Nessuna jam al momento." : `Nessuna jam il ${selectedDay}.`}
             />
             <DetailSection 
-              title="Corsi" icon="mortarboard" count={filteredCourses.length}
-              isOpen={showCourses} onToggle={() => setShowCourses(!showCourses)}
-              items={filteredCourses} renderItem={(course, idx) => <CourseCard key={course.id || idx} course={course} />}
+              title="Mostra i corsi" 
+              icon="mortarboard" 
+              count={filteredCourses.length}
+              isOpen={showCourses} 
+              onToggle={() => setShowCourses(!showCourses)}
+              items={filteredCourses} 
+              renderItem={(course, idx) => <CourseCard key={course.id || idx} course={course} />}
               emptyText={selectedDay === 'Tutti' ? "Nessun corso disponibile." : `Nessun corso il ${selectedDay}.`}
             />
           </div>
+
         </div>
       )}
     </div>

@@ -35,8 +35,8 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
-              <Link to="/cities" className="nav-link text-white" onClick={closeMenu}>
-                Città
+              <Link to="/community" className="nav-link text-white" onClick={closeMenu}>
+                Community
               </Link>
             </li>
 
