@@ -1,4 +1,5 @@
 import { useState } from "react"
+import SEO from "../components/SEO"
 
 function ContactPage() {
   const [formData, setFormData] = useState({
@@ -28,6 +29,12 @@ function ContactPage() {
 
   return (
     <main className="container my-5">
+
+      <SEO
+        title="Contatti | AcroFinder"
+        description="Contatta AcroFinder per informazioni, segnalazioni o richieste relative al progetto."
+      />
+
       <div className="row justify-content-center">
         <div className="col-12 col-md-8 col-lg-6 text-center">
           <h1 className="fw-bold mb-3">Contattaci</h1>

@@ -23,8 +23,8 @@ function Footer() {
           {/* Colonna 2: Legale */}
           <div className="col-6 col-md-3 col-lg-3">
             <h6 
-              className="text-uppercase text-success fw-semibold mb-3" 
-              style={{ fontSize: '11px', letterSpacing: '0.08em' }}
+              className="text-uppercase fw-semibold mb-3" 
+              style={{ fontSize: '11px', letterSpacing: '0.08em', color: '#4ade80' }}
             >
               Legale
             </h6>
@@ -45,8 +45,8 @@ function Footer() {
           {/* Colonna 3: Progetto */}
           <div className="col-6 col-md-3 col-lg-4">
             <h6 
-              className="text-uppercase text-success fw-semibold mb-3" 
-              style={{ fontSize: '11px', letterSpacing: '0.08em' }}
+              className="text-uppercase fw-semibold mb-3" 
+              style={{ fontSize: '11px', letterSpacing: '0.08em', color: '#4ade80' }}
             >
               Progetto
             </h6>
@@ -72,9 +72,9 @@ function Footer() {
         </div>
 
         {/* Riga Divisoria */}
-        <div className="pt-3" style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+        <div className="pt-3" style={{ borderTop: '1px solid rgba(255,255,255,0.12)' }}>
           {/* Copyright */}
-          <span style={{ color: '#6B7269', fontSize: '12px' }}>
+          <span style={{ color: '#9CA3AF', fontSize: '12px' }}>
             &copy; {currentYear} AcroMap Italy. Tutti i diritti riservati.
           </span>
         </div>

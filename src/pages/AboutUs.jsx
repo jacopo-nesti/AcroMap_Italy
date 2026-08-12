@@ -1,9 +1,20 @@
+import SEO from "../components/SEO"
+
 function AboutUs() {
   return (
     <div className="container py-5">
+
+      <SEO
+        title="Chi siamo | AcroFinder"
+        description="Scopri il progetto AcroFinder e l'obiettivo di rendere più facile trovare community di Acroyoga in Italia."
+      />
+      
       <div className="row align-items-center g-5">
         <div className="col-lg-6">
-          <span className="badge bg-success-subtle text-success mb-2 px-3 py-2 rounded-pill fw-semibold">
+          <span 
+            className="badge mb-2 px-3 py-2 rounded-pill fw-semibold text-white"
+            style={{ backgroundColor: '#15803d' }}
+          >
             Chi Siamo
           </span>
           <h2 className="display-5 fw-bold text-dark mb-3">
@@ -20,17 +31,17 @@ function AboutUs() {
         <div className="col-lg-6">
           <div className="card border-0 shadow-sm p-4 bg-light rounded-4">
             <h3 className="h4 fw-bold mb-3 text-dark">La nostra Mission</h3>
-            <ul className="list-unstyled mb-0 d-flex flex-column gap-3 text-secondary">
+            <ul className="list-unstyled mb-0 d-flex flex-column gap-3" style={{ color: '#1e293b' }}>
               <li className="d-flex align-items-start gap-3">
-                <i className="bi bi-geo-alt-fill text-success fs-5"></i>
+                <i className="bi bi-geo-alt-fill fs-5" style={{ color: '#15803d' }}></i>
                 <span>Mappare jam, allenamenti liberi e corsi in tutte le regioni d'Italia.</span>
               </li>
               <li className="d-flex align-items-start gap-3">
-                <i className="bi bi-people-fill text-success fs-5"></i>
+                <i className="bi bi-people-fill fs-5" style={{ color: '#15803d' }}></i>
                 <span>Mettere in contatto diretto le persone con i canali social ufficiali dei gruppi.</span>
               </li>
               <li className="d-flex align-items-start gap-3">
-                <i className="bi bi-heart-fill text-success fs-5"></i>
+                <i className="bi bi-heart-fill fs-5" style={{ color: '#15803d' }}></i>
                 <span>Promuovere la condivisione, la fiducia e il divertimento all'aria aperta.</span>
               </li>
             </ul>

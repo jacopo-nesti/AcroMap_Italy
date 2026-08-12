@@ -20,7 +20,7 @@ function RegionCard({ regionName, regionCities, isOpen, onToggle }) {
 
   return (
     <div
-      className={`card rounded-4 h-100 overflow-hidden transition-all ${
+      className={`card rounded-4 h-100 transition-all ${
         isOpen
           ? 'border-success border-2 shadow'
           : 'border-1 border-light-subtle shadow-sm'
@@ -32,7 +32,7 @@ function RegionCard({ regionName, regionCities, isOpen, onToggle }) {
     >
       <button
         onClick={onToggle}
-        className={`btn text-start p-3 d-flex flex-column justify-content-between border-0 shadow-none h-100 w-100 ${
+        className={`btn region-card-button text-start p-3 d-flex flex-column justify-content-between border-0 shadow-none h-100 w-100 ${
           isOpen ? 'bg-transparent' : 'bg-white'
         }`}
         type="button"

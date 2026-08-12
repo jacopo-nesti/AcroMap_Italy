@@ -14,3 +14,27 @@ section[id] {
   transform: translateY(-3px);
   box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.12) !important;
 }
+
+.region-card-button:focus-visible {
+  outline: 3px solid #198754 !important;
+  outline-offset: 3px;
+  border-radius: 1rem;
+}
+
+.back-button:focus-visible {
+  outline: 3px solid #198754 !important;
+  outline-offset: 3px;
+  border-radius: 0.75rem;
+}
+
+.report-error-link:focus-visible {
+  outline: 3px solid #198754 !important;
+  outline-offset: 3px;
+  border-radius: 0.75rem;
+}
+
+.community-toggle-button:focus-visible {
+  outline: 3px solid #0f5132 !important;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.25) !important;
+}

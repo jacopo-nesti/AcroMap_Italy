@@ -3,6 +3,7 @@ import { useParams } from "react-router"
 import { getCityBySlug } from "../services/cityService"
 import CommunityCard from "../components/CommunityCard"
 import BackButton from "../components/BackButton"
+import SEO from "../components/SEO"
 
 function CityPage() {
   const { slug } = useParams()
@@ -39,6 +40,12 @@ function CityPage() {
 
   return (
     <div className="min-vh-100 py-4 bg-light">
+
+      <SEO
+        title={`Acroyoga a ${city.name} | Community, Jam e Corsi | AcroFinder`}
+        description={`Scopri le community di Acroyoga a ${city.name}, le jam e i corsi disponibili.`}
+      />
+
       <main className="container">
         
         {/* Barra superiore: Componente BackButton + Segnala Errore */}
@@ -50,9 +57,15 @@ function CityPage() {
               href="https://tally.so/r/zxAD88"
               target="_blank"
               rel="noreferrer"
-              className="btn btn-outline-secondary border-0 bg-transparent text-secondary rounded-3 d-inline-flex align-items-center gap-2 px-3 py-2 small fw-medium text-decoration-none"
+              aria-label="Segnala un errore (apre in una nuova scheda)"
+              className="report-error-link btn border-0 bg-transparent rounded-3 d-inline-flex align-items-center gap-2 px-3 py-2 small fw-medium text-decoration-none"
+              style={{ color: "#334155" }}
             >
-              <i className="bi bi-exclamation-triangle"></i>
+              <i
+                className="bi bi-exclamation-triangle"
+                aria-hidden="true"
+                style={{ color: "#b45309" }}
+              ></i>
               <span className="d-none d-md-inline">Segnala un errore</span>
             </a>
           </div>

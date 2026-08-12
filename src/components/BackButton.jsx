@@ -15,7 +15,7 @@ function BackButton({ label = "Indietro", onClick, className = "" }) {
     <button
       type="button"
       onClick={handleClick}
-      className={`btn btn-white bg-white border text-dark rounded-3 shadow-sm d-inline-flex align-items-center gap-2 px-3 py-2 fw-medium ${className}`}
+      className={`btn back-button btn-white bg-white border text-dark rounded-3 shadow-sm d-inline-flex align-items-center gap-2 px-3 py-2 fw-medium ${className}`}
       aria-label={label}
     >
       <i className="bi bi-arrow-left"></i>

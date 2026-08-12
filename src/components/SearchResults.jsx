@@ -2,12 +2,16 @@ import { Link } from "react-router"
 
 function SearchResults({ search, filteredCities, setSelectedCity }) {
 
-    if(!search.trim()) {
+    if (!search.trim()) {
         return null
     }
 
     if (filteredCities.length === 0) {
-        return <p className="text-muted mt-3">Nessuna città trovata.</p>
+        return (
+            <p className="fw-bold text-dark mt-3">
+                Nessuna città trovata.
+            </p>
+        )
     }
 
     return (

@@ -1,8 +1,15 @@
 import { Link } from 'react-router'
+import SEO from "../components/SEO"
 
 function NotFound() {
   return (
     <div className="container py-5 text-center my-5">
+
+      <SEO
+        title="Pagina non trovata | AcroFinder"
+        description="La pagina che stai cercando non è disponibile."
+      />
+      
       <div className="row justify-content-center">
         <div className="col-md-6">
           <i className="bi bi-compass text-success display-1 mb-3 d-block"></i>

@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo, useRef } from "react"
 import { getCities } from "../services/cityService"
 import RegionCard from "../components/RegionCard"
 import RegionCitiesList from "../components/RegionCitiesList"
+import SEO from "../components/SEO"
 
 function CitiesPage() {
   const [cities, setCities] = useState([])
@@ -56,7 +57,7 @@ function CitiesPage() {
         <div className="spinner-border text-success" role="status">
           <span className="visually-hidden">Caricamento...</span>
         </div>
-        <p className="text-muted mt-3">Caricamento città in corso...</p>
+        <p className="mt-3" style={{ color: '#475569' }}>Caricamento città in corso...</p>
       </div>
     )
   }
@@ -74,12 +75,21 @@ function CitiesPage() {
 
   return (
     <div className="container-fluid container-xl py-5">
+
+      <SEO
+        title="Community di Acroyoga in Italia | AcroFinder"
+        description="Esplora le community di Acroyoga in Italia organizzate per regione e città."
+      />
+
       <div className="text-center mb-5">
-        <span className="badge bg-success-subtle text-success mb-2 px-3 py-2 rounded-pill fw-semibold">
+        <span 
+          className="badge mb-2 px-3 py-2 rounded-pill fw-semibold text-white"
+          style={{ backgroundColor: '#15803d' }}
+        >
           Esplora le community in Italia
         </span>
         <h1 className="display-5 fw-bold text-dark mb-2">Città e Community per Regione</h1>
-        <p className="lead text-muted mx-auto" style={{ maxWidth: "600px" }}>
+        <p className="lead mx-auto" style={{ maxWidth: "600px", color: '#475569' }}>
           Clicca su una regione per visualizzare le città disponibili.
         </p>
       </div>

@@ -1,8 +1,15 @@
 import { Link } from 'react-router'
+import SEO from "../components/SEO"
 
 function Donations() {
   return (
     <div className="container py-5 my-4">
+
+      <SEO
+        title="Sostieni il progetto | AcroFinder"
+        description="Scopri come sostenere AcroFinder e contribuire alla crescita del progetto."
+      />
+
       <div className="row justify-content-center">
         <div className="col-md-8 col-lg-6 text-center">
           <div className="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
