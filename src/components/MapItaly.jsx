@@ -8,7 +8,7 @@ const ITALY_BOUNDS = [
   [47.5, 18.5]
 ]
 
-function MapItaly({ cities, selectedCity }) {
+function MapItaly({ cities = [], selectedCity = null }) {
   return (
     <MapContainer
       center={[42.8, 12.5]}
@@ -17,18 +17,18 @@ function MapItaly({ cities, selectedCity }) {
       maxZoom={18}
       maxBounds={ITALY_BOUNDS}
       maxBoundsViscosity={1.0}
-      style={{ height: "600px", width: "100%" }}
+      style={{ height: "100%", width: "100%" }}
     >
       <TileLayer
         attribution='&copy; OpenStreetMap contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
-      <ChangeView city={selectedCity} />
+      {selectedCity && <ChangeView city={selectedCity} />}
 
       {cities.map((city) => (
         <CityMarker
-          key={city.id}
+          key={city.id || city.name}
           city={city}
         />
       ))}

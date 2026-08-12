@@ -41,6 +41,12 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
+              <Link to="/map" className="nav-link text-white" onClick={closeMenu}>
+                Mappa
+              </Link>
+            </li>
+
+            <li className="nav-item">
               <Link to="/contribute" className="nav-link text-white" onClick={closeMenu}>
                 Contribuisci
               </Link>

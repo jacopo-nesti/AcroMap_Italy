@@ -1,31 +1,24 @@
 import HomeHero from "../components/HomeHero"
-import { CommunityFinder } from "../components/CommunityFinder"
 import CommunityFinderSearchBar from "../components/CommunityFinderSearchBar"
-import FeatureCards from "../components/FeatureCards"
 import CommunityStats from "../components/CommunityStats"
-import CommunityFinderMap from "../components/CommunityFinderMap"
-import Contribute from "./Contribute"
+import OrganizerCallout from "../components/OrganizerCallout"
 
 function HomePage() {
   return (
     <main className="container my-5">
-      <CommunityFinder>
-        <HomeHero />
+      <HomeHero />
 
-        <div className="row justify-content-center my-4">
-          <CommunityFinderSearchBar />
-        </div>
-
-        <div className="row g-4 justify-content-center">
-          <FeatureCards />
-          <CommunityStats />
-          <CommunityFinderMap />
-        </div>
-      </CommunityFinder>
-
-      <div>
-        <Contribute />
+      <div className="row justify-content-center my-4">
+        <CommunityFinderSearchBar />
       </div>
+
+      <div className="my-5">
+        <CommunityStats />
+      </div>
+
+      <hr className="my-5 text-border opacity-25" />
+
+      <OrganizerCallout />
     </main>
   )
 }

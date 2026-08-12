@@ -5,7 +5,7 @@ function SearchBar({ search, setSearch}) {
         <input
             type="text"
             className="form-control"
-            placeholder="Cerca una città..."
+            placeholder="Es. Firenze, Milano, Bologna..."
             value={search}
             onChange={(event) => setSearch(event.target.value)}
         />

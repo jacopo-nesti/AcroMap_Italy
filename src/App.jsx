@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router"
+import { CommunityFinder } from "./components/CommunityFinder" // Assicurati che il percorso sia corretto
 import Contribute from "./pages/Contribute"
 import AboutUs from "./pages/AboutUs"
 import HomePage from "./pages/HomePage"
@@ -10,28 +11,33 @@ import Privacy from "./pages/Privacy"
 import Terms from "./pages/Terms"
 import Donations from "./pages/Donations"
 import ContactPage from "./pages/ContactPage"
+import MapPage from "./pages/MapPage"
 
 function App() {
-
   return (
-    <Routes>
+    <CommunityFinder>
 
-      <Route element={<MainLayout />}>
+      <Routes>
 
-        <Route path="/" element={<HomePage />} />
-        <Route path="/contribute" element={<Contribute />} />
-        <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/community" element={<CitiesPage />} />
-        <Route path="/city/:slug" element={<CityPage />} />
-        <Route path="*" element={<NotFound />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="/terms" element={<Terms />} />
-        <Route path="/donations" element={<Donations />} />
-        <Route path="/contactus" element={<ContactPage />} />
+        <Route element={<MainLayout />}>
 
-      </Route>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/contribute" element={<Contribute />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/community" element={<CitiesPage />} />
+          <Route path="/city/:slug" element={<CityPage />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/donations" element={<Donations />} />
+          <Route path="/contactus" element={<ContactPage />} />
+          <Route path="/map" element={<MapPage />} />
+          <Route path="*" element={<NotFound />} />
 
-    </Routes>
+        </Route>
+
+      </Routes>
+      
+    </CommunityFinder>
   )
 }
 

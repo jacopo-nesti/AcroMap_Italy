@@ -1,9 +1,16 @@
+import BackButton from "../components/BackButton"
+
 function Privacy() {
   return (
     <div className="container py-5 my-4">
       <div className="row justify-content-center">
         <div className="col-lg-9 col-xl-8">
           
+          {/* Tasto Indietro */}
+          <div className="mb-3">
+            <BackButton />
+          </div>
+
           {/* Header Pagina */}
           <div className="text-center mb-5">
             <span className="badge bg-success-subtle text-success mb-2 px-3 py-2 rounded-pill fw-semibold">
