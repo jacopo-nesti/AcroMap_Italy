@@ -13,7 +13,7 @@ function OrganizerCallout() {
         Sei un organizzatore?
       </h2>
       <p className="small mx-auto mb-4" style={{ color: '#475569', maxWidth: '520px' }}>
-        Aiuta a mantenere AcroMap Italy aggiornato. Aggiungi il tuo gruppo, segnala una nuova jam o aggiorna gli orari dei corsi.
+        Aiuta a mantenere AcroFinder aggiornato. Aggiungi il tuo gruppo, segnala una nuova jam o aggiorna gli orari dei corsi.
       </p>
       <Link 
         to="/contribute" 

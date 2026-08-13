@@ -13,7 +13,7 @@ function Footer() {
           {/* Colonna 1: Info Progetto */}
           <div className="col-12 col-md-6 col-lg-5">
             <h3 className="h5 fw-bold text-white mb-2">
-              AcroMap Italy
+              AcroFinder
             </h3>
             <p className="text-light opacity-75 small mb-0 lh-lg" style={{ maxWidth: '360px' }}>
               Progetto indipendente dedicato alla community italiana di Acroyoga.
@@ -75,7 +75,7 @@ function Footer() {
         <div className="pt-3" style={{ borderTop: '1px solid rgba(255,255,255,0.12)' }}>
           {/* Copyright */}
           <span style={{ color: '#9CA3AF', fontSize: '12px' }}>
-            &copy; {currentYear} AcroMap Italy. Tutti i diritti riservati.
+            &copy; {currentYear} AcroFinder. Tutti i diritti riservati.
           </span>
         </div>
 

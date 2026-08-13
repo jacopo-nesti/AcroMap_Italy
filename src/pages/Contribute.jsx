@@ -26,7 +26,7 @@ export default function Contribute() {
         Contribuisci al Progetto
       </h1>
       <p className="lead mx-auto mb-4" style={{ maxWidth: '700px', color: '#475569' }}>
-        AcroMap Italy vive grazie alla community! Aiutaci a rendere il sito sempre più completo e aggiornato.
+        AcroFinder vive grazie alla community! Aiutaci a rendere il sito sempre più completo e aggiornato.
       </p>
 
       <div className="row g-4 text-start justify-content-center mb-4">

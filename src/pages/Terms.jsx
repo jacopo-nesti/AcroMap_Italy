@@ -38,7 +38,7 @@ function Terms() {
                 1. Descrizione del servizio
               </h2>
               <p className="mb-0" style={{ color: '#334155' }}>
-                AcroMap Italy è una piattaforma informativa che raccoglie informazioni pubbliche relative alle community di Acroyoga.
+                AcroFinder è una piattaforma informativa che raccoglie informazioni pubbliche relative alle community di Acroyoga.
               </p>
             </section>
 
@@ -53,7 +53,7 @@ function Terms() {
                 Le informazioni vengono raccolte tramite segnalazioni della community.
               </p>
               <p className="mb-0" style={{ color: '#334155' }}>
-                Nonostante gli sforzi per mantenere i dati aggiornati, AcroMap Italy non garantisce la correttezza o disponibilità continua delle informazioni pubblicate.
+                Nonostante gli sforzi per mantenere i dati aggiornati, AcroFinder non garantisce la correttezza o disponibilità continua delle informazioni pubblicate.
               </p>
             </section>
 
@@ -68,7 +68,7 @@ function Terms() {
                 Le community sono responsabili dei contenuti e dei link forniti.
               </p>
               <p className="mb-0" style={{ color: '#334155' }}>
-                AcroMap Italy non organizza direttamente jam o corsi presenti sulla piattaforma.
+                AcroFinder non organizza direttamente jam o corsi presenti sulla piattaforma.
               </p>
             </section>
 
@@ -95,7 +95,7 @@ function Terms() {
                 5. Contenuti e proprietà
               </h2>
               <p className="mb-0" style={{ color: '#334155' }}>
-                Il progetto, il design e il codice di AcroMap Italy sono protetti secondo le condizioni applicabili.
+                Il progetto, il design e il codice di AcroFinder sono protetti secondo le condizioni applicabili.
               </p>
             </section>
 

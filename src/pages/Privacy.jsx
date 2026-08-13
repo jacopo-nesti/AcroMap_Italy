@@ -39,7 +39,7 @@ function Privacy() {
                 1. Titolare del progetto
               </h2>
               <p className="mb-0" style={{ color: '#334155' }}>
-                AcroMap Italy è un progetto indipendente dedicato alla raccolta e organizzazione delle informazioni sulle community di Acroyoga in Italia.
+                AcroFinder è un progetto indipendente dedicato alla raccolta e organizzazione delle informazioni sulle community di Acroyoga in Italia.
               </p>
             </section>
 
@@ -51,7 +51,7 @@ function Privacy() {
                 2. Dati raccolti
               </h2>
               <p className="mb-3" style={{ color: '#334155' }}>
-                AcroMap Italy non richiede la registrazione degli utenti e non raccoglie dati personali tramite il sito.
+                AcroFinder non richiede la registrazione degli utenti e non raccoglie dati personali tramite il sito.
               </p>
               <p className="mb-2" style={{ color: '#334155' }}>
                 Attraverso il modulo di contribuzione possono essere inviati volontariamente dati e informazioni relativi alle community, come:

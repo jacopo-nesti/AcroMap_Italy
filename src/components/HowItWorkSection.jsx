@@ -14,7 +14,7 @@ const STEPS = [
   {
     num: '03',
     title: 'Contribuisci',
-    desc: 'Segnala una community, una jam o un corso per aiutare a mantenere AcroMap Italy aggiornato.',
+    desc: 'Segnala una community, una jam o un corso per aiutare a mantenere AcroFinder aggiornato.',
     cta: true
   }
 ]

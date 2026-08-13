@@ -21,10 +21,10 @@ function AboutUs() {
             Connettere la community italiana di AcroYoga
           </h2>
           <p className="lead text-muted mb-4">
-            AcroMap Italy nasce con un obiettivo semplice: rendere l'AcroYoga accessibile a chiunque, ovunque si trovi in Italia.
+            AcroFinder nasce con un obiettivo semplice: rendere l'AcroYoga accessibile a chiunque, ovunque si trovi in Italia.
           </p>
           <p className="text-secondary">
-            Che tu sia un praticante esperto in cerca di una jam al parco durante un viaggio, o un principiante che vuole muovere i primi passi e trovare un corso nella propria città, AcroMap è il punto di partenza per connetterti con la community locale.
+            Che tu sia un praticante esperto in cerca di una jam al parco durante un viaggio, o un principiante che vuole muovere i primi passi e trovare un corso nella propria città, AcroFinder è il punto di partenza per connetterti con la community locale.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ function AboutUs() {
 
         <div className="col-12">
           <div className="card border-0 shadow-sm p-4 text-center bg-light mt-2 rounded-4">
-            <h3 className="h4 fw-bold mb-2 text-dark">Ti piace AcroMap Italy?</h3>
+            <h3 className="h4 fw-bold mb-2 text-dark">Ti piace AcroFinder?</h3>
             <p className="text-muted small mb-3 mx-auto" style={{ maxWidth: '650px' }}>
               Il progetto è gratuito e gestito nel tempo libero. Se vuoi sostenere i costi del dominio o semplicemente offrirci un caffè per il lavoro svolto, ogni piccolo contributo è super apprezzato!
             </p>

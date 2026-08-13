@@ -19,7 +19,7 @@ function Donations() {
               Prossimamente
             </span>
 
-            <h1 className="h2 fw-bold text-dark mb-3">Sostieni AcroMap Italy</h1>
+            <h1 className="h2 fw-bold text-dark mb-3">Sostieni AcroFinder</h1>
 
             <p className="text-secondary mb-4">
               Stiamo lavorando per integrare la possibilità di effettuare donazioni a sostegno del progetto. Questa funzionalità sarà disponibile a breve!

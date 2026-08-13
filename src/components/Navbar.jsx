@@ -11,7 +11,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand text-white" onClick={closeMenu}>
-          AcroMap Italy
+          AcroFinder
         </Link>
 
         {/* Bottone Hamburger (visibile solo su mobile) */}
