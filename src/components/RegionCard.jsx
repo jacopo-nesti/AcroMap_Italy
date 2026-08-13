@@ -26,8 +26,7 @@ function RegionCard({ regionName, regionCities, isOpen, onToggle, controlsId }) 
           : 'border-1 border-light-subtle shadow-sm'
       }`}
       style={{
-        backgroundColor: isOpen ? '#e8f5e9' : '#ffffff',
-        transition: 'all 0.2s ease-in-out'
+        backgroundColor: isOpen ? '#e8f5e9' : '#ffffff'
       }}
     >
       <button
@@ -52,11 +51,11 @@ function RegionCard({ regionName, regionCities, isOpen, onToggle, controlsId }) 
         </div>
 
         <div className="d-flex flex-wrap gap-2 w-100 mt-auto">
-          <span className="badge bg-white text-dark border px-2 py-1.5 rounded-pill fw-normal small shadow-sm">
+          <span className="badge bg-white text-dark border px-2 py-1 rounded-pill fw-normal small shadow-sm">
             <i className="bi bi-calendar-event text-success me-1" aria-hidden="true"></i>
             {totalJams} {totalJams === 1 ? 'Jam' : 'Jam'}
           </span>
-          <span className="badge bg-white text-dark border px-2 py-1.5 rounded-pill fw-normal small shadow-sm">
+          <span className="badge bg-white text-dark border px-2 py-1 rounded-pill fw-normal small shadow-sm">
             <i className="bi bi-mortarboard text-success me-1" aria-hidden="true"></i>
             {totalCourses} {totalCourses === 1 ? 'Corso' : 'Corsi'}
           </span>

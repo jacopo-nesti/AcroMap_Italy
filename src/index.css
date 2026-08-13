@@ -38,3 +38,27 @@ section[id] {
   outline-offset: 3px;
   box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.25) !important;
 }
+
+.hover-opacity {
+  transition: opacity 0.2s ease;
+}
+
+.hover-opacity:hover {
+  opacity: 0.75;
+}
+
+.transition-all {
+  transition: all 0.2s ease-in-out;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.x-small {
+  font-size: 0.75rem;
+}
+
+.text-border {
+  color: #dee2e6;
+}
