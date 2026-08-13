@@ -2,7 +2,7 @@ import SEO from "../components/SEO"
 
 function ContactPage() {
   return (
-    <main className="container my-5">
+    <div className="container my-5">
       <SEO
         title="Contatti | AcroFinder"
         description="Contatta AcroFinder per informazioni, suggerimenti o segnalazioni relative al progetto."
@@ -24,7 +24,7 @@ function ContactPage() {
             className="btn btn-success btn-lg px-5 py-3 fw-semibold shadow-sm"
           >
             Apri il modulo di contatto
-            <i className="bi bi-arrow-up-right ms-2"></i>
+            <i className="bi bi-arrow-up-right ms-2" aria-hidden="true"></i>
           </a>
 
           <p className="text-muted small mt-3 mb-0">
@@ -32,7 +32,7 @@ function ContactPage() {
           </p>
         </div>
       </div>
-    </main>
+    </div>
   )
 }
 

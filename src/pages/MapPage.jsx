@@ -4,7 +4,7 @@ import { useCommunityFinderContext } from "../components/CommunityFinder"
 import SEO from "../components/SEO"
 
 function MapPage() {
-  const { cities } = useCommunityFinderContext()
+  const { cities, isLoading, error } = useCommunityFinderContext()
 
   return (
     <div className="container pt-2 pb-4">
@@ -34,10 +34,22 @@ function MapPage() {
         </p>
       </div>
 
-      {/* Container Mappa */}
-      <div className="rounded-4 overflow-hidden shadow-sm border border-light-subtle" style={{ height: '70vh' }}>
-        <MapItaly cities={cities} />
-      </div>
+      {isLoading ? (
+        <div className="text-center py-5">
+          <div className="spinner-border text-success" role="status">
+            <span className="visually-hidden">Caricamento...</span>
+          </div>
+        </div>
+      ) : error ? (
+        <div className="alert alert-danger my-3" role="alert">
+          {error}
+        </div>
+      ) : (
+        /* Container Mappa */
+        <div className="rounded-4 overflow-hidden shadow-sm border border-light-subtle" style={{ height: '70vh' }}>
+          <MapItaly cities={cities} />
+        </div>
+      )}
     </div>
   )
 }

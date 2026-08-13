@@ -2,13 +2,20 @@ function SearchBar({ search, setSearch}) {
 
     return (
 
-        <input
-            type="text"
-            className="form-control"
-            placeholder="Es. Firenze, Milano, Bologna..."
-            value={search}
-            onChange={(event) => setSearch(event.target.value)}
-        />
+        <>
+            <label htmlFor="community-search" className="visually-hidden">
+                Cerca una città
+            </label>
+            <input
+                id="community-search"
+                type="search"
+                className="form-control"
+                placeholder="Es. Firenze, Milano, Bologna..."
+                value={search}
+                onChange={(event) => setSearch(event.target.value)}
+                aria-controls="community-search-results"
+            />
+        </>
 
     )
 }

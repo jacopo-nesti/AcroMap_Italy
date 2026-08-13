@@ -15,7 +15,7 @@ function SearchResults({ search, filteredCities, setSelectedCity }) {
     }
 
     return (
-        <div className="list-group mb-4">
+        <div className="list-group mb-4" aria-label="Risultati della ricerca">
 
             {filteredCities.map((city) => (
 

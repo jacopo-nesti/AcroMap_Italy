@@ -1,25 +1,26 @@
 import { forwardRef } from "react"
 import CityCard from "./CityCard"
 
-const RegionCitiesList = forwardRef(({ regionName, cities = [], onClose }, ref) => {
+const RegionCitiesList = forwardRef(({ regionName, cities = [], onClose, id }, ref) => {
   return (
-    <div ref={ref} className="mt-4 p-3 p-md-4 bg-light rounded-4 shadow-sm border">
+    <div id={id} ref={ref} className="mt-4 p-3 p-md-4 bg-light rounded-4 shadow-sm border">
       <div className="d-flex align-items-center justify-content-between mb-3">
         <h3 className="h5 fw-bold text-dark mb-0">
           Città in <span className="text-success">{regionName}</span> ({cities.length})
         </h3>
         <button
+          type="button"
           className="btn btn-sm btn-outline-secondary rounded-circle"
           onClick={onClose}
-          aria-label="Chiudi"
+          aria-label={`Chiudi le città della regione ${regionName}`}
         >
-          <i className="bi bi-x-lg"></i>
+          <i className="bi bi-x-lg" aria-hidden="true"></i>
         </button>
       </div>
 
       {cities.length === 0 ? (
         <div className="text-center py-4 text-muted">
-          <i className="bi bi-info-circle fs-4 d-block mb-2 text-secondary"></i>
+          <i className="bi bi-info-circle fs-4 d-block mb-2 text-secondary" aria-hidden="true"></i>
           Nessuna città disponibile per questa regione al momento.
         </div>
       ) : (

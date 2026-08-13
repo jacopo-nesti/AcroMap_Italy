@@ -18,7 +18,7 @@ function BackButton({ label = "Indietro", onClick, className = "" }) {
       className={`btn back-button btn-white bg-white border text-dark rounded-3 shadow-sm d-inline-flex align-items-center gap-2 px-3 py-2 fw-medium ${className}`}
       aria-label={label}
     >
-      <i className="bi bi-arrow-left"></i>
+      <i className="bi bi-arrow-left" aria-hidden="true"></i>
       <span className="d-none d-sm-inline">{label}</span>
     </button>
   )

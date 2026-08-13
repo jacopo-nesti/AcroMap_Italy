@@ -18,15 +18,18 @@ function CommunityFinderSearchBar() {
               className="btn btn-outline-secondary"
               type="button"
               onClick={() => setSearch("")}
+              aria-label="Cancella la ricerca"
             >
-              ✕
+              <span aria-hidden="true">✕</span>
             </button>
           )}
         </div>
 
         <div
+          id="community-search-results"
           className="search-results-wrapper"
           style={{ maxHeight: "300px", overflowY: "auto" }}
+          aria-live="polite"
         >
           <SearchResults
             search={search}

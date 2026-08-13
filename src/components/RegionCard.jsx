@@ -1,6 +1,6 @@
 import { useMemo } from "react"
 
-function RegionCard({ regionName, regionCities, isOpen, onToggle }) {
+function RegionCard({ regionName, regionCities, isOpen, onToggle, controlsId }) {
   // Calcolo totale di Jam e Corsi con useMemo
   const { totalJams, totalCourses } = useMemo(() => {
     return regionCities.reduce(
@@ -37,10 +37,11 @@ function RegionCard({ regionName, regionCities, isOpen, onToggle }) {
         }`}
         type="button"
         aria-expanded={isOpen}
+        aria-controls={controlsId}
       >
         <div className="d-flex align-items-center justify-content-between w-100 mb-3">
           <div className="d-flex align-items-center gap-2">
-            <i className={`bi bi-geo-alt-fill fs-5 ${isOpen ? 'text-success' : 'text-secondary'}`}></i>
+            <i className={`bi bi-geo-alt-fill fs-5 ${isOpen ? 'text-success' : 'text-secondary'}`} aria-hidden="true"></i>
             <h2 className="h5 fw-bold text-dark mb-0">{regionName}</h2>
           </div>
           <span className={`badge rounded-pill px-2 py-1 small fw-semibold ${
@@ -52,11 +53,11 @@ function RegionCard({ regionName, regionCities, isOpen, onToggle }) {
 
         <div className="d-flex flex-wrap gap-2 w-100 mt-auto">
           <span className="badge bg-white text-dark border px-2 py-1.5 rounded-pill fw-normal small shadow-sm">
-            <i className="bi bi-calendar-event text-success me-1"></i>
+            <i className="bi bi-calendar-event text-success me-1" aria-hidden="true"></i>
             {totalJams} {totalJams === 1 ? 'Jam' : 'Jam'}
           </span>
           <span className="badge bg-white text-dark border px-2 py-1.5 rounded-pill fw-normal small shadow-sm">
-            <i className="bi bi-mortarboard text-success me-1"></i>
+            <i className="bi bi-mortarboard text-success me-1" aria-hidden="true"></i>
             {totalCourses} {totalCourses === 1 ? 'Corso' : 'Corsi'}
           </span>
         </div>

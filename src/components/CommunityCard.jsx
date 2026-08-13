@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useId, useState } from 'react'
 import SocialLinks from './SocialLinks'
 import JamCard from './JamCard'
 import CourseCard from './CourseCard'
@@ -7,6 +7,7 @@ import DayFilter from './DayFilter'
 import { sortByDayAndTime } from '../utils/SortingHelper'
 
 function CommunityCard({ community, isOpen, onToggle }) {
+  const detailsId = useId()
   const [showJams, setShowJams] = useState(false)
   const [showCourses, setShowCourses] = useState(false)
   const [selectedDay, setSelectedDay] = useState('Tutti')
@@ -26,7 +27,6 @@ function CommunityCard({ community, isOpen, onToggle }) {
 
   const filteredJams = filterByDay(sortedJams)
   const filteredCourses = filterByDay(sortedCourses)
-
   return (
     <div
       className="card border-0 shadow-sm rounded-4 bg-white overflow-hidden community-card-hover h-100 w-100 d-flex flex-column"
@@ -51,6 +51,7 @@ function CommunityCard({ community, isOpen, onToggle }) {
         type="button"
         onClick={onToggle}
         aria-expanded={isOpen}
+        aria-controls={detailsId}
         className="community-toggle-button btn bg-success text-white w-100 rounded-0 d-flex align-items-center justify-content-between px-3 py-2 border-0 fw-semibold mt-auto"
         style={{ backgroundColor: '#198754' }}
       >
@@ -65,7 +66,7 @@ function CommunityCard({ community, isOpen, onToggle }) {
       </button>
 
       {isOpen && (
-        <div className="card-footer bg-white border-top border-light-subtle p-3">
+        <div id={detailsId} className="card-footer bg-white border-top border-light-subtle p-3">
           <div className="mb-3">
             <SocialLinks community={community} />
           </div>

@@ -35,24 +35,12 @@ export function CommunityFinder({ children }) {
     city.name.toLowerCase().includes(search.toLowerCase())
   )
 
-  if (isLoading) {
-    return (
-      <div className="text-center py-5">
-        <div className="spinner-border text-success" role="status">
-          <span className="visually-hidden">Caricamento...</span>
-        </div>
-      </div>
-    )
-  }
-
-  if (error) {
-    return <div className="alert alert-danger my-3">{error}</div>
-  }
-
   return (
     <CommunityFinderContext.Provider
       value={{
         cities,
+        isLoading,
+        error,
         search,
         setSearch,
         filteredCities,

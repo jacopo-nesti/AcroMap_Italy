@@ -12,10 +12,3 @@ export async function getCities() {
 
     return data;
 }
-
-export async function getCityBySlug(slug) {
-
-    const cities = await getCities()
-
-    return cities.find(city => city.slug === slug)
-}

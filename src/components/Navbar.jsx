@@ -19,14 +19,15 @@ function Navbar() {
           className="navbar-toggler"
           type="button"
           aria-expanded={isOpen}
-          aria-label="Toggle navigation"
+          aria-controls="main-navigation"
+          aria-label={isOpen ? "Chiudi il menu di navigazione" : "Apri il menu di navigazione"}
           onClick={toggleMenu}
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon" aria-hidden="true"></span>
         </button>
 
         {/* Menu di navigazione */}
-        <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}>
+        <div id="main-navigation" className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}>
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
             <li className="nav-item">
               <Link to="/" className="nav-link text-white" onClick={closeMenu}>

@@ -1,32 +1,14 @@
 import { useEffect, useState, useMemo, useRef } from "react"
-import { getCities } from "../services/cityService"
 import RegionCard from "../components/RegionCard"
 import RegionCitiesList from "../components/RegionCitiesList"
 import SEO from "../components/SEO"
+import { useCommunityFinderContext } from "../components/CommunityFinder"
 
 function CitiesPage() {
-  const [cities, setCities] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
-  const [error, setError] = useState(null)
+  const { cities, isLoading, error } = useCommunityFinderContext()
   const [openRegion, setOpenRegion] = useState(null)
 
   const listRef = useRef(null)
-
-  useEffect(() => {
-    async function loadCities() {
-      try {
-        setIsLoading(true)
-        setError(null)
-        const data = await getCities()
-        setCities(data)
-      } catch {
-        setError("Si è verificato un errore inaspettato durante il caricamento.")
-      } finally {
-        setIsLoading(false)
-      }
-    }
-    loadCities()
-  }, [])
 
   // Auto-scroll alla sezione espansa
   useEffect(() => {
@@ -102,6 +84,7 @@ function CitiesPage() {
               regionCities={groupedCities[regionName]}
               isOpen={openRegion === regionName}
               onToggle={() => toggleRegion(regionName)}
+              controlsId={`region-${encodeURIComponent(regionName)}-cities`}
             />
           </div>
         ))}
@@ -113,6 +96,7 @@ function CitiesPage() {
           regionName={openRegion}
           cities={groupedCities[openRegion]}
           onClose={() => setOpenRegion(null)}
+          id={`region-${encodeURIComponent(openRegion)}-cities`}
         />
       )}
     </div>

@@ -1,32 +1,16 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { useParams } from "react-router"
-import { getCityBySlug } from "../services/cityService"
 import CommunityCard from "../components/CommunityCard"
 import BackButton from "../components/BackButton"
 import SEO from "../components/SEO"
+import { useCommunityFinderContext } from "../components/CommunityFinder"
 
 function CityPage() {
   const { slug } = useParams()
-  const [city, setCity] = useState(null)
-  const [isLoading, setIsLoading] = useState(true)
-  const [error, setError] = useState(null)
+  const { cities, isLoading, error } = useCommunityFinderContext()
   const [openCommunityId, setOpenCommunityId] = useState(null)
 
-  useEffect(() => {
-    async function loadCity() {
-      try {
-        setIsLoading(true)
-        setError(null)
-        const data = await getCityBySlug(slug)
-        setCity(data)
-      } catch (err) {
-        setError("Si è verificato un errore nel caricamento della città.")
-      } finally {
-        setIsLoading(false)
-      }
-    }
-    loadCity()
-  }, [slug])
+  const city = cities.find((city) => city.slug === slug)
 
   const handleToggleCommunity = (id) => {
     setOpenCommunityId((prevId) => (prevId === id ? null : id))
@@ -46,7 +30,7 @@ function CityPage() {
         description={`Scopri le community di Acroyoga a ${city.name}, le jam e i corsi disponibili.`}
       />
 
-      <main className="container">
+      <div className="container">
         
         {/* Barra superiore: Componente BackButton + Segnala Errore */}
         <div className="d-flex align-items-center justify-content-between gap-2 mb-4">
@@ -108,7 +92,7 @@ function CityPage() {
           })}
         </div>
 
-      </main>
+      </div>
     </div>
   )
 }
