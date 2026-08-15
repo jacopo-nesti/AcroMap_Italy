@@ -9,7 +9,6 @@ import CitiesPage from "./pages/CitiesPage"
 import CityPage from "./pages/CityPage"
 import Privacy from "./pages/Privacy"
 import Terms from "./pages/Terms"
-import Donations from "./pages/Donations"
 import ContactPage from "./pages/ContactPage"
 import MapPage from "./pages/MapPage"
 
@@ -28,7 +27,6 @@ function App() {
           <Route path="/city/:slug" element={<CityPage />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
-          <Route path="/donations" element={<Donations />} />
           <Route path="/contactus" element={<ContactPage />} />
           <Route path="/map" element={<MapPage />} />
           <Route path="*" element={<NotFound />} />

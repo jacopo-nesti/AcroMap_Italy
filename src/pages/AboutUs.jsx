@@ -56,7 +56,7 @@ function AboutUs() {
             </p>
             <div>
               <a 
-                href="/donations" 
+                href="https://buymeacoffee.com/acrofinder" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="btn btn-warning fw-semibold px-4 rounded-pill shadow-sm"

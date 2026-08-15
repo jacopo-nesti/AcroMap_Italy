@@ -1,64 +1,48 @@
 import { useState } from "react"
 import { Link } from "react-router"
+import logoImage from "../assets/logo/acrofinder-logo.png"
 
-function Navbar() {
+function Navbar({ isHomePage = false }) {
   const [isOpen, setIsOpen] = useState(false)
 
-  const toggleMenu = () => setIsOpen(!isOpen)
   const closeMenu = () => setIsOpen(false)
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+    <nav
+      className={`navbar navbar-expand-lg px-3 ${isHomePage ? "home-navbar position-absolute top-0 start-0 w-100" : "navbar-dark bg-dark"}`}
+    >
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand text-white" onClick={closeMenu}>
-          AcroFinder
+        <Link to="/" className="navbar-brand d-flex align-items-center gap-3 text-decoration-none" onClick={closeMenu}>
+          <img src={logoImage} alt="" className="home-navbar__logo" />
+          <span className="home-navbar__brand">AcroFinder</span>
         </Link>
 
-        {/* Bottone Hamburger (visibile solo su mobile) */}
         <button
           className="navbar-toggler"
           type="button"
           aria-expanded={isOpen}
           aria-controls="main-navigation"
           aria-label={isOpen ? "Chiudi il menu di navigazione" : "Apri il menu di navigazione"}
-          onClick={toggleMenu}
+          onClick={() => setIsOpen((value) => !value)}
         >
           <span className="navbar-toggler-icon" aria-hidden="true"></span>
         </button>
 
-        {/* Menu di navigazione */}
-        <div id="main-navigation" className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}>
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
-            <li className="nav-item">
-              <Link to="/" className="nav-link text-white" onClick={closeMenu}>
-                Home
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link to="/community" className="nav-link text-white" onClick={closeMenu}>
-                Community
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link to="/map" className="nav-link text-white" onClick={closeMenu}>
-                Mappa
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link to="/contribute" className="nav-link text-white" onClick={closeMenu}>
-                Contribuisci
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link to="/aboutus" className="nav-link text-white" onClick={closeMenu}>
-                Chi siamo
-              </Link>
-            </li>
-          </ul>
+        <div id="main-navigation" className={`collapse navbar-collapse justify-content-end ${isOpen ? "show" : ""}`}>
+          <div className={`d-flex flex-column flex-lg-row align-items-lg-center gap-2 gap-lg-4 px-3 py-2 ${isHomePage ? "home-navbar__pill" : ""}`}>
+            <Link to="/community" className={`nav-link ${isHomePage ? "home-navbar__link" : "text-white"}`} onClick={closeMenu}>
+              Community
+            </Link>
+            <Link to="/map" className={`nav-link ${isHomePage ? "home-navbar__link" : "text-white"}`} onClick={closeMenu}>
+              Mappa
+            </Link>
+            <Link to="/aboutus" className={`nav-link ${isHomePage ? "home-navbar__link" : "text-white"}`} onClick={closeMenu}>
+              Chi siamo
+            </Link>
+            <Link to="/contribute" className={`btn btn-success ${isHomePage ? "home-navbar__cta" : ""}`} onClick={closeMenu}>
+              Contribuisci
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

@@ -7,36 +7,31 @@ function CommunityFinderSearchBar() {
     useCommunityFinderContext()
 
   return (
-    <div className="col-12 col-md-8 col-lg-6">
-      <div className="p-3 bg-white border border-2 border-success rounded-3 text-center">
-        <h5 className="fw-bold mb-3">Trova una community nella tua città</h5>
+    <div className="home-search">
+      <div className="input-group home-search__group">
+        <SearchBar search={search} setSearch={setSearch} />
+        {search && (
+          <button
+            className="btn home-search__clear"
+            type="button"
+            onClick={() => setSearch("")}
+            aria-label="Cancella la ricerca"
+          >
+            <span aria-hidden="true">×</span>
+          </button>
+        )}
+      </div>
 
-        <div className="input-group mb-3">
-          <SearchBar search={search} setSearch={setSearch} />
-          {search && (
-            <button
-              className="btn btn-outline-secondary"
-              type="button"
-              onClick={() => setSearch("")}
-              aria-label="Cancella la ricerca"
-            >
-              <span aria-hidden="true">✕</span>
-            </button>
-          )}
-        </div>
-
-        <div
-          id="community-search-results"
-          className="search-results-wrapper"
-          style={{ maxHeight: "300px", overflowY: "auto" }}
-          aria-live="polite"
-        >
-          <SearchResults
-            search={search}
-            filteredCities={filteredCities}
-            setSelectedCity={setSelectedCity}
-          />
-        </div>
+      <div
+        id="community-search-results"
+        className="home-search__results"
+        aria-live="polite"
+      >
+        <SearchResults
+          search={search}
+          filteredCities={filteredCities}
+          setSelectedCity={setSelectedCity}
+        />
       </div>
     </div>
   )
