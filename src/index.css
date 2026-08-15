@@ -569,8 +569,20 @@ section[id] {
   }
 
   .community-intro__visual {
+    height: clamp(10rem, 46vw, 12rem);
     max-width: 34rem;
     margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .community-intro__picture,
+  .community-intro__image {
+    height: 100%;
+  }
+
+  .community-intro__image {
+    object-fit: cover;
+    object-position: center bottom;
   }
 
   .community-regions {
