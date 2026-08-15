@@ -13,7 +13,7 @@ function OrganizerCallout() {
       </div>
 
       <p className="organizer-callout__description">
-        Segnala nuove community, eventi o correzioni. La tua collaborazione fa crescere la mappa!
+        Aggiungi il tuo gruppo, segnala una nuova jam o aggiorna le informazioni della tua community.
       </p>
 
       <Link to="/contribute" className="organizer-callout__button">

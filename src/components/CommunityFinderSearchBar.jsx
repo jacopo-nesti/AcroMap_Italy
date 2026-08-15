@@ -5,10 +5,14 @@ import { useCommunityFinderContext } from "./CommunityFinder"
 function CommunityFinderSearchBar() {
   const { search, setSearch, filteredCities, setSelectedCity } =
     useCommunityFinderContext()
+  const hasQuery = Boolean(search.trim())
 
   return (
-    <div className="home-search">
+    <div className={`home-search${hasQuery ? " home-search--open" : ""}`}>
       <div className="input-group home-search__group">
+        <span className="home-search__icon" aria-hidden="true">
+          <i className="bi bi-search" />
+        </span>
         <SearchBar search={search} setSearch={setSearch} />
         {search && (
           <button

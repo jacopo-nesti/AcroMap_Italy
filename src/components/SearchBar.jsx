@@ -9,7 +9,7 @@ function SearchBar({ search, setSearch}) {
             <input
                 id="community-search"
                 type="search"
-                className="form-control"
+                className="form-control home-search__input"
                 placeholder="Es. Firenze, Milano, Bologna..."
                 value={search}
                 onChange={(event) => setSearch(event.target.value)}

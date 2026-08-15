@@ -8,26 +8,26 @@ function SearchResults({ search, filteredCities, setSelectedCity }) {
 
     if (filteredCities.length === 0) {
         return (
-            <p className="fw-bold text-dark mt-3">
+            <p className="home-search__empty">
                 Nessuna città trovata.
             </p>
         )
     }
 
     return (
-        <div className="list-group mb-4" aria-label="Risultati della ricerca">
+        <div className="home-search__list" aria-label="Risultati della ricerca">
 
             {filteredCities.map((city) => (
 
                 <Link
                     key={city.id}
                     to={`/city/${city.slug}`}
-                    className="list-group-item list-group-item-action"
+                    className="home-search__result"
                     onClick={() => setSelectedCity(city)}
                 >
-                    <strong>{city.name}</strong>
-                    <br />
-                    <small>{city.region}</small>
+                    <span className="home-search__result-city">{city.name}</span>
+                    <span className="home-search__result-region">{city.region}</span>
+                    <i className="bi bi-arrow-right" aria-hidden="true" />
                 </Link>
 
             ))}

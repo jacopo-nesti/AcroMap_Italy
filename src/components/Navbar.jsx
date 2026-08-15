@@ -8,10 +8,13 @@ function Navbar({ isHomePage = false }) {
   const isCommunityPage = location.pathname === "/community"
 
   const closeMenu = () => setIsOpen(false)
+  const menuClasses = isHomePage
+    ? "home-navbar__menu"
+    : `gap-2 gap-lg-4 px-3 py-2 ${isCommunityPage ? "community-navbar__menu" : ""}`
 
   return (
     <nav
-      className={`navbar navbar-expand-lg px-3 ${
+      className={`navbar navbar-expand-lg ${isHomePage ? "" : "px-3"} ${
         isHomePage
           ? "home-navbar position-absolute top-0 start-0 w-100"
           : isCommunityPage
@@ -36,10 +39,11 @@ function Navbar({ isHomePage = false }) {
           <span className="navbar-toggler-icon" aria-hidden="true"></span>
         </button>
 
-        <div id="main-navigation" className={`collapse navbar-collapse justify-content-end ${isOpen ? "show" : ""}`}>
-          <div className={`d-flex flex-column flex-lg-row align-items-lg-center gap-2 gap-lg-4 px-3 py-2 ${
-            isHomePage ? "home-navbar__pill" : isCommunityPage ? "community-navbar__menu" : ""
-          }`}>
+        <div
+          id="main-navigation"
+          className={`collapse navbar-collapse justify-content-end ${isHomePage ? "home-navbar__collapse" : ""} ${isOpen ? "show" : ""}`}
+        >
+          <div className={`d-flex flex-column flex-lg-row align-items-lg-center ${menuClasses}`}>
             <Link
               to="/community"
               className={`nav-link ${isHomePage ? "home-navbar__link" : isCommunityPage ? "community-navbar__link community-navbar__link--active" : "text-white"}`}
@@ -54,7 +58,11 @@ function Navbar({ isHomePage = false }) {
             <Link to="/aboutus" className={`nav-link ${isHomePage ? "home-navbar__link" : isCommunityPage ? "community-navbar__link" : "text-white"}`} onClick={closeMenu}>
               Chi siamo
             </Link>
-            <Link to="/contribute" className={`btn btn-success ${isHomePage ? "home-navbar__cta" : isCommunityPage ? "community-navbar__cta" : ""}`} onClick={closeMenu}>
+            <Link
+              to="/contribute"
+              className={isHomePage ? "btn home-navbar__cta" : `btn btn-success ${isCommunityPage ? "community-navbar__cta" : ""}`}
+              onClick={closeMenu}
+            >
               Contribuisci
             </Link>
           </div>

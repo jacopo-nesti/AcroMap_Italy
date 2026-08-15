@@ -34,10 +34,10 @@ function HomePage() {
         <div className="container home-hero__content position-relative">
           <div className="home-hero__copy">
             <h1 className="home-hero__title mb-3">
-              Inizia la tua ricerca, trova la tua community.
+              Trova la tua community di Acroyoga in tutta Italia!
             </h1>
             <p className="home-hero__subtitle mb-4">
-              La mappa delle community di Acroyoga in tutta Italia. Scopri, connettiti e partecipa.
+              Scopri jam, corsi e gruppi di Acroyoga. Scopri, connettiti e partecipa.
             </p>
 
             {isLoading ? (
@@ -55,6 +55,11 @@ function HomePage() {
                 <CommunityFinderSearchBar />
               </div>
             )}
+
+            <a className="home-hero__more" href="#home-secondary">
+              <span>Scopri di più</span>
+              <i className="bi bi-arrow-down-short" aria-hidden="true" />
+            </a>
           </div>
         </div>
       </section>
@@ -62,11 +67,6 @@ function HomePage() {
       <section className="home-features-wrap">
         <div className="container">
           <FeatureHighlights />
-
-          <a className="home-more-link mt-4" href="#home-secondary">
-            <span>Scopri di più</span>
-            <i className="bi bi-arrow-down-short" aria-hidden="true" />
-          </a>
         </div>
       </section>
 
