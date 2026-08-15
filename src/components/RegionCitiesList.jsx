@@ -1,40 +1,62 @@
 import { forwardRef } from "react"
 import CityCard from "./CityCard"
+import { getRegionIcon } from "./regionPresentation"
 
 const RegionCitiesList = forwardRef(({ regionName, cities = [], onClose, id }, ref) => {
+  const headingId = `${id}-heading`
+  const regionIcon = getRegionIcon(regionName)
+
   return (
-    <div id={id} ref={ref} className="mt-4 p-3 p-md-4 bg-light rounded-4 shadow-sm border">
-      <div className="d-flex align-items-center justify-content-between mb-3">
-        <h3 className="h5 fw-bold text-dark mb-0">
-          Città in <span className="text-success">{regionName}</span> ({cities.length})
-        </h3>
+    <section
+      id={id}
+      ref={ref}
+      className="region-cities-panel"
+      aria-labelledby={headingId}
+    >
+      <header className="region-cities-panel__header">
+        <div className="region-cities-panel__identity">
+          <span className="region-cities-panel__icon" aria-hidden="true">
+            <i className={`bi ${regionIcon}`}></i>
+          </span>
+          <div className="region-cities-panel__intro">
+            <div className="region-cities-panel__title-row">
+              <h3 id={headingId} className="region-cities-panel__title">{regionName}</h3>
+              <span className="region-cities-panel__count">
+                {cities.length} {cities.length === 1 ? "città" : "città"}
+              </span>
+            </div>
+            <p className="region-cities-panel__description">
+              Esplora le città e trova le community vicino a te.
+            </p>
+          </div>
+        </div>
+
         <button
           type="button"
-          className="btn btn-sm btn-outline-secondary rounded-circle"
+          className="region-cities-panel__close"
           onClick={onClose}
           aria-label={`Chiudi le città della regione ${regionName}`}
         >
+          <span>Chiudi</span>
           <i className="bi bi-x-lg" aria-hidden="true"></i>
         </button>
-      </div>
+      </header>
 
       {cities.length === 0 ? (
-        <div className="text-center py-4 text-muted">
-          <i className="bi bi-info-circle fs-4 d-block mb-2 text-secondary" aria-hidden="true"></i>
+        <div className="region-cities-panel__empty">
+          <i className="bi bi-info-circle" aria-hidden="true"></i>
           Nessuna città disponibile per questa regione al momento.
         </div>
       ) : (
-        <div className="row g-2">
+        <div className="row g-3 g-lg-4">
           {cities.map((city) => (
-            <div key={city.id || city.slug} className="col-6 col-md-4 col-lg-3">
-              <div className="h-100">
-                <CityCard city={city} />
-              </div>
+            <div key={city.id || city.slug} className="col-12 col-md-6 col-lg-4">
+              <CityCard city={city} />
             </div>
           ))}
         </div>
       )}
-    </div>
+    </section>
   )
 })
 

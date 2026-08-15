@@ -1,38 +1,5 @@
 import { useMemo } from "react"
-
-const regionIcons = {
-  Campania: "bi-sun",
-  "Emilia-Romagna": "bi-building",
-  "Friuli-Venezia Giulia": "bi-gem",
-  Lazio: "bi-bank",
-  Liguria: "bi-water",
-  Lombardia: "bi-buildings",
-  Piemonte: "bi-compass",
-  Puglia: "bi-tree",
-  Sardegna: "bi-wind",
-  Sicilia: "bi-map",
-  Toscana: "bi-tree",
-  "Trentino-Alto Adige": "bi-compass",
-  Umbria: "bi-house",
-  Veneto: "bi-building",
-}
-
-const regionArticles = {
-  Campania: "la ",
-  "Emilia-Romagna": "l'",
-  "Friuli-Venezia Giulia": "il ",
-  Lazio: "il ",
-  Liguria: "la ",
-  Lombardia: "la ",
-  Piemonte: "il ",
-  Puglia: "la ",
-  Sardegna: "la ",
-  Sicilia: "la ",
-  Toscana: "la ",
-  "Trentino-Alto Adige": "il ",
-  Umbria: "l'",
-  Veneto: "il ",
-}
+import { getRegionArticle, getRegionIcon } from "./regionPresentation"
 
 function RegionCard({ regionName, regionCities, isOpen, onToggle, controlsId }) {
   // Calcolo totale di Jam e Corsi con useMemo
@@ -51,8 +18,8 @@ function RegionCard({ regionName, regionCities, isOpen, onToggle, controlsId }) 
   }, [regionCities])
 
   const cityCount = regionCities.length
-  const regionIcon = regionIcons[regionName] || "bi-geo-alt"
-  const regionArticle = regionArticles[regionName] || "la "
+  const regionIcon = getRegionIcon(regionName)
+  const regionArticle = getRegionArticle(regionName)
 
   return (
     <article className={`region-card h-100 ${isOpen ? "region-card--selected" : ""}`}>
