@@ -4,56 +4,45 @@ function JamCard({ jam }) {
   const hasTime = jam.start_time || jam.end_time
 
   return (
-    <div className="card border border-light-subtle shadow-sm p-3 bg-white rounded-3 mb-2">
-      {/* Giorno e Orari */}
+    <article className="city-activity-card city-activity-card--jam">
       {(jam.day || hasTime) && (
-        <div className="d-flex align-items-center flex-wrap gap-2 mb-2">
-          {jam.day && (
-            <span className="fw-semibold text-dark d-inline-flex align-items-center gap-1 small bg-light px-2 py-1 rounded border">
-              <i className="bi bi-calendar-event-fill text-success"></i>
-              <span className="text-capitalize" style={{ color: '#0f291e' }}>{jam.day}</span>
-            </span>
-          )}
-          {hasTime && (
-            <span className="fw-semibold text-dark d-inline-flex align-items-center gap-1 small bg-white px-2 py-1 rounded border">
-              <i className="bi bi-clock-fill text-success"></i>
-              <span>{jam.start_time}{jam.end_time ? ` - ${jam.end_time}` : ''}</span>
-            </span>
-          )}
+        <div className="city-activity-card__heading">
+          {jam.day && <p className="city-activity-card__day">{jam.day}</p>}
+          <i className="bi bi-calendar-event" aria-hidden="true"></i>
         </div>
       )}
 
-      {/* Luogo */}
+      {hasTime && (
+        <p className="city-activity-card__time">
+          <i className="bi bi-clock" aria-hidden="true"></i>
+          {jam.start_time}{jam.end_time ? ` – ${jam.end_time}` : ""}
+        </p>
+      )}
+
       {jam.location && (
-        <div className="text-secondary mb-1 d-flex align-items-center gap-2 small">
-          <i className="bi bi-geo-alt-fill text-success"></i>
-          <span className="fw-medium">{jam.location}</span>
-        </div>
+        <p className="city-activity-card__meta">
+          <i className="bi bi-geo-alt-fill" aria-hidden="true"></i>
+          {jam.location}
+        </p>
       )}
 
-      {/* Link Maps */}
       {jam.maps_url && (
-        <div className="mt-1">
-          <a
-            href={jam.maps_url}
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn-sm btn-link text-success p-0 text-decoration-none fw-semibold small d-inline-flex align-items-center gap-1"
-          >
-            Visualizza su Google Maps
-            <i className="bi bi-box-arrow-up-right x-small"></i>
-          </a>
-        </div>
+        <a
+          href={jam.maps_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="city-activity-card__maps"
+          aria-label={`Apri ${jam.location || "il luogo della Jam"} su Google Maps in una nuova scheda`}
+        >
+          <i className="bi bi-geo-alt-fill" aria-hidden="true"></i>
+          Apri su Maps
+        </a>
       )}
 
-      {/* Note */}
       {jam.notes && (
-        <div className="text-muted small mt-2 border-top pt-2 fst-italic">
-          <i className="bi bi-info-circle me-1 text-success"></i>
-          {jam.notes}
-        </div>
+        <p className="city-activity-card__notes">{jam.notes}</p>
       )}
-    </div>
+    </article>
   )
 }
 

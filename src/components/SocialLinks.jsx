@@ -6,52 +6,27 @@ function SocialLinks({ community }) {
   const hasSocials = whatsapp || instagram || facebook || website
   if (!hasSocials) return null
 
+  const socialLinks = [
+    { url: whatsapp, label: "WhatsApp", icon: "bi-whatsapp" },
+    { url: instagram, label: "Instagram", icon: "bi-instagram" },
+    { url: facebook, label: "Facebook", icon: "bi-facebook" },
+    { url: website, label: "sito web", icon: "bi-globe" },
+  ].filter((social) => social.url)
+
   return (
-    <div className="socials d-flex flex-wrap gap-2">
-      {whatsapp && (
-        <a 
-          href={whatsapp} 
-          target="_blank" 
-          rel="noreferrer" 
-          className="btn btn-success btn-sm rounded-pill fw-semibold shadow-sm px-3"
+    <nav className="city-social-links" aria-label={`Canali social di ${community.name}`}>
+      {socialLinks.map((social) => (
+        <a
+          key={social.label}
+          href={social.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Apri ${social.label} di ${community.name} in una nuova scheda`}
         >
-          <i className="bi bi-whatsapp me-1"></i> WhatsApp
+          <i className={`bi ${social.icon}`} aria-hidden="true"></i>
         </a>
-      )}
-
-      {instagram && (
-        <a 
-          href={instagram} 
-          target="_blank" 
-          rel="noreferrer" 
-          className="btn btn-outline-danger btn-sm rounded-pill fw-semibold shadow-sm px-3"
-        >
-          <i className="bi bi-instagram me-1"></i> Instagram
-        </a>
-      )}
-
-      {facebook && (
-        <a 
-          href={facebook} 
-          target="_blank" 
-          rel="noreferrer" 
-          className="btn btn-outline-primary btn-sm rounded-pill fw-semibold shadow-sm px-3"
-        >
-          <i className="bi bi-facebook me-1"></i> Facebook
-        </a>
-      )}
-
-      {website && (
-        <a 
-          href={website} 
-          target="_blank" 
-          rel="noreferrer" 
-          className="btn btn-outline-secondary btn-sm rounded-pill fw-semibold shadow-sm px-3"
-        >
-          <i className="bi bi-globe me-1"></i> Sito Web
-        </a>
-      )}
-    </div>
+      ))}
+    </nav>
   )
 }
 
