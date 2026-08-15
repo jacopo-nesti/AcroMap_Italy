@@ -1,84 +1,81 @@
 import { Link } from 'react-router'
+import logoImage from '../assets/logo/acrofinder-logo.png'
+
+const footerGroups = [
+  {
+    label: 'Esplora',
+    className: 'col-6 col-md-6 col-lg-2',
+    links: [
+      { label: 'Community', to: '/community' },
+      { label: 'Mappa', to: '/map' },
+    ],
+  },
+  {
+    label: 'Partecipa',
+    className: 'col-6 col-md-6 col-lg-3',
+    links: [
+      { label: 'Contribuisci', to: '/contribute' },
+      { label: 'Chi siamo', to: '/aboutus' },
+      { label: 'Contatti', to: '/contactus' },
+    ],
+  },
+  {
+    label: 'Legale',
+    className: 'col-6 col-md-6 col-lg-2',
+    links: [
+      { label: 'Privacy Policy', to: '/privacy' },
+      { label: 'Termini di utilizzo', to: '/terms' },
+    ],
+  },
+]
 
 function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-dark text-light pt-5 pb-4 mt-5">
+    <footer className="site-footer">
       <div className="container px-4">
-        
-        {/* Griglia Principale */}
-        <div className="row g-4 mb-4">
-          
-          {/* Colonna 1: Info Progetto */}
+        <div className="row g-4 g-lg-5 site-footer__grid">
           <div className="col-12 col-md-6 col-lg-5">
-            <h3 className="h5 fw-bold text-white mb-2">
-              AcroFinder
-            </h3>
-            <p className="text-light opacity-75 small mb-0 lh-lg" style={{ maxWidth: '360px' }}>
+            <div className="site-footer__brand">
+              <img
+                src={logoImage}
+                alt=""
+                className="site-footer__logo"
+                aria-hidden="true"
+              />
+              <span className="site-footer__brand-name">AcroFinder</span>
+            </div>
+            <p className="site-footer__description">
               Progetto indipendente dedicato alla community italiana di Acroyoga.
             </p>
           </div>
 
-          {/* Colonna 2: Legale */}
-          <div className="col-6 col-md-3 col-lg-3">
-            <h6 
-              className="text-uppercase fw-semibold mb-3" 
-              style={{ fontSize: '11px', letterSpacing: '0.08em', color: '#4ade80' }}
+          {footerGroups.map((group) => (
+            <nav
+              key={group.label}
+              className={group.className}
+              aria-label={`${group.label} nel footer`}
             >
-              Legale
-            </h6>
-            <ul className="list-unstyled d-flex flex-column gap-2 mb-0">
-              <li>
-                <Link to="/privacy" className="text-light text-decoration-none fw-medium small hover-opacity">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link to="/terms" className="text-light text-decoration-none fw-medium small hover-opacity">
-                  Termini di utilizzo
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Colonna 3: Progetto */}
-          <div className="col-6 col-md-3 col-lg-4">
-            <h6 
-              className="text-uppercase fw-semibold mb-3" 
-              style={{ fontSize: '11px', letterSpacing: '0.08em', color: '#4ade80' }}
-            >
-              Progetto
-            </h6>
-            <ul className="list-unstyled d-flex flex-column gap-2 mb-0">
-              <li>
-                <Link to="/aboutus" className="text-light text-decoration-none fw-medium small hover-opacity">
-                  Chi siamo
-                </Link>
-              </li>
-              <li>
-                <Link to="/contribute" className="text-light text-decoration-none fw-medium small hover-opacity">
-                  Contribuisci
-                </Link>
-              </li>
-              <li>
-                <Link to="/contactus" className="text-light text-decoration-none fw-medium small hover-opacity">
-                  Contatti
-                </Link>
-              </li>
-            </ul>
-          </div>
-
+              <h2 className="site-footer__heading">{group.label}</h2>
+              <ul className="list-unstyled mb-0 site-footer__links">
+                {group.links.map((link) => (
+                  <li key={link.to}>
+                    <Link to={link.to} className="site-footer__link">
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          ))}
         </div>
 
-        {/* Riga Divisoria */}
-        <div className="pt-3" style={{ borderTop: '1px solid rgba(255,255,255,0.12)' }}>
-          {/* Copyright */}
-          <span style={{ color: '#9CA3AF', fontSize: '12px' }}>
+        <div className="site-footer__bottom">
+          <p className="mb-0">
             &copy; {currentYear} AcroFinder. Tutti i diritti riservati.
-          </span>
+          </p>
         </div>
-
       </div>
     </footer>
   )
