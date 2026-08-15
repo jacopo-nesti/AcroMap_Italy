@@ -1,5 +1,39 @@
 import { useMemo } from "react"
 
+const regionIcons = {
+  Campania: "bi-sun",
+  "Emilia-Romagna": "bi-building",
+  "Friuli-Venezia Giulia": "bi-gem",
+  Lazio: "bi-bank",
+  Liguria: "bi-water",
+  Lombardia: "bi-buildings",
+  Piemonte: "bi-compass",
+  Puglia: "bi-tree",
+  Sardegna: "bi-wind",
+  Sicilia: "bi-map",
+  Toscana: "bi-tree",
+  "Trentino-Alto Adige": "bi-compass",
+  Umbria: "bi-house",
+  Veneto: "bi-building",
+}
+
+const regionArticles = {
+  Campania: "la ",
+  "Emilia-Romagna": "l'",
+  "Friuli-Venezia Giulia": "il ",
+  Lazio: "il ",
+  Liguria: "la ",
+  Lombardia: "la ",
+  Piemonte: "il ",
+  Puglia: "la ",
+  Sardegna: "la ",
+  Sicilia: "la ",
+  Toscana: "la ",
+  "Trentino-Alto Adige": "il ",
+  Umbria: "l'",
+  Veneto: "il ",
+}
+
 function RegionCard({ regionName, regionCities, isOpen, onToggle, controlsId }) {
   // Calcolo totale di Jam e Corsi con useMemo
   const { totalJams, totalCourses } = useMemo(() => {
@@ -17,51 +51,45 @@ function RegionCard({ regionName, regionCities, isOpen, onToggle, controlsId }) 
   }, [regionCities])
 
   const cityCount = regionCities.length
+  const regionIcon = regionIcons[regionName] || "bi-geo-alt"
+  const regionArticle = regionArticles[regionName] || "la "
 
   return (
-    <div
-      className={`card rounded-4 h-100 transition-all ${
-        isOpen
-          ? 'border-success border-2 shadow'
-          : 'border-1 border-light-subtle shadow-sm'
-      }`}
-      style={{
-        backgroundColor: isOpen ? '#e8f5e9' : '#ffffff'
-      }}
-    >
+    <article className={`region-card h-100 ${isOpen ? "region-card--selected" : ""}`}>
       <button
         onClick={onToggle}
-        className={`btn region-card-button text-start p-3 d-flex flex-column justify-content-between border-0 shadow-none h-100 w-100 ${
-          isOpen ? 'bg-transparent' : 'bg-white'
-        }`}
+        className="region-card__button"
         type="button"
         aria-expanded={isOpen}
         aria-controls={controlsId}
       >
-        <div className="d-flex align-items-center justify-content-between w-100 mb-3">
-          <div className="d-flex align-items-center gap-2">
-            <i className={`bi bi-geo-alt-fill fs-5 ${isOpen ? 'text-success' : 'text-secondary'}`} aria-hidden="true"></i>
-            <h2 className="h5 fw-bold text-dark mb-0">{regionName}</h2>
-          </div>
-          <span className={`badge rounded-pill px-2 py-1 small fw-semibold ${
-            isOpen ? 'bg-success text-white' : 'bg-secondary-subtle text-dark'
-          }`}>
+        <div className="region-card__header">
+          <span className="region-card__region-icon" aria-hidden="true">
+            <i className={`bi ${regionIcon}`}></i>
+          </span>
+          <h2 className="region-card__title">{regionName}</h2>
+          <span className="region-card__city-count">
             {cityCount} {cityCount === 1 ? 'città' : 'città'}
           </span>
         </div>
 
-        <div className="d-flex flex-wrap gap-2 w-100 mt-auto">
-          <span className="badge bg-white text-dark border px-2 py-1 rounded-pill fw-normal small shadow-sm">
-            <i className="bi bi-calendar-event text-success me-1" aria-hidden="true"></i>
+        <div className="region-card__metadata">
+          <span className="region-card__meta">
+            <i className="bi bi-calendar-event" aria-hidden="true"></i>
             {totalJams} {totalJams === 1 ? 'Jam' : 'Jam'}
           </span>
-          <span className="badge bg-white text-dark border px-2 py-1 rounded-pill fw-normal small shadow-sm">
-            <i className="bi bi-mortarboard text-success me-1" aria-hidden="true"></i>
+          <span className="region-card__meta">
+            <i className="bi bi-mortarboard" aria-hidden="true"></i>
             {totalCourses} {totalCourses === 1 ? 'Corso' : 'Corsi'}
           </span>
         </div>
+
+        <span className="region-card__cta">
+          Esplora {regionArticle}{regionName}
+          <i className="bi bi-arrow-right" aria-hidden="true"></i>
+        </span>
       </button>
-    </div>
+    </article>
   )
 }
 

@@ -3,6 +3,9 @@ import RegionCard from "../components/RegionCard"
 import RegionCitiesList from "../components/RegionCitiesList"
 import SEO from "../components/SEO"
 import { useCommunityFinderContext } from "../components/CommunityFinder"
+import communityHeroDesktop from "../assets/images/community-regions-hero-desktop.webp"
+import communityHeroTablet from "../assets/images/community-regions-hero-tablet.webp"
+import communityHeroMobile from "../assets/images/community-regions-hero-mobile.webp"
 
 function CitiesPage() {
   const { cities, isLoading, error } = useCommunityFinderContext()
@@ -56,49 +59,86 @@ function CitiesPage() {
   }
 
   return (
-    <div className="container-fluid container-xl py-5">
+    <div className="community-page">
 
       <SEO
         title="Community di Acroyoga in Italia | AcroFinder"
         description="Esplora le community di Acroyoga in Italia organizzate per regione e città."
       />
 
-      <div className="text-center mb-5">
-        <span 
-          className="badge mb-2 px-3 py-2 rounded-pill fw-semibold text-white"
-          style={{ backgroundColor: '#15803d' }}
-        >
-          Esplora le community in Italia
-        </span>
-        <h1 className="display-5 fw-bold text-dark mb-2">Città e Community per Regione</h1>
-        <p className="lead mx-auto" style={{ maxWidth: "600px", color: '#475569' }}>
-          Clicca su una regione per visualizzare le città disponibili.
-        </p>
-      </div>
+      <section className="community-intro" aria-labelledby="community-page-title">
+        <div className="container-fluid container-xl">
+          <div className="row align-items-center g-0">
+            <div className="col-12 col-md-6 community-intro__copy">
+              <span className="community-intro__badge">
+                <i className="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                Esplora le community in Italia
+              </span>
+              <h1 id="community-page-title" className="community-intro__title">
+                <span className="community-intro__title-line">Città e Community</span>
+                <span className="community-intro__title-line">per Regione</span>
+              </h1>
+              <p className="community-intro__subtitle">
+                Clicca su una regione per visualizzare le città disponibili.
+              </p>
+            </div>
 
-      <div className="row g-3">
-        {sortedRegions.map((regionName) => (
-          <div key={regionName} className="col-12 col-sm-6 col-lg-4 col-xl-3">
-            <RegionCard
-              regionName={regionName}
-              regionCities={groupedCities[regionName]}
-              isOpen={openRegion === regionName}
-              onToggle={() => toggleRegion(regionName)}
-              controlsId={`region-${encodeURIComponent(regionName)}-cities`}
-            />
+            <div className="col-12 col-md-6 community-intro__visual" aria-hidden="true">
+              <picture className="community-intro__picture">
+                <source
+                  media="(min-width: 1200px)"
+                  srcSet={communityHeroDesktop}
+                  width="1600"
+                  height="600"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcSet={communityHeroTablet}
+                  width="1200"
+                  height="600"
+                />
+                <img
+                  className="community-intro__image"
+                  src={communityHeroMobile}
+                  alt=""
+                  width="800"
+                  height="600"
+                  fetchPriority="high"
+                  decoding="async"
+                />
+              </picture>
+            </div>
           </div>
-        ))}
-      </div>
+        </div>
+      </section>
 
-      {openRegion && (
-        <RegionCitiesList
-          ref={listRef}
-          regionName={openRegion}
-          cities={groupedCities[openRegion]}
-          onClose={() => setOpenRegion(null)}
-          id={`region-${encodeURIComponent(openRegion)}-cities`}
-        />
-      )}
+      <section className="community-regions" aria-label="Regioni disponibili">
+        <div className="container-fluid container-xl">
+          <div className="row g-3 g-xl-4">
+            {sortedRegions.map((regionName) => (
+              <div key={regionName} className="col-12 col-md-6 col-xl-3">
+                <RegionCard
+                  regionName={regionName}
+                  regionCities={groupedCities[regionName]}
+                  isOpen={openRegion === regionName}
+                  onToggle={() => toggleRegion(regionName)}
+                  controlsId={`region-${encodeURIComponent(regionName)}-cities`}
+                />
+              </div>
+            ))}
+          </div>
+
+          {openRegion && (
+            <RegionCitiesList
+              ref={listRef}
+              regionName={openRegion}
+              cities={groupedCities[openRegion]}
+              onClose={() => setOpenRegion(null)}
+              id={`region-${encodeURIComponent(openRegion)}-cities`}
+            />
+          )}
+        </div>
+      </section>
     </div>
   )
 }
