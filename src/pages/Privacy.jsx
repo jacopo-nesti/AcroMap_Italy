@@ -644,9 +644,6 @@ function Privacy() {
                 indicando la data dell'ultimo aggiornamento.
               </p>
 
-              <p className="fw-semibold mb-0" style={{ color: "#1e293b" }}>
-                Ultimo aggiornamento: agosto 2026.
-              </p>
             </section>
 
           </div>

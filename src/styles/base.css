@@ -1,0 +1,42 @@
+/* Base & utilities */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f4ec;
+  color: #263238;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+.back-button:focus-visible {
+  outline: 3px solid #198754 !important;
+  outline-offset: 3px;
+  border-radius: 0.75rem;
+}
+
+.report-error-link:focus-visible {
+  outline: 3px solid #198754 !important;
+  outline-offset: 3px;
+  border-radius: 0.75rem;
+}
+
+.transition-all {
+  transition: all 0.2s ease-in-out;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.x-small {
+  font-size: 0.75rem;
+}
+
+.text-border {
+  color: #dee2e6;
+}

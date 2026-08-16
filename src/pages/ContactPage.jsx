@@ -2,37 +2,48 @@ import SEO from "../components/SEO"
 
 function ContactPage() {
   return (
-    <div className="container my-5">
+    <main className="contact-page">
       <SEO
         title="Contatti | AcroFinder"
         description="Contatta AcroFinder per informazioni, suggerimenti o segnalazioni relative al progetto."
       />
 
-      <div className="row justify-content-center">
-        <div className="col-12 col-md-8 col-lg-6 text-center">
-          <h1 className="fw-bold mb-3">Contattaci</h1>
+      <div className="container contact-page__container">
+        <div className="contact-page__content">
+          <span className="contact-page__badge">
+            Contatti
+          </span>
 
-          <p className="text-muted mb-4">
-            Hai una domanda, un suggerimento o vuoi segnalare una nuova community? 
-            Compila il modulo di contatto: leggeremo il tuo messaggio e ti risponderemo il prima possibile.
+          <div className="contact-page__icon" aria-hidden="true">
+            <i className="bi bi-envelope" />
+          </div>
+
+          <h1 className="contact-page__title">
+            Contattaci
+          </h1>
+
+          <p className="contact-page__description">
+            Hai una domanda, un suggerimento o vuoi metterti in contatto con
+            AcroFinder? Scrivici tramite il modulo di contatto e ti
+            risponderemo il prima possibile.
           </p>
 
           <a
             href="https://tally.so/r/81DR1Y"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-success btn-lg px-5 py-3 fw-semibold shadow-sm"
+            className="contact-page__button"
           >
             Apri il modulo di contatto
-            <i className="bi bi-arrow-up-right ms-2" aria-hidden="true"></i>
+            <i className="bi bi-arrow-up-right" aria-hidden="true" />
           </a>
 
-          <p className="text-muted small mt-3 mb-0">
+          <p className="contact-page__note">
             Il modulo si aprirà in una nuova scheda.
           </p>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

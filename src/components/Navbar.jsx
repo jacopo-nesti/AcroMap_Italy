@@ -17,9 +17,7 @@ function Navbar({ isHomePage = false }) {
       className={`navbar navbar-expand-lg ${isHomePage ? "" : "px-3"} ${
         isHomePage
           ? "home-navbar position-absolute top-0 start-0 w-100"
-          : isCommunityPage
-            ? "community-navbar navbar-light"
-            : "navbar-dark bg-dark"
+          : "community-navbar navbar-light"
       }`}
     >
       <div className="container-fluid">
@@ -44,27 +42,38 @@ function Navbar({ isHomePage = false }) {
           className={`collapse navbar-collapse justify-content-end ${isHomePage ? "home-navbar__collapse" : ""} ${isOpen ? "show" : ""}`}
         >
           <div className={`d-flex flex-column flex-lg-row align-items-lg-center ${menuClasses}`}>
+            
             <Link
               to="/community"
-              className={`nav-link ${isHomePage ? "home-navbar__link" : isCommunityPage ? "community-navbar__link community-navbar__link--active" : "text-white"}`}
+              className={`nav-link ${isHomePage ? "home-navbar__link" : "community-navbar__link" }`}
               aria-current={isCommunityPage ? "page" : undefined}
               onClick={closeMenu}
             >
               Community
             </Link>
-            <Link to="/map" className={`nav-link ${isHomePage ? "home-navbar__link" : isCommunityPage ? "community-navbar__link" : "text-white"}`} onClick={closeMenu}>
+
+            <Link 
+              to="/map" 
+              className={`nav-link ${isHomePage ? "home-navbar__link" :  "community-navbar__link" }`} 
+              onClick={closeMenu}>
               Mappa
             </Link>
-            <Link to="/aboutus" className={`nav-link ${isHomePage ? "home-navbar__link" : isCommunityPage ? "community-navbar__link" : "text-white"}`} onClick={closeMenu}>
+
+            <Link 
+              to="/aboutus" 
+              className={`nav-link ${isHomePage ? "home-navbar__link" :  "community-navbar__link" }`} 
+              onClick={closeMenu}>
               Chi siamo
             </Link>
+
             <Link
               to="/contribute"
-              className={isHomePage ? "btn home-navbar__cta" : `btn btn-success ${isCommunityPage ? "community-navbar__cta" : ""}`}
+              className={isHomePage ? "btn home-navbar__cta" : "btn btn-success community-navbar__cta" }
               onClick={closeMenu}
             >
               Contribuisci
             </Link>
+
           </div>
         </div>
       </div>
