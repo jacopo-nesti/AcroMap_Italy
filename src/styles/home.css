@@ -262,6 +262,10 @@
   row-gap: 0.35rem;
 }
 
+#home-features {
+  scroll-margin-top: 1rem;
+}
+
 .home-feature-card {
   text-align: center;
   padding: 0 0.65rem;

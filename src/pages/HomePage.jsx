@@ -56,7 +56,7 @@ function HomePage() {
               </div>
             )}
 
-            <a className="home-hero__more" href="#home-secondary">
+            <a className="home-hero__more" href="#home-features">
               <span>Scopri di più</span>
               <i className="bi bi-arrow-down-short" aria-hidden="true" />
             </a>
@@ -64,7 +64,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="home-features-wrap">
+      <section className="home-features-wrap" id="home-features">
         <div className="container">
           <FeatureHighlights />
         </div>
