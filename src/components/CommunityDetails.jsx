@@ -35,6 +35,16 @@ const CommunityDetails = forwardRef(function CommunityDetails({ community, panel
         </div>
       </header>
 
+      <div className="city-community-detail__notice" role="note">
+        <i className="bi bi-info-circle-fill" aria-hidden="true"></i>
+
+        <p>
+          <strong>Prima di partecipare:</strong> giorni, orari e luoghi possono variare.
+          Verifica sempre l'attività contattando direttamente la community tramite
+          i suoi canali ufficiali.
+        </p>
+      </div>
+
       <div className="city-community-detail__filter">
         <DayFilter selectedDay={selectedDay} onSelectDay={setSelectedDay} />
       </div>

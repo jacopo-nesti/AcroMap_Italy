@@ -924,14 +924,6 @@ function Terms() {
 
           </div>
 
-          {/* Data aggiornamento finale */}
-          <p
-            className="text-center small mt-4 mb-0"
-            style={{ color: "#64748b" }}
-          >
-            Ultimo aggiornamento: agosto 2026
-          </p>
-
         </div>
       </div>
     </div>

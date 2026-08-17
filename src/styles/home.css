@@ -142,6 +142,10 @@
   box-shadow: none;
 }
 
+.home-search__input::-webkit-search-cancel-button {
+  display: none;
+}
+
 .home-search__clear {
   width: 2.45rem;
   min-width: 2.45rem;

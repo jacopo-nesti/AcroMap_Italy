@@ -363,6 +363,37 @@
   color: #174f38;
 }
 
+/* Community activity notice */
+
+.city-community-detail__notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  border: 1px solid rgba(56, 87, 40, 0.14);
+  border-radius: 0.75rem;
+  background: #eef3e9;
+  padding: 0.85rem 1rem;
+  color: #405249;
+}
+
+.city-community-detail__notice > i {
+  flex: 0 0 auto;
+  margin-top: 0.1rem;
+  color: #397255;
+  font-size: 1rem;
+}
+
+.city-community-detail__notice p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.city-community-detail__notice strong {
+  color: #234b38;
+}
+
 .city-community-detail__filter {
   margin-top: 1.25rem;
   border-top: 1px solid rgba(48, 91, 66, 0.12);
@@ -770,6 +801,16 @@
 
   .city-activity__scroller {
     grid-auto-columns: minmax(15.5rem, 91%);
+  }
+
+  .city-community-detail__notice {
+    gap: 0.6rem;
+    margin-top: 1rem;
+    padding: 0.75rem 0.8rem;
+  }
+
+  .city-community-detail__notice p {
+    font-size: 0.8rem;
   }
 }
 

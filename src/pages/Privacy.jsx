@@ -414,10 +414,23 @@ function Privacy() {
                 gestione delle risposte.
               </p>
 
-              <p className="mb-0" style={{ color: "#334155" }}>
+              <p style={{ color: "#334155" }}>
                 Per maggiori informazioni sulle modalità con cui Tally tratta i
                 dati personali è possibile consultare la documentazione privacy
                 pubblicata da Tally.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                AcroFinder utilizza inoltre OpenStreetMap per la visualizzazione
+                della mappa delle community. Quando viene visualizzata la mappa,
+                il browser dell'utente può effettuare richieste ai server utilizzati
+                per fornire i dati cartografici e le relative immagini.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                Tali richieste possono comportare la trasmissione di dati tecnici
+                necessari alla comunicazione via Internet, come l'indirizzo IP e
+                informazioni relative alla richiesta effettuata dal browser.
               </p>
             </section>
 
@@ -494,8 +507,14 @@ function Privacy() {
               </h2>
 
               <p style={{ color: "#334155" }}>
-                AcroFinder non utilizza i dati raccolti attraverso il modulo per
-                finalità pubblicitarie o di profilazione.
+                AcroFinder non utilizza cookie di profilazione, strumenti
+                pubblicitari o sistemi di tracciamento degli utenti per finalità
+                di marketing.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                Il sito non utilizza attualmente strumenti di analisi del traffico
+                basati sulla profilazione degli utenti.
               </p>
 
               <p style={{ color: "#334155" }}>
