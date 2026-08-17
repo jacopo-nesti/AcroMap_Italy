@@ -10,7 +10,7 @@ function Navbar({ isHomePage = false }) {
   const closeMenu = () => setIsOpen(false)
   const menuClasses = isHomePage
     ? "home-navbar__menu"
-    : `gap-2 gap-lg-4 px-3 py-2 ${isCommunityPage ? "community-navbar__menu" : ""}`
+    : "community-navbar__menu gap-2 gap-lg-4 px-3 py-2"
 
   return (
     <nav
