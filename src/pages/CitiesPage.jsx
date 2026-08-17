@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo, useRef } from "react"
+import { useEffect, useState, useMemo, useRef, Fragment } from "react"
 import RegionCard from "../components/RegionCard"
 import RegionCitiesList from "../components/RegionCitiesList"
 import SEO from "../components/SEO"
@@ -116,27 +116,31 @@ function CitiesPage() {
         <div className="container-fluid container-xl">
           <div className="row g-3 g-xl-4">
             {sortedRegions.map((regionName) => (
-              <div key={regionName} className="col-12 col-md-6 col-xl-3">
-                <RegionCard
-                  regionName={regionName}
-                  regionCities={groupedCities[regionName]}
-                  isOpen={openRegion === regionName}
-                  onToggle={() => toggleRegion(regionName)}
-                  controlsId={`region-${encodeURIComponent(regionName)}-cities`}
-                />
-              </div>
+              <Fragment key={regionName}>
+                <div className="col-12 col-md-6 col-xl-3">
+                  <RegionCard
+                    regionName={regionName}
+                    regionCities={groupedCities[regionName]}
+                    isOpen={openRegion === regionName}
+                    onToggle={() => toggleRegion(regionName)}
+                    controlsId={`region-${encodeURIComponent(regionName)}-cities`}
+                  />
+                </div>
+
+                {openRegion === regionName && (
+                  <div className="col-12">
+                    <RegionCitiesList
+                      ref={listRef}
+                      regionName={regionName}
+                      cities={groupedCities[regionName]}
+                      onClose={() => setOpenRegion(null)}
+                      id={`region-${encodeURIComponent(regionName)}-cities`}
+                    />
+                  </div>
+                )}
+              </Fragment>
             ))}
           </div>
-
-          {openRegion && (
-            <RegionCitiesList
-              ref={listRef}
-              regionName={openRegion}
-              cities={groupedCities[openRegion]}
-              onClose={() => setOpenRegion(null)}
-              id={`region-${encodeURIComponent(openRegion)}-cities`}
-            />
-          )}
         </div>
       </section>
     </div>
