@@ -50,8 +50,8 @@ const CommunityDetails = forwardRef(function CommunityDetails({ community, panel
       </div>
 
       <HorizontalScroller
-        title="Jam settimanali"
-        icon="calendar-event"
+        title="Jam & Pratiche"
+        icon="people-fill"
         variant="jams"
         resetKey={community.id}
         emptyText={selectedDay === "Tutti" ? "Nessuna jam al momento." : `Nessuna jam il ${selectedDay}.`}
@@ -60,7 +60,7 @@ const CommunityDetails = forwardRef(function CommunityDetails({ community, panel
       </HorizontalScroller>
 
       <HorizontalScroller
-        title="Corsi"
+        title="Corsi & Classi "
         icon="mortarboard"
         variant="courses"
         resetKey={community.id}

@@ -25,7 +25,9 @@
             "end_time": "22:00",
             "location": "Parco delle Cascine",
             "maps_url": "https://maps.app.goo.gl/44wg3AyuxBYEMc3v8",
-            "notes": "Jam outdoor estiva"
+            "season": "summer",
+            "season_notes": "Da giugno a settembre/ottobre, in base al meteo",
+            "notes": "Jam outdoor"
           },
           {
             "id": 2,
@@ -34,6 +36,8 @@
             "end_time": "21:30",
             "location": "Giardino dell'Ardiglione",
             "maps_url": "https://maps.app.goo.gl/huw2yLSZmEToWr869",
+            "season": "winter",
+            "season_notes": "Indicativamente da ottobre a maggio",
             "notes": "Jam indoor in palestra, tatami presenti"
           }
         ],
@@ -50,6 +54,8 @@
             "location": "Fattoria dei Ragazzi",
             "maps_url": "https://maps.app.goo.gl/UV5ZV6h26Lq5BbXN6",
             "level": "Advanced",
+            "season": "winter",
+            "season_notes": "Indicativamente da ottobre a maggio",
             "notes": "Tatami presenti"
           },
           {
@@ -64,6 +70,8 @@
             "location": "Fattoria dei Ragazzi",
             "maps_url": "https://maps.app.goo.gl/UV5ZV6h26Lq5BbXN6",
             "level": "Intermediate",
+            "season": "winter",
+            "season_notes": "Indicativamente da ottobre a maggio",
             "notes": "Tatami presenti"
           },
           {
@@ -78,6 +86,8 @@
             "location": "Fattoria dei Ragazzi",
             "maps_url": "https://maps.app.goo.gl/UV5ZV6h26Lq5BbXN6",
             "level": "Beginner",
+            "season": "winter",
+            "season_notes": "Indicativamente da ottobre a maggio",
             "notes": "Tatami presenti"
           },
           {
@@ -92,6 +102,8 @@
             "location": "Samadhi",
             "maps_url": "https://maps.app.goo.gl/M7Xyp7sKr8XkRein7",
             "level": "All Levels",
+            "season": "winter",
+            "season_notes": "Indicativamente da ottobre a maggio",
             "notes": "Tatami presenti"
           }
         ]

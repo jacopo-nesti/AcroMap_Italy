@@ -1,3 +1,21 @@
+const seasonLabels = {
+  summer: {
+    label: "Estivo",
+    icon: "bi-sun-fill",
+    className: "city-activity-card__season--summer",
+  },
+  winter: {
+    label: "Invernale",
+    icon: "bi-snow",
+    className: "city-activity-card__season--winter",
+  },
+  "all-year": {
+    label: "Tutto l'anno",
+    icon: "bi-arrow-repeat",
+    className: "city-activity-card__season--all-year",
+  },
+}
+
 function CourseCard({ course }) {
   if (!course) return null
 
@@ -6,6 +24,8 @@ function CourseCard({ course }) {
     : course.teachers
 
   const hasTime = course.start_time || course.end_time
+
+  const season = seasonLabels[course.season]
 
   return (
     <article className="city-activity-card city-activity-card--course">
@@ -22,6 +42,23 @@ function CourseCard({ course }) {
           <i className="bi bi-clock" aria-hidden="true"></i>
           {course.start_time}{course.end_time ? ` – ${course.end_time}` : ""}
         </p>
+      )}
+
+      {season && (
+        <div className="city-activity-card__season-wrap">
+          <span
+            className={`city-activity-card__season ${season.className}`}
+          >
+            <i className={`bi ${season.icon}`} aria-hidden="true"></i>
+            {season.label}
+          </span>
+
+          {course.season_notes && (
+            <span className="city-activity-card__season-notes">
+              {course.season_notes}
+            </span>
+          )}
+        </div>
       )}
 
       {course.level && <span className="city-activity-card__level">{course.level}</span>}

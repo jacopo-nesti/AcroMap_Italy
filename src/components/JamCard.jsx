@@ -1,7 +1,27 @@
+const seasonLabels = {
+  summer: {
+    label: "Estivo",
+    icon: "bi-sun-fill",
+    className: "city-activity-card__season--summer",
+  },
+  winter: {
+    label: "Invernale",
+    icon: "bi-snow",
+    className: "city-activity-card__season--winter",
+  },
+  "all-year": {
+    label: "Tutto l'anno",
+    icon: "bi-arrow-repeat",
+    className: "city-activity-card__season--all-year",
+  },
+}
+
 function JamCard({ jam }) {
   if (!jam) return null
 
   const hasTime = jam.start_time || jam.end_time
+  
+  const season = seasonLabels[jam.season]
 
   return (
     <article className="city-activity-card city-activity-card--jam">
@@ -17,6 +37,23 @@ function JamCard({ jam }) {
           <i className="bi bi-clock" aria-hidden="true"></i>
           {jam.start_time}{jam.end_time ? ` – ${jam.end_time}` : ""}
         </p>
+      )}
+
+      {season && (
+        <div className="city-activity-card__season-wrap">
+          <span
+            className={`city-activity-card__season ${season.className}`}
+          >
+            <i className={`bi ${season.icon}`} aria-hidden="true"></i>
+            {season.label}
+          </span>
+
+          {jam.season_notes && (
+            <span className="city-activity-card__season-notes">
+              {jam.season_notes}
+            </span>
+          )}
+        </div>
       )}
 
       {jam.location && (
