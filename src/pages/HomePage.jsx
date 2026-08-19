@@ -55,18 +55,26 @@ function HomePage() {
                 <CommunityFinderSearchBar />
               </div>
             )}
-
-            <a className="home-hero__more" href="#home-features">
-              <span>Scopri di più</span>
-              <i className="bi bi-arrow-down-short" aria-hidden="true" />
-            </a>
           </div>
         </div>
+
+        <div className="home-scroll-hint home-scroll-hint--mobile" aria-hidden="true">
+          <span>Scopri di più</span>
+          <i className="bi bi-chevron-down"></i>
+        </div>
+        
       </section>
 
       <section className="home-features-wrap" id="home-features">
         <div className="container">
+
           <FeatureHighlights />
+
+          <div className="home-scroll-hint home-scroll-hint--desktop" aria-hidden="true">
+            <span>Scopri di più</span>
+            <i className="bi bi-chevron-down"></i>
+          </div>
+
         </div>
       </section>
 

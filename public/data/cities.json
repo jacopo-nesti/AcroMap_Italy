@@ -17,6 +17,7 @@
         "whatsapp": "",
         "instagram": "https://www.instagram.com/florence.acroyoga/",
         "facebook": "",
+        "website": "",
         "jams": [
           {
             "id": 1,
@@ -105,6 +106,172 @@
             "season": "winter",
             "season_notes": "Indicativamente da ottobre a maggio",
             "notes": "Tatami presenti"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "pisa",
+    "name": "Pisa",
+    "region": "Toscana",
+    "province": "Pisa",
+    "coordinates": {
+      "lat": 43.716667,
+      "lng": 10.4
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acroyoga Pisa",
+        "description": "Community di Acroyoga molto attiva a Pisa, con corsi e momenti di pratica regolari e diversi workshop organizzati durante l'anno.",
+        "whatsapp": "",
+        "instagram": "https://www.instagram.com/acroyogapisa/",
+        "facebook": "https://www.facebook.com/AcroyogaPisaLindaPalazzolo/?locale=it_IT",
+        "website": "https://spazioyogamente.com/",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Venerdì",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "location": "Spazio YogaMente",
+            "maps_url": "https://maps.app.goo.gl/A3scNznZcvSUEFmM6",
+            "season": "",
+            "season_notes": "",
+            "notes": "Jam indoor in palestra, tatami presenti"
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Open Level",
+            "teachers": [
+              "Linda",
+              "Antonio"
+            ],
+            "day": "Lunedì",
+            "start_time": "20:45",
+            "end_time": "22:45",
+            "location": "Spazio YogaMente",
+            "maps_url": "https://maps.app.goo.gl/A3scNznZcvSUEFmM6",
+            "level": "All Levels",
+            "season": "winter",
+            "season_notes": "Da settembre a maggio",
+            "notes": "Palestra attrezzata con tatami"
+          },
+          {
+            "id": 2,
+            "name": "Corso Open Level",
+            "teachers": [
+              "Linda",
+              "Antonio"
+            ],
+            "day": "Mercoledì",
+            "start_time": "20:45",
+            "end_time": "22:45",
+            "location": "Spazio YogaMente",
+            "maps_url": "https://maps.app.goo.gl/A3scNznZcvSUEFmM6",
+            "level": "All Levels",
+            "season": "winter",
+            "season_notes": "Da settembre a maggio",
+            "notes": "Palestra attrezzata con tatami"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "lucca",
+    "name": "Lucca",
+    "region": "Toscana",
+    "province": "Lucca",
+    "coordinates": {
+      "lat": 43.84167,
+      "lng": 10.50278
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acroyoga Lucca",
+        "description": "Community di Acroyoga a Lucca con momenti di pratica e jam aperte alla community locale.",
+        "whatsapp": "https://chat.whatsapp.com/L5ESscjRfygCnidcLA0BfM",
+        "instagram": "https://www.instagram.com/acroyogalucca/",
+        "facebook": "",
+        "website": "",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Martedì",
+            "start_time": "19:00",
+            "end_time": "21:00",
+            "location": "Mura di Lucca",
+            "maps_url": "https://maps.app.goo.gl/U41iGPDa8Td4EYvP6",
+            "season": "summer",
+            "season_notes": "",
+            "notes": "Jam outdoor, portare tappetino"
+          }
+        ],
+        "courses": []
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "faenza",
+    "name": "Faenza",
+    "region": "Emilia-Romagna",
+    "province": "Ravenna",
+    "coordinates": {
+      "lat": 44.285557,
+      "lng": 11.883333
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acroyoga Faenza",
+        "description": "Community di Acroyoga a Faenza con corsi dedicati a diversi livelli di esperienza.",
+        "whatsapp": "https://chat.whatsapp.com/EayIqK0TuLL0N4FKtSpnyJ",
+        "instagram": "https://www.instagram.com/duoaliento/",
+        "facebook": "",
+        "website": "",
+        "jams": [],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Base",
+            "teachers": [
+              "Jenna",
+              "Andrea"
+            ],
+            "day": "Mercoledì",
+            "start_time": "19:00",
+            "end_time": "20:30",
+            "location": "Movat ASD",
+            "maps_url": "https://maps.app.goo.gl/96kagNkmQCd8Y7yH6",
+            "level": "Beginner",
+            "season": "winter",
+            "season_notes": "Da settembre a maggio",
+            "notes": "Ex Fiera di Faenza, padiglione B. Insegnanti: Duo Aliento."
+          },
+          {
+            "id": 2,
+            "name": "Corso Intermedio",
+            "teachers": [
+              "Jenna",
+              "Andrea"
+            ],
+            "day": "Mercoledì",
+            "start_time": "20:30",
+            "end_time": "22:00",
+            "location": "Movat ASD",
+            "maps_url": "https://maps.app.goo.gl/96kagNkmQCd8Y7yH6",
+            "level": "Intermediate",
+            "season": "winter",
+            "season_notes": "Da settembre a maggio",
+            "notes": "Ex Fiera di Faenza, padiglione B. Insegnanti: Duo Aliento."
           }
         ]
       }
