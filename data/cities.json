@@ -335,5 +335,83 @@
       ]
     }
   ]
+},
+{
+  "id": 6,
+  "slug": "lugo",
+  "name": "Lugo",
+  "region": "Emilia-Romagna",
+  "province": "Ravenna",
+  "coordinates": {
+    "lat": 44.4214,
+    "lng": 11.9117
+  },
+  "communities": [
+    {
+      "id": 1,
+      "name": "AcroSomething Kune",
+      "description": "Community di Acroyoga a Lugo con corsi e occasioni di pratica durante l'anno, guidata da Faby e Teo, insegnanti certificati AcroFusion.",
+      "whatsapp": "https://chat.whatsapp.com/FwMfXgg9aegJ7srOQj7U2G?s=sh&p=a&ilr=1",
+      "instagram": "https://www.instagram.com/acrosomething_kune?igsh=MTFva2dwNXI0ZnFubQ==&igsi=MTFva2dwNXI0ZnFubQ==",
+      "facebook": "https://www.facebook.com/share/1HKpXePhf4/",
+      "website": "",
+      "jams": [
+        {
+          "id": 1,
+          "day": "Prima domenica del mese",
+          "start_time": "15:00",
+          "end_time": "19:00",
+          "location": "Ravenna",
+          "maps_url": "",
+          "season": "winter",
+          "season_notes": "Da ottobre a giugno",
+          "notes": "Per maggiori informazioni contattare la community sui social."
+        }
+      ],
+      "courses": [
+        {
+          "id": 1,
+          "name": "Corso di Acroyoga Multilivello",
+          "teachers": [
+            "Faby",
+            "Teo"
+          ],
+          "day": "Mercoledì",
+          "start_time": "20:00",
+          "end_time": "21:30",
+          "location": "Centro Studi Danza e Musical, Via Gastaldi 16, Lugo",
+          "maps_url": "https://maps.app.goo.gl/LCrtRaWu9sDBgJtW8?g_st=ac",
+          "level": "Intermediate",
+          "season": "all-year",
+          "season_notes": "Da ottobre a luglio",
+          "notes": "Presenza di tatami. Diverse tipologie di abbonamento. Per maggiori informazioni contattare la community sui social."
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": 7,
+  "slug": "pavia",
+  "name": "Pavia",
+  "region": "Lombardia",
+  "province": "Pavia",
+  "coordinates": {
+    "lat": 45.1847,
+    "lng": 9.1582
+  },
+  "communities": [
+    {
+      "id": 1,
+      "name": "Acroyoga Pavia",
+      "description": "Community di Acroyoga a Pavia.",
+      "whatsapp": "",
+      "instagram": "https://www.instagram.com/acroyogapavia/",
+      "facebook": "",
+      "website": "",
+      "jams": [],
+      "courses": []
+    }
+  ]
 }
 ]
