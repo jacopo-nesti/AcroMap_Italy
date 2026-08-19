@@ -451,38 +451,6 @@
   font-weight: 800;
 }
 
-.city-community-detail__filter {
-  margin-top: 1.25rem;
-  border-top: 1px solid rgba(48, 91, 66, 0.12);
-  padding-top: 1rem;
-}
-
-.city-day-filter {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.65rem;
-}
-
-.city-day-filter label {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  color: #2e4d3d;
-  font-size: 0.85rem;
-  font-weight: 700;
-}
-
-.city-day-filter select {
-  min-height: 42px;
-  border: 1px solid rgba(44, 90, 63, 0.23);
-  border-radius: 0.55rem;
-  background: #fffdf8;
-  padding: 0.4rem 2.2rem 0.4rem 0.75rem;
-  color: #28483a;
-  font-size: 0.875rem;
-}
-
 .city-activity {
   margin-top: 1.75rem;
 }
@@ -707,7 +675,6 @@
 .city-page__report-link:focus-visible,
 .city-community-card__toggle:focus-visible,
 .city-social-links a:focus-visible,
-.city-day-filter select:focus-visible,
 .city-activity__controls button:focus-visible,
 .city-activity__scroller:focus-visible,
 .city-activity-card__maps:focus-visible {
@@ -1022,11 +989,6 @@
 
   .city-social-links {
     margin-top: 0.65rem;
-  }
-
-  .city-community-detail__filter {
-    margin-top: 0.85rem;
-    padding-top: 0.75rem;
   }
 
   .city-activity {
