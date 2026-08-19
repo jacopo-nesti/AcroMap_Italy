@@ -276,5 +276,64 @@
         ]
       }
     ]
-  }
+  },
+  {
+  "id": 5,
+  "slug": "roma",
+  "name": "Roma",
+  "region": "Lazio",
+  "province": "Roma",
+  "coordinates": {
+    "lat": 41.9028,
+    "lng": 12.4964
+  },
+  "communities": [
+    {
+      "id": 1,
+      "name": "Acroyoga Roma",
+      "description": "Community di Acroyoga a Roma con corsi open level e occasioni per praticare, imparare e condividere l'Acroyoga insieme.",
+      "whatsapp": "",
+      "instagram": "https://www.instagram.com/acroyoga.roma/",
+      "facebook": "",
+      "website": "https://www.jayoga.it/",
+      "jams": [],
+      "courses": [
+        {
+          "id": 1,
+          "name": "Corso Open Level",
+          "teachers": [
+            "Sofia",
+            "Angelo"
+          ],
+          "day": "Martedì",
+          "start_time": "20:30",
+          "end_time": "22:15",
+          "location": "Centro Jayoga",
+          "maps_url": "https://maps.app.goo.gl/9zr2wKJPcDNBmBP26",
+          "level": "All Levels",
+          "season": "",
+          "season_notes": "",
+          "notes": "Il Centro Yoga si trova a pochi minuti a piedi dalla fermata Metro A “Porta Furba Quadraro” (zona Tuscolana)."
+        },
+        {
+          "id": 2,
+          "name": "Corso Open Level",
+          "teachers": [
+            "Sofia",
+            "Angelo"
+          ],
+          "day": "Giovedì",
+          "start_time": "20:30",
+          "end_time": "22:15",
+          "location": "Centro Jayoga",
+          "maps_url": "https://maps.app.goo.gl/9zr2wKJPcDNBmBP26",
+          "level": "All Levels",
+          "season": "",
+          "season_notes": "",
+          "notes": "Il Centro Yoga si trova a pochi minuti a piedi dalla fermata Metro A “Porta Furba Quadraro” (zona Tuscolana)."
+        }
+      ]
+    }
+  ]
+}
 ]

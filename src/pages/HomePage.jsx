@@ -4,12 +4,37 @@ import FeatureHighlights from "../components/FeatureHighlights"
 import OrganizerCallout from "../components/OrganizerCallout"
 import SEO from "../components/SEO"
 import { useCommunityFinderContext } from "../components/CommunityFinder"
+import { useState } from "react"
 import heroDesktopImage from "../assets/images/hero-acrofinder-desktop.webp"
 import heroTabletImage from "../assets/images/hero-acrofinder-tablet.webp"
 import heroMobileImage from "../assets/images/hero-acrofinder-mobile.webp"
 
 function HomePage() {
   const { isLoading, error } = useCommunityFinderContext()
+
+  const [highlightSearch, setHighlightSearch] = useState(false)
+
+  const handleSearchClick = () => {
+    const searchTarget = document.getElementById("home-search-target")
+    const searchInput = document.querySelector(".home-search__input")
+
+    if (!searchTarget) return
+
+    searchTarget.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    })
+
+    setHighlightSearch(true)
+
+    setTimeout(() => {
+      searchInput?.focus()
+    }, 600)
+
+    setTimeout(() => {
+      setHighlightSearch(false)
+    }, 2000)
+  }
 
   return (
     <div className="home-page">
@@ -51,7 +76,12 @@ function HomePage() {
                 {error}
               </div>
             ) : (
-              <div className="home-search-shell">
+              <div
+                id="home-search-target"
+                className={`home-search-shell ${
+                  highlightSearch ? "home-search-shell--highlight" : ""
+                }`}
+              >
                 <CommunityFinderSearchBar />
               </div>
             )}
@@ -59,7 +89,7 @@ function HomePage() {
         </div>
 
         <div className="home-scroll-hint home-scroll-hint--mobile" aria-hidden="true">
-          <span>Scopri di più</span>
+          <span>Scorri per scoprire di più</span>
           <i className="bi bi-chevron-down"></i>
         </div>
         
@@ -71,7 +101,7 @@ function HomePage() {
           <FeatureHighlights />
 
           <div className="home-scroll-hint home-scroll-hint--desktop" aria-hidden="true">
-            <span>Scopri di più</span>
+            <span>Scorri per scoprire di più</span>
             <i className="bi bi-chevron-down"></i>
           </div>
 
@@ -91,14 +121,29 @@ function HomePage() {
               {error}
             </div>
           ) : (
-            <div className="row g-4 align-items-stretch">
-              <div className="col-12 col-lg-7">
-                <CommunityStats />
+            <>
+              <div className="row g-4 align-items-stretch">
+                <div className="col-12 col-lg-7">
+                  <CommunityStats />
+                </div>
+
+                <div className="col-12 col-lg-5">
+                  <OrganizerCallout />
+                </div>
               </div>
-              <div className="col-12 col-lg-5">
-                <OrganizerCallout />
+
+              <div className="home-search-cta">
+                <button
+                  type="button"
+                  className="organizer-callout__search"
+                  onClick={handleSearchClick}
+                >
+                  <i className="bi bi-search" aria-hidden="true"></i>
+                  <span>Cerca la tua città</span>
+                  <i className="bi bi-arrow-up" aria-hidden="true"></i>
+                </button>
               </div>
-            </div>
+            </>
           )}
         </div>
       </section>
