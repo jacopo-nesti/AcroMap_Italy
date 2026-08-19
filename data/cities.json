@@ -413,5 +413,128 @@
       "courses": []
     }
   ]
+},
+{
+  "id": 8,
+  "slug": "milano",
+  "name": "Milano",
+  "region": "Lombardia",
+  "province": "Milano",
+  "coordinates": {
+    "lat": 45.4642,
+    "lng": 9.19
+  },
+  "communities": [
+    {
+      "id": 1,
+      "name": "Spazio Terzo Tempo Ululí",
+      "description": "Community di Acroyoga a Milano con corsi base e intermedi e occasioni di pratica durante l'anno.",
+      "whatsapp": "",
+      "instagram": "https://www.instagram.com/terzotempoululi_scuoladicirco?igsi=ZXFvbjVmOXZlb2Y=",
+      "facebook": "https://www.facebook.com/share/1JkV5VEgVu/",
+      "website": "https://www.terzotempoululi.com",
+      "jams": [
+        {
+          "id": 1,
+          "day": "Domenica",
+          "start_time": "15:00",
+          "end_time": "18:00",
+          "location": "Spazio Terzo Tempo Ululí",
+          "maps_url": "https://maps.app.goo.gl/pVHNNVMFPSpbDeDZ6",
+          "season": "all-year",
+          "season_notes": "Le date vengono pubblicate sui social",
+          "notes": "Ingresso solo con tessera associativa"
+        }
+      ],
+      "courses": [
+        {
+          "id": 1,
+          "name": "Acroyoga",
+          "teachers": [
+            "Monica Abruzzi",
+            "Gino Menozzi"
+          ],
+          "day": "Martedì",
+          "start_time": "20:30",
+          "end_time": "22:30",
+          "location": "Spazio Terzo Tempo Ululí",
+          "maps_url": "https://maps.app.goo.gl/eY67eQpWJtgK8jBo6",
+          "level": "Intermediate",
+          "season": "all-year",
+          "season_notes": "Da fine settembre a fine giugno",
+          "notes": "Lezione di prova gratuita. Altre informazioni sul sito della community."
+        },
+        {
+          "id": 2,
+          "name": "Corso di Acroyoga",
+          "teachers": [
+            "Monica Abruzzi",
+            "Gino Menozzi"
+          ],
+          "day": "Giovedì",
+          "start_time": "20:45",
+          "end_time": "22:45",
+          "location": "Spazio Terzo Tempo Ululí",
+          "maps_url": "https://maps.app.goo.gl/eY67eQpWJtgK8jBo6",
+          "level": "Beginner",
+          "season": "all-year",
+          "season_notes": "Da fine settembre a fine giugno",
+          "notes": "Lezione di prova gratuita. Altre informazioni sul sito della community."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "AcroYoga Milano",
+      "description": "Community di Acroyoga sviluppata principalmente nella zona nord di Milano, inclusiva e aperta a chiunque passi dalla città.",
+      "whatsapp": "https://chat.whatsapp.com/JnEUwPwu0UK8brHmToIEUH?s=cl&p=a&ilr=0",
+      "instagram": "",
+      "facebook": "https://www.facebook.com/share/g/1M2CYaYQKf/",
+      "website": "",
+      "jams": [
+        {
+          "id": 1,
+          "day": "Lunedì",
+          "start_time": "21:00",
+          "end_time": "23:00",
+          "location": "Moma41",
+          "maps_url": "https://maps.app.goo.gl/N2AEUEoXwXaHdZUE7",
+          "season": "all-year",
+          "season_notes": "Indicativamente da ottobre fino a fine giugno",
+          "notes": "Contributo per l'affitto della sala: 5 €"
+        },
+        {
+          "id": 2,
+          "day": "Tutti i giorni",
+          "start_time": "18:30",
+          "end_time": "23:00",
+          "location": "Parco Biblioteca degli Alberi",
+          "maps_url": "https://maps.app.goo.gl/HqZspEm2Gxousbjk6?g_st=aw",
+          "season": "summer",
+          "season_notes": "Da quando inizia a fare bel tempo",
+          "notes": "Jam aperta a tutti"
+        }
+      ],
+      "courses": [
+        {
+          "id": 1,
+          "name": "Corso Multilevel",
+          "teachers": [
+            "Abele",
+            "Stefania"
+          ],
+          "day": "Giovedì",
+          "start_time": "19:30",
+          "end_time": "21:00",
+          "location": "San Dao Sesto",
+          "maps_url": "https://maps.app.goo.gl/6FVNgtbhm8Lyeho36",
+          "level": "All Levels",
+          "season": "winter",
+          "season_notes": "Da metà settembre fino alla fine di maggio",
+          "notes": "Prima lezione gratuita"
+        }
+      ]
+    }
+  ]
 }
 ]
