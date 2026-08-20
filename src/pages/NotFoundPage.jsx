@@ -5,9 +5,11 @@ import notFoundImage from "../assets/images/notfound-acroyoga.webp"
 function NotFound() {
   return (
     <main className="not-found">
+
       <SEO
         title="Pagina non trovata | AcroFinder"
         description="La pagina che stai cercando non è disponibile."
+        robots="noindex, nofollow"
       />
 
       <div className="container not-found__container">

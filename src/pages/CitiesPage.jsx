@@ -60,10 +60,11 @@ function CitiesPage() {
 
   return (
     <div className="community-page">
-
+      
       <SEO
         title="Community di Acroyoga in Italia | AcroFinder"
         description="Esplora le community di Acroyoga in Italia organizzate per regione e città."
+        canonical="https://acrofinder.it/community"
       />
 
       <section className="community-intro" aria-labelledby="community-page-title">

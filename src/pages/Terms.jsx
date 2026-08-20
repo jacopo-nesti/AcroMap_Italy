@@ -8,6 +8,7 @@ function Terms() {
       <SEO
         title="Termini di utilizzo | AcroFinder"
         description="Consulta i termini di utilizzo di AcroFinder."
+        canonical="https://acrofinder.it/terms"
       />
 
       <div className="row justify-content-center">

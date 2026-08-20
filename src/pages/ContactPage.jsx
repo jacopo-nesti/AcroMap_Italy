@@ -3,9 +3,11 @@ import SEO from "../components/SEO"
 function ContactPage() {
   return (
     <main className="contact-page">
+      
       <SEO
         title="Contatti | AcroFinder"
-        description="Contatta AcroFinder per informazioni, suggerimenti o segnalazioni relative al progetto."
+        description="Contatta AcroFinder per informazioni, segnalazioni o suggerimenti sul progetto."
+        canonical="https://acrofinder.it/contactus"
       />
 
       <div className="container contact-page__container">

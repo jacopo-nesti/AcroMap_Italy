@@ -69,6 +69,7 @@ function RegionJamsPage() {
       <SEO
         title={`Jam di Acroyoga in ${regionName} | AcroFinder`}
         description={`Scopri tutte le jam di Acroyoga disponibili in ${regionName}, con città, orari, luoghi e community.`}
+        canonical={`https://acrofinder.it/region/${regionSlug}/jams`}
       />
 
       <div className="container py-4">

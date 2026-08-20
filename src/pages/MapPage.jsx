@@ -7,9 +7,11 @@ function MapPage() {
 
   return (
     <main className="map-page">
+      
       <SEO
         title="Mappa delle community di Acroyoga in Italia | AcroFinder"
-        description="Esplora sulla mappa le community di Acroyoga presenti in tutta Italia e scopri dove praticare."
+        description="Esplora sulla mappa le città e le community di Acroyoga presenti in Italia."
+        canonical="https://acrofinder.it/map"
       />
 
       <div className="container map-page__container">

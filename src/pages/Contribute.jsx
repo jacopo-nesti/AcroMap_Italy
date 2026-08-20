@@ -21,9 +21,11 @@ const CARDS = [
 export default function Contribute() {
   return (
     <main className="contribute-page">
+      
       <SEO
         title="Contribuisci | AcroFinder"
-        description="Segnala una community, una jam, un corso o un'informazione da aggiornare e aiuta AcroFinder a crescere."
+        description="Segnala una community, una jam, un corso o un aggiornamento e contribuisci a mantenere AcroFinder aggiornato."
+        canonical="https://acrofinder.it/contribute"
       />
 
       <div className="container contribute-page__container">

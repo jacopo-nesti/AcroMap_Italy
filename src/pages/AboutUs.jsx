@@ -3,9 +3,11 @@ import SEO from "../components/SEO"
 function AboutUs() {
   return (
     <div className="about-page">
+
       <SEO
         title="Chi siamo | AcroFinder"
-        description="Scopri il progetto AcroFinder e l'obiettivo di rendere più facile trovare community di Acroyoga in Italia."
+        description="Scopri AcroFinder, il progetto che raccoglie community, jam e corsi di Acroyoga in Italia."
+        canonical="https://acrofinder.it/aboutus"
       />
 
       <div className="container about-page__container">

@@ -38,9 +38,11 @@ function HomePage() {
 
   return (
     <div className="home-page">
+
       <SEO
         title="AcroFinder - Trova community di Acroyoga in Italia"
         description="Trova community, jam e corsi di Acroyoga in tutta Italia. Cerca la tua città e scopri dove praticare vicino a te."
+        canonical="https://acrofinder.it/"
       />
 
       <section className="home-hero position-relative overflow-hidden">

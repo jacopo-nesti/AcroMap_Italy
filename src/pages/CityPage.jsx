@@ -80,6 +80,7 @@ function CityPage() {
       <SEO
         title={`Acroyoga a ${city.name} | Community, Jam e Corsi | AcroFinder`}
         description={`Scopri le community di Acroyoga a ${city.name}, le jam e i corsi disponibili.`}
+        canonical={`https://acrofinder.it/city/${city.slug}`}
       />
 
       <div className="container city-page__container">

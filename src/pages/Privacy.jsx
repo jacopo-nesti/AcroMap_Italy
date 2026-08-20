@@ -4,9 +4,11 @@ import SEO from "../components/SEO"
 function Privacy() {
   return (
     <div className="container-fluid container-xl py-5">
+
       <SEO
         title="Privacy Policy | AcroFinder"
-        description="Consulta la Privacy Policy di AcroFinder e scopri come vengono gestiti i dati personali e le informazioni inviate tramite il sito."
+        description="Consulta l'informativa sulla privacy di AcroFinder."
+        canonical="https://acrofinder.it/privacy"
       />
 
       <div className="row justify-content-center">
