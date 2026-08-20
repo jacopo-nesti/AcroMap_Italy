@@ -500,3 +500,252 @@
     min-height: 11.25rem;
   }
 }
+
+/* Region jams page */
+
+.region-jams-page {
+  min-height: 100vh;
+  padding: 2rem 0 4rem;
+  background: #fbf7ef;
+  color: #183529;
+}
+
+.region-jams-page__header {
+  max-width: 46rem;
+  margin: 2rem 0 2.5rem;
+}
+
+.region-jams-page__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: #edf7fb;
+  color: #1769aa;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.region-jams-page__header h1 {
+  margin: 0;
+  color: #183529;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.region-jams-page__header p {
+  max-width: 38rem;
+  margin: 1rem 0 0;
+  color: #43534c;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.region-jams-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.region-jam-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.35rem;
+  border: 1px solid #b9d8e6;
+  border-radius: 0.9rem;
+  background: #f7fcfe;
+  color: #263d46;
+  box-shadow: 0 0.3rem 1rem rgba(42, 56, 45, 0.045);
+}
+
+.region-jam-card__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.region-jam-card__city {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #1769aa;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.region-jam-card__season {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  background: #e4f2f8;
+  color: #1769aa;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.region-jam-card h2 {
+  margin: 0 0 1rem;
+  color: #183529;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.region-jam-card p {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin: 0 0 0.7rem;
+  color: #43534c;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.region-jam-card p i {
+  flex: 0 0 auto;
+  margin-top: 0.08rem;
+  color: #1769aa;
+}
+
+.region-jam-card__day {
+  font-weight: 700;
+}
+
+.region-jam-card__season-notes {
+  margin-top: 0.25rem !important;
+  color: #5d6d66 !important;
+  font-size: 0.86rem !important;
+  font-style: italic;
+}
+
+.region-jam-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(23, 105, 170, 0.12);
+}
+
+.region-jam-card__actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #1769aa;
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.region-jam-card__actions a:hover {
+  color: #0f527f;
+  text-decoration: underline;
+}
+
+.region-jam-card__actions a:focus-visible {
+  outline: 3px solid rgba(23, 105, 170, 0.28);
+  outline-offset: 3px;
+  border-radius: 0.2rem;
+}
+
+.region-jams-page__empty {
+  padding: 2rem;
+  border: 1px solid rgba(46, 79, 58, 0.12);
+  border-radius: 0.9rem;
+  background: #fffdf9;
+  color: #526159;
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .region-jams-page {
+    padding-top: 1rem;
+  }
+
+  .region-jams-page__header {
+    margin: 1.5rem 0 2rem;
+  }
+
+  .region-jams-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .region-jam-card {
+    padding: 1.15rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .region-jams-page__header h1 {
+    font-size: clamp(2rem, 9vw, 2.5rem);
+  }
+
+  .region-jam-card__top {
+    align-items: flex-start;
+  }
+
+  .region-jam-card__actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.region-cities-panel__jams-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-left: 0.5rem;
+  padding: 0.55rem 0.9rem;
+
+  border: 1px solid #b9d8e6;
+  border-radius: 999px;
+
+  background: #edf7fb;
+  color: #1769aa;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.region-cities-panel__jams-link:hover {
+  border-color: #8fc4d9;
+  background: #e1f2f8;
+  color: #125b91;
+  transform: translateY(-1px);
+}
+
+.region-cities-panel__jams-link .bi-arrow-right {
+  font-size: 0.8rem;
+  transition: transform 0.2s ease;
+}
+
+.region-cities-panel__jams-link:hover .bi-arrow-right {
+  transform: translateX(3px);
+}
+
+.region-cities-panel__jams-link:focus-visible {
+  outline: 3px solid rgba(23, 105, 170, 0.25);
+  outline-offset: 3px;
+}

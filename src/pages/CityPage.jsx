@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import { useParams } from "react-router"
+import { useParams, useSearchParams } from "react-router"
 import CommunityCard from "../components/CommunityCard"
 import CommunityDetails from "../components/CommunityDetails"
 import CityHero from "../components/CityHero"
@@ -10,6 +10,8 @@ import { getCityIcon } from "../utils/cityPresentation"
 
 function CityPage() {
   const { slug } = useParams()
+  const [searchParams] = useSearchParams()
+  const communityParam = searchParams.get("community")
   const { cities, isLoading, error } = useCommunityFinderContext()
   const [openCommunityId, setOpenCommunityId] = useState(null)
   const detailsRef = useRef(null)
@@ -18,8 +20,24 @@ function CityPage() {
   const city = cities.find((city) => city.slug === slug)
 
   useEffect(() => {
-    setOpenCommunityId(null)
-  }, [slug])
+    if (!city || !communityParam) {
+      setOpenCommunityId(null)
+      return
+    }
+
+    const communityId = Number(communityParam)
+
+    const communityExists = city.communities?.some(
+      (community) => community.id === communityId
+    )
+
+    if (communityExists) {
+      setOpenCommunityId(communityId)
+      shouldScrollToDetails.current = true
+    } else {
+      setOpenCommunityId(null)
+    }
+  }, [slug, communityParam, city])
 
   const handleToggleCommunity = (id) => {
     setOpenCommunityId((prevId) => {

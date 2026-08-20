@@ -11,6 +11,7 @@ import Privacy from "./pages/Privacy"
 import Terms from "./pages/Terms"
 import ContactPage from "./pages/ContactPage"
 import MapPage from "./pages/MapPage"
+import RegionJamsPage from "./pages/RegionJamsPage"
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/community" element={<CitiesPage />} />
           <Route path="/city/:slug" element={<CityPage />} />
+          <Route path="/region/:regionSlug/jams" element={<RegionJamsPage />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/contactus" element={<ContactPage />} />
