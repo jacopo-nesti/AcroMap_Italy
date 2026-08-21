@@ -1,7 +1,7 @@
 function CityHero({ city, communitiesCount, jamsCount, coursesCount, iconClass }) {
   const stats = [
     { icon: "bi-people-fill", value: communitiesCount, label: "Community" },
-    { icon: "bi-calendar-event", value: jamsCount, label: jamsCount === 1 ? "Jam settimanale" : "Jam settimanali" },
+    { icon: "bi-calendar-event", value: jamsCount, label: "Jam" },
     { icon: "bi-mortarboard-fill", value: coursesCount, label: coursesCount === 1 ? "Corso attivo" : "Corsi attivi" },
   ]
 

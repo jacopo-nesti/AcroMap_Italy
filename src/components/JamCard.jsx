@@ -19,20 +19,31 @@ const seasonLabels = {
 function JamCard({ jam }) {
   if (!jam) return null
 
+  const isVariable = jam.type === "variable"
   const hasTime = jam.start_time || jam.end_time
-  
   const season = seasonLabels[jam.season]
 
   return (
-    <article className="city-activity-card city-activity-card--jam">
-      {(jam.day || hasTime) && (
+    <article className={`city-activity-card city-activity-card--jam${isVariable ? " city-activity-card--variable" : ""}`}>
+      {isVariable ? (
+        <div className="city-activity-card__heading">
+          <span className="city-activity-card__variable-badge">Jam variabile</span>
+          <i className="bi bi-calendar2-week" aria-hidden="true"></i>
+        </div>
+      ) : (jam.day || hasTime) && (
         <div className="city-activity-card__heading">
           {jam.day && <p className="city-activity-card__day">{jam.day}</p>}
           <i className="bi bi-calendar-event" aria-hidden="true"></i>
         </div>
       )}
 
-      {hasTime && (
+      {isVariable && (
+        <p className="city-activity-card__variable-copy">
+          Giorno, orario e luogo vengono definiti di volta in volta dalla community.
+        </p>
+      )}
+
+      {!isVariable && hasTime && (
         <p className="city-activity-card__time">
           <i className="bi bi-clock" aria-hidden="true"></i>
           {jam.start_time}{jam.end_time ? ` – ${jam.end_time}` : ""}
@@ -56,14 +67,21 @@ function JamCard({ jam }) {
         </div>
       )}
 
-      {jam.location && (
+      {isVariable && jam.updates_method && (
+        <p className="city-activity-card__meta">
+          <i className="bi bi-megaphone-fill" aria-hidden="true"></i>
+          {jam.updates_method}
+        </p>
+      )}
+
+      {!isVariable && jam.location && (
         <p className="city-activity-card__meta">
           <i className="bi bi-geo-alt-fill" aria-hidden="true"></i>
           {jam.location}
         </p>
       )}
 
-      {jam.maps_url && (
+      {!isVariable && jam.maps_url && (
         <a
           href={jam.maps_url}
           target="_blank"
@@ -73,6 +91,18 @@ function JamCard({ jam }) {
         >
           <i className="bi bi-geo-alt-fill" aria-hidden="true"></i>
           Apri su Maps
+        </a>
+      )}
+
+      {isVariable && jam.updates_url && (
+        <a
+          href={jam.updates_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="city-activity-card__updates"
+        >
+          <i className="bi bi-bell-fill" aria-hidden="true"></i>
+          Ricevi gli aggiornamenti
         </a>
       )}
 

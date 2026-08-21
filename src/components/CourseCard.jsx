@@ -90,6 +90,18 @@ function CourseCard({ course }) {
         </a>
       )}
 
+      {course.contact?.url && (
+        <a
+          href={course.contact.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="city-activity-card__contact"
+        >
+          <i className="bi bi-chat-dots-fill" aria-hidden="true"></i>
+          {course.contact.label || "Chiedi informazioni"}
+        </a>
+      )}
+
       {course.notes && (
         <p className="city-activity-card__notes">{course.notes}</p>
       )}

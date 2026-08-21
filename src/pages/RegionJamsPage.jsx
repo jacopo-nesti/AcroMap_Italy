@@ -68,7 +68,7 @@ function RegionJamsPage() {
 
       <SEO
         title={`Jam di Acroyoga in ${regionName} | AcroFinder`}
-        description={`Scopri tutte le jam di Acroyoga disponibili in ${regionName}, con città, orari, luoghi e community.`}
+        description={`Scopri tutte le jam di Acroyoga disponibili in ${regionName}, con città, dettagli e community di riferimento.`}
         canonical={`https://acrofinder.it/region/${regionSlug}/jams`}
       />
 
@@ -95,11 +95,14 @@ function RegionJamsPage() {
           </p>
         ) : (
           <div className="region-jams-grid">
-            {jams.map((jam, index) => (
-              <article
-                key={`${jam.city.slug}-${jam.community.id}-${jam.id || index}`}
-                className="region-jam-card"
-              >
+            {jams.map((jam, index) => {
+              const isVariable = jam.type === "variable"
+
+              return (
+                <article
+                  key={`${jam.city.slug}-${jam.community.id}-${jam.id || index}`}
+                  className={`region-jam-card${isVariable ? " region-jam-card--variable" : ""}`}
+                >
                 <div className="region-jam-card__top">
 
                   <span className="region-jam-card__city">
@@ -107,24 +110,38 @@ function RegionJamsPage() {
                     {jam.city.name}
                   </span>
 
-                  {jam.season && (
-                    <span className="region-jam-card__season">
-                      {jam.season === "summer" && "Estiva"}
-                      {jam.season === "winter" && "Invernale"}
-                      {jam.season === "all-year" && "Tutto l'anno"}
-                    </span>
-                  )}
+                  <div className="region-jam-card__badges">
+                    {isVariable && (
+                      <span className="region-jam-card__variable-badge">
+                        Jam variabile
+                      </span>
+                    )}
+
+                    {jam.season && (
+                      <span className="region-jam-card__season">
+                        {jam.season === "summer" && "Estiva"}
+                        {jam.season === "winter" && "Invernale"}
+                        {jam.season === "all-year" && "Tutto l'anno"}
+                      </span>
+                    )}
+                  </div>
 
                 </div>
 
                 <h2>{jam.community.name}</h2>
 
-                <p className="region-jam-card__day">
-                  <i className="bi bi-calendar-event" aria-hidden="true"></i>
-                  {jam.day}
-                </p>
+                {isVariable ? (
+                  <p className="region-jam-card__variable-copy">
+                    Giorno, orario e luogo vengono definiti di volta in volta dalla community.
+                  </p>
+                ) : jam.day && (
+                  <p className="region-jam-card__day">
+                    <i className="bi bi-calendar-event" aria-hidden="true"></i>
+                    {jam.day}
+                  </p>
+                )}
 
-                {(jam.start_time || jam.end_time) && (
+                {!isVariable && (jam.start_time || jam.end_time) && (
                   <p>
                     <i className="bi bi-clock" aria-hidden="true"></i>
                     {jam.start_time}
@@ -132,7 +149,7 @@ function RegionJamsPage() {
                   </p>
                 )}
 
-                {jam.location && (
+                {!isVariable && jam.location && (
                   <p>
                     <i className="bi bi-geo-alt" aria-hidden="true"></i>
                     {jam.location}
@@ -145,9 +162,20 @@ function RegionJamsPage() {
                   </p>
                 )}
 
+                {isVariable && jam.updates_method && (
+                  <p>
+                    <i className="bi bi-megaphone-fill" aria-hidden="true"></i>
+                    {jam.updates_method}
+                  </p>
+                )}
+
+                {isVariable && jam.notes && (
+                  <p className="region-jam-card__notes">{jam.notes}</p>
+                )}
+
                 <div className="region-jam-card__actions">
 
-                  {jam.maps_url && (
+                  {!isVariable && jam.maps_url && (
                     <a
                       href={jam.maps_url}
                       target="_blank"
@@ -155,6 +183,17 @@ function RegionJamsPage() {
                     >
                       <i className="bi bi-geo-alt-fill" aria-hidden="true"></i>
                       Apri su Maps
+                    </a>
+                  )}
+
+                  {isVariable && jam.updates_url && (
+                    <a
+                      href={jam.updates_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="bi bi-bell-fill" aria-hidden="true"></i>
+                      Ricevi gli aggiornamenti
                     </a>
                   )}
 
@@ -166,8 +205,9 @@ function RegionJamsPage() {
                     </Link>
 
                 </div>
-              </article>
-            ))}
+                </article>
+              )
+            })}
           </div>
         )}
       </div>

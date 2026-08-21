@@ -582,6 +582,24 @@
   font-weight: 700;
 }
 
+.region-jam-card__badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.45rem;
+}
+
+.region-jam-card__variable-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  background: #d7ebf4;
+  color: #125b91;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
 .region-jam-card__season {
   display: inline-flex;
   align-items: center;
@@ -622,11 +640,26 @@
   font-weight: 700;
 }
 
+.region-jam-card .region-jam-card__variable-copy {
+  display: block;
+  margin-bottom: 0.9rem;
+  border-left: 3px solid #75b5cf;
+  background: rgba(220, 238, 246, 0.55);
+  padding: 0.7rem 0.8rem;
+  color: #294f60;
+  font-weight: 650;
+}
+
 .region-jam-card__season-notes {
   margin-top: 0.25rem !important;
   color: #5d6d66 !important;
   font-size: 0.86rem !important;
   font-style: italic;
+}
+
+.region-jam-card .region-jam-card__notes {
+  color: #52645c;
+  font-size: 0.88rem;
 }
 
 .region-jam-card__actions {
@@ -641,7 +674,9 @@
 
 .region-jam-card__actions a {
   display: inline-flex;
+  min-height: 44px;
   align-items: center;
+  justify-content: center;
   gap: 0.4rem;
   color: #1769aa;
   font-size: 0.86rem;
@@ -694,6 +729,10 @@
 
   .region-jam-card__top {
     align-items: flex-start;
+  }
+
+  .region-jam-card__badges {
+    justify-content: flex-start;
   }
 
   .region-jam-card__actions {

@@ -15,7 +15,7 @@ function CommunityCard({ community, isOpen, onToggle, controlsId }) {
         <div className="city-community-card__meta">
           <span>
             <i className="bi bi-calendar-event" aria-hidden="true"></i>
-            {jamsCount} {jamsCount === 1 ? "Jam settimanale" : "Jam settimanali"}
+            {jamsCount} Jam
           </span>
           <span>
             <i className="bi bi-mortarboard" aria-hidden="true"></i>

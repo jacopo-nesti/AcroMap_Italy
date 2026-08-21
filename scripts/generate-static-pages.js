@@ -180,7 +180,7 @@ for (const [regionName, regionCities] of regions) {
   createPage(
     route,
     `Jam di Acroyoga in ${regionName} | AcroFinder`,
-    `Scopri tutte le jam di Acroyoga disponibili in ${regionName}, con città, orari, luoghi e community.`
+    `Scopri tutte le jam di Acroyoga disponibili in ${regionName}, con città, dettagli e community di riferimento.`
   )
 
   urls.push(`${SITE_URL}${route}`)
