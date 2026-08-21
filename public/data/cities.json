@@ -572,5 +572,112 @@
         "courses": []
       }
     ]
-  }
+  },
+  {
+  "id": 10,
+  "slug": "torino",
+  "name": "Torino",
+  "region": "Piemonte",
+  "province": "Torino",
+  "coordinates": {
+    "lat": 45.0703,
+    "lng": 7.6869
+  },
+  "communities": [
+    {
+      "id": 1,
+      "name": "Acroyoga Torino",
+      "description": "Community di Acroyoga molto vasta con diversi corsi settimanali e jam organizzate spontaneamente dai partecipanti.",
+      "whatsapp": "",
+      "instagram": "",
+      "facebook": "",
+      "website": "",
+      "jams": [
+        {
+          "id": 1,
+          "day": "Tutti i giorni",
+          "start_time": "17:00",
+          "end_time": "20:00",
+          "location": "Parchi e spazi verdi",
+          "maps_url": "https://maps.app.goo.gl/Ku275U2fxEuz7kFt7?g_st=ac",
+          "season": "all-year",
+          "season_notes": "Tutto l'anno",
+          "notes": "Le jam si tengono in parchi e spazi verdi nel periodo estivo e si può partecipare gratuitamente. In inverno, per le jam al chiuso si divide tra i partecipanti il costo della sala."
+        }
+      ],
+      "courses": [
+        {
+          "id": 1,
+          "name": "Acroyoga Base",
+          "teachers": [
+            "Tancredi",
+            "Vittoria"
+          ],
+          "day": "Mercoledì",
+          "start_time": "21:00",
+          "end_time": "22:30",
+          "location": "Acropole Garden",
+          "maps_url": "https://maps.app.goo.gl/jxP91Ct18pfq5nsz7?g_st=ac",
+          "level": "Beginner",
+          "season": "all-year",
+          "season_notes": "Da settembre a luglio",
+          "notes": ""
+        },
+        {
+          "id": 2,
+          "name": "Acroyoga Intermedio",
+          "teachers": [
+            "Stella",
+            "Sebastiano"
+          ],
+          "day": "Lunedì",
+          "start_time": "21:00",
+          "end_time": "22:30",
+          "location": "Acropole Garden",
+          "maps_url": "https://maps.app.goo.gl/jxP91Ct18pfq5nsz7?g_st=ac",
+          "level": "Intermediate",
+          "season": "all-year",
+          "season_notes": "Da settembre a luglio",
+          "notes": ""
+        },
+        {
+          "id": 3,
+          "name": "Acroyoga Avanzato",
+          "teachers": [
+            "Stella",
+            "Sebastiano"
+          ],
+          "day": "Giovedì",
+          "start_time": "21:00",
+          "end_time": "22:30",
+          "location": "Acropole Garden",
+          "maps_url": "https://maps.app.goo.gl/jxP91Ct18pfq5nsz7?g_st=ac",
+          "level": "Advanced",
+          "season": "all-year",
+          "season_notes": "Da settembre a luglio",
+          "notes": ""
+        },
+        {
+          "id": 4,
+          "name": "Practice Time",
+          "teachers": [
+            "Tancredi",
+            "Vittoria",
+            "Stella",
+            "Sebastiano"
+          ],
+          "day": "Venerdì",
+          "start_time": "20:30",
+          "end_time": "22:00",
+          "location": "Acropole Garden",
+          "maps_url": "https://maps.app.goo.gl/jxP91Ct18pfq5nsz7?g_st=ac",
+          "level": "All Levels",
+          "season": "all-year",
+          "season_notes": "Da settembre a luglio",
+          "notes": "Spazio di pratica libera e jam supervisionata dagli insegnanti della scuola, riservata ai corsisti."
+        }
+      ]
+    }
+  ]
+}
 ]
