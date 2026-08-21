@@ -14,13 +14,14 @@
         "id": 1,
         "name": "Acroyoga Firenze",
         "description": "Community di Acroyoga a Firenze con jam settimanali, corsi per diversi livelli e occasioni di pratica durante tutto l'anno.",
-        "whatsapp": "",
+        "whatsapp": null,
         "instagram": "https://www.instagram.com/florence.acroyoga/",
-        "facebook": "",
-        "website": "",
+        "facebook": null,
+        "website": null,
         "jams": [
           {
             "id": 1,
+            "type": "recurring",
             "day": "Lunedì",
             "start_time": "19:00",
             "end_time": "22:00",
@@ -28,10 +29,13 @@
             "maps_url": "https://maps.app.goo.gl/44wg3AyuxBYEMc3v8",
             "season": "summer",
             "season_notes": "Da giugno a settembre/ottobre, in base al meteo",
+            "updates_method": null,
+            "updates_url": null,
             "notes": "Jam outdoor"
           },
           {
             "id": 2,
+            "type": "recurring",
             "day": "Giovedì",
             "start_time": "18:30",
             "end_time": "21:30",
@@ -39,7 +43,23 @@
             "maps_url": "https://maps.app.goo.gl/huw2yLSZmEToWr869",
             "season": "winter",
             "season_notes": "Indicativamente da ottobre a maggio",
-            "notes": "Jam indoor in palestra, tatami presenti"
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "Jam indoor in palestra, tatami presenti. Contributo mensile."
+          },
+          {
+            "id": 3,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": "Parco delle Cascine o Giardino dell'Orticoltura",
+            "maps_url": null,
+            "season": "summer",
+            "season_notes": "Da quando inizia a fare bel tempo",
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "Luogo e orario soggetto a variazioni. Spesso vengono organizzate altre jam oltre a quella fisse, autogestite dai partecipanti. Si consiglia di contattare direttamente la community per maggiori informazioni."
           }
         ],
         "courses": [
@@ -57,7 +77,11 @@
             "level": "Advanced",
             "season": "winter",
             "season_notes": "Indicativamente da ottobre a maggio",
-            "notes": "Tatami presenti"
+            "notes": "Tatami presenti. Contributo per lezione: 5€.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://www.instagram.com/jacropoyoga"
+            }
           },
           {
             "id": 2,
@@ -73,7 +97,11 @@
             "level": "Intermediate",
             "season": "winter",
             "season_notes": "Indicativamente da ottobre a maggio",
-            "notes": "Tatami presenti"
+            "notes": "Tatami presenti. Contributo per lezione: 5€.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://www.instagram.com/jacropoyoga"
+            }
           },
           {
             "id": 3,
@@ -89,7 +117,8 @@
             "level": "Beginner",
             "season": "winter",
             "season_notes": "Indicativamente da ottobre a maggio",
-            "notes": "Tatami presenti"
+            "notes": "Tatami presenti. Contributo per lezione: 5€.",
+            "contact": null
           },
           {
             "id": 4,
@@ -105,7 +134,11 @@
             "level": "All Levels",
             "season": "winter",
             "season_notes": "Indicativamente da ottobre a maggio",
-            "notes": "Tatami presenti"
+            "notes": "Tatami presenti",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://www.yogafirenze.it/"
+            }
           }
         ]
       }
@@ -126,20 +159,23 @@
         "id": 1,
         "name": "Acroyoga Pisa",
         "description": "Community di Acroyoga molto attiva a Pisa, con corsi e momenti di pratica regolari e diversi workshop organizzati durante l'anno.",
-        "whatsapp": "",
+        "whatsapp": null,
         "instagram": "https://www.instagram.com/acroyogapisa/",
         "facebook": "https://www.facebook.com/AcroyogaPisaLindaPalazzolo/?locale=it_IT",
         "website": "https://spazioyogamente.com/",
         "jams": [
           {
             "id": 1,
+            "type": "recurring",
             "day": "Venerdì",
             "start_time": "19:30",
             "end_time": "21:00",
             "location": "Spazio YogaMente",
             "maps_url": "https://maps.app.goo.gl/A3scNznZcvSUEFmM6",
-            "season": "",
-            "season_notes": "",
+            "season": null,
+            "season_notes": null,
+            "updates_method": null,
+            "updates_url": null,
             "notes": "Jam indoor in palestra, tatami presenti"
           }
         ],
@@ -159,7 +195,8 @@
             "level": "All Levels",
             "season": "winter",
             "season_notes": "Da settembre a maggio",
-            "notes": "Palestra attrezzata con tatami"
+            "notes": "Palestra attrezzata con tatami",
+            "contact": null
           },
           {
             "id": 2,
@@ -176,7 +213,8 @@
             "level": "All Levels",
             "season": "winter",
             "season_notes": "Da settembre a maggio",
-            "notes": "Palestra attrezzata con tatami"
+            "notes": "Palestra attrezzata con tatami",
+            "contact": null
           }
         ]
       }
@@ -199,18 +237,21 @@
         "description": "Community di Acroyoga a Lucca con momenti di pratica e jam aperte alla community locale.",
         "whatsapp": "https://chat.whatsapp.com/L5ESscjRfygCnidcLA0BfM",
         "instagram": "https://www.instagram.com/acroyogalucca/",
-        "facebook": "",
-        "website": "",
+        "facebook": null,
+        "website": null,
         "jams": [
           {
             "id": 1,
+            "type": "recurring",
             "day": "Martedì",
             "start_time": "19:00",
             "end_time": "21:00",
             "location": "Mura di Lucca",
             "maps_url": "https://maps.app.goo.gl/U41iGPDa8Td4EYvP6",
             "season": "summer",
-            "season_notes": "",
+            "season_notes": null,
+            "updates_method": null,
+            "updates_url": null,
             "notes": "Jam outdoor, portare tappetino"
           }
         ],
@@ -235,8 +276,8 @@
         "description": "Community di Acroyoga a Faenza con corsi dedicati a diversi livelli di esperienza.",
         "whatsapp": "https://chat.whatsapp.com/EayIqK0TuLL0N4FKtSpnyJ",
         "instagram": "https://www.instagram.com/duoaliento/",
-        "facebook": "",
-        "website": "",
+        "facebook": null,
+        "website": null,
         "jams": [],
         "courses": [
           {
@@ -254,7 +295,8 @@
             "level": "Beginner",
             "season": "winter",
             "season_notes": "Da settembre a maggio",
-            "notes": "Ex Fiera di Faenza, padiglione B. Insegnanti: Duo Aliento."
+            "notes": "Ex Fiera di Faenza, padiglione B. Insegnanti: Duo Aliento.",
+            "contact": null
           },
           {
             "id": 2,
@@ -271,272 +313,294 @@
             "level": "Intermediate",
             "season": "winter",
             "season_notes": "Da settembre a maggio",
-            "notes": "Ex Fiera di Faenza, padiglione B. Insegnanti: Duo Aliento."
+            "notes": "Ex Fiera di Faenza, padiglione B. Insegnanti: Duo Aliento.",
+            "contact": null
           }
         ]
       }
     ]
   },
   {
-  "id": 5,
-  "slug": "roma",
-  "name": "Roma",
-  "region": "Lazio",
-  "province": "Roma",
-  "coordinates": {
-    "lat": 41.9028,
-    "lng": 12.4964
-  },
-  "communities": [
-    {
-      "id": 1,
-      "name": "Acroyoga Roma",
-      "description": "Community di Acroyoga a Roma con corsi open level e occasioni per praticare, imparare e condividere l'Acroyoga insieme.",
-      "whatsapp": "",
-      "instagram": "https://www.instagram.com/acroyoga.roma/",
-      "facebook": "",
-      "website": "https://www.jayoga.it/",
-      "jams": [],
-      "courses": [
-        {
-          "id": 1,
-          "name": "Corso Open Level",
-          "teachers": [
-            "Sofia",
-            "Angelo"
-          ],
-          "day": "Martedì",
-          "start_time": "20:30",
-          "end_time": "22:15",
-          "location": "Centro Jayoga",
-          "maps_url": "https://maps.app.goo.gl/9zr2wKJPcDNBmBP26",
-          "level": "All Levels",
-          "season": "",
-          "season_notes": "",
-          "notes": "Il Centro Yoga si trova a pochi minuti a piedi dalla fermata Metro A “Porta Furba Quadraro” (zona Tuscolana)."
-        },
-        {
-          "id": 2,
-          "name": "Corso Open Level",
-          "teachers": [
-            "Sofia",
-            "Angelo"
-          ],
-          "day": "Giovedì",
-          "start_time": "20:30",
-          "end_time": "22:15",
-          "location": "Centro Jayoga",
-          "maps_url": "https://maps.app.goo.gl/9zr2wKJPcDNBmBP26",
-          "level": "All Levels",
-          "season": "",
-          "season_notes": "",
-          "notes": "Il Centro Yoga si trova a pochi minuti a piedi dalla fermata Metro A “Porta Furba Quadraro” (zona Tuscolana)."
-        }
-      ]
-    }
-  ]
-},
-{
-  "id": 6,
-  "slug": "lugo",
-  "name": "Lugo",
-  "region": "Emilia-Romagna",
-  "province": "Ravenna",
-  "coordinates": {
-    "lat": 44.4214,
-    "lng": 11.9117
-  },
-  "communities": [
-    {
-      "id": 1,
-      "name": "AcroSomething Kune",
-      "description": "Community di Acroyoga a Lugo con corsi e occasioni di pratica durante l'anno, guidata da Faby e Teo, insegnanti certificati AcroFusion.",
-      "whatsapp": "https://chat.whatsapp.com/FwMfXgg9aegJ7srOQj7U2G?s=sh&p=a&ilr=1",
-      "instagram": "https://www.instagram.com/acrosomething_kune?igsh=MTFva2dwNXI0ZnFubQ==&igsi=MTFva2dwNXI0ZnFubQ==",
-      "facebook": "https://www.facebook.com/share/1HKpXePhf4/",
-      "website": "",
-      "jams": [
-        {
-          "id": 1,
-          "day": "Prima domenica del mese",
-          "start_time": "15:00",
-          "end_time": "19:00",
-          "location": "Ravenna",
-          "maps_url": "",
-          "season": "winter",
-          "season_notes": "Da ottobre a giugno",
-          "notes": "Per maggiori informazioni contattare la community sui social."
-        }
-      ],
-      "courses": [
-        {
-          "id": 1,
-          "name": "Corso di Acroyoga Multilivello",
-          "teachers": [
-            "Faby",
-            "Teo"
-          ],
-          "day": "Mercoledì",
-          "start_time": "20:00",
-          "end_time": "21:30",
-          "location": "Centro Studi Danza e Musical, Via Gastaldi 16, Lugo",
-          "maps_url": "https://maps.app.goo.gl/LCrtRaWu9sDBgJtW8?g_st=ac",
-          "level": "Intermediate",
-          "season": "all-year",
-          "season_notes": "Da ottobre a luglio",
-          "notes": "Presenza di tatami. Diverse tipologie di abbonamento. Per maggiori informazioni contattare la community sui social."
-        }
-      ]
-    }
-  ]
-},
-{
-  "id": 7,
-  "slug": "pavia",
-  "name": "Pavia",
-  "region": "Lombardia",
-  "province": "Pavia",
-  "coordinates": {
-    "lat": 45.1847,
-    "lng": 9.1582
-  },
-  "communities": [
-    {
-      "id": 1,
-      "name": "Acroyoga Pavia",
-      "description": "Community di Acroyoga a Pavia.",
-      "whatsapp": "",
-      "instagram": "https://www.instagram.com/acroyogapavia/",
-      "facebook": "",
-      "website": "",
-      "jams": [],
-      "courses": []
-    }
-  ]
-},
-{
-  "id": 8,
-  "slug": "milano",
-  "name": "Milano",
-  "region": "Lombardia",
-  "province": "Milano",
-  "coordinates": {
-    "lat": 45.4642,
-    "lng": 9.19
-  },
-  "communities": [
-    {
-      "id": 1,
-      "name": "Spazio Terzo Tempo Ululí",
-      "description": "Community di Acroyoga a Milano con corsi base e intermedi e occasioni di pratica durante l'anno.",
-      "whatsapp": "",
-      "instagram": "https://www.instagram.com/terzotempoululi_scuoladicirco?igsi=ZXFvbjVmOXZlb2Y=",
-      "facebook": "https://www.facebook.com/share/1JkV5VEgVu/",
-      "website": "https://www.terzotempoululi.com",
-      "jams": [
-        {
-          "id": 1,
-          "day": "Domenica",
-          "start_time": "15:00",
-          "end_time": "18:00",
-          "location": "Spazio Terzo Tempo Ululí",
-          "maps_url": "https://maps.app.goo.gl/pVHNNVMFPSpbDeDZ6",
-          "season": "all-year",
-          "season_notes": "Le date vengono pubblicate sui social",
-          "notes": "Ingresso solo con tessera associativa"
-        }
-      ],
-      "courses": [
-        {
-          "id": 1,
-          "name": "Acroyoga",
-          "teachers": [
-            "Monica Abruzzi",
-            "Gino Menozzi"
-          ],
-          "day": "Martedì",
-          "start_time": "20:30",
-          "end_time": "22:30",
-          "location": "Spazio Terzo Tempo Ululí",
-          "maps_url": "https://maps.app.goo.gl/eY67eQpWJtgK8jBo6",
-          "level": "Intermediate",
-          "season": "all-year",
-          "season_notes": "Da fine settembre a fine giugno",
-          "notes": "Lezione di prova gratuita. Altre informazioni sul sito della community."
-        },
-        {
-          "id": 2,
-          "name": "Corso di Acroyoga",
-          "teachers": [
-            "Monica Abruzzi",
-            "Gino Menozzi"
-          ],
-          "day": "Giovedì",
-          "start_time": "20:45",
-          "end_time": "22:45",
-          "location": "Spazio Terzo Tempo Ululí",
-          "maps_url": "https://maps.app.goo.gl/eY67eQpWJtgK8jBo6",
-          "level": "Beginner",
-          "season": "all-year",
-          "season_notes": "Da fine settembre a fine giugno",
-          "notes": "Lezione di prova gratuita. Altre informazioni sul sito della community."
-        }
-      ]
+    "id": 5,
+    "slug": "roma",
+    "name": "Roma",
+    "region": "Lazio",
+    "province": "Roma",
+    "coordinates": {
+      "lat": 41.9028,
+      "lng": 12.4964
     },
-    {
-      "id": 2,
-      "name": "AcroYoga Milano",
-      "description": "Community di Acroyoga sviluppata principalmente nella zona nord di Milano, inclusiva e aperta a chiunque passi dalla città.",
-      "whatsapp": "https://chat.whatsapp.com/JnEUwPwu0UK8brHmToIEUH?s=cl&p=a&ilr=0",
-      "instagram": "",
-      "facebook": "https://www.facebook.com/share/g/1M2CYaYQKf/",
-      "website": "",
-      "jams": [
-        {
-          "id": 1,
-          "day": "Lunedì",
-          "start_time": "21:00",
-          "end_time": "23:00",
-          "location": "Moma41",
-          "maps_url": "https://maps.app.goo.gl/N2AEUEoXwXaHdZUE7",
-          "season": "all-year",
-          "season_notes": "Indicativamente da ottobre fino a fine giugno",
-          "notes": "Contributo per l'affitto della sala: 5 €"
-        },
-        {
-          "id": 2,
-          "day": "Tutti i giorni",
-          "start_time": "18:30",
-          "end_time": "23:00",
-          "location": "Parco Biblioteca degli Alberi",
-          "maps_url": "https://maps.app.goo.gl/HqZspEm2Gxousbjk6?g_st=aw",
-          "season": "summer",
-          "season_notes": "Da quando inizia a fare bel tempo",
-          "notes": "Jam aperta a tutti"
-        }
-      ],
-      "courses": [
-        {
-          "id": 1,
-          "name": "Corso Multilevel",
-          "teachers": [
-            "Abele",
-            "Stefania"
-          ],
-          "day": "Giovedì",
-          "start_time": "19:30",
-          "end_time": "21:00",
-          "location": "San Dao Sesto",
-          "maps_url": "https://maps.app.goo.gl/6FVNgtbhm8Lyeho36",
-          "level": "All Levels",
-          "season": "winter",
-          "season_notes": "Da metà settembre fino alla fine di maggio",
-          "notes": "Prima lezione gratuita"
-        }
-      ]
-    }
-  ]
-},
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acroyoga Roma",
+        "description": "Community di Acroyoga a Roma con corsi open level e occasioni per praticare, imparare e condividere l'Acroyoga insieme.",
+        "whatsapp": null,
+        "instagram": "https://www.instagram.com/acroyoga.roma/",
+        "facebook": null,
+        "website": "https://www.jayoga.it/",
+        "jams": [],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Open Level",
+            "teachers": [
+              "Sofia",
+              "Angelo"
+            ],
+            "day": "Martedì",
+            "start_time": "20:30",
+            "end_time": "22:15",
+            "location": "Centro Jayoga",
+            "maps_url": "https://maps.app.goo.gl/9zr2wKJPcDNBmBP26",
+            "level": "All Levels",
+            "season": null,
+            "season_notes": null,
+            "notes": "Il Centro Yoga si trova a pochi minuti a piedi dalla fermata Metro A “Porta Furba Quadraro” (zona Tuscolana).",
+            "contact": null
+          },
+          {
+            "id": 2,
+            "name": "Corso Open Level",
+            "teachers": [
+              "Sofia",
+              "Angelo"
+            ],
+            "day": "Giovedì",
+            "start_time": "20:30",
+            "end_time": "22:15",
+            "location": "Centro Jayoga",
+            "maps_url": "https://maps.app.goo.gl/9zr2wKJPcDNBmBP26",
+            "level": "All Levels",
+            "season": null,
+            "season_notes": null,
+            "notes": "Il Centro Yoga si trova a pochi minuti a piedi dalla fermata Metro A “Porta Furba Quadraro” (zona Tuscolana).",
+            "contact": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "lugo",
+    "name": "Lugo",
+    "region": "Emilia-Romagna",
+    "province": "Ravenna",
+    "coordinates": {
+      "lat": 44.4214,
+      "lng": 11.9117
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "AcroSomething Kune",
+        "description": "Community di Acroyoga a Lugo con corsi e occasioni di pratica durante l'anno, guidata da Faby e Teo, insegnanti certificati AcroFusion.",
+        "whatsapp": "https://chat.whatsapp.com/FwMfXgg9aegJ7srOQj7U2G?s=sh&p=a&ilr=1",
+        "instagram": "https://www.instagram.com/acrosomething_kune?igsh=MTFva2dwNXI0ZnFubQ==&igsi=MTFva2dwNXI0ZnFubQ==",
+        "facebook": "https://www.facebook.com/share/1HKpXePhf4/",
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "recurring",
+            "day": "Prima domenica del mese",
+            "start_time": "15:00",
+            "end_time": "19:00",
+            "location": "Ravenna",
+            "maps_url": null,
+            "season": "winter",
+            "season_notes": "Da ottobre a giugno",
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "Per maggiori info contattateci al 348 4784927"
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso di Acroyoga Multilivello",
+            "teachers": [
+              "Faby",
+              "Teo"
+            ],
+            "day": "Mercoledì",
+            "start_time": "20:00",
+            "end_time": "21:30",
+            "location": "Centro Studi Danza e Musical, Via Gastaldi 16, Lugo",
+            "maps_url": "https://maps.app.goo.gl/LCrtRaWu9sDBgJtW8?g_st=ac",
+            "level": "Intermediate",
+            "season": "all-year",
+            "season_notes": "Da ottobre a luglio",
+            "notes": "Presenza di tatami. Diverse tipologie di abbonamento. Per maggiori info contattateci al 348 4784927",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/3484784927"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "pavia",
+    "name": "Pavia",
+    "region": "Lombardia",
+    "province": "Pavia",
+    "coordinates": {
+      "lat": 45.1847,
+      "lng": 9.1582
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acroyoga Pavia",
+        "description": "Community di Acroyoga a Pavia.",
+        "whatsapp": null,
+        "instagram": "https://www.instagram.com/acroyogapavia/",
+        "facebook": null,
+        "website": null,
+        "jams": [],
+        "courses": []
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "milano",
+    "name": "Milano",
+    "region": "Lombardia",
+    "province": "Milano",
+    "coordinates": {
+      "lat": 45.4642,
+      "lng": 9.19
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Spazio Terzo Tempo Ululí",
+        "description": "Community di Acroyoga a Milano con corsi base e intermedi e occasioni di pratica durante l'anno.",
+        "whatsapp": null,
+        "instagram": "https://www.instagram.com/terzotempoululi_scuoladicirco?igsi=ZXFvbjVmOXZlb2Y=",
+        "facebook": "https://www.facebook.com/share/1JkV5VEgVu/",
+        "website": "https://www.terzotempoululi.com",
+        "jams": [
+          {
+            "id": 1,
+            "type": "recurring",
+            "day": "Domenica",
+            "start_time": "15:00",
+            "end_time": "18:00",
+            "location": "Spazio Terzo Tempo Ululí",
+            "maps_url": "https://maps.app.goo.gl/pVHNNVMFPSpbDeDZ6",
+            "season": "all-year",
+            "season_notes": "Le date vengono pubblicate sui social",
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "Ingresso solo con tessera associativa"
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Acroyoga",
+            "teachers": [
+              "Monica Abruzzi",
+              "Gino Menozzi"
+            ],
+            "day": "Martedì",
+            "start_time": "20:30",
+            "end_time": "22:30",
+            "location": "Spazio Terzo Tempo Ululí",
+            "maps_url": "https://maps.app.goo.gl/eY67eQpWJtgK8jBo6",
+            "level": "Intermediate",
+            "season": "all-year",
+            "season_notes": "Da fine settembre a fine giugno",
+            "notes": "Lezione di prova gratuita. Altre informazioni sul sito della community.",
+            "contact": null
+          },
+          {
+            "id": 2,
+            "name": "Corso di Acroyoga",
+            "teachers": [
+              "Monica Abruzzi",
+              "Gino Menozzi"
+            ],
+            "day": "Giovedì",
+            "start_time": "20:45",
+            "end_time": "22:45",
+            "location": "Spazio Terzo Tempo Ululí",
+            "maps_url": "https://maps.app.goo.gl/eY67eQpWJtgK8jBo6",
+            "level": "Beginner",
+            "season": "all-year",
+            "season_notes": "Da fine settembre a fine giugno",
+            "notes": "Lezione di prova gratuita. Altre informazioni sul sito della community.",
+            "contact": null
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "AcroYoga Milano",
+        "description": "Community di Acroyoga sviluppata principalmente nella zona nord di Milano, inclusiva e aperta a chiunque passi dalla città.",
+        "whatsapp": "https://chat.whatsapp.com/JnEUwPwu0UK8brHmToIEUH?s=cl&p=a&ilr=0",
+        "instagram": null,
+        "facebook": "https://www.facebook.com/share/g/1M2CYaYQKf/",
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "recurring",
+            "day": "Lunedì",
+            "start_time": "21:00",
+            "end_time": "23:00",
+            "location": "Moma41",
+            "maps_url": "https://maps.app.goo.gl/N2AEUEoXwXaHdZUE7",
+            "season": "all-year",
+            "season_notes": "Indicativamente da ottobre fino a fine giugno",
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "Contributo per l'affitto della sala: 5 €"
+          },
+          {
+            "id": 2,
+            "type": "recurring",
+            "day": "Tutti i giorni",
+            "start_time": "18:30",
+            "end_time": "23:00",
+            "location": "Parco Biblioteca degli Alberi",
+            "maps_url": "https://maps.app.goo.gl/HqZspEm2Gxousbjk6?g_st=aw",
+            "season": "summer",
+            "season_notes": "Da quando inizia a fare bel tempo",
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "Jam aperta a tutti"
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Multilevel",
+            "teachers": [
+              "Abele",
+              "Stefania"
+            ],
+            "day": "Giovedì",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "location": "San Dao Sesto",
+            "maps_url": "https://maps.app.goo.gl/6FVNgtbhm8Lyeho36",
+            "level": "All Levels",
+            "season": "winter",
+            "season_notes": "Da metà settembre fino alla fine di maggio",
+            "notes": "Prima lezione gratuita",
+            "contact": null
+          }
+        ]
+      }
+    ]
+  },
   {
     "id": 9,
     "slug": "palermo",
@@ -554,11 +618,12 @@
         "description": "Comunità di Acroyoga a Palermo",
         "whatsapp": "https://chat.whatsapp.com/L5ndtV26F61Gky52mifaVv?s=cl&p=a&ilr=1",
         "instagram": "https://www.instagram.com/acro.palermo",
-        "facebook": "",
-        "website": "",
+        "facebook": null,
+        "website": null,
         "jams": [
           {
             "id": 1,
+            "type": "recurring",
             "day": "Lunedì",
             "start_time": "18:00",
             "end_time": "22:00",
@@ -566,10 +631,140 @@
             "maps_url": "https://maps.app.goo.gl/8ikXV9DcY7tWjBx76",
             "season": "all-year",
             "season_notes": "Tutto l’anno",
-            "notes": "Luogo soggetto a variazioni. Spesso vengono organizzate altre jam oltre a quella del lunedì, autogestite dai partecipanti; giorno, orario e luogo possono variare."
+            "updates_method": null,
+            "updates_url": null,
+            "notes": null
+          },
+          {
+            "id": 2,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": "Foro Italico (all'aperto), EPYC (al chiuso)",
+            "maps_url": "https://maps.app.goo.gl/8ikXV9DcY7tWjBx76",
+            "season": "all-year",
+            "season_notes": "Tutto l’anno",
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "Luogo e orario soggetto a variazioni. Spesso vengono organizzate altre jam oltre a quella fisse, autogestite dai partecipanti. Si consiglia di contattare direttamente la community per maggiori informazioni."
           }
         ],
         "courses": []
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "torino",
+    "name": "Torino",
+    "region": "Piemonte",
+    "province": "Torino",
+    "coordinates": {
+      "lat": 45.0703,
+      "lng": 7.6869
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acroyoga Torino",
+        "description": "Community di Acroyoga molto vasta con diversi corsi settimanali e jam organizzate spontaneamente dai partecipanti.",
+        "whatsapp": null,
+        "instagram": null,
+        "facebook": null,
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "all-year",
+            "season_notes": null,
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "Le jam vengono organizzate spontaneamente dai partecipanti. Nel periodo estivo si tengono in parchi e spazi verdi e si può partecipare gratuitamente. In inverno, per le jam al chiuso, il costo della sala viene diviso tra i partecipanti."
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Acroyoga Base",
+            "teachers": [
+              "Tancredi",
+              "Vittoria"
+            ],
+            "day": "Mercoledì",
+            "start_time": "21:00",
+            "end_time": "22:30",
+            "location": "Acropole Garden",
+            "maps_url": "https://maps.app.goo.gl/jxP91Ct18pfq5nsz7?g_st=ac",
+            "level": "Beginner",
+            "season": "all-year",
+            "season_notes": "Da settembre a luglio",
+            "notes": null,
+            "contact": null
+          },
+          {
+            "id": 2,
+            "name": "Acroyoga Intermedio",
+            "teachers": [
+              "Stella",
+              "Sebastiano"
+            ],
+            "day": "Lunedì",
+            "start_time": "21:00",
+            "end_time": "22:30",
+            "location": "Acropole Garden",
+            "maps_url": "https://maps.app.goo.gl/jxP91Ct18pfq5nsz7?g_st=ac",
+            "level": "Intermediate",
+            "season": "all-year",
+            "season_notes": "Da settembre a luglio",
+            "notes": null,
+            "contact": null
+          },
+          {
+            "id": 3,
+            "name": "Acroyoga Avanzato",
+            "teachers": [
+              "Stella",
+              "Sebastiano"
+            ],
+            "day": "Giovedì",
+            "start_time": "21:00",
+            "end_time": "22:30",
+            "location": "Acropole Garden",
+            "maps_url": "https://maps.app.goo.gl/jxP91Ct18pfq5nsz7?g_st=ac",
+            "level": "Advanced",
+            "season": "all-year",
+            "season_notes": "Da settembre a luglio",
+            "notes": null,
+            "contact": null
+          },
+          {
+            "id": 4,
+            "name": "Practice Time",
+            "teachers": [
+              "Tancredi",
+              "Vittoria",
+              "Stella",
+              "Sebastiano"
+            ],
+            "day": "Venerdì",
+            "start_time": "20:30",
+            "end_time": "22:00",
+            "location": "Acropole Garden",
+            "maps_url": "https://maps.app.goo.gl/jxP91Ct18pfq5nsz7?g_st=ac",
+            "level": "All Levels",
+            "season": "all-year",
+            "season_notes": "Da settembre a luglio",
+            "notes": "Spazio di pratica libera e jam supervisionata dagli insegnanti della scuola, riservata ai corsisti.",
+            "contact": null
+          }
+        ]
       }
     ]
   }
