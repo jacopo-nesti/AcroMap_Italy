@@ -49,6 +49,9 @@
     <loc>https://acrofinder.it/city/milano</loc>
   </url>
   <url>
+    <loc>https://acrofinder.it/city/palermo</loc>
+  </url>
+  <url>
     <loc>https://acrofinder.it/region/toscana/jams</loc>
   </url>
   <url>
@@ -56,5 +59,8 @@
   </url>
   <url>
     <loc>https://acrofinder.it/region/lombardia/jams</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/region/sicilia/jams</loc>
   </url>
 </urlset>

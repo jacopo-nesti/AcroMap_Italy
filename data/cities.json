@@ -536,5 +536,41 @@
       ]
     }
   ]
-}
+},
+  {
+    "id": 9,
+    "slug": "palermo",
+    "name": "Palermo",
+    "region": "Sicilia",
+    "province": "Palermo",
+    "coordinates": {
+      "lat": 38.1157,
+      "lng": 13.3615
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Palermo",
+        "description": "Comunità di Acroyoga a Palermo",
+        "whatsapp": "https://chat.whatsapp.com/L5ndtV26F61Gky52mifaVv?s=cl&p=a&ilr=1",
+        "instagram": "https://www.instagram.com/acro.palermo",
+        "facebook": "",
+        "website": "",
+        "jams": [
+          {
+            "id": 1,
+            "day": "Lunedì",
+            "start_time": "18:00",
+            "end_time": "22:00",
+            "location": "Foro Italico (all'aperto), EPYC (al chiuso)",
+            "maps_url": "https://maps.app.goo.gl/8ikXV9DcY7tWjBx76",
+            "season": "all-year",
+            "season_notes": "Tutto l’anno",
+            "notes": "Luogo soggetto a variazioni. Spesso vengono organizzate altre jam oltre a quella del lunedì, autogestite dai partecipanti; giorno, orario e luogo possono variare."
+          }
+        ],
+        "courses": []
+      }
+    ]
+  }
 ]
