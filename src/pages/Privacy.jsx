@@ -102,9 +102,9 @@ function Privacy() {
               </p>
 
               <p style={{ color: "#334155" }}>
-                Attraverso il modulo di contribuzione possono tuttavia essere
-                raccolti dati e informazioni forniti volontariamente
-                dall'utente.
+                Attraverso i moduli esterni di contribuzione e di contatto
+                possono tuttavia essere raccolti dati e informazioni forniti
+                volontariamente dall'utente.
               </p>
 
               <p className="mb-2" style={{ color: "#334155" }}>
@@ -119,6 +119,10 @@ function Privacy() {
                 <li>link a siti web, social network, gruppi o altri canali pubblici della community;</li>
                 <li>informazioni relative a jam, corsi e altre attività di Acroyoga;</li>
                 <li>nome degli insegnanti o degli organizzatori;</li>
+                <li>
+                  contenuto di domande, richieste o altre comunicazioni inviate
+                  attraverso il modulo Contatti;
+                </li>
                 <li>eventuali ulteriori informazioni inserite volontariamente nel modulo.</li>
               </ul>
 
@@ -140,9 +144,9 @@ function Privacy() {
               </h2>
 
               <p style={{ color: "#334155" }}>
-                I dati raccolti attraverso il modulo di contribuzione vengono
-                trattati esclusivamente per finalità connesse al funzionamento
-                di AcroFinder e, in particolare, per:
+                I dati raccolti attraverso i moduli di contribuzione e di
+                contatto vengono trattati esclusivamente per finalità connesse
+                al funzionamento di AcroFinder e, in particolare, per:
               </p>
 
               <ul style={{ color: "#334155" }}>
@@ -153,6 +157,10 @@ function Privacy() {
                 <li>mantenere aggiornata la mappa e il database delle community;</li>
                 <li>prevenire o gestire segnalazioni manifestamente errate, abusive o non pertinenti;</li>
                 <li>gestire eventuali richieste di rettifica, aggiornamento o rimozione delle informazioni.</li>
+                <li>
+                  rispondere a domande, richieste o comunicazioni inviate
+                  attraverso il modulo Contatti.
+                </li>
               </ul>
             </section>
 
@@ -174,7 +182,8 @@ function Privacy() {
               <ul style={{ color: "#334155" }}>
                 <li>
                   dell'esecuzione delle attività richieste dall'interessato
-                  mediante l'invio volontario della segnalazione;
+                  mediante l'invio volontario di una segnalazione o di una
+                  richiesta di contatto;
                 </li>
                 <li>
                   del legittimo interesse del Titolare a gestire, verificare,
@@ -192,7 +201,7 @@ function Privacy() {
               </p>
 
               <p className="mb-0" style={{ color: "#334155" }}>
-                AcroFinder non utilizza i dati raccolti attraverso il modulo per
+                AcroFinder non utilizza i dati raccolti attraverso i moduli per
                 attività di marketing, profilazione o invio di comunicazioni
                 commerciali.
               </p>
@@ -294,12 +303,12 @@ function Privacy() {
               </h2>
 
               <p style={{ color: "#334155" }}>
-                La consultazione di AcroFinder non richiede l'invio del modulo
-                di contribuzione.
+                La consultazione di AcroFinder non richiede l'invio dei moduli
+                di contribuzione o di contatto.
               </p>
 
               <p style={{ color: "#334155" }}>
-                Il conferimento dei dati attraverso il modulo è volontario.
+                Il conferimento dei dati attraverso i moduli è volontario.
               </p>
 
               <p style={{ color: "#334155" }}>
@@ -364,13 +373,21 @@ function Privacy() {
               </p>
 
               <p style={{ color: "#334155" }}>
-                I dati personali utilizzati esclusivamente per gestire e
-                verificare una segnalazione, compreso l'indirizzo email del
-                soggetto che la invia, vengono conservati per il tempo
-                ragionevolmente necessario alla gestione della segnalazione e
-                agli eventuali successivi aggiornamenti, salvo che una
-                conservazione più lunga sia necessaria per gestire
-                contestazioni, richieste dell'interessato o obblighi di legge.
+                I dati personali utilizzati per gestire e verificare una
+                segnalazione, compreso l'indirizzo email del soggetto che la
+                invia, vengono conservati finché risultano ragionevolmente
+                necessari per valutare la segnalazione, documentarne l'origine
+                e supportare eventuali aggiornamenti delle informazioni
+                pubblicate.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                I dati inviati tramite il modulo Contatti vengono conservati
+                finché risultano ragionevolmente necessari per gestire la
+                richiesta e le eventuali comunicazioni successive. In entrambi
+                i casi può rendersi necessaria una conservazione ulteriore per
+                gestire contestazioni, richieste dell'interessato o obblighi di
+                legge.
               </p>
 
               <p style={{ color: "#334155" }}>
@@ -390,12 +407,24 @@ function Privacy() {
             <section className="mb-4">
               <h2 className="h5 fw-bold text-dark d-flex align-items-center gap-2 mb-3">
                 <i className="bi bi-box-seam-fill" style={{ color: "#15803d" }}></i>
-                10. Tally e servizi di terze parti
+                10. Fornitori tecnici e servizi di terze parti
               </h2>
 
+              <h3 className="h6 fw-bold text-dark mt-4 mb-2">Tally</h3>
+
               <p style={{ color: "#334155" }}>
-                Il modulo utilizzato per raccogliere contributi e segnalazioni
-                è fornito tramite Tally.
+                AcroFinder utilizza due moduli forniti da Tally: il modulo
+                Contribuisci, destinato all'invio di nuove community, jam,
+                corsi, aggiornamenti e altre segnalazioni utili al progetto, e
+                il modulo Contatti, destinato a domande, richieste e
+                comunicazioni rivolte ad AcroFinder.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                I moduli non sono incorporati in AcroFinder tramite iframe o
+                script: vengono aperti sul dominio <strong>tally.so</strong>
+                soltanto dopo un'azione esplicita dell'utente. Da quel momento
+                il browser comunica direttamente con il servizio Tally.
               </p>
 
               <p style={{ color: "#334155" }}>
@@ -411,28 +440,113 @@ function Privacy() {
               </p>
 
               <p style={{ color: "#334155" }}>
-                L'utilizzo di Tally può comportare il trattamento tecnico delle
-                informazioni necessario alla ricezione, conservazione e
-                gestione delle risposte.
+                Nella configurazione attuale non sono attive la raccolta delle
+                risposte parziali, la cancellazione automatica delle
+                submission, le notifiche email automatiche al gestore o al
+                rispondente e la prevenzione degli invii duplicati. Le risposte
+                inviate vengono quindi gestite e cancellate in base ai criteri
+                di necessità descritti nella sezione 9, senza un termine
+                automatico preimpostato sulla piattaforma.
               </p>
 
               <p style={{ color: "#334155" }}>
-                Per maggiori informazioni sulle modalità con cui Tally tratta i
-                dati personali è possibile consultare la documentazione privacy
-                pubblicata da Tally.
+                È attiva la funzione “Save answers for later”. Secondo quanto
+                dichiarato da Tally, le risposte non ancora inviate vengono
+                conservate localmente nel browser dell'utente per consentirgli
+                di riprendere la compilazione e non lasciano il suo dispositivo.
+                Questo storage è gestito sul servizio Tally e non è implementato
+                dal codice di <strong>acrofinder.it</strong>.
               </p>
 
               <p style={{ color: "#334155" }}>
-                AcroFinder utilizza inoltre OpenStreetMap per la visualizzazione
-                della mappa delle community. Quando viene visualizzata la mappa,
-                il browser dell'utente può effettuare richieste ai server utilizzati
-                per fornire i dati cartografici e le relative immagini.
+                Per maggiori informazioni è possibile consultare la{" "}
+                <a
+                  href="https://tally.so/help/gdpr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  documentazione privacy di Tally
+                </a>{" "}
+                e le relative condizioni applicabili.
+              </p>
+
+              <h3 className="h6 fw-bold text-dark mt-4 mb-2">
+                OpenStreetMap e Leaflet
+              </h3>
+
+              <p style={{ color: "#334155" }}>
+                La pagina <strong>/map</strong> utilizza Leaflet e React Leaflet
+                per visualizzare la mappa delle community. Le librerie e i
+                relativi file applicativi sono serviti localmente da
+                AcroFinder; le tile cartografiche, invece, vengono richieste
+                automaticamente dal browser ai server della OpenStreetMap
+                Foundation, sui domini <strong>*.tile.openstreetmap.org</strong>,
+                quando l'utente apre la pagina della mappa e durante la sua
+                consultazione.
               </p>
 
               <p style={{ color: "#334155" }}>
-                Tali richieste possono comportare la trasmissione di dati tecnici
-                necessari alla comunicazione via Internet, come l'indirizzo IP e
-                informazioni relative alla richiesta effettuata dal browser.
+                Tali richieste possono trasmettere alla OpenStreetMap Foundation
+                dati tecnici quali indirizzo IP, informazioni sul browser o sul
+                dispositivo, referrer, data e ora della richiesta e tile o area
+                geografica visualizzata. AcroFinder utilizza questo servizio
+                esclusivamente per fornire la funzionalità cartografica e non
+                impiega tali dati per analytics, marketing o profilazione.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                Per maggiori informazioni è possibile consultare la{" "}
+                <a
+                  href="https://osmfoundation.org/wiki/Privacy_Policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Privacy Policy della OpenStreetMap Foundation
+                </a>
+                .
+              </p>
+
+              <h3 className="h6 fw-bold text-dark mt-4 mb-2">GitHub Pages</h3>
+
+              <p style={{ color: "#334155" }}>
+                AcroFinder è ospitato tramite GitHub Pages. Nel corso delle
+                normali richieste HTTP necessarie a rendere disponibile il sito,
+                GitHub può trattare dati tecnici quali indirizzo IP, user-agent,
+                URL richiesto, data e ora, referrer e log tecnici o di sicurezza,
+                secondo le proprie pratiche e condizioni. GitHub opera come
+                fornitore dell'infrastruttura di hosting; AcroFinder non utilizza
+                questi dati per attività di profilazione.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                Ulteriori informazioni sono disponibili nella{" "}
+                <a
+                  href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Privacy Statement di GitHub
+                </a>
+                .
+              </p>
+
+              <h3 className="h6 fw-bold text-dark mt-4 mb-2">
+                Semplici collegamenti esterni
+              </h3>
+
+              <p style={{ color: "#334155" }}>
+                Google Maps, Instagram, Facebook, WhatsApp, i siti delle
+                community e Buy Me a Coffee sono presenti esclusivamente come
+                collegamenti esterni e non come embed, iframe o SDK incorporati.
+                Il browser contatta il relativo servizio soltanto quando
+                l'utente sceglie di aprire il link.
+              </p>
+
+              <p className="mb-0" style={{ color: "#334155" }}>
+                Dopo la navigazione verso il servizio esterno, l'eventuale
+                trattamento di dati e l'uso di cookie o altre tecnologie proprie
+                avvengono secondo le informative e le condizioni del rispettivo
+                provider.
               </p>
             </section>
 
@@ -505,24 +619,36 @@ function Privacy() {
             <section className="mb-4">
               <h2 className="h5 fw-bold text-dark d-flex align-items-center gap-2 mb-3">
                 <i className="bi bi-cookie" style={{ color: "#15803d" }}></i>
-                13. Cookie e tecnologie di tracciamento
+                13. Cookie, browser storage e strumenti di tracciamento
               </h2>
 
               <p style={{ color: "#334155" }}>
-                AcroFinder non utilizza cookie di profilazione, strumenti
-                pubblicitari o sistemi di tracciamento degli utenti per finalità
-                di marketing.
+                Il codice applicativo di AcroFinder non imposta né legge cookie
+                e non utilizza <strong>localStorage</strong>,{" "}
+                <strong>sessionStorage</strong> o <strong>IndexedDB</strong> sul
+                dominio <strong>acrofinder.it</strong>.
               </p>
 
               <p style={{ color: "#334155" }}>
-                Il sito non utilizza attualmente strumenti di analisi del traffico
-                basati sulla profilazione degli utenti.
+                AcroFinder non utilizza Google Analytics o GA4, Google Tag
+                Manager, Meta Pixel, strumenti pubblicitari, strumenti di
+                profilazione o sistemi di analytics comportamentali.
               </p>
 
               <p style={{ color: "#334155" }}>
-                Eventuali tecnologie strettamente necessarie al funzionamento
-                del sito o dei servizi richiesti dall'utente possono essere
-                utilizzate senza finalità di profilazione.
+                Poiché nello stato attuale del sito non sono presenti cookie o
+                tecnologie non essenziali soggetti a consenso preventivo,
+                AcroFinder non presenta un cookie banner o una piattaforma di
+                gestione del consenso (CMP).
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                Questa descrizione riguarda il funzionamento di AcroFinder. I
+                servizi esterni aperti volontariamente tramite link possono
+                utilizzare cookie o tecnologie proprie dopo la navigazione sui
+                rispettivi domini; inoltre Tally utilizza lo storage locale del
+                browser per la funzione “Save answers for later” descritta nella
+                sezione 10.
               </p>
 
               <p className="mb-0" style={{ color: "#334155" }}>

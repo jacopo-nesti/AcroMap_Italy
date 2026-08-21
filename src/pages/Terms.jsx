@@ -502,24 +502,25 @@ function Terms() {
               </h2>
 
               <p style={{ color: "#334155" }}>
-                AcroFinder può contenere collegamenti verso servizi e siti
-                gestiti da soggetti terzi, tra cui, a titolo esemplificativo:
+                AcroFinder contiene collegamenti verso servizi e siti gestiti
+                da soggetti terzi, tra cui:
               </p>
 
               <ul style={{ color: "#334155" }}>
-                <li>social network;</li>
-                <li>gruppi di messaggistica;</li>
+                <li>i moduli Tally per contribuzioni, segnalazioni e contatti;</li>
+                <li>Google Maps;</li>
+                <li>Instagram e Facebook;</li>
+                <li>WhatsApp;</li>
                 <li>siti delle community;</li>
-                <li>servizi cartografici;</li>
-                <li>moduli esterni;</li>
-                <li>
-                  piattaforme utilizzate per supportare il progetto.
-                </li>
+                <li>Buy Me a Coffee per il sostegno volontario al progetto.</li>
               </ul>
 
               <p style={{ color: "#334155" }}>
-                I collegamenti vengono forniti per facilitare l'accesso alle
-                informazioni.
+                Questi servizi non sono incorporati nella pagina tramite iframe
+                o SDK: vengono contattati dal browser quando l'utente sceglie di
+                aprire il relativo collegamento. I link vengono forniti per
+                facilitare l'accesso alle informazioni o alle funzionalità
+                richieste dall'utente.
               </p>
 
               <p style={{ color: "#334155" }}>
@@ -547,8 +548,8 @@ function Terms() {
               </h2>
 
               <p style={{ color: "#334155" }}>
-                AcroFinder può mettere a disposizione collegamenti a
-                piattaforme esterne attraverso cui gli utenti possono
+                AcroFinder mette a disposizione un collegamento a Buy Me a
+                Coffee, piattaforma esterna attraverso cui gli utenti possono
                 sostenere volontariamente il progetto mediante donazioni o
                 contributi.
               </p>
