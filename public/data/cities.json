@@ -667,9 +667,9 @@
     "communities": [
       {
         "id": 1,
-        "name": "Acroyoga Torino",
+        "name": "Acroflowers & Acronodes",
         "description": "Community di Acroyoga molto vasta con diversi corsi settimanali e jam organizzate spontaneamente dai partecipanti.",
-        "whatsapp": null,
+        "whatsapp": "https://chat.whatsapp.com/5bCP3s2ka21E3GUWWrhbIW",
         "instagram": null,
         "facebook": null,
         "website": null,
@@ -683,10 +683,10 @@
             "location": null,
             "maps_url": null,
             "season": "all-year",
-            "season_notes": null,
-            "updates_method": null,
-            "updates_url": null,
-            "notes": "Le jam vengono organizzate spontaneamente dai partecipanti. Nel periodo estivo si tengono in parchi e spazi verdi e si può partecipare gratuitamente. In inverno, per le jam al chiuso, il costo della sala viene diviso tra i partecipanti."
+            "season_notes": "Tutto l'anno",
+            "updates_method": "WhatsApp",
+            "updates_url": "https://chat.whatsapp.com/5bCP3s2ka21E3GUWWrhbIW",
+            "notes": "Le jam vengono organizzate spontaneamente dai partecipanti e possono essere proposte in qualsiasi giorno della settimana. Indicativamente si svolgono tra le 17:00 e le 20:00, principalmente in parchi e spazi verdi durante il periodo estivo, con partecipazione gratuita. In inverno vengono organizzate anche jam al chiuso, dividendo tra i partecipanti il costo della sala."
           }
         ],
         "courses": [
@@ -706,7 +706,10 @@
             "season": "all-year",
             "season_notes": "Da settembre a luglio",
             "notes": null,
-            "contact": null
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://www.instagram.com/acronodes/"
+            }
           },
           {
             "id": 2,
@@ -724,7 +727,10 @@
             "season": "all-year",
             "season_notes": "Da settembre a luglio",
             "notes": null,
-            "contact": null
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://www.instagram.com/acroflowers/"
+            }
           },
           {
             "id": 3,
@@ -742,7 +748,10 @@
             "season": "all-year",
             "season_notes": "Da settembre a luglio",
             "notes": null,
-            "contact": null
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://www.instagram.com/acroflowers/"
+            }
           },
           {
             "id": 4,
@@ -762,9 +771,188 @@
             "season": "all-year",
             "season_notes": "Da settembre a luglio",
             "notes": "Spazio di pratica libera e jam supervisionata dagli insegnanti della scuola, riservata ai corsisti.",
-            "contact": null
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://acropolegarden.it/"
+            }
           }
         ]
+      },
+      {
+        "id": 2,
+        "name": "Acrobaleno",
+        "description": "Community di Acroyoga con corsi settimanali di livello base e intermedio presso Spazio Dilà.",
+        "whatsapp": null,
+        "instagram": "https://www.instagram.com/acrobaleno.acroyoga/",
+        "facebook": "https://www.facebook.com/acrobaleno.acroyoga/",
+        "website": null,
+        "jams": [],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Acroyoga Base e Intermedio",
+            "teachers": [
+              "Ale",
+              "Simo"
+            ],
+            "day": "Lunedì",
+            "start_time": "20:30",
+            "end_time": "22:30",
+            "location": "Spazio Dilà",
+            "maps_url": "https://maps.app.goo.gl/LQXavMVbMhgJKRa3A",
+            "level": "Beginner / Intermediate",
+            "season": null,
+            "season_notes": null,
+            "notes": null,
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://www.instagram.com/acrobaleno.acroyoga/"
+            }
+          },
+          {
+            "id": 2,
+            "name": "Acroyoga Base",
+            "teachers": [
+              "Ale",
+              "Simo"
+            ],
+            "day": "Mercoledì",
+            "start_time": "20:30",
+            "end_time": "22:30",
+            "location": "Spazio Dilà",
+            "maps_url": "https://maps.app.goo.gl/LQXavMVbMhgJKRa3A",
+            "level": "Beginner",
+            "season": null,
+            "season_notes": null,
+            "notes": null,
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://www.instagram.com/acrobaleno.acroyoga/"
+            }
+          },
+          {
+            "id": 3,
+            "name": "Acroyoga Intermedio",
+            "teachers": [
+              "Ale",
+              "Simo"
+            ],
+            "day": "Giovedì",
+            "start_time": "20:30",
+            "end_time": "22:30",
+            "location": "Spazio Dilà",
+            "maps_url": "https://maps.app.goo.gl/LQXavMVbMhgJKRa3A",
+            "level": "Intermediate",
+            "season": null,
+            "season_notes": null,
+            "notes": null,
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://www.instagram.com/acrobaleno.acroyoga/"
+            }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Acroyoga Moncalieri",
+        "description": "Community di Acroyoga a Moncalieri con corsi settimanali di livello base e intermedio presso Spazio Dance Heart.",
+        "whatsapp": null,
+        "instagram": "https://www.instagram.com/acroyogamoncalieri/",
+        "facebook": "https://www.facebook.com/people/Acroyoga-Moncalieri/100088793021195/",
+        "website": null,
+        "jams": [],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Acroyoga Base e Intermedio",
+            "teachers": [],
+            "day": "Giovedì",
+            "start_time": "20:00",
+            "end_time": "21:30",
+            "location": "Spazio Dance Heart",
+            "maps_url": "https://maps.app.goo.gl/NhEQ4a5yvc9qXqfX7",
+            "level": "Beginner / Intermediate",
+            "season": null,
+            "season_notes": null,
+            "notes": null,
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://www.instagram.com/acroyogamoncalieri/"
+            }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Acroyoga Alchemy Torino",
+        "description": "Community di Acroyoga a Torino con un corso settimanale di livello base e intermedio presso il CUS Torino a Mirafiori Sud.",
+        "whatsapp": null,
+        "instagram": null,
+        "facebook": null,
+        "website": null,
+        "jams": [],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Acroyoga Base e Intermedio",
+            "teachers": [
+              "Tony Leader"
+            ],
+            "day": "Mercoledì",
+            "start_time": "20:30",
+            "end_time": "22:30",
+            "location": "CUS Torino - Mirafiori Sud",
+            "maps_url": "https://maps.app.goo.gl/mPZDdLAus9ntb5cS9",
+            "level": "Beginner / Intermediate",
+            "season": null,
+            "season_notes": null,
+            "notes": null,
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://www.instagram.com/acrotony.leader/"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "catania",
+    "name": "Catania",
+    "region": "Sicilia",
+    "province": "Catania",
+    "coordinates": {
+      "lat": 37.5079,
+      "lng": 15.083
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acroyoga_community_ct",
+        "description": "Bel gruppetto di amici che vanno e vengono, si trovano e si riperdono. Gruppo volatile ma sempre presente 👌🏻❤️",
+        "whatsapp": null,
+        "instagram": "https://www.instagram.com/acroyoga_community_ct?igsi=MWcyYzNlcTRsbGh0cw%3D%3D&utm_source=qr",
+        "facebook": null,
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "all-year",
+            "season_notes": null,
+            "updates_method": "WhatsApp",
+            "updates_url": null,
+            "notes": "Non ci sono giorni o orari fissi. Chiunque può proporre nel gruppo di trovarsi per fare Acroyoga. Le jam possono svolgersi all'aperto oppure in una sala messa a disposizione dai partecipanti."
+          }
+        ],
+        "courses": []
       }
     ]
   }
