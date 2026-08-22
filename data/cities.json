@@ -773,7 +773,7 @@
             "notes": "Spazio di pratica libera e jam supervisionata dagli insegnanti della scuola, riservata ai corsisti.",
             "contact": {
               "label": "Chiedi informazioni",
-              "url": "https://acropolegarden.it/"
+              "url": "https://www.instagram.com/acropole_garden/"
             }
           }
         ]
@@ -786,7 +786,22 @@
         "instagram": "https://www.instagram.com/acrobaleno.acroyoga/",
         "facebook": "https://www.facebook.com/acrobaleno.acroyoga/",
         "website": null,
-        "jams": [],
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "all-year",
+            "season_notes": "Tutto l'anno",
+            "updates_method": "WhatsApp",
+            "updates_url": "https://chat.whatsapp.com/5bCP3s2ka21E3GUWWrhbIW",
+            "notes": "Le jam vengono organizzate spontaneamente dai partecipanti e possono essere proposte in qualsiasi giorno della settimana. Indicativamente si svolgono tra le 17:00 e le 20:00, principalmente in parchi e spazi verdi durante il periodo estivo, con partecipazione gratuita. In inverno vengono organizzate anche jam al chiuso, dividendo tra i partecipanti il costo della sala."
+          }
+        ],
         "courses": [
           {
             "id": 1,
@@ -861,7 +876,22 @@
         "instagram": "https://www.instagram.com/acroyogamoncalieri/",
         "facebook": "https://www.facebook.com/people/Acroyoga-Moncalieri/100088793021195/",
         "website": null,
-        "jams": [],
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "all-year",
+            "season_notes": "Tutto l'anno",
+            "updates_method": "WhatsApp",
+            "updates_url": "https://chat.whatsapp.com/5bCP3s2ka21E3GUWWrhbIW",
+            "notes": "Le jam vengono organizzate spontaneamente dai partecipanti e possono essere proposte in qualsiasi giorno della settimana. Indicativamente si svolgono tra le 17:00 e le 20:00, principalmente in parchi e spazi verdi durante il periodo estivo, con partecipazione gratuita. In inverno vengono organizzate anche jam al chiuso, dividendo tra i partecipanti il costo della sala."
+          }
+        ],
         "courses": [
           {
             "id": 1,
@@ -891,7 +921,22 @@
         "instagram": null,
         "facebook": null,
         "website": null,
-        "jams": [],
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "all-year",
+            "season_notes": "Tutto l'anno",
+            "updates_method": "WhatsApp",
+            "updates_url": "https://chat.whatsapp.com/5bCP3s2ka21E3GUWWrhbIW",
+            "notes": "Le jam vengono organizzate spontaneamente dai partecipanti e possono essere proposte in qualsiasi giorno della settimana. Indicativamente si svolgono tra le 17:00 e le 20:00, principalmente in parchi e spazi verdi durante il periodo estivo, con partecipazione gratuita. In inverno vengono organizzate anche jam al chiuso, dividendo tra i partecipanti il costo della sala."
+          }
+        ],
         "courses": [
           {
             "id": 1,
