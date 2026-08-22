@@ -573,6 +573,15 @@
     height: clamp(34rem, 64vw, 40rem);
   }
 
+  .home-hero:has(.home-search--open) {
+    height: auto;
+    min-height: clamp(34rem, 64vw, 40rem);
+  }
+
+  .home-hero:has(.home-search--open) .home-hero__content {
+    height: auto;
+  }
+
   .home-hero__image {
     object-position: center 52%;
   }
@@ -671,6 +680,10 @@
 @media (min-width: 992px) {
   .home-hero {
     height: clamp(33.5rem, 67vh, 38rem);
+  }
+
+  .home-hero:has(.home-search--open) {
+    min-height: clamp(33.5rem, 67vh, 38rem);
   }
 
   .home-hero__content {
