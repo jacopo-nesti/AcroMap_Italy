@@ -3,6 +3,7 @@ import { useMemo } from "react"
 import SEO from "../components/SEO"
 import BackButton from "../components/BackButton"
 import { useCommunityFinderContext } from "../components/CommunityFinder"
+import { groupSharedJams } from "../utils/jamHelpers"
 import { sortByDayAndTime } from "../utils/SortingHelper"
 
 function createRegionSlug(regionName) {
@@ -36,7 +37,7 @@ function RegionJamsPage() {
       )
     )
 
-    return sortByDayAndTime(items)
+    return sortByDayAndTime(groupSharedJams(items))
   }, [regionCities])
 
   if (isLoading) {
@@ -97,6 +98,7 @@ function RegionJamsPage() {
           <div className="region-jams-grid">
             {jams.map((jam, index) => {
               const isVariable = jam.type === "variable"
+              const isShared = jam.shared_id != null
 
               return (
                 <article
@@ -111,6 +113,12 @@ function RegionJamsPage() {
                   </span>
 
                   <div className="region-jam-card__badges">
+                    {isShared && (
+                      <span className="region-jam-card__shared-badge">
+                        Jam condivisa
+                      </span>
+                    )}
+
                     {isVariable && (
                       <span className="region-jam-card__variable-badge">
                         Jam variabile
@@ -128,7 +136,21 @@ function RegionJamsPage() {
 
                 </div>
 
-                <h2>{jam.community.name}</h2>
+                <h2>
+                  {isShared ? "Jam condivisa tra community" : jam.community.name}
+                </h2>
+
+                {isShared && (
+                  <p className="region-jam-card__communities">
+                    <i className="bi bi-people-fill" aria-hidden="true"></i>
+                    <span>
+                      <strong>Community partecipanti:</strong>{" "}
+                      {jam.participatingCommunities
+                        .map((community) => community.name)
+                        .join(", ")}
+                    </span>
+                  </p>
+                )}
 
                 {isVariable ? (
                   <p className="region-jam-card__variable-copy">
@@ -198,9 +220,13 @@ function RegionJamsPage() {
                   )}
 
                     <Link
-                      to={`/city/${jam.city.slug}?community=${jam.community.id}`}
+                      to={isShared
+                        ? `/city/${jam.city.slug}`
+                        : `/city/${jam.city.slug}?community=${jam.community.id}`}
                     >
-                      Vai alla community
+                      {isShared
+                        ? `Vai alle community di ${jam.city.name}`
+                        : "Vai alla community"}
                       <i className="bi bi-arrow-right" aria-hidden="true"></i>
                     </Link>
 

@@ -676,6 +676,7 @@
         "jams": [
           {
             "id": 1,
+            "shared_id": "torino-community-jam",
             "type": "variable",
             "day": null,
             "start_time": null,
@@ -789,6 +790,7 @@
         "jams": [
           {
             "id": 1,
+            "shared_id": "torino-community-jam",
             "type": "variable",
             "day": null,
             "start_time": null,
@@ -879,6 +881,7 @@
         "jams": [
           {
             "id": 1,
+            "shared_id": "torino-community-jam",
             "type": "variable",
             "day": null,
             "start_time": null,
@@ -924,6 +927,7 @@
         "jams": [
           {
             "id": 1,
+            "shared_id": "torino-community-jam",
             "type": "variable",
             "day": null,
             "start_time": null,

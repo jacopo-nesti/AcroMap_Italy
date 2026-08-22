@@ -589,7 +589,8 @@
   gap: 0.45rem;
 }
 
-.region-jam-card__variable-badge {
+.region-jam-card__variable-badge,
+.region-jam-card__shared-badge {
   display: inline-flex;
   align-items: center;
   padding: 0.3rem 0.6rem;
@@ -598,6 +599,11 @@
   color: #125b91;
   font-size: 0.76rem;
   font-weight: 800;
+}
+
+.region-jam-card__shared-badge {
+  background: #e4f1e9;
+  color: #25613f;
 }
 
 .region-jam-card__season {
@@ -638,6 +644,10 @@
 
 .region-jam-card__day {
   font-weight: 700;
+}
+
+.region-jam-card .region-jam-card__communities {
+  margin-bottom: 0.9rem;
 }
 
 .region-jam-card .region-jam-card__variable-copy {
