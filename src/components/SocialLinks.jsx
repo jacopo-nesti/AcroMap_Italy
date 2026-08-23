@@ -41,10 +41,11 @@ function SocialLinks({ community }) {
           href={social.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="{social.className}"
+          className={social.className}
           aria-label={`Apri ${social.label} di ${community.name} in una nuova scheda`}
         >
           <i className={`bi ${social.icon}`} aria-hidden="true"></i>
+          <span>{social.label}</span>
         </a>
       ))}
     </nav>

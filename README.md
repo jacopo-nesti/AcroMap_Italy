@@ -222,11 +222,6 @@ Il progetto continua a essere sviluppato e aggiornato attraverso:
 Lo sviluppo segue quindi un approccio iterativo anche dopo la pubblicazione.
 
 
-## Screenshot
-
-Gli screenshot definitivi dell'applicazione verranno aggiunti a breve...
-
-
 ## Note legali
 
 AcroFinder è un progetto indipendente dedicato alla community italiana di Acroyoga.

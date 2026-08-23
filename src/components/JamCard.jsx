@@ -50,32 +50,15 @@ function JamCard({ jam }) {
         </p>
       )}
 
-      {season && (
-        <div className="city-activity-card__season-wrap">
-          <span
-            className={`city-activity-card__season ${season.className}`}
-          >
-            <i className={`bi ${season.icon}`} aria-hidden="true"></i>
-            {season.label}
-          </span>
-
-          {jam.season_notes && (
-            <span className="city-activity-card__season-notes">
-              {jam.season_notes}
-            </span>
-          )}
-        </div>
-      )}
-
       {isVariable && jam.updates_method && (
-        <p className="city-activity-card__meta">
+        <p className="city-activity-card__meta city-activity-card__updates-method">
           <i className="bi bi-megaphone-fill" aria-hidden="true"></i>
           {jam.updates_method}
         </p>
       )}
 
       {!isVariable && jam.location && (
-        <p className="city-activity-card__meta">
+        <p className="city-activity-card__meta city-activity-card__location">
           <i className="bi bi-geo-alt-fill" aria-hidden="true"></i>
           {jam.location}
         </p>
@@ -104,6 +87,25 @@ function JamCard({ jam }) {
           <i className="bi bi-bell-fill" aria-hidden="true"></i>
           Ricevi gli aggiornamenti
         </a>
+      )}
+
+      {season && (
+        <div className="city-activity-card__secondary">
+          <div className="city-activity-card__season-wrap">
+            <span
+              className={`city-activity-card__season ${season.className}`}
+            >
+              <i className={`bi ${season.icon}`} aria-hidden="true"></i>
+              {season.label}
+            </span>
+
+            {jam.season_notes && (
+              <span className="city-activity-card__season-notes">
+                {jam.season_notes}
+              </span>
+            )}
+          </div>
+        </div>
       )}
 
       {jam.notes && (

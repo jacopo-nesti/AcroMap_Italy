@@ -35,16 +35,6 @@ const CommunityDetails = forwardRef(function CommunityDetails(
         </div>
       </header>
 
-      <div className="city-community-detail__notice">
-        <i className="bi bi-info-circle-fill" aria-hidden="true"></i>
-
-        <p>
-          <strong>Prima di partecipare:</strong> giorni, orari e luoghi
-          possono variare. Verifica sempre l'attività contattando
-          direttamente la community tramite i suoi canali ufficiali.
-        </p>
-      </div>
-
       <HorizontalScroller
         title="Jam & Pratiche"
         icon="people-fill"
@@ -68,6 +58,16 @@ const CommunityDetails = forwardRef(function CommunityDetails(
           <CourseCard key={course.id || index} course={course} />
         ))}
       </HorizontalScroller>
+
+      <div className="city-community-detail__notice">
+        <i className="bi bi-info-circle-fill" aria-hidden="true"></i>
+
+        <p>
+          <strong>Prima di partecipare:</strong> giorni, orari e luoghi
+          possono variare. Verifica sempre l'attività contattando
+          direttamente la community tramite i suoi canali ufficiali.
+        </p>
+      </div>
     </article>
   )
 })

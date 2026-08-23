@@ -44,34 +44,8 @@ function CourseCard({ course }) {
         </p>
       )}
 
-      {season && (
-        <div className="city-activity-card__season-wrap">
-          <span
-            className={`city-activity-card__season ${season.className}`}
-          >
-            <i className={`bi ${season.icon}`} aria-hidden="true"></i>
-            {season.label}
-          </span>
-
-          {course.season_notes && (
-            <span className="city-activity-card__season-notes">
-              {course.season_notes}
-            </span>
-          )}
-        </div>
-      )}
-
-      {course.level && <span className="city-activity-card__level">{course.level}</span>}
-
-      {teachersList && (
-        <p className="city-activity-card__meta">
-          <i className="bi bi-person-badge" aria-hidden="true"></i>
-          {teachersList}
-        </p>
-      )}
-
       {course.location && (
-        <p className="city-activity-card__meta">
+        <p className="city-activity-card__meta city-activity-card__location">
           <i className="bi bi-geo-alt-fill" aria-hidden="true"></i>
           {course.location}
         </p>
@@ -100,6 +74,36 @@ function CourseCard({ course }) {
           <i className="bi bi-chat-dots-fill" aria-hidden="true"></i>
           {course.contact.label || "Chiedi informazioni"}
         </a>
+      )}
+
+      {(season || course.level || teachersList) && (
+        <div className="city-activity-card__secondary">
+          {season && (
+            <div className="city-activity-card__season-wrap">
+              <span
+                className={`city-activity-card__season ${season.className}`}
+              >
+                <i className={`bi ${season.icon}`} aria-hidden="true"></i>
+                {season.label}
+              </span>
+
+              {course.season_notes && (
+                <span className="city-activity-card__season-notes">
+                  {course.season_notes}
+                </span>
+              )}
+            </div>
+          )}
+
+          {course.level && <span className="city-activity-card__level">{course.level}</span>}
+
+          {teachersList && (
+            <p className="city-activity-card__meta">
+              <i className="bi bi-person-badge" aria-hidden="true"></i>
+              {teachersList}
+            </p>
+          )}
+        </div>
       )}
 
       {course.notes && (

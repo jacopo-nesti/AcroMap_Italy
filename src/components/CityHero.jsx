@@ -14,13 +14,10 @@ function CityHero({ city, communitiesCount, jamsCount, coursesCount, iconClass }
           <span>{city.name}</span>
         </p>
 
-        <h1 className="city-hero__title">{city.name}</h1>
+        <h1 className="city-hero__title">Community a {city.name}</h1>
         <p className="city-hero__region">
           <i className="bi bi-geo-alt-fill" aria-hidden="true"></i>
           {city.region}
-        </p>
-        <p className="city-hero__intro">
-          Scopri le community di Acroyoga a {city.name}. Pratica, condividi e cresci insieme alla community.
         </p>
 
         <dl className="city-hero__stats">

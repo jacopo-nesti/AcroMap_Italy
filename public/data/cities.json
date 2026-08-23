@@ -65,7 +65,7 @@
         "courses": [
           {
             "id": 1,
-            "name": "Corso Avanzato",
+            "name": "Corso Intermedio/Avanzato",
             "teachers": [
               "Jacopo"
             ],
@@ -74,37 +74,17 @@
             "end_time": "21:45",
             "location": "Fattoria dei Ragazzi",
             "maps_url": "https://maps.app.goo.gl/UV5ZV6h26Lq5BbXN6",
-            "level": "Advanced",
+            "level": "Intermediate / Advanced",
             "season": "winter",
             "season_notes": "Indicativamente da ottobre a maggio",
             "notes": "Tatami presenti. Contributo per lezione: 5€.",
             "contact": {
               "label": "Chiedi informazioni",
-              "url": "https://www.instagram.com/jacropoyoga"
+              "url": "https://wa.me/393398007210"
             }
           },
           {
             "id": 2,
-            "name": "Corso Intermedio",
-            "teachers": [
-              "Jacopo"
-            ],
-            "day": "Lunedì",
-            "start_time": "20:00",
-            "end_time": "21:45",
-            "location": "Fattoria dei Ragazzi",
-            "maps_url": "https://maps.app.goo.gl/UV5ZV6h26Lq5BbXN6",
-            "level": "Intermediate",
-            "season": "winter",
-            "season_notes": "Indicativamente da ottobre a maggio",
-            "notes": "Tatami presenti. Contributo per lezione: 5€.",
-            "contact": {
-              "label": "Chiedi informazioni",
-              "url": "https://www.instagram.com/jacropoyoga"
-            }
-          },
-          {
-            "id": 3,
             "name": "Corso Principianti",
             "teachers": [
               "Jason"
@@ -121,7 +101,7 @@
             "contact": null
           },
           {
-            "id": 4,
+            "id": 3,
             "name": "Corso Open",
             "teachers": [
               "Matilde"
@@ -434,7 +414,7 @@
             "season_notes": "Da ottobre a luglio",
             "notes": "Presenza di tatami. Diverse tipologie di abbonamento.",
             "contact": {
-              "label": "Chiedi informazioni a Matteo",
+              "label": "Chiedi informazioni",
               "url": "https://wa.me/393484784927"
             }
           }
@@ -708,7 +688,7 @@
             "season_notes": "Da settembre a luglio",
             "notes": null,
             "contact": {
-              "label": "Scrivi su WhatsApp a Acropole Garden",
+              "label": "Chiedi informazioni",
               "url": "https://wa.me/393518956468"
             }
           },
@@ -729,7 +709,7 @@
             "season_notes": "Da settembre a luglio",
             "notes": null,
             "contact": {
-              "label": "Scrivi su WhatsApp a Acropole Garden",
+              "label": "Chiedi informazioni",
               "url": "https://wa.me/393518956468"
             }
           },
@@ -750,7 +730,7 @@
             "season_notes": "Da settembre a luglio",
             "notes": null,
             "contact": {
-              "label": "Scrivi su WhatsApp a Acropole Garden",
+              "label": "Chiedi informazioni",
               "url": "https://wa.me/393518956468"
             }
           },
@@ -773,7 +753,7 @@
             "season_notes": "Da settembre a luglio",
             "notes": "Spazio di pratica libera e jam supervisionata dagli insegnanti della scuola, riservata ai corsisti.",
             "contact": {
-              "label": "Scrivi su WhatsApp a Acropole Garden",
+              "label": "Chiedi informazioni",
               "url": "https://wa.me/393518956468"
             }
           }
@@ -1090,7 +1070,7 @@
             "season_notes": "Da da ottobre a maggio.",
             "notes": "Tatami presenti.",
             "contact": {
-              "label": "Chiedi informazioni a Lorenzo",
+              "label": "Chiedi informazioni",
               "url": "https://wa.me/393888918656"
             }
           },
@@ -1111,7 +1091,7 @@
             "season_notes": "Da da ottobre a maggio.",
             "notes": "Tatami presenti.",
             "contact": {
-              "label": "Chiedi informazioni a Lorenzo",
+              "label": "Chiedi informazioni",
               "url": "https://wa.me/393888918656"
             }
           },
@@ -1132,7 +1112,7 @@
             "season_notes": "Da da ottobre a maggio.",
             "notes": "Tatami presenti.",
             "contact": {
-              "label": "Chiedi informazioni a Lorenzo",
+              "label": "Chiedi informazioni",
               "url": "https://wa.me/393888918656"
             }
           }

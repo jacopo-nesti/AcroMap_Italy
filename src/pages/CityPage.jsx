@@ -111,12 +111,10 @@ function CityPage() {
           iconClass={getCityIcon(city)}
         />
 
-        <section className="city-communities" aria-labelledby="city-communities-title">
-          <div className="city-communities__heading">
-            <h2 id="city-communities-title">Community a {city.name}</h2>
-            <p>Conosci i gruppi locali e scopri Jam e Corsi disponibili in città.</p>
-          </div>
-
+        <section
+          className={`city-communities${hasSingleCommunity ? " city-communities--single" : ""}`}
+          aria-label={`Community a ${city.name}`}
+        >
           {communitiesCount === 0 ? (
             <p className="city-communities__empty">Nessuna community disponibile al momento.</p>
           ) : hasSingleCommunity ? (
