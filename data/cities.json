@@ -65,7 +65,7 @@
         "courses": [
           {
             "id": 1,
-            "name": "Corso Avanzato",
+            "name": "Corso Intermedio/Avanzato",
             "teachers": [
               "Jacopo"
             ],
@@ -74,37 +74,17 @@
             "end_time": "21:45",
             "location": "Fattoria dei Ragazzi",
             "maps_url": "https://maps.app.goo.gl/UV5ZV6h26Lq5BbXN6",
-            "level": "Advanced",
+            "level": "Intermediate / Advanced",
             "season": "winter",
             "season_notes": "Indicativamente da ottobre a maggio",
             "notes": "Tatami presenti. Contributo per lezione: 5€.",
             "contact": {
               "label": "Chiedi informazioni",
-              "url": "https://www.instagram.com/jacropoyoga"
+              "url": "https://wa.me/393398007210"
             }
           },
           {
             "id": 2,
-            "name": "Corso Intermedio",
-            "teachers": [
-              "Jacopo"
-            ],
-            "day": "Lunedì",
-            "start_time": "20:00",
-            "end_time": "21:45",
-            "location": "Fattoria dei Ragazzi",
-            "maps_url": "https://maps.app.goo.gl/UV5ZV6h26Lq5BbXN6",
-            "level": "Intermediate",
-            "season": "winter",
-            "season_notes": "Indicativamente da ottobre a maggio",
-            "notes": "Tatami presenti. Contributo per lezione: 5€.",
-            "contact": {
-              "label": "Chiedi informazioni",
-              "url": "https://www.instagram.com/jacropoyoga"
-            }
-          },
-          {
-            "id": 3,
             "name": "Corso Principianti",
             "teachers": [
               "Jason"
@@ -121,7 +101,7 @@
             "contact": null
           },
           {
-            "id": 4,
+            "id": 3,
             "name": "Corso Open",
             "teachers": [
               "Matilde"
@@ -413,7 +393,7 @@
             "season_notes": "Da ottobre a giugno",
             "updates_method": null,
             "updates_url": null,
-            "notes": "Per maggiori info contattateci al 348 4784927"
+            "notes": "Per maggiori info contattateci al 348 4784927 - Matteo."
           }
         ],
         "courses": [
@@ -432,10 +412,10 @@
             "level": "Intermediate",
             "season": "all-year",
             "season_notes": "Da ottobre a luglio",
-            "notes": "Presenza di tatami. Diverse tipologie di abbonamento. Per maggiori info contattateci al 348 4784927",
+            "notes": "Presenza di tatami. Diverse tipologie di abbonamento.",
             "contact": {
               "label": "Chiedi informazioni",
-              "url": "https://wa.me/3484784927"
+              "url": "https://wa.me/393484784927"
             }
           }
         ]
@@ -708,8 +688,8 @@
             "season_notes": "Da settembre a luglio",
             "notes": null,
             "contact": {
-              "label": "Scrivi su WhatsApp",
-              "url": "https://wa.me/3518956468"
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393518956468"
             }
           },
           {
@@ -729,8 +709,8 @@
             "season_notes": "Da settembre a luglio",
             "notes": null,
             "contact": {
-              "label": "Scrivi su WhatsApp",
-              "url": "https://wa.me/3518956468"
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393518956468"
             }
           },
           {
@@ -750,8 +730,8 @@
             "season_notes": "Da settembre a luglio",
             "notes": null,
             "contact": {
-              "label": "Scrivi su WhatsApp",
-              "url": "https://wa.me/3518956468"
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393518956468"
             }
           },
           {
@@ -773,8 +753,8 @@
             "season_notes": "Da settembre a luglio",
             "notes": "Spazio di pratica libera e jam supervisionata dagli insegnanti della scuola, riservata ai corsisti.",
             "contact": {
-              "label": "Scrivi su WhatsApp",
-              "url": "https://wa.me/3518956468"
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393518956468"
             }
           }
         ]
@@ -901,8 +881,8 @@
             "name": "Acroyoga Base e Intermedio",
             "teachers": [],
             "day": "Giovedì",
-            "start_time": "20:00",
-            "end_time": "21:30",
+            "start_time": "20:30",
+            "end_time": "22:00",
             "location": "Spazio Dance Heart",
             "maps_url": "https://maps.app.goo.gl/NhEQ4a5yvc9qXqfX7",
             "level": "Beginner / Intermediate",
@@ -1002,6 +982,141 @@
           }
         ],
         "courses": []
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "brescia",
+    "name": "Brescia",
+    "region": "Lombardia",
+    "province": "Brescia",
+    "coordinates": {
+      "lat": 45.5416,
+      "lng": 10.2118
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acroyoga Brescia",
+        "description": "Persone belle e varie",
+        "whatsapp": "https://chat.whatsapp.com/E8P7FTwCw9z32ejItrfmBL?s=sh&p=a&mlu=4",
+        "instagram": null,
+        "facebook": null,
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "summer",
+            "season_notes": null,
+            "updates_method": "WhatsApp",
+            "updates_url": "https://chat.whatsapp.com/E8P7FTwCw9z32ejItrfmBL?s=sh&p=a&mlu=4",
+            "notes": "Chiunque può proporre incontri jam dove e quando vuole."
+          },
+          {
+            "id": 2,
+            "type": "recurring",
+            "day": "Venerdì",
+            "start_time": "20:30",
+            "end_time": null,
+            "location": "Hakusha Brescia",
+            "maps_url": "https://maps.app.goo.gl/JwN2wgyTtBXpjtth7",
+            "season": "winter",
+            "season_notes": "Da ottobre a maggio",
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "Jam aperta a tutti i livelli in una sala con tatami, con capienza indicativa di circa 25 persone. La jam invernale ha un costo di 5 € per la copertura dei costi della sala. Per partecipare più di una volta alle jam presso Hakusha è necessario il tesseramento annuale con Shakti ASD (20 €, valido fino a fine agosto). La jam finisce quando si esauriscono le energie!"
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Base",
+            "teachers": [
+              "Irina",
+              "Lorenzo"
+            ],
+            "day": "Martedì",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "location": "Hakusha Brescia",
+            "maps_url": "https://maps.app.goo.gl/JwN2wgyTtBXpjtth7",
+            "level": "Beginner",
+            "season": "winter",
+            "season_notes": "Da ottobre a maggio. Lezioni di prova gratuite l'8 ed il 29 settembre.",
+            "notes": "Presenza di Tatami. Per prenotare la prova gratuita, compilare il seguente form: https://forms.gle/bimLmAkTQhG1ZGPb8",
+            "contact": null
+          },
+          {
+            "id": 2,
+            "name": "Corso Intermedio 1",
+            "teachers": [
+              "Irina",
+              "Lorenzo"
+            ],
+            "day": "Mercoledì",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "location": "Hakusha Brescia",
+            "maps_url": "https://maps.app.goo.gl/JwN2wgyTtBXpjtth7",
+            "level": "Intermediate",
+            "season": "winter",
+            "season_notes": "Da da ottobre a maggio.",
+            "notes": "Tatami presenti.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393888918656"
+            }
+          },
+          {
+            "id": 3,
+            "name": "Corso Intermedio 2",
+            "teachers": [
+              "Irina",
+              "Lorenzo"
+            ],
+            "day": "Martedì",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "location": "Hakusha Brescia",
+            "maps_url": "https://maps.app.goo.gl/JwN2wgyTtBXpjtth7",
+            "level": "Intermediate",
+            "season": "winter",
+            "season_notes": "Da da ottobre a maggio.",
+            "notes": "Tatami presenti.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393888918656"
+            }
+          },
+          {
+            "id": 4,
+            "name": "Corso Avanzato",
+            "teachers": [
+              "Irina",
+              "Lorenzo"
+            ],
+            "day": "Mercoledì",
+            "start_time": "21:15",
+            "end_time": "22:45",
+            "location": "Hakusha Brescia",
+            "maps_url": "https://maps.app.goo.gl/JwN2wgyTtBXpjtth7",
+            "level": "Advanced",
+            "season": "winter",
+            "season_notes": "Da da ottobre a maggio.",
+            "notes": "Tatami presenti.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393888918656"
+            }
+          }
+        ]
       }
     ]
   }
