@@ -1050,8 +1050,11 @@
             "level": "Beginner",
             "season": "winter",
             "season_notes": "Da ottobre a maggio. Lezioni di prova gratuite l'8 ed il 29 settembre.",
-            "notes": "Presenza di Tatami. Per prenotare la prova gratuita, compilare il seguente form: https://forms.gle/bimLmAkTQhG1ZGPb8",
-            "contact": null
+            "notes": "Presenza di Tatami.",
+            "contact": {
+              "label": "Per informazioni",
+              "url": "https://forms.gle/bimLmAkTQhG1ZGPb8"
+            }
           },
           {
             "id": 2,
