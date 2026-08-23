@@ -23,7 +23,7 @@ function CityMarker({ city }) {
             position={[city.coordinates.lat, city.coordinates.lng]}
             icon={defaultIcon}
         >
-            <Popup>
+            <Popup keepInView autoPanPadding={[16, 16]}>
                 <h3>{city.name}</h3>
 
                 <p>{city.region}</p>
