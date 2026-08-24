@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react"
+import { Fragment, useEffect, useRef, useState } from "react"
 import { Link } from "react-router"
 import SEO from "../components/SEO"
 import { guideSections } from "./guideSections"
@@ -71,7 +71,25 @@ function GuideContentBlock({ block }) {
 
 function GuidePage() {
   const [openSectionId, setOpenSectionId] = useState(null)
+  const sectionTriggerRefs = useRef(new Map())
   const firstSection = guideSections[0]
+
+  useEffect(() => {
+    if (!openSectionId) return
+
+    const activeTrigger = sectionTriggerRefs.current.get(openSectionId)
+    if (!activeTrigger) return
+
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches
+
+    activeTrigger.scrollIntoView({
+      behavior: prefersReducedMotion ? "instant" : "smooth",
+      block: "center",
+      inline: "nearest",
+    })
+  }, [openSectionId])
 
   const toggleSection = (sectionId) => {
     setOpenSectionId((currentId) => currentId === sectionId ? null : sectionId)
@@ -121,6 +139,13 @@ function GuidePage() {
               >
                 <h2 className="guide-accordion__heading">
                   <button
+                    ref={(element) => {
+                      if (element) {
+                        sectionTriggerRefs.current.set(section.id, element)
+                      } else {
+                        sectionTriggerRefs.current.delete(section.id)
+                      }
+                    }}
                     id={triggerId}
                     type="button"
                     className="guide-accordion__trigger"
