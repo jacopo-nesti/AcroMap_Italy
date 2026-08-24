@@ -8,6 +8,7 @@ const footerGroups = [
     links: [
       { label: 'Community', to: '/community' },
       { label: 'Mappa', to: '/map' },
+      { label: 'Guida', to: '/guide' },
     ],
   },
   {

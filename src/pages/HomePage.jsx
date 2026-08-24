@@ -4,15 +4,37 @@ import FeatureHighlights from "../components/FeatureHighlights"
 import OrganizerCallout from "../components/OrganizerCallout"
 import SEO from "../components/SEO"
 import { useCommunityFinderContext } from "../components/CommunityFinder"
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { useLocation } from "react-router"
 import heroDesktopImage from "../assets/images/hero-acrofinder-desktop.webp"
 import heroTabletImage from "../assets/images/hero-acrofinder-tablet.webp"
 import heroMobileImage from "../assets/images/hero-acrofinder-mobile.webp"
 
 function HomePage() {
   const { isLoading, error } = useCommunityFinderContext()
+  const location = useLocation()
 
   const [highlightSearch, setHighlightSearch] = useState(false)
+
+  useEffect(() => {
+    if (location.hash !== "#home-search-target" || isLoading || error) return
+
+    const searchTarget = document.getElementById("home-search-target")
+    const searchInput = document.querySelector(".home-search__input")
+
+    if (!searchTarget) return
+
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches
+
+    searchTarget.scrollIntoView({
+      behavior: prefersReducedMotion ? "instant" : "smooth",
+      block: "center",
+    })
+
+    searchInput?.focus({ preventScroll: true })
+  }, [location.hash, isLoading, error])
 
   const handleSearchClick = () => {
     const searchTarget = document.getElementById("home-search-target")

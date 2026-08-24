@@ -12,6 +12,7 @@ import Terms from "./pages/Terms"
 import ContactPage from "./pages/ContactPage"
 import MapPage from "./pages/MapPage"
 import RegionJamsPage from "./pages/RegionJamsPage"
+import GuidePage from "./pages/GuidePage"
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/contactus" element={<ContactPage />} />
           <Route path="/map" element={<MapPage />} />
+          <Route path="/guide" element={<GuidePage />} />
           <Route path="*" element={<NotFound />} />
 
         </Route>

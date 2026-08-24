@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Local editorial source for the public Guide page
+/docs/guida.md
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

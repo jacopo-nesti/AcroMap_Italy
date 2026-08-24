@@ -95,6 +95,12 @@ const staticPages = [
       "Esplora sulla mappa le città e le community di Acroyoga presenti in Italia.",
   },
   {
+    route: "/guide",
+    title: "Guida all'Acroyoga | AcroFinder",
+    description:
+      "Informazioni utili per iniziare, partecipare alle jam e vivere la community in modo sicuro, consapevole e rispettoso.",
+  },
+  {
     route: "/aboutus",
     title: "Chi siamo | AcroFinder",
     description:

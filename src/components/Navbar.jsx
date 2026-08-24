@@ -6,6 +6,7 @@ function Navbar({ isHomePage = false }) {
   const [isOpen, setIsOpen] = useState(false)
   const location = useLocation()
   const isCommunityPage = location.pathname === "/community"
+  const isGuidePage = location.pathname === "/guide"
 
   const closeMenu = () => setIsOpen(false)
   const menuClasses = isHomePage
@@ -57,6 +58,15 @@ function Navbar({ isHomePage = false }) {
               className={`nav-link ${isHomePage ? "home-navbar__link" :  "community-navbar__link" }`} 
               onClick={closeMenu}>
               Mappa
+            </Link>
+
+            <Link
+              to="/guide"
+              className={`nav-link ${isHomePage ? "home-navbar__link" : "community-navbar__link" }`}
+              aria-current={isGuidePage ? "page" : undefined}
+              onClick={closeMenu}
+            >
+              Guida
             </Link>
 
             <Link 
