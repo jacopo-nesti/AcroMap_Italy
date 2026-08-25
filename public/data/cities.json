@@ -65,7 +65,7 @@
         "courses": [
           {
             "id": 1,
-            "name": "Corso Intermedio/Avanzato",
+            "name": "Corso Intermedio + Coaching Avanzato",
             "teachers": [
               "Jacopo"
             ],
@@ -102,7 +102,7 @@
           },
           {
             "id": 3,
-            "name": "Corso Open",
+            "name": "Corso Multilivello",
             "teachers": [
               "Matilde"
             ],
@@ -111,13 +111,33 @@
             "end_time": "22:00",
             "location": "Samadhi",
             "maps_url": "https://maps.app.goo.gl/M7Xyp7sKr8XkRein7",
-            "level": "All Levels",
+            "level": "Open level",
             "season": "winter",
             "season_notes": "Indicativamente da ottobre a maggio",
             "notes": "Tatami presenti",
             "contact": {
               "label": "Chiedi informazioni",
               "url": "https://www.yogafirenze.it/"
+            }
+          },
+          {
+            "id": 4,
+            "name": "Corso Principianti - Imparare a volare, mantenendo i piedi per terra",
+            "teachers": [
+              "Samantha"
+            ],
+            "day": "Lunedì",
+            "start_time": "20:45",
+            "end_time": "22:00",
+            "location": "Centro yoga Villa Vrindavana",
+            "maps_url": "https://maps.app.goo.gl/A5MGjzcZzcEe1zvi7",
+            "level": "Beginner",
+            "season": "winter",
+            "season_notes": "",
+            "notes": "",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393516863632"
             }
           }
         ]
@@ -172,7 +192,7 @@
             "end_time": "22:45",
             "location": "Spazio YogaMente",
             "maps_url": "https://maps.app.goo.gl/A3scNznZcvSUEFmM6",
-            "level": "All Levels",
+            "level": "Open level",
             "season": "winter",
             "season_notes": "Da settembre a maggio",
             "notes": "Palestra attrezzata con tatami",
@@ -190,7 +210,7 @@
             "end_time": "22:45",
             "location": "Spazio YogaMente",
             "maps_url": "https://maps.app.goo.gl/A3scNznZcvSUEFmM6",
-            "level": "All Levels",
+            "level": "Open level",
             "season": "winter",
             "season_notes": "Da settembre a maggio",
             "notes": "Palestra attrezzata con tatami",
@@ -333,7 +353,7 @@
             "end_time": "22:15",
             "location": "Centro Jayoga",
             "maps_url": "https://maps.app.goo.gl/9zr2wKJPcDNBmBP26",
-            "level": "All Levels",
+            "level": "Open level",
             "season": null,
             "season_notes": null,
             "notes": "Il Centro Yoga si trova a pochi minuti a piedi dalla fermata Metro A “Porta Furba Quadraro” (zona Tuscolana).",
@@ -351,7 +371,7 @@
             "end_time": "22:15",
             "location": "Centro Jayoga",
             "maps_url": "https://maps.app.goo.gl/9zr2wKJPcDNBmBP26",
-            "level": "All Levels",
+            "level": "Open level",
             "season": null,
             "season_notes": null,
             "notes": "Il Centro Yoga si trova a pochi minuti a piedi dalla fermata Metro A “Porta Furba Quadraro” (zona Tuscolana).",
@@ -441,8 +461,53 @@
         "instagram": "https://www.instagram.com/acroyogapavia/",
         "facebook": null,
         "website": null,
-        "jams": [],
-        "courses": []
+        "jams": [
+          {
+            "id": 1,
+            "type": "recurring",
+            "day": "Venerdì",
+            "start_time": "19:00",
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": null,
+            "season_notes": null,
+            "updates_method": null,
+            "updates_url": null,
+            "notes": null
+          },
+          {
+            "id": 2,
+            "type": "recurring",
+            "day": "Mercoledì",
+            "start_time": "19:30",
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": null,
+            "season_notes": null,
+            "updates_method": null,
+            "updates_url": null,
+            "notes": null
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Open Level",
+            "teachers": [],
+            "day": "Mercoledì",
+            "start_time": "18:30",
+            "end_time": "19:30",
+            "location": null,
+            "maps_url": null,
+            "level": "Open level",
+            "season": null,
+            "season_notes": null,
+            "notes": null,
+            "contact": null
+          }
+        ]
       }
     ]
   },
@@ -571,7 +636,7 @@
             "end_time": "21:00",
             "location": "San Dao Sesto",
             "maps_url": "https://maps.app.goo.gl/6FVNgtbhm8Lyeho36",
-            "level": "All Levels",
+            "level": "Open level",
             "season": "winter",
             "season_notes": "Da metà settembre fino alla fine di maggio",
             "notes": "Prima lezione gratuita",
@@ -748,7 +813,7 @@
             "end_time": "22:00",
             "location": "Acropole Garden",
             "maps_url": "https://maps.app.goo.gl/jxP91Ct18pfq5nsz7?g_st=ac",
-            "level": "All Levels",
+            "level": "Open level",
             "season": "all-year",
             "season_notes": "Da settembre a luglio",
             "notes": "Spazio di pratica libera e jam supervisionata dagli insegnanti della scuola, riservata ai corsisti.",
@@ -1117,6 +1182,236 @@
             "contact": {
               "label": "Chiedi informazioni",
               "url": "https://wa.me/393888918656"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "udine",
+    "name": "Udine",
+    "region": "Friuli Venezia Giulia",
+    "province": "Udine",
+    "coordinates": {
+      "lat": 46.0711,
+      "lng": 13.2346
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acroyoga Udine",
+        "description": "Community di livello misto, aperta a tutti. Spesso frequentata anche da circensi, verticalisti e giocolieri. Slackline sempre ben accette nelle jam estive.",
+        "whatsapp": "https://chat.whatsapp.com/FwZjzttuOXm4SBYg3IGF4z",
+        "instagram": null,
+        "facebook": "https://www.facebook.com/groups/714395818670897",
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "all-year",
+            "season_notes": "Tutto l'anno",
+            "updates_method": "WhatsApp",
+            "updates_url": "https://chat.whatsapp.com/FwZjzttuOXm4SBYg3IGF4z",
+            "notes": "Di solito si organizza quando piove nei weekend, ma il gruppo è sempre aperto a nuove proposte."
+          },
+          {
+            "id": 2,
+            "type": "recurring",
+            "day": "Martedì",
+            "start_time": "19:00",
+            "end_time": "21:30",
+            "location": "Gemona, palestra boulder",
+            "maps_url": "https://maps.app.goo.gl/xTgMj6BoN2intNN36",
+            "season": "winter",
+            "season_notes": "Da ottobre a maggio",
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "5 euro per tutti, 3 euro per i soci CAI. Soffitto alto, qualche materassone. Si possono avere tatami. Scrivere a Eli o Bagaz per maggiori informazioni."
+          },
+          {
+            "id": 3,
+            "type": "recurring",
+            "day": "Martedì",
+            "start_time": "18:00",
+            "end_time": null,
+            "location": "Parco Ardito Desio",
+            "maps_url": "https://maps.app.goo.gl/1DNpSgJPbMa3ZSXg7",
+            "season": "summer",
+            "season_notes": "Da maggio a settembre",
+            "updates_method": "WhatsApp",
+            "updates_url": "https://chat.whatsapp.com/FwZjzttuOXm4SBYg3IGF4z",
+            "notes": "Gratuito, portare tappetino. Spesso presente longia, ci si accorda nel gruppo WhatsApp."
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Acroyoga Buja",
+            "teachers": [
+              "Eli",
+              "Bagaz"
+            ],
+            "day": "Giovedì",
+            "start_time": "19:30",
+            "end_time": "21:30",
+            "location": "Palestra scuole medie Buja",
+            "maps_url": "https://maps.app.goo.gl/xre7kk3NXmyNtSpCA",
+            "level": "Open level",
+            "season": "winter",
+            "season_notes": "Da ottobre a maggio",
+            "notes": "Corso multilivello aperto a tutti e molto inclusivo. Tatami e spogliatoi, no docce.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "mailto:elibagaz.acro@gmail.com"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "san-casciano-in-val-di-pesa",
+    "name": "San Casciano in Val di Pesa",
+    "region": "Toscana",
+    "province": "Firenze",
+    "coordinates": {
+      "lat": 43.6598,
+      "lng": 11.1846
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acroyoga San Casciano in Val di Pesa",
+        "description": "Community di Acroyoga a San Casciano in Val di Pesa.",
+        "whatsapp": null,
+        "instagram": null,
+        "facebook": null,
+        "website": null,
+        "jams": [],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Principianti - Imparare a volare, mantenendo i piedi per terra",
+            "teachers": [
+              "Samantha"
+            ],
+            "day": "Lunedì",
+            "start_time": "20:45",
+            "end_time": "22:00",
+            "location": "Centro yoga Villa Vrindavana",
+            "maps_url": "https://maps.app.goo.gl/A5MGjzcZzcEe1zvi7",
+            "level": "Beginner",
+            "season": "winter",
+            "season_notes": null,
+            "notes": null,
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393516863632"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "ravenna",
+    "name": "Ravenna",
+    "region": "Emilia-Romagna",
+    "province": "Ravenna",
+    "coordinates": {
+      "lat": 44.4184,
+      "lng": 12.2035
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Kune - Acroyoga Insieme",
+        "description": "Kune è insieme in Esperanto, acrobatica consapevole... è volare! Proponiamo corsi settimanali, workshop e jam. Trasmettiamo dal 2018 con passione. Kune staff: Luca, Giada, Fabi, Teo, Mavi e Martino.",
+        "whatsapp": "https://wa.me/qr/HPZFYN3MZ7LVB1",
+        "instagram": "https://www.instagram.com/acroyogakune?igsi=MXIzcGx1dGg5bWxsdw==",
+        "facebook": "https://www.facebook.com/share/1D3aKKZfPZ/",
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "all-year",
+            "season_notes": "Tutto l'anno",
+            "updates_method": "WhatsApp",
+            "updates_url": "https://chat.whatsapp.com/FwMfXgg9aegJ7srOQj7U2G?s=cl&p=a&ilr=0",
+            "notes": "Liberi di proporre incontri."
+          },
+          {
+            "id": 2,
+            "type": "recurring",
+            "day": "Domenica",
+            "start_time": "15:00",
+            "end_time": "18:30",
+            "location": "KUNE acroyoga",
+            "maps_url": "https://maps.app.goo.gl/CzvDbArHtpeXRqPn8",
+            "season": "winter",
+            "season_notes": "Da ottobre a maggio",
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "Tatami a disposizione, teachers presenti. Contributo minimo richiesto per sostenere i costi."
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Base",
+            "teachers": [
+              "Mavi",
+              "Martino"
+            ],
+            "day": "Lunedì",
+            "start_time": "20:00",
+            "end_time": "21:30",
+            "location": "Ravenna",
+            "maps_url": "https://maps.app.goo.gl/CzvDbArHtpeXRqPn8",
+            "level": "Open level / Beginner",
+            "season": "winter",
+            "season_notes": "Da ottobre a maggio",
+            "notes": null,
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393389814641"
+            }
+          },
+          {
+            "id": 2,
+            "name": "Flowing - Intermedio",
+            "teachers": [
+              "Luca",
+              "Giada"
+            ],
+            "day": "Giovedì",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "location": null,
+            "maps_url": "https://maps.app.goo.gl/CzvDbArHtpeXRqPn8",
+            "level": "Intermediate",
+            "season": "winter",
+            "season_notes": "Da ottobre a maggio",
+            "notes": "Prerequisiti: side star, foot to hand, reverse star.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393938359801"
             }
           }
         ]
