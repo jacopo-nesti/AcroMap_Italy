@@ -1417,5 +1417,44 @@
         ]
       }
     ]
+  },
+  {
+    "id": 16,
+    "slug": "genova",
+    "name": "Genova",
+    "region": "Liguria",
+    "province": "Genova",
+    "coordinates": {
+      "lat": 44.4056,
+      "lng": 8.9463
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acroyoga Genova - AcroLepre",
+        "description": "Community acro della città di Genova e dintorni. Jam settimanale fissa il mercoledì, 20.30 (In piazza della lepre da ottobre a maggio, in spiaggia a vernazzola da giugno a settembre)",
+        "whatsapp": "https://chat.whatsapp.com/JnEKoz3KAclJ9xl3Q2yCYY",
+        "instagram": null,
+        "facebook": null,
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "recurring",
+            "day": "Mercoledì",
+            "start_time": "20:30",
+            "end_time": "oltranza",
+            "location": "Piazza della Lepre da ottobre a maggio, Spiaggia di Vernazzola da giugno a settembre",
+            "maps_url": "https://maps.app.goo.gl/PpMffWWBgcjiqS7PA",
+            "season": "all-year",
+            "season_notes": "Al chiuso da ottobre a maggio, in spiaggia nel periodo estivo",
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "Contributo 3€ per la palestrina, gratuita sulla spiaggia"
+          }
+        ],
+        "courses": []
+      }
+    ]
   }
 ]

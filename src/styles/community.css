@@ -753,21 +753,23 @@
 
 .region-cities-panel__jams-link {
   display: inline-flex;
+  min-height: 3rem;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
 
   margin-left: 0.5rem;
-  padding: 0.55rem 0.9rem;
+  padding: 0.75rem 1.15rem;
 
-  border: 1px solid #b9d8e6;
-  border-radius: 999px;
+  border: 1px solid #285c3f;
+  border-radius: 0.75rem;
 
-  background: #edf7fb;
-  color: #1769aa;
+  background: #285c3f;
+  color: #fffdf8;
 
-  font-size: 0.85rem;
-  font-weight: 700;
-  line-height: 1;
+  font-size: 0.95rem;
+  font-weight: 750;
+  line-height: 1.2;
 
   text-decoration: none;
   white-space: nowrap;
@@ -779,14 +781,14 @@
 }
 
 .region-cities-panel__jams-link:hover {
-  border-color: #8fc4d9;
-  background: #e1f2f8;
-  color: #125b91;
+  border-color: #1f4a33;
+  background: #1f4a33;
+  color: #fffdf8;
   transform: translateY(-1px);
 }
 
 .region-cities-panel__jams-link .bi-arrow-right {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   transition: transform 0.2s ease;
 }
 
@@ -795,6 +797,17 @@
 }
 
 .region-cities-panel__jams-link:focus-visible {
-  outline: 3px solid rgba(23, 105, 170, 0.25);
+  outline: 3px solid #397255;
   outline-offset: 3px;
+}
+
+@media (max-width: 575.98px) {
+  .region-cities-panel__jams-link {
+    width: 100%;
+    flex-basis: 100%;
+    justify-content: space-between;
+    margin: 0.25rem 0 0;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+  }
 }
