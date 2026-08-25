@@ -64,6 +64,18 @@
     <loc>https://acrofinder.it/city/brescia</loc>
   </url>
   <url>
+    <loc>https://acrofinder.it/city/udine</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/city/san-casciano-in-val-di-pesa</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/city/ravenna</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/city/genova</loc>
+  </url>
+  <url>
     <loc>https://acrofinder.it/region/toscana/jams</loc>
   </url>
   <url>
@@ -77,5 +89,11 @@
   </url>
   <url>
     <loc>https://acrofinder.it/region/piemonte/jams</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/region/friuli-venezia-giulia/jams</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/region/liguria/jams</loc>
   </url>
 </urlset>

@@ -56,7 +56,7 @@ Durante una jam puoi ripassare figure e sequenze che già conosci, consolidare c
 
 Se arrivi senza conoscere nessuno, non preoccuparti. Puoi presentarti, dire che sei <strong>nuovə nella community</strong> e proporre a qualcunə di praticare insieme. Allo stesso tempo, una community accogliente può fare molto per coinvolgere chi arriva per la prima volta.
 
-E non è necessario praticare continuamente: <strong>riposarsi, osservare, parlare e conoscere altre persone fanno parte della jam</strong>. Ognunə può vivere la pratica con i propri tempi.`,linkText:null},{id:`buone-pratiche`,icon:`bi-shield-check`,title:`5. Buone pratiche in Jam`,description:`Comportamenti utili per una pratica piacevole, rispettosa e sicura.`,source:`Una jam è uno spazio libero e condiviso: perché funzioni bene, è importante che tutte le persone contribuiscano a creare un ambiente <strong>sicuro, rispettoso e piacevole</strong>.
+E non è necessario praticare continuamente: <strong>riposarsi, osservare, parlare e conoscere altre persone fanno parte della jam</strong>. Ognunə può vivere la pratica con i propri tempi.`,linkText:null},{id:`buone-pratiche`,icon:`bi-shield-check`,title:`5. Buone pratiche in una Jam`,description:`Comportamenti utili per una pratica piacevole, rispettosa e sicura.`,source:`Una jam è uno spazio libero e condiviso: perché funzioni bene, è importante che tutte le persone contribuiscano a creare un ambiente <strong>sicuro, rispettoso e piacevole</strong>.
 
 Non esiste un regolamento universale valido per ogni community, ma ci sono alcune buone pratiche che possono aiutare:
 
