@@ -467,10 +467,10 @@
             "type": "recurring",
             "day": "Venerdì",
             "start_time": "19:00",
-            "end_time": null,
-            "location": null,
-            "maps_url": null,
-            "season": null,
+            "end_time": "21:30",
+            "location": "Polisportiva Popolare Pavese APS",
+            "maps_url": "https://maps.app.goo.gl/nghugZj5yLJohGB98",
+            "season": "all-year",
             "season_notes": null,
             "updates_method": null,
             "updates_url": null,
@@ -481,10 +481,10 @@
             "type": "recurring",
             "day": "Mercoledì",
             "start_time": "19:30",
-            "end_time": null,
-            "location": null,
-            "maps_url": null,
-            "season": null,
+            "end_time": "21:00",
+            "location": "Polisportiva Popolare Pavese APS",
+            "maps_url": "https://maps.app.goo.gl/nghugZj5yLJohGB98",
+            "season": "all-year",
             "season_notes": null,
             "updates_method": null,
             "updates_url": null,
@@ -495,14 +495,16 @@
           {
             "id": 1,
             "name": "Corso Open Level",
-            "teachers": [],
+            "teachers": [
+              "Marco Savino"
+            ],
             "day": "Mercoledì",
             "start_time": "18:30",
             "end_time": "19:30",
-            "location": null,
-            "maps_url": null,
+            "location": "Polisportiva Popolare Pavese APS",
+            "maps_url": "https://maps.app.goo.gl/nghugZj5yLJohGB98",
             "level": "Open level",
-            "season": null,
+            "season": "all-year",
             "season_notes": null,
             "notes": null,
             "contact": null
@@ -1135,7 +1137,7 @@
             "maps_url": "https://maps.app.goo.gl/JwN2wgyTtBXpjtth7",
             "level": "Intermediate",
             "season": "winter",
-            "season_notes": "Da da ottobre a maggio.",
+            "season_notes": "Da ottobre a maggio.",
             "notes": "Tatami presenti.",
             "contact": {
               "label": "Chiedi informazioni",
@@ -1156,7 +1158,7 @@
             "maps_url": "https://maps.app.goo.gl/JwN2wgyTtBXpjtth7",
             "level": "Intermediate",
             "season": "winter",
-            "season_notes": "Da da ottobre a maggio.",
+            "season_notes": "Da ottobre a maggio.",
             "notes": "Tatami presenti.",
             "contact": {
               "label": "Chiedi informazioni",
@@ -1177,11 +1179,72 @@
             "maps_url": "https://maps.app.goo.gl/JwN2wgyTtBXpjtth7",
             "level": "Advanced",
             "season": "winter",
-            "season_notes": "Da da ottobre a maggio.",
+            "season_notes": "Da ottobre a maggio.",
             "notes": "Tatami presenti.",
             "contact": {
               "label": "Chiedi informazioni",
               "url": "https://wa.me/393888918656"
+            }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Acroyoga Brescia - ASD Tandava",
+        "description": "Persone che vogliono scoprirsi divertendosi. Ogni volta si spostano i propri limiti. Un modo di praticare yoga verso mokśa.",
+        "whatsapp": null,
+        "instagram": "https://www.instagram.com/acroyoga_brescia?igsi=MXNoczE3NDRsNXUzcg%3D%3D&utm_source=qr",
+        "facebook": "https://www.facebook.com/share/1Ec16cyRXb/?mibextid=wwXIfr",
+        "website": "https://www.acroyogabrescia.com",
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "all-year",
+            "season_notes": "Tutto l'anno",
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "La Jam è aperta a tutti. È gratuita, bisogna essere tesserati alla ASD Tandava (validità 12 mesi dalla sottoscrizione) e frequentare il corso infrasettimanale. Si svolge in una sala attrezzata con il tatami. La durata è di circa due ore e spesso termina con una buona pizza, chiacchiere e risate seduti in cerchio per terra."
+          },
+          {
+            "id": 2,
+            "type": "recurring",
+            "day": "Venerdì",
+            "start_time": "20:00",
+            "end_time": "22:00",
+            "location": "Acroyoga Brescia",
+            "maps_url": "https://maps.app.goo.gl/ukx7Sr6gvCmT8ejn6?g_st=ic",
+            "season": "all-year",
+            "season_notes": "Da metà settembre a fine giugno",
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "Bisogna essere tesserati con ASD Tandava e frequentare il corso infrasettimanale. La sala è attrezzata di ogni necessità per praticare in sicurezza."
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso multilivello",
+            "teachers": [
+              "Massimo"
+            ],
+            "day": "Mercoledì",
+            "start_time": "20:00",
+            "end_time": "21:30",
+            "location": "Acroyoga Brescia",
+            "maps_url": "https://maps.app.goo.gl/ukx7Sr6gvCmT8ejn6?g_st=ic",
+            "level": "Open level",
+            "season": "all-year",
+            "season_notes": "Da metà settembre a fine giugno",
+            "notes": "La lezione di prova è gratuita e disponibile tutto l’anno.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393472438620"
             }
           }
         ]
@@ -1454,6 +1517,66 @@
           }
         ],
         "courses": []
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "bolzano",
+    "name": "Bolzano",
+    "region": "Trentino-Alto Adige",
+    "province": "Bolzano",
+    "coordinates": {
+      "lat": 46.4983,
+      "lng": 11.3548
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "AcroSlack BolzanoBozen",
+        "description": "Siamo un gruppo aperto di Acroyoghi, Slackliners e anche musicisti che si trovano sui prati del talvera vicino al bar pippo tutti i mercoledì. Organizziamo anche corsi di Acroyoga.",
+        "whatsapp": "https://chat.whatsapp.com/JOEgcsH877FAxiTHeoXgYa?mode=gi_t",
+        "instagram": "https://www.instagram.com/acroyoga_slackline_bz?igsi=d2QyZGsyd2E0cnU%3D&utm_source=qr",
+        "facebook": null,
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "recurring",
+            "day": "Mercoledì",
+            "start_time": null,
+            "end_time": null,
+            "location": "Estate: Prati del Talvera, Inverno: Palestra",
+            "maps_url": "https://maps.app.goo.gl/YcZu4mTmjPjHVK866?g_st=ic",
+            "season": "all-year",
+            "season_notes": "Estate: dalle 17:00 fino al tramonto. Inverno: 20:00-22:00. Ci spostiamo al parco/in palestra a base della stagione. La palestra cambia tutti gli anni quindi contattateci direttamente sui nostri social.",
+            "updates_method": "WhatsApp",
+            "updates_url": "https://chat.whatsapp.com/JOEgcsH877FAxiTHeoXgYa?mode=gi_t",
+            "notes": "Al parco la jam è gratuita, in palestra bisogna associarsi. Abbiamo anche una formula di abbonamento per chi viene poche volte."
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Open Level",
+            "teachers": [
+              "Variabili"
+            ],
+            "day": "Variabile",
+            "start_time": null,
+            "end_time": null,
+            "location": "Variabile",
+            "maps_url": "https://maps.app.goo.gl/YcZu4mTmjPjHVK866?g_st=ic",
+            "level": "Open level",
+            "season": "winter",
+            "season_notes": "Da ottobre a marzo",
+            "notes": "Giorno e orario variabili. Facciamo si delle classe drop in che dei corsi fissi durante la stagione invernale. Contattateci per info attuali.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://www.instagram.com/acroyoga_slackline_bz?igsi=d2QyZGsyd2E0cnU%3D&utm_source=qr"
+            }
+          }
+        ]
       }
     ]
   }

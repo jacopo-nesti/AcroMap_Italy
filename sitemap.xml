@@ -76,6 +76,9 @@
     <loc>https://acrofinder.it/city/genova</loc>
   </url>
   <url>
+    <loc>https://acrofinder.it/city/bolzano</loc>
+  </url>
+  <url>
     <loc>https://acrofinder.it/region/toscana/jams</loc>
   </url>
   <url>
@@ -95,5 +98,8 @@
   </url>
   <url>
     <loc>https://acrofinder.it/region/liguria/jams</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/region/trentino-alto-adige/jams</loc>
   </url>
 </urlset>
