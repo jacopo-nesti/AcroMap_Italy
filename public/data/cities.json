@@ -14,7 +14,7 @@
         "id": 1,
         "name": "Acroyoga Firenze",
         "description": "Community di Acroyoga a Firenze con jam settimanali, corsi per diversi livelli e occasioni di pratica durante tutto l'anno.",
-        "whatsapp": null,
+        "whatsapp": "https://chat.whatsapp.com/EMJFZpEKvDb2U48YuSVw9n?s=cl&p=a&ilr=0",
         "instagram": "https://www.instagram.com/florence.acroyoga/",
         "facebook": null,
         "website": null,
@@ -118,26 +118,6 @@
             "contact": {
               "label": "Chiedi informazioni",
               "url": "https://www.yogafirenze.it/"
-            }
-          },
-          {
-            "id": 4,
-            "name": "Corso Principianti - Imparare a volare, mantenendo i piedi per terra",
-            "teachers": [
-              "Samantha"
-            ],
-            "day": "Lunedì",
-            "start_time": "20:45",
-            "end_time": "22:00",
-            "location": "Centro yoga Villa Vrindavana",
-            "maps_url": "https://maps.app.goo.gl/A5MGjzcZzcEe1zvi7",
-            "level": "Beginner",
-            "season": "winter",
-            "season_notes": "",
-            "notes": "",
-            "contact": {
-              "label": "Chiedi informazioni",
-              "url": "https://wa.me/393516863632"
             }
           }
         ]
@@ -643,6 +623,75 @@
             "season_notes": "Da metà settembre fino alla fine di maggio",
             "notes": "Prima lezione gratuita",
             "contact": null
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Acroyoga_Samasa",
+        "description": "SAMASA | Milano Muoversi, incontrarsi, stare bene. Insieme. SAMASA nasce a Milano nel 2016 per creare uno spazio dove movimento, benessere e condivisione si incontrano. Siamo una community aperta a tutti, unita dalla voglia di stare bene, conoscere nuove persone e vivere nuove esperienze. Vieni a conoscerci e scopri SAMASA.",
+        "whatsapp": "https://wa.me/393316279839",
+        "instagram": "https://www.instagram.com/samasa_acroyoga?igsi=aWlyemRzOWdmbWcw&utm_source=qr",
+        "facebook": "https://www.facebook.com/share/1EEjKUb6xL/?mibextid=wwXIfr",
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "recurring",
+            "day": "Domenica",
+            "start_time": "14:00",
+            "end_time": "18:00",
+            "location": "Artemadia",
+            "maps_url": "https://maps.app.goo.gl/vMMdeS4adygtrWSs5",
+            "season": "winter",
+            "season_notes": "Da settembre a giugno",
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "Per partecipare alla jam bisogna essere tesserati."
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Base",
+            "teachers": [
+              "Veronica",
+              "Massimo"
+            ],
+            "day": "Giovedì",
+            "start_time": "20:30",
+            "end_time": "22:40",
+            "location": "Artemadia ",
+            "maps_url": "https://maps.app.goo.gl/vMMdeS4adygtrWSs5",
+            "level": "Beginner",
+            "season": "winter",
+            "season_notes": "Da ottobre a maggio",
+            "notes": "IL GIOVEDÌ È IL TUO PRIMO VOLO | Corso Base | Primi equilibri, fiducia, gioco e quel momento in cui pensi: “Lo sto facendo davvero!” ",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393316279839"
+            }
+          },
+          {
+            "id": 2,
+            "name": "Corso Intermedio",
+            "teachers": [
+              "Veronica",
+              "Massimo"
+            ],
+            "day": "Lunedì",
+            "start_time": "20:30",
+            "end_time": "22:30",
+            "location": "Artemadia ",
+            "maps_url": "https://maps.app.goo.gl/vMMdeS4adygtrWSs5",
+            "level": "Intermediate",
+            "season": "winter",
+            "season_notes": "Da ottobre a maggio",
+            "notes": "IL LUNEDÌ ENTRI NEL FLOW | Corso Intermedio | Transizioni, connessione, libertà e la giusta dose di adrenalina.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393316279839"
+            }
           }
         ]
       }
