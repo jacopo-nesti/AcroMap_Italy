@@ -1361,6 +1361,20 @@
             "updates_method": "WhatsApp",
             "updates_url": "https://chat.whatsapp.com/FwZjzttuOXm4SBYg3IGF4z",
             "notes": "Gratuito, portare tappetino. Spesso presente longia, ci si accorda nel gruppo WhatsApp."
+          },
+          {
+            "id": 4,
+            "type": "recurring",
+            "day": "Mercoledì",
+            "start_time": "18:30",
+            "end_time": "21:00",
+            "location": "DNA Danza di Reana del Rojale",
+            "maps_url": "https://maps.app.goo.gl/yfApknqrGDJUNW4u6",
+            "season": "winter",
+            "season_notes": null,
+            "updates_method": null,
+            "updates_url": null,
+            "notes": null
           }
         ],
         "courses": [
@@ -1383,6 +1397,42 @@
             "contact": {
               "label": "Chiedi informazioni",
               "url": "mailto:elibagaz.acro@gmail.com"
+            }
+          },
+          {
+            "id": 2,
+            "name": "Corso Beginner",
+            "teachers": [],
+            "day": "Giovedì",
+            "start_time": "19:30",
+            "end_time": "21:30",
+            "location": "Istituto Volta, Udine",
+            "maps_url": "https://maps.app.goo.gl/Natccfz8FmzPTyNZ7",
+            "level": "Beginner",
+            "season": null,
+            "season_notes": null,
+            "notes": "Contatto aggiuntivo per informazioni: Matthias — mat@shaktiasd.it",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393395240752"
+            }
+          },
+          {
+            "id": 3,
+            "name": "Corso Intermedio/Avanzato",
+            "teachers": [],
+            "day": "Martedì",
+            "start_time": "19:30",
+            "end_time": "21:30",
+            "location": "Istituto Volta, Udine",
+            "maps_url": "https://maps.app.goo.gl/Natccfz8FmzPTyNZ7",
+            "level": "Intermediate / Advanced",
+            "season": null,
+            "season_notes": null,
+            "notes": "Contatto aggiuntivo per informazioni: Matthias — mat@shaktiasd.it",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393395240752"
             }
           }
         ]
