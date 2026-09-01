@@ -343,8 +343,8 @@
             "id": 2,
             "name": "Corso Open Level",
             "teachers": [
-              "Sofia",
-              "Angelo"
+              "Katia Gargiulo",
+              "Alessandro Amici"
             ],
             "day": "Giovedì",
             "start_time": "20:30",
@@ -1673,6 +1673,254 @@
             "contact": {
               "label": "Chiedi informazioni",
               "url": "https://www.instagram.com/acroyoga_slackline_bz?igsi=d2QyZGsyd2E0cnU%3D&utm_source=qr"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "slug": "reggio-emilia",
+    "name": "Reggio Emilia",
+    "region": "Emilia-Romagna",
+    "province": "Reggio Emilia",
+    "coordinates": {
+      "lat": 44.7,
+      "lng": 10.6333
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acrogiraf",
+        "description": "Gruppo molto aperto a tutti, non numerosissimo ma affiatato.",
+        "whatsapp": "https://chat.whatsapp.com/LSc95d0fds32zn4RpP9wXC",
+        "instagram": "https://www.instagram.com/acrogiraf_acroyoga_re_pr/",
+        "facebook": null,
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "shared_id": "acrogiraf-community-jam",
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "all-year",
+            "season_notes": "Tutto l'anno",
+            "updates_method": "WhatsApp",
+            "updates_url": "https://chat.whatsapp.com/LSc95d0fds32zn4RpP9wXC",
+            "notes": "Le jam vengono comunicate tramite il gruppo WhatsApp. Le jam programmate al chiuso sono indicate nella descrizione del gruppo; quelle al parco vengono organizzate di volta in volta tramite sondaggi sulle presenze. In estate la community cerca di organizzare almeno una jam a settimana al parco, durante la settimana dopo il lavoro."
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Open Level",
+            "teachers": [
+              "Fabio",
+              "Elena",
+              "Valentina"
+            ],
+            "day": "Martedì",
+            "start_time": "21:00",
+            "end_time": "22:45",
+            "location": "Gymnastx – Reggio Emilia",
+            "maps_url": "https://maps.app.goo.gl/3FU2Gie1NpSrzeqo9",
+            "level": "Open level",
+            "season": "winter",
+            "season_notes": "Da settembre a maggio",
+            "notes": "Prova con prenotazione obbligatoria. Disponibili abbonamenti bimestrali.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393489293966"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "parma",
+    "name": "Parma",
+    "region": "Emilia-Romagna",
+    "province": "Parma",
+    "coordinates": {
+      "lat": 44.8008,
+      "lng": 10.3185
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acrogiraf",
+        "description": "Gruppo molto aperto a tutti, non numerosissimo ma affiatato.",
+        "whatsapp": "https://chat.whatsapp.com/LSc95d0fds32zn4RpP9wXC",
+        "instagram": "https://www.instagram.com/acrogiraf_acroyoga_re_pr/",
+        "facebook": null,
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "shared_id": "acrogiraf-community-jam",
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "all-year",
+            "season_notes": "Tutto l'anno",
+            "updates_method": "WhatsApp",
+            "updates_url": "https://chat.whatsapp.com/LSc95d0fds32zn4RpP9wXC",
+            "notes": "Le jam vengono comunicate tramite il gruppo WhatsApp. Le jam programmate al chiuso sono indicate nella descrizione del gruppo; quelle al parco vengono organizzate di volta in volta tramite sondaggi sulle presenze. In estate la community cerca di organizzare almeno una jam a settimana al parco, durante la settimana dopo il lavoro."
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso Open Level",
+            "teachers": [
+              "Fabio",
+              "Elena",
+              "Annalisa"
+            ],
+            "day": "Lunedì",
+            "start_time": "20:30",
+            "end_time": "22:30",
+            "location": "Spazio84 – Parma",
+            "maps_url": "https://maps.app.goo.gl/oQRjYTvyPY1pbnjZ8",
+            "level": "Open level",
+            "season": "winter",
+            "season_notes": "Da settembre a maggio",
+            "notes": "Prova con prenotazione obbligatoria. Disponibili abbonamenti bimestrali.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393489293966"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "slug": "bologna",
+    "name": "Bologna",
+    "region": "Emilia-Romagna",
+    "province": "Bologna",
+    "coordinates": {
+      "lat": 44.4949,
+      "lng": 11.3426
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acroyoga Bologna",
+        "description": "Community e attività di Acroyoga nell'area di Bologna e dintorni, con corsi per diversi livelli e occasioni di pratica libera.",
+        "whatsapp": null,
+        "instagram": null,
+        "facebook": null,
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": "Venerdì",
+            "start_time": null,
+            "end_time": null,
+            "location": "Centro Natura, Via degli Albari 4/a, Bologna",
+            "maps_url": null,
+            "season": null,
+            "season_notes": null,
+            "updates_method": "Calendario Centro Natura",
+            "updates_url": "https://centronatura.it/benessere-naturale/",
+            "notes": "Jam organizzata due venerdì al mese nella sala con pavimento in tatami del Centro Natura. Rivolta a chi ha già esperienza di Acroyoga o frequenta/ha frequentato un corso. È previsto il tesseramento e la quota della sala viene suddivisa tra i partecipanti."
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Acroyoga Eden Park Bologna",
+            "teachers": [
+              "Tania Abbiate",
+              "Luciachiara Monari"
+            ],
+            "day": "Giovedì",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "location": "Eden Park Bologna - DUMBO, Via Casarini 19, Bologna",
+            "maps_url": "https://maps.app.goo.gl/ThJxUbj7iii49z8C8",
+            "level": "Open level",
+            "season": null,
+            "season_notes": "Dal 15 ottobre 2026",
+            "notes": "Corso multilivello aperto anche a chi si avvicina all'Acroyoga per la prima volta. Posti limitati e prenotazione necessaria. Tesseramento sportivo Eden/AICS obbligatorio.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://www.edenparkzone.it/bologna/acroyoga/"
+            }
+          },
+          {
+            "id": 2,
+            "name": "Acroyoga Multilivello Centro Natura",
+            "teachers": [
+              "Lucia Cuppini",
+              "Giampiero Buganè"
+            ],
+            "day": "Lunedì",
+            "start_time": "20:30",
+            "end_time": "22:00",
+            "location": "Centro Natura, Via degli Albari 4/a, Bologna",
+            "maps_url": "https://maps.app.goo.gl/t2y2kCfrMMuNvpKAA",
+            "level": "Open level",
+            "season": null,
+            "season_notes": null,
+            "notes": "Corso rivolto anche a persone senza precedente esperienza di Acroyoga.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://centronatura.it/benessere-naturale/yoga-bologna/acroyoga/"
+            }
+          },
+          {
+            "id": 3,
+            "name": "Corso Base - Eden Park San Lazzaro",
+            "teachers": [
+              "Giampiero Buganè"
+            ],
+            "day": "Giovedì",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "location": "Eden Park, Via Commenda 13, San Lazzaro di Savena",
+            "maps_url": "https://maps.app.goo.gl/5fJVKzSaBBssAFfdA",
+            "level": "Beginner",
+            "season": null,
+            "season_notes": null,
+            "notes": "Corso aperto anche a chi non ha esperienza precedente. Non è necessario partecipare in coppia. Tesseramento sportivo Eden/AICS obbligatorio.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://www.edenparkzone.it/san-lazzaro/corsi-di-acroyoga/"
+            }
+          },
+          {
+            "id": 4,
+            "name": "Corso Multilivello - Eden Park San Lazzaro",
+            "teachers": [
+              "Giampiero Buganè"
+            ],
+            "day": "Giovedì",
+            "start_time": "21:00",
+            "end_time": "22:30",
+            "location": "Eden Park, Via Commenda 13, San Lazzaro di Savena",
+            "maps_url": "https://maps.app.goo.gl/5fJVKzSaBBssAFfdA",
+            "level": "Open level",
+            "season": null,
+            "season_notes": null,
+            "notes": "Corso multilivello. Non è necessario partecipare in coppia. Tesseramento sportivo Eden/AICS obbligatorio.",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://www.edenparkzone.it/san-lazzaro/corsi-di-acroyoga/"
             }
           }
         ]
