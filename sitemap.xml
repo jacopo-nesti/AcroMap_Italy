@@ -88,6 +88,21 @@
     <loc>https://acrofinder.it/city/bologna</loc>
   </url>
   <url>
+    <loc>https://acrofinder.it/city/oristano</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/city/cittadella</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/city/napoli</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/city/chiaravalle</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/city/forli</loc>
+  </url>
+  <url>
     <loc>https://acrofinder.it/region/toscana/jams</loc>
   </url>
   <url>
@@ -110,5 +125,17 @@
   </url>
   <url>
     <loc>https://acrofinder.it/region/trentino-alto-adige/jams</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/region/sardegna/jams</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/region/veneto/jams</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/region/campania/jams</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/region/marche/jams</loc>
   </url>
 </urlset>
