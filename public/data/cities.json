@@ -1926,5 +1926,339 @@
         ]
       }
     ]
+  },
+  {
+    "id": 21,
+    "slug": "oristano",
+    "name": "Oristano",
+    "region": "Sardegna",
+    "province": "Oristano",
+    "coordinates": {
+      "lat": 39.9058,
+      "lng": 8.5916
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "AcroYoga Oristano",
+        "description": "Il nostro gruppo nasce nel marzo 2026 da persone venute da altre community e da nuovi membri. Al momento ci riuniamo sempre all'aperto in forma gratuita, cercando un equilibrio tra jams, workshops ed incontri assieme alle altre comunità sarde.",
+        "whatsapp": "https://chat.whatsapp.com/KPOjsie5PKJF1Iw5qQNikB",
+        "instagram": "https://www.instagram.com/acroyogaoristano",
+        "facebook": null,
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "summer",
+            "season_notes": null,
+            "updates_method": "Gruppo whatsapp ",
+            "updates_url": "https://chat.whatsapp.com/KPOjsie5PKJF1Iw5qQNikB",
+            "notes": "Questo periodo (settembre 2026), considerata l'affluenza di nuovissimi membri, stiamo provando ad organizzare un incontro settimanale in forma di workshop (gratuito) nella speranza di avere presto più persone autonome nelle jams."
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Workshop settimanale",
+            "teachers": [],
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "level": "Open level / Beginner",
+            "season": null,
+            "season_notes": null,
+            "notes": "Contatta la community per avere maggiori informazioni.",
+            "contact": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "cittadella",
+    "name": "Cittadella",
+    "region": "Veneto",
+    "province": "Padova",
+    "coordinates": {
+      "lat": 45.6509,
+      "lng": 11.7852
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acro Cittadella (PD)",
+        "description": "Corso di AcroYoga Beginner/Intermedio. Jam durante il week end",
+        "whatsapp": "https://chat.whatsapp.com/KBFDf20vBS14CKFNooQEuI?mode=gi_t",
+        "instagram": "https://www.instagram.com/francescoscalcobonaldo/",
+        "facebook": null,
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "all-year",
+            "season_notes": null,
+            "updates_method": "Gruppo whatsapp e locandina instagram",
+            "updates_url": "https://chat.whatsapp.com/KBFDf20vBS14CKFNooQEuI?mode=gi_t",
+            "notes": null
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Acro Cittadella",
+            "teachers": [
+              "Francesco e Giulia"
+            ],
+            "day": "Martedì",
+            "start_time": "20:00",
+            "end_time": "22:00",
+            "location": "Raja centro yoga",
+            "maps_url": "https://maps.app.goo.gl/R7XLxV6fMfGqDZ5S6?g_st=ic",
+            "level": "Open level",
+            "season": "all-year",
+            "season_notes": "Da settembre a Giugno",
+            "notes": null,
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393497588231"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "napoli",
+    "name": "Napoli",
+    "region": "Campania",
+    "province": "Napoli",
+    "coordinates": {
+      "lat": 40.863,
+      "lng": 14.2767
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acroyoga Parthenope",
+        "description": "Uno spazio di cura dove tematiche come consenso e comunicazione sono parti fondamentali della nostra pratica. Il nostro desiderio di praticare in uno spazio sicuro cammina di pari passo con una consapevolezza sociale e politica, per questo, i valori fondamentali che ci uniscono sono antifascismo, antirazzismo, antiomofobia e la solidarietà per il popolo palestinese (Free palestine)",
+        "whatsapp": "https://chat.whatsapp.com/EKTppp1WrDLAcR9KwThVhM?mode=gi_t",
+        "instagram": "https://www.instagram.com/acroyoga.parthenope?igsi=M29uZTI1dm9icTF4",
+        "facebook": null,
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "all-year",
+            "season_notes": null,
+            "updates_method": "Gruppo whatsapp",
+            "updates_url": "https://chat.whatsapp.com/EKTppp1WrDLAcR9KwThVhM?mode=gi_t",
+            "notes": null
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Acroyoga al Giardino Liberato",
+            "teachers": [
+              "Luisa", 
+              "Silvio", 
+              "Giulia",
+              "altri"
+            ],
+            "day": "Lunedì",
+            "start_time": "19:00",
+            "end_time": "21:00",
+            "location": "Giardino Liberato di Materdei",
+            "maps_url": "https://maps.app.goo.gl/KBwpnV73BxK9eWd97?g_st=ic",
+            "level": "Open level / Intermedio / Avanzato",
+            "season": "all-year",
+            "season_notes": "Da fine settembre a fine maggio",
+            "notes": null,
+            "contact": null
+          },
+          {
+            "id": 2,
+            "name": "Acroyoga al Giardino Liberato",
+            "teachers": [
+              "Luisa", 
+              "Silvio", 
+              "Giulia",
+              "altri"
+            ],
+            "day": "Mercoledì",
+            "start_time": "19:00",
+            "end_time": "21:00",
+            "location": "Giardino Liberato di Materdei",
+            "maps_url": "https://maps.app.goo.gl/KBwpnV73BxK9eWd97?g_st=ic",
+            "level": "Open level / Intermedio / Avanzato",
+            "season": "all-year",
+            "season_notes": "Da fine settembre a fine maggio",
+            "notes": null,
+            "contact": null
+          },
+          {
+            "id": 3,
+            "name": "Acroyoga al Giardino Liberato",
+            "teachers": [
+              "Luisa", 
+              "Silvio", 
+              "Giulia",
+              "altri"
+            ],
+            "day": "Venerdì",
+            "start_time": "19:00",
+            "end_time": "21:00",
+            "location": "Giardino Liberato di Materdei",
+            "maps_url": "https://maps.app.goo.gl/KBwpnV73BxK9eWd97?g_st=ic",
+            "level": "Open level / Intermedio / Avanzato",
+            "season": "all-year",
+            "season_notes": "Da fine settembre a fine maggio",
+            "notes": null,
+            "contact": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "chiaravalle",
+    "name": "Chiaravalle",
+    "region": "Marche",
+    "province": "Ancona",
+    "coordinates": {
+      "lat": 43.6036,
+      "lng": 13.3255
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acroyoga Marche",
+        "description": "Jam nei weekend e corsi in palestra",
+        "whatsapp": "https://chat.whatsapp.com/GLoPrDhD2Va4igL14xrBi5?s=cl&p=a&mlu=4&ilr=4",
+        "instagram": null,
+        "facebook": null,
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "all-year",
+            "season_notes": null,
+            "updates_method": "Gruppo whatsapp",
+            "updates_url": "https://chat.whatsapp.com/GLoPrDhD2Va4igL14xrBi5?s=cl&p=a&mlu=4&ilr=4",
+            "notes": null
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Open level",
+            "teachers": [
+              "Jenny",
+              "Manolo"
+            ],
+            "day": "Martedì e/o giovedì",
+            "start_time": "18:30",
+            "end_time": "20:00",
+            "location": "Atelier del movimento A.S.D.",
+            "maps_url": "https://maps.app.goo.gl/KK468e29wCeV28o7A",
+            "level": "Open level / Principiante / Intermedio",
+            "season": "all-year",
+            "season_notes": "Da settembre a giugno",
+            "notes": "Presenza di tatami, riscaldamento in inverno, aria condizionata in estate",
+            "contact": {
+              "label": "Chiedi informazioni",
+              "url": "https://wa.me/393288612932"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "slug": "forli",
+    "name": "Forlì",
+    "region": "Emilia-Romagna",
+    "province": "Forlì-Cesena",
+    "coordinates": {
+      "lat": 44.223208,
+      "lng": 12.039158
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Centro Olistico Bodhi Dharma",
+        "description": "Nato nel 2016 dall’incontro di Eugenia e Luigi. Bodhi Dharma è l’unione di più arti volte alla consapevolezza ed evoluzione personale. Yoga, Acroyoga, Kung Fu, Tai Ji e molti eventi accompagnano le nostre stagioni accademiche.",
+        "whatsapp": null,
+        "instagram": "https://www.instagram.com/bodhidharma_forli?igsi=MTEzM3Jna29yZm5iaw%3D%3D&utm_source=qr",
+        "facebook": "https://www.facebook.com/share/1BiVg4zSxH/?mibextid=wwXIfr",
+        "website": "http://www.bodhidharmaforli.com/",
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": null,
+            "season_notes": null,
+            "updates_method": "Social",
+            "updates_url": null,
+            "notes": "Per rimanere aggiornato/a su workshop e jam seguici sui social."
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso settimanale",
+            "teachers": [
+              "Eugenia Fabbri della Faggiola",
+              "Luigi Ventura"
+            ],
+            "day": "Martedì",
+            "start_time": "20:15",
+            "end_time": "22:00",
+            "location": "Centro Olistico Bodhi Dharma",
+            "maps_url": "https://maps.app.goo.gl/PDKAw6w6ZEY6ZR54A",
+            "level": "Open level",
+            "season": null,
+            "season_notes": null,
+            "notes": "Si può venire da soli o con un partner o amico/a. Aperto a tutti/e senza pre-requisiti. Presenza di insegnanti qualificati.",
+            "contact": null
+          }
+        ]
+      }
+    ]
   }
 ]
