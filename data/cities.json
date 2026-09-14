@@ -1820,8 +1820,8 @@
         "id": 1,
         "name": "Acroyoga Bologna",
         "description": "Community e attività di Acroyoga nell'area di Bologna e dintorni, con corsi per diversi livelli e occasioni di pratica libera.",
-        "whatsapp": null,
-        "instagram": null,
+        "whatsapp": "https://chat.whatsapp.com/LGdHjEOYhJn9d8Vm9N4iWv",
+        "instagram": "https://www.instagram.com/bologna.acroyoga/",
         "facebook": null,
         "website": null,
         "jams": [
@@ -1832,12 +1832,40 @@
             "start_time": null,
             "end_time": null,
             "location": "Centro Natura, Via degli Albari 4/a, Bologna",
-            "maps_url": null,
-            "season": null,
+            "maps_url": "https://maps.app.goo.gl/CF4h9N3Ti79gbYMt7",
+            "season": "all-year",
             "season_notes": null,
-            "updates_method": "Calendario Centro Natura",
-            "updates_url": "https://centronatura.it/benessere-naturale/",
+            "updates_method": "Contattare Giampi",
+            "updates_url": null,
             "notes": "Jam organizzata due venerdì al mese nella sala con pavimento in tatami del Centro Natura. Rivolta a chi ha già esperienza di Acroyoga o frequenta/ha frequentato un corso. È previsto il tesseramento e la quota della sala viene suddivisa tra i partecipanti."
+          },
+          {
+            "id": 2,
+            "type": "recurring",
+            "day": "Venerdì",
+            "start_time": "19:00",
+            "end_time": "22:00",
+            "location": "Purple Cats",
+            "maps_url": "https://maps.app.goo.gl/wgXoqYm5Zo3bYmCh9",
+            "season": "all-year",
+            "season_notes": null,
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "Jam organizzata ogni venerdi."
+          },
+          {
+            "id": 3,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": "Sepolcro etrusco - Giardini Margherita",
+            "maps_url": "https://maps.app.goo.gl/eZBSEzXVD8CZg7RF8",
+            "season": "summer",
+            "season_notes": null,
+            "updates_method": "WhatsApp",
+            "updates_url": null,
+            "notes": "Jam estiva."
           }
         ],
         "courses": [
@@ -2256,6 +2284,88 @@
             "season_notes": null,
             "notes": "Si può venire da soli o con un partner o amico/a. Aperto a tutti/e senza pre-requisiti. Presenza di insegnanti qualificati.",
             "contact": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "slug": "rimini",
+    "name": "Rimini",
+    "region": "Emilia-Romagna",
+    "province": "Rimini",
+    "coordinates": {
+      "lat": 43.9246,
+      "lng": 12.4527
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Acroyoga San Marino",
+        "description": "Community di circa 200 persone nata dalla passione per l’Acroyoga e dal desiderio di creare uno spazio di incontro, condivisione e benessere. Tra corsi, jam, allenamenti, ritiri, weekend all’aperto e attività dedicate al benessere, la community unisce pratica, socialità e voglia di stare insieme.",
+        "whatsapp": null,
+        "instagram": "https://www.instagram.com/acroyoga_sanmarino/",
+        "facebook": null,
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "variable",
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "season": "summer",
+            "season_notes": null,
+            "updates_method": "WhatsApp",
+            "updates_url": null,
+            "notes": "Per rimanere aggiornato/a su workshop e jam seguici sui social."
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso di Acroyoga Open Level",
+            "teachers": [
+              "Barbara",
+              "Fabrizio"
+            ],
+            "day": "Lunedì",
+            "start_time": "20:30",
+            "end_time": "22:00",
+            "location": "Palazzetto Flaminio Rn",
+            "maps_url": "https://maps.app.goo.gl/cdFVjAXLUkAE4q8D7",
+            "level": "Open level",
+            "season": "winter",
+            "season_notes": "Da ottobre a maggio",
+            "notes": null,
+            "contact": {
+              "label":"Chiedi informazioni",
+              "url": "https://wa.me/393395952655"
+            }
+          },
+          {
+            "id": 2,
+            "name": "Corso di Acroyoga Open Level",
+            "teachers": [
+              "Barbara",
+              "Fabrizio"
+            ],
+            "day": "Giovedì",
+            "start_time": "20:30",
+            "end_time": "22:00",
+            "location": "Borgo maggiore RSM",
+            "maps_url": "https://maps.app.goo.gl/pFmxtvyfsYCrUotR6",
+            "level": "Open level",
+            "season": "winter",
+            "season_notes": "Da ottobre a maggio",
+            "notes": null,
+            "contact": {
+              "label":"Chiedi informazioni",
+              "url": "https://wa.me/393395952655"
+            }
           }
         ]
       }
