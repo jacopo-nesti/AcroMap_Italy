@@ -1097,7 +1097,131 @@
             "notes": "Non ci sono giorni o orari fissi. Chiunque può proporre nel gruppo di trovarsi per fare Acroyoga. Le jam possono svolgersi all'aperto oppure in una sala messa a disposizione dai partecipanti."
           }
         ],
-        "courses": []
+        "courses": [
+          {
+            "id": 1,
+            "name": "Corso di Ale & Fra",
+            "teachers": [
+              "Ale",
+              "Fra"
+            ],
+            "day": "Martedì",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "location": "Midulla Centro Polifunzionale",
+            "maps_url": "https://maps.app.goo.gl/HDKH99WJSzUrDhRJ8",
+            "level": null,
+            "season": null,
+            "season_notes": null,
+            "notes": null,
+            "contact": {}
+          },
+          {
+            "id": 2,
+            "name": "Corso di Ale & Fra",
+            "teachers": [
+              "Ale",
+              "Fra"
+            ],
+            "day": "Giovedì",
+            "start_time": "19:00",
+            "end_time": "20:00",
+            "location": "Accademia Danse la vie",
+            "maps_url": "https://maps.app.goo.gl/yJzdWyrPwqYTVuMV6",
+            "level": null,
+            "season": null,
+            "season_notes": null,
+            "notes": null,
+            "contact": {}
+          },
+          {
+            "id": 3,
+            "name": "Corso di Salvo",
+            "teachers": [
+              "Salvo"
+            ],
+            "day": "Mercoledì",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "location": "Vertical Climbing Center",
+            "maps_url": "https://maps.app.goo.gl/AqQkJhdjDtsfaBMn6",
+            "level": null,
+            "season": null,
+            "season_notes": null,
+            "notes": null,
+            "contact": {}
+          },
+          {
+            "id": 4,
+            "name": "Corso di Giovanni",
+            "teachers": [
+              "Giovanni"
+            ],
+            "day": "Mercoledì",
+            "start_time": "15:30",
+            "end_time": "17:00",
+            "location": "ASD Vany Sport",
+            "maps_url": "https://maps.app.goo.gl/g4KpmPRdPcjkqLUS8",
+            "level": null,
+            "season": null,
+            "season_notes": null,
+            "notes": null,
+            "contact": {}
+          },
+          {
+            "id": 5,
+            "name": "Corso di Giovanni",
+            "teachers": [
+              "Giovanni"
+            ],
+            "day": "Venerdì",
+            "start_time": "20:30",
+            "end_time": "22:00",
+            "location": "ASD Xdancers",
+            "maps_url": "https://maps.app.goo.gl/MgLxdRUAkK4S2q5K9",
+            "level": null,
+            "season": null,
+            "season_notes": null,
+            "notes": null,
+            "contact": {}
+          },
+          {
+            "id": 6,
+            "name": "Workshop mensile",
+            "teachers": [
+              "Ale",
+              "Emma"
+            ],
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "level": null,
+            "season": null,
+            "season_notes": null,
+            "notes": "Contatta la community per avere maggiori informazioni.",
+            "contact": {}
+          },
+          {
+            "id": 7,
+            "name": "Workshop mensile",
+            "teachers": [
+              "Tino",
+              "Giorgia"
+            ],
+            "day": null,
+            "start_time": null,
+            "end_time": null,
+            "location": null,
+            "maps_url": null,
+            "level": null,
+            "season": null,
+            "season_notes": null,
+            "notes": "Contatta la community per avere maggiori informazioni.",
+            "contact": {}
+          }
+        ]
       }
     ]
   },
@@ -1827,20 +1951,6 @@
         "jams": [
           {
             "id": 1,
-            "type": "variable",
-            "day": "Venerdì",
-            "start_time": null,
-            "end_time": null,
-            "location": "Centro Natura, Via degli Albari 4/a, Bologna",
-            "maps_url": "https://maps.app.goo.gl/CF4h9N3Ti79gbYMt7",
-            "season": "all-year",
-            "season_notes": null,
-            "updates_method": "Contattare Giampi",
-            "updates_url": null,
-            "notes": "Jam organizzata due venerdì al mese nella sala con pavimento in tatami del Centro Natura. Rivolta a chi ha già esperienza di Acroyoga o frequenta/ha frequentato un corso. È previsto il tesseramento e la quota della sala viene suddivisa tra i partecipanti."
-          },
-          {
-            "id": 2,
             "type": "recurring",
             "day": "Venerdì",
             "start_time": "19:00",
@@ -1854,7 +1964,7 @@
             "notes": "Jam organizzata ogni venerdi."
           },
           {
-            "id": 3,
+            "id": 2,
             "type": "variable",
             "day": null,
             "start_time": null,
@@ -1917,7 +2027,7 @@
             "teachers": [
               "Giampiero Buganè"
             ],
-            "day": "Giovedì",
+            "day": "Martedì",
             "start_time": "19:30",
             "end_time": "21:00",
             "location": "Eden Park, Via Commenda 13, San Lazzaro di Savena",
@@ -1926,26 +2036,6 @@
             "season": null,
             "season_notes": null,
             "notes": "Corso aperto anche a chi non ha esperienza precedente. Non è necessario partecipare in coppia. Tesseramento sportivo Eden/AICS obbligatorio.",
-            "contact": {
-              "label": "Chiedi informazioni",
-              "url": "https://www.edenparkzone.it/san-lazzaro/corsi-di-acroyoga/"
-            }
-          },
-          {
-            "id": 4,
-            "name": "Corso Multilivello - Eden Park San Lazzaro",
-            "teachers": [
-              "Giampiero Buganè"
-            ],
-            "day": "Giovedì",
-            "start_time": "21:00",
-            "end_time": "22:30",
-            "location": "Eden Park, Via Commenda 13, San Lazzaro di Savena",
-            "maps_url": "https://maps.app.goo.gl/5fJVKzSaBBssAFfdA",
-            "level": "Open level",
-            "season": null,
-            "season_notes": null,
-            "notes": "Corso multilivello. Non è necessario partecipare in coppia. Tesseramento sportivo Eden/AICS obbligatorio.",
             "contact": {
               "label": "Chiedi informazioni",
               "url": "https://www.edenparkzone.it/san-lazzaro/corsi-di-acroyoga/"
@@ -2304,7 +2394,7 @@
         "id": 1,
         "name": "Acroyoga San Marino",
         "description": "Community di circa 200 persone nata dalla passione per l’Acroyoga e dal desiderio di creare uno spazio di incontro, condivisione e benessere. Tra corsi, jam, allenamenti, ritiri, weekend all’aperto e attività dedicate al benessere, la community unisce pratica, socialità e voglia di stare insieme.",
-        "whatsapp": null,
+        "whatsapp": "https://chat.whatsapp.com/KyrdE3jF92tDw0YVlwK3Vb",
         "instagram": "https://www.instagram.com/acroyoga_sanmarino/",
         "facebook": null,
         "website": null,
@@ -2365,6 +2455,113 @@
             "contact": {
               "label":"Chiedi informazioni",
               "url": "https://wa.me/393395952655"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "slug": "venezia",
+    "name": "Venezia",
+    "region": "Veneto",
+    "province": "Venezia",
+    "coordinates": {
+      "lat": 45.4408,
+      "lng": 12.3155
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Venezia",
+        "description": "Piccola comunità che organizza solo qualche jam occasionale",
+        "whatsapp": "https://chat.whatsapp.com/KnluVHZPC4b7q04opvTNAw",
+        "instagram": null,
+        "facebook": null,
+        "website": null,
+        "jams": [],
+        "courses": [
+          {
+            "id": "1",
+            "name": "Corso principianti acroyoga",
+            "teachers": [
+              "Miriam Roverato",
+              "Francesco Scalco Bonaldo"
+            ],
+            "day": "Sabato",
+            "start_time": "15:00",
+            "end_time": "17:00",
+            "location": "Presso Get to Fly ASD - Zelarino (VE)",
+            "maps_url": "https://maps.app.goo.gl/hj1nrAPztonwpcug7?g_st=ic",
+            "level": "Principiante / Intermedio",
+            "season": "winter",
+            "season_notes": "Il corso si svolge 2 sabati al mese: 26 settembre; 10 e 24 ottobre; 14 e 28 novembre; 12 dicembre; 16 e 30 gennaio; 13 e 27 febbraio; 13 e 27 marzo; 10 e 24 aprile; 15 e 29 maggio.",
+            "notes": "Iscrizione obbligatoria per la partecipazione",
+            "contact": {
+              "label": "Informazioni e iscrizioni",
+              "url": "https://wa.me/393793895407"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "slug": "padova",
+    "name": "Padova",
+    "region": "Veneto",
+    "province": "Padova",
+    "coordinates": {
+      "lat": 45.4064,
+      "lng": 11.8768
+    },
+    "communities": [
+      {
+        "id": 1,
+        "name": "Padova",
+        "description": "La jam settimanale a Padova viene proposta ogni venerdì sera da settembre a maggio. Nel periodo estivo ci si trova nei parchi di Padova.",
+        "whatsapp": "https://chat.whatsapp.com/8vzopp2xz2I29ZcY56dzks",
+        "instagram": "https://www.instagram.com/acro_padova?stkn=anI4MnRtZXFxMWxr",
+        "facebook": null,
+        "website": null,
+        "jams": [
+          {
+            "id": 1,
+            "type": "recurring",
+            "day": "Venerdì",
+            "start_time": "20:00",
+            "end_time": "00:00",
+            "location": "Greenkippe",
+            "maps_url": "https://maps.app.goo.gl/8R3Wt2NHSbvkQBWH8?g_st=ic",
+            "season": "winter",
+            "season_notes": "Da settembre a maggio",
+            "updates_method": null,
+            "updates_url": null,
+            "notes": "Costo 10€. Terzo tempo con “porta e condividi”."
+          }
+        ],
+        "courses": [
+          {
+            "id": 1,
+            "name": "Workshop acroyoga principianti/intermedi",
+            "teachers": [
+              "Miriam Roverato",
+              "Francesco Scalco Bonaldo"
+            ],
+            "day": "Domenica",
+            "start_time": "10:00",
+            "end_time": "12:00",
+            "location": "Centro yoga Tuo - Vigodarzere",
+            "maps_url": "https://maps.app.goo.gl/MjCmmeAV7MxhV1NZ7?g_st=ic",
+            "level": "Principiante / Intermedio",
+            "season": "winter",
+            "season_notes": "20 settembre; 18 ottobre; 15 novembre; 20 dicembre; 17 gennaio; 21 febbraio; 21 marzo; 18 aprile; 16 maggio.",
+            "notes": "Costo 20€. Iscrizione obbligatoria. Portare tanta voglia di divertirsi.",
+            "contact": {
+              "label": "Informazioni e iscrizioni",
+              "url": "https://wa.me/393473341282"
             }
           }
         ]
