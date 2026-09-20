@@ -103,13 +103,13 @@
     <loc>https://acrofinder.it/city/forli</loc>
   </url>
   <url>
-    <loc>https://acrofinder.it/city/rimini</loc>
-  </url>
-  <url>
     <loc>https://acrofinder.it/city/venezia</loc>
   </url>
   <url>
     <loc>https://acrofinder.it/city/padova</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/city/san-marino</loc>
   </url>
   <url>
     <loc>https://acrofinder.it/region/toscana/jams</loc>
@@ -146,5 +146,8 @@
   </url>
   <url>
     <loc>https://acrofinder.it/region/marche/jams</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/region/san-marino/jams</loc>
   </url>
 </urlset>
