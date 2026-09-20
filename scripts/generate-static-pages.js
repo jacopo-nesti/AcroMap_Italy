@@ -1,14 +1,94 @@
 import fs from "fs"
 import path from "path"
+import { fileURLToPath } from "node:url"
+import { loadEnv } from "vite"
+import { createClient } from "@supabase/supabase-js"
 
-const distDir = path.resolve("dist")
+const projectRoot = fileURLToPath(new URL("../", import.meta.url))
+const distDir = path.join(projectRoot, "dist")
 const indexPath = path.join(distDir, "index.html")
-const citiesPath = path.resolve("public/data/cities.json")
 
 const SITE_URL = "https://acrofinder.it"
 
 const indexHtml = fs.readFileSync(indexPath, "utf8")
-const cities = JSON.parse(fs.readFileSync(citiesPath, "utf8"))
+
+async function loadSeoMetadata() {
+  const env = loadEnv("production", projectRoot, "VITE_SUPABASE_")
+  const required = ["VITE_SUPABASE_URL", "VITE_SUPABASE_PUBLISHABLE_KEY"]
+  const missing = required.filter((name) => !env[name]?.trim())
+  if (missing.length) throw new Error(`Variabili ambiente mancanti: ${missing.join(", ")}`)
+
+  const supabase = createClient(env.VITE_SUPABASE_URL, env.VITE_SUPABASE_PUBLISHABLE_KEY, {
+    auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
+  })
+
+  // Anonymous reads respect the same public RLS as the frontend. Never select
+  // contacts, courses, descriptions or the complete legacy data structure.
+  async function readRows(table, columns, orderColumns, acceptedOnly = false) {
+    const rows = []
+    const pageSize = 500
+    for (let offset = 0; ; offset += pageSize) {
+      let query = supabase.from(table).select(columns, { count: "exact" })
+      for (const column of orderColumns) query = query.order(column)
+      if (acceptedOnly) query = query.eq("status", "accepted")
+      const { data, error, count } = await query.range(offset, offset + pageSize - 1)
+        .abortSignal(AbortSignal.timeout(30000))
+      if (error || !Array.isArray(data) || count === null) {
+        throw new Error(`Lettura metadata SEO da ${table} fallita. Verificare connessione, configurazione e policy pubbliche.`)
+      }
+      rows.push(...data)
+      if (rows.length >= count) return rows
+      // Fail rather than silently omit pages if the API row cap is too low.
+      if (data.length < pageSize) throw new Error(`Risposta incompleta da ${table}: verificare il limite righe dell'API.`)
+    }
+  }
+
+  const [cities, regions, cityCommunities, communityGroups, groups, communityJams, jams, groupJams] = await Promise.all([
+    readRows("cities", "id,slug,name,region_id", ["id"]),
+    readRows("regions", "id,name", ["id"]),
+    readRows("city_communities", "city_id,community_id", ["city_id", "community_id"]),
+    readRows("community_groups", "community_id,group_id", ["community_id", "group_id"]),
+    readRows("groups", "id", ["id"]),
+    readRows("community_jams", "community_id,jam_id", ["community_id", "jam_id"]),
+    readRows("jams", "id", ["id"]),
+    readRows("group_jams", "group_id,jam_id", ["group_id", "jam_id"], true),
+  ])
+  if (!cities.length) throw new Error("Nessuna città pubblica restituita da Supabase: generazione SEO interrotta.")
+  const citySlugs = new Set()
+  for (const city of cities) {
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(city.slug) || !city.name?.trim() || citySlugs.has(city.slug)) {
+      throw new Error("Metadata città non validi o slug duplicati: generazione SEO interrotta.")
+    }
+    citySlugs.add(city.slug)
+  }
+
+  const publicGroupIds = new Set(groups.map((group) => group.id))
+  const publicJamIds = new Set(jams.map((jam) => jam.id))
+  const acceptedPairs = new Set(groupJams.map((relation) => `${relation.group_id}:${relation.jam_id}`))
+  const communitiesWithJams = new Set(communityJams.filter((relation) =>
+    publicJamIds.has(relation.jam_id) && communityGroups.some((membership) =>
+      membership.community_id === relation.community_id && publicGroupIds.has(membership.group_id)
+      && acceptedPairs.has(`${membership.group_id}:${relation.jam_id}`)
+    )
+  ).map((relation) => relation.community_id))
+  const cityIdsWithJams = new Set(cityCommunities.filter((relation) =>
+    communitiesWithJams.has(relation.community_id)
+  ).map((relation) => relation.city_id))
+  const regionNames = new Map(regions.map((region) => [region.id, region.name]))
+  const jamRegions = new Set()
+  for (const city of cities) {
+    if (!cityIdsWithJams.has(city.id)) continue
+    const name = regionNames.get(city.region_id)
+    if (!name?.trim()) throw new Error("Regione pubblica mancante per una città con jam: generazione SEO interrotta.")
+    jamRegions.add(name)
+  }
+  return { cities, jamRegions }
+}
+
+const { cities, jamRegions } = await loadSeoMetadata().catch((error) => {
+  console.error(`Generazione SEO fallita: ${error.message}`)
+  process.exit(1)
+})
 
 function createSlug(value) {
   return value
@@ -156,30 +236,7 @@ for (const city of cities) {
 }
 
 // regioni con almeno una jam
-const regions = new Map()
-
-for (const city of cities) {
-  if (!regions.has(city.region)) {
-    regions.set(city.region, [])
-  }
-
-  regions.get(city.region).push(city)
-}
-
-for (const [regionName, regionCities] of regions) {
-  const totalJams = regionCities.reduce((total, city) => {
-    return (
-      total +
-      (city.communities || []).reduce(
-        (communityTotal, community) =>
-          communityTotal + (community.jams?.length || 0),
-        0
-      )
-    )
-  }, 0)
-
-  if (totalJams === 0) continue
-
+for (const regionName of jamRegions) {
   const regionSlug = createSlug(regionName)
   const route = `/region/${regionSlug}/jams`
 
