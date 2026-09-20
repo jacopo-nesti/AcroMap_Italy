@@ -318,7 +318,7 @@
   margin-top: 1rem;
 }
 
-.city-social-links a {
+.city-social-links :is(a, .protected-contact__button) {
   display: inline-flex;
   min-height: 52px;
   align-items: center;
@@ -337,11 +337,11 @@
     border-color 0.18s ease;
 }
 
-.city-social-links a i {
+.city-social-links :is(a, .protected-contact__button) i {
   font-size: 1.15rem;
 }
 
-.city-social-links a:hover {
+.city-social-links :is(a, .protected-contact__button):hover {
   transform: translateY(-2px);
 }
 
@@ -729,7 +729,7 @@
 
 .city-page__report-link:focus-visible,
 .city-community-card__toggle:focus-visible,
-.city-social-links a:focus-visible,
+.city-social-links :is(a, .protected-contact__button):focus-visible,
 .city-activity__controls button:focus-visible,
 .city-activity__scroller:focus-visible,
 .city-activity-card__maps:focus-visible,

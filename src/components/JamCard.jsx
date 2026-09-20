@@ -1,3 +1,5 @@
+import { ProtectedContacts } from "./ProtectedContactLink"
+
 const seasonLabels = {
   summer: {
     label: "Estivo",
@@ -88,6 +90,8 @@ function JamCard({ jam }) {
           Ricevi gli aggiornamenti
         </a>
       )}
+
+      <ProtectedContacts contacts={jam.protected_contacts} className="city-activity-card__updates" />
 
       {season && (
         <div className="city-activity-card__secondary">

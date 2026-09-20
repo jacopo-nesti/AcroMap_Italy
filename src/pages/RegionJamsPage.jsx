@@ -1,3 +1,4 @@
+import { ProtectedContacts } from "../components/ProtectedContactLink"
 import { Link, useParams } from "react-router"
 import { useMemo } from "react"
 import SEO from "../components/SEO"
@@ -218,6 +219,8 @@ function RegionJamsPage() {
                       Ricevi gli aggiornamenti
                     </a>
                   )}
+
+                  <ProtectedContacts contacts={jam.protected_contacts} />
 
                     <Link
                       to={isShared

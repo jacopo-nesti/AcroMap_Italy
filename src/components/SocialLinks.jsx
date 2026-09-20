@@ -1,9 +1,11 @@
+import { ProtectedContacts } from "./ProtectedContactLink"
+
 function SocialLinks({ community }) {
   if (!community) return null
 
   const { whatsapp, instagram, facebook, website } = community
 
-  const hasSocials = whatsapp || instagram || facebook || website
+  const hasSocials = whatsapp || instagram || facebook || website || community.protected_contacts?.length
   if (!hasSocials) return null
 
   const socialLinks = [
@@ -48,6 +50,7 @@ function SocialLinks({ community }) {
           <span>{social.label}</span>
         </a>
       ))}
+      <ProtectedContacts contacts={community.protected_contacts} social />
     </nav>
   )
 }

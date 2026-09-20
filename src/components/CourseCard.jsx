@@ -1,3 +1,5 @@
+import { ProtectedContacts } from "./ProtectedContactLink"
+
 const seasonLabels = {
   summer: {
     label: "Estivo",
@@ -75,6 +77,8 @@ function CourseCard({ course }) {
           {course.contact.label || "Chiedi informazioni"}
         </a>
       )}
+
+      <ProtectedContacts contacts={course.protected_contacts} className="city-activity-card__contact" />
 
       {(season || course.level || teachersList) && (
         <div className="city-activity-card__secondary">

@@ -682,7 +682,7 @@
   border-top: 1px solid rgba(23, 105, 170, 0.12);
 }
 
-.region-jam-card__actions a {
+.region-jam-card__actions :is(a, .protected-contact__button) {
   display: inline-flex;
   min-height: 44px;
   align-items: center;
@@ -694,12 +694,12 @@
   text-decoration: none;
 }
 
-.region-jam-card__actions a:hover {
+.region-jam-card__actions :is(a, .protected-contact__button):hover {
   color: #0f527f;
   text-decoration: underline;
 }
 
-.region-jam-card__actions a:focus-visible {
+.region-jam-card__actions :is(a, .protected-contact__button):focus-visible {
   outline: 3px solid rgba(23, 105, 170, 0.28);
   outline-offset: 3px;
   border-radius: 0.2rem;
