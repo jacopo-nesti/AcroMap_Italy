@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link, useLocation } from "react-router"
-import logoImage from "../assets/logo/acrofinder-logo.png"
+import logoImage from "../assets/logo/acrofinder-logo.webp"
 
 function Navbar({ isHomePage = false }) {
   const [isOpen, setIsOpen] = useState(false)
