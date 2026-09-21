@@ -15,3 +15,17 @@
 }
 .protected-contact__button:disabled { cursor: wait; opacity: .7; }
 .protected-contact__error { color: #a12828; font-size: .85rem; max-width: 30rem; }
+
+.protected-contact__button {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.protected-contact__spinner { flex-shrink: 0; }
+.protected-contact__button[aria-busy="true"] {
+  font-size: 1rem;
+  line-height: 1.5;
+}

@@ -16,7 +16,10 @@ document.body.appendChild(host)
 const root = createRoot(host)
 const widgets = new Map()
 const calls = []
-const tabs = []
+const navigations = []
+let popupAttempts = 0
+const widgetContainers = new Map()
+let removedWidgets = 0
 let sequence = 0
 let response
 let resolveRequest
@@ -36,18 +39,24 @@ window.turnstile = {
     check(options.appearance === "interaction-only", "widget appearance")
     check(options["response-field"] === false, "no token in hidden input")
     const id = ++sequence
+    check(options.size === "compact", "compact challenge fits mobile cards")
+    const challenge = document.createElement("div")
+    challenge.textContent = "Completa la verifica"
+    challenge.setAttribute("data-test-challenge", "")
+    container.appendChild(challenge)
+    widgetContainers.set(id, container)
     widgets.set(id, options)
     return id
   },
-  remove(id) { widgets.delete(id) },
+  remove(id) {
+    widgetContainers.get(id)?.replaceChildren()
+    widgetContainers.delete(id)
+    widgets.delete(id)
+    removedWidgets++
+  },
 }
-window.open = () => {
-  const tab = { closed: false, opener: window, document: document.implementation.createHTMLDocument(),
-    close() { this.closed = true }, location: { replace(url) { tab.destination = url } } }
-  tabs.push(tab)
-  return tab
-}
-window.focus = () => {}
+window.open = () => { popupAttempts++; throw new Error("No popup should be opened") }
+window.__navigate = (destination) => navigations.push(destination)
 window.__invoke = async (name, options) => {
   calls.push({ name, ...options.body })
   return response ? response : new Promise((resolve) => { resolveRequest = resolve })
@@ -58,10 +67,15 @@ const success = { data: { ok: true, contact: { id: 42, type: "whatsapp", value: 
 async function run() {
 try {
   await mount(button)
-  check(calls.length === 0 && widgets.size === 0 && tabs.length === 0, "no work on initial render")
+  check(calls.length === 0 && widgets.size === 0 && popupAttempts === 0, "no work on initial render")
   check(!host.innerHTML.includes("private") && !host.querySelector("a"), "no protected URL in DOM")
   await click()
   check(widgets.size === 1 && host.querySelector("button").disabled, "single widget and disabled button")
+  check(host.textContent.includes("Verifica in corso") && host.querySelector(".protected-contact__spinner"), "inline loading feedback")
+  check(popupAttempts === 0 && navigations.length === 0, "stay on current page during verification")
+  check(host.querySelector(".protected-contact [data-test-challenge]"), "interactive challenge is next to the clicked control")
+  await click()
+  check(widgets.size === 1 && calls.length === 0, "double click does not start another attempt")
   const first = widget()
   first.callback("token-1")
   first.callback("token-1")
@@ -70,7 +84,7 @@ try {
   check(calls[0].name === "reveal-protected-contact" && widgets.size === 0, "correct function and widget cleanup")
   resolveRequest(success)
   await tick()
-  check(tabs[0].destination === success.data.contact.value && tabs[0].opener === null, "safe successful navigation")
+  check(navigations.length === 1 && navigations[0] === success.data.contact.value && popupAttempts === 0, "safe successful navigation")
   check(!host.innerHTML.includes("private"), "revealed URL never rendered")
   await click()
   first.callback("stale-token")
@@ -79,7 +93,7 @@ try {
   widget().callback("token-2")
   await tick()
   check(calls.length === 2 && calls[1].turnstile_token === "token-2", "fresh token for retry")
-  check(host.textContent.includes("troppe richieste") && tabs[1].closed, "429 message and blank tab cleanup")
+  check(host.textContent.includes("troppe richieste") && !host.querySelector("button").disabled && !host.querySelector(".protected-contact__spinner") && navigations.length === 1, "429 restores the control without navigation")
   response = { data: { ok: false }, error: null }
   await click()
   widget().callback("token-3")
@@ -97,11 +111,10 @@ try {
   await click()
   widget().callback("token-4")
   await tick()
-  const pendingTab = tabs.at(-1)
   await mount(<span>Other page</span>)
   resolveRequest(success)
   await tick()
-  check(pendingTab.closed && !pendingTab.destination && widgets.size === 0, "unmount suppresses late responses")
+  check(navigations.length === 1 && widgets.size === 0, "unmount suppresses late responses")
   await mount(<SocialLinks community={{ name: "Test", website: "https://example.test/public", protected_contacts: [contact] }} />)
   check(host.querySelector("a").href === "https://example.test/public" && host.querySelector("button").textContent.includes(contact.label), "public and protected group contacts")
   await mount(<CourseCard course={{ name: "Test", contact: { url: "https://example.test/course" }, protected_contacts: [contact] }} />)
@@ -116,6 +129,7 @@ try {
   await mount(<MemoryRouter initialEntries={["/region/test-region/jams"]}><Routes><Route path="/region/:regionSlug/jams" element={<RegionJamsPage />} /></Routes></MemoryRouter>)
   check(host.querySelector(".region-jam-card button"), "regional jam contact")
   flushSync(() => root.unmount())
+  check(popupAttempts === 0 && removedWidgets === sequence && widgets.size === 0, "no popups and complete StrictMode widget cleanup")
   result.textContent = "PASS: StrictMode, idle privacy, token lifecycle, duplicate prevention, stale callbacks, 429, errors, expiry, unmount, navigation, group/course/jam contacts"
 } catch (error) {
   result.textContent = `FAIL: ${error.message}`

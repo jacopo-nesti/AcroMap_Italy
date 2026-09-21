@@ -17,10 +17,6 @@ const types = {
   other: ["Contatto", "bi-chat-dots"],
 }
 
-function closePendingWindow(attempt) {
-  if (attempt?.popup && !attempt.popup.closed) attempt.popup.close()
-}
-
 export default function ProtectedContactLink({ contactId, contactType, label, className = "" }) {
   const [phase, setPhase] = useState("idle")
   const [message, setMessage] = useState("")
@@ -29,13 +25,11 @@ export default function ProtectedContactLink({ contactId, contactType, label, cl
   const [defaultLabel, icon] = types[contactType] || types.other
 
   useEffect(() => () => {
-    closePendingWindow(attemptRef.current)
     attemptRef.current = null
   }, [contactId, contactType])
 
   const fail = (attempt, error) => {
     if (attemptRef.current !== attempt) return
-    closePendingWindow(attempt)
     attemptRef.current = null
     setPhase("idle")
     setMessage(revealErrorMessage(error))
@@ -43,30 +37,11 @@ export default function ProtectedContactLink({ contactId, contactType, label, cl
 
   const start = () => {
     if (attemptRef.current) return
-    const attempt = { requested: false, popup: null }
+    const attempt = { requested: false }
     attemptRef.current = attempt
     setMessage("")
     setPhase("verifying")
-    // Reserve the tab during the user gesture to avoid async popup blocking.
-    // No contact value is known here. Disconnect the opener before navigation.
-    if (!["phone", "email"].includes(contactType)) {
-      try {
-        attempt.popup = window.open("about:blank", "_blank")
-        if (attempt.popup) {
-          attempt.popup.opener = null
-          const meta = attempt.popup.document.createElement("meta")
-          meta.name = "referrer"
-          meta.content = "no-referrer"
-          attempt.popup.document.head.appendChild(meta)
-          attempt.popup.document.title = "Verifica del contatto"
-          attempt.popup.document.body.textContent = "Verifica in corso. Se richiesto, completa la verifica nella pagina AcroFinder."
-          window.focus()
-        }
-      } catch {
-        closePendingWindow(attempt)
-        attempt.popup = null
-      }
-    }
+
   }
 
   const verify = async (token) => {
@@ -79,12 +54,7 @@ export default function ProtectedContactLink({ contactId, contactType, label, cl
       if (attemptRef.current !== attempt) return
       if (contact.type !== contactType) throw new Error("Unexpected contact type")
       const destination = contactDestination(contact.type, contact.value)
-      if (attempt.popup && !attempt.popup.closed) {
-        attempt.popup.location.replace(destination)
-      } else {
-        // Browsers that block new tabs can still open the contact in this tab.
-        window.location.assign(destination)
-      }
+      window.location.assign(destination)
       attemptRef.current = null
       setPhase("idle")
     } catch (error) {
@@ -96,14 +66,19 @@ export default function ProtectedContactLink({ contactId, contactType, label, cl
     <div className="protected-contact">
       <button type="button" className={`protected-contact__button ${className}`}
         disabled={phase !== "idle"} aria-busy={phase !== "idle"}
-        aria-describedby={message ? messageId : undefined} onClick={start}>
-        <i className={`bi ${icon}`} aria-hidden="true" />
-        <span>{phase === "idle" ? label || defaultLabel : "Verifica..."}</span>
+        aria-describedby={message || phase !== "idle" ? messageId : undefined} onClick={start}>
+        {phase === "idle"
+          ? <i className={`bi ${icon}`} aria-hidden="true" />
+          : <span className="spinner-border spinner-border-sm protected-contact__spinner" aria-hidden="true" />}
+        <span>{phase === "idle" ? label || defaultLabel : "Verifica in corso…"}</span>
       </button>
+      <span id={messageId} className={message ? "protected-contact__error" : "visually-hidden"}
+        role="status" aria-live="polite">
+        {message || (phase !== "idle" ? "Verifica in corso. A breve sarai reindirizzato." : "")}
+      </span>
       {phase === "verifying" && <TurnstileWidget onVerify={verify}
         onExpire={() => { if (!attemptRef.current?.requested) fail(attemptRef.current) }}
         onError={() => { if (!attemptRef.current?.requested) fail(attemptRef.current) }} />}
-      {message && <span id={messageId} className="protected-contact__error" role="alert">{message}</span>}
     </div>
   )
 }

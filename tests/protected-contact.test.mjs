@@ -26,6 +26,13 @@ test("429 is friendly and other failures do not expose internal details", () => 
   assert.equal(revealErrorMessage(new Error("private backend detail")), "Non è stato possibile aprire il contatto. Riprova tra poco.")
 })
 
+test("protected contacts navigate in the current tab without any popup workaround", async () => {
+  const { readFile } = await import("node:fs/promises")
+  const source = await readFile(new URL("../src/components/ProtectedContactLink.jsx", import.meta.url), "utf8")
+  assert.match(source, /window\.location\.assign\(destination\)/)
+  assert.doesNotMatch(source, /window\.open|about:blank|popup|closePendingWindow/)
+})
+
 // Real React lifecycle test in local headless Chrome. All external services are mocked.
 test("protected contact browser flow", async (t) => {
   const { existsSync } = await import("node:fs")
@@ -50,6 +57,14 @@ test("protected contact browser flow", async (t) => {
           if (source.endsWith("lib/supabase")) return "\0mock-supabase"
           if (source.endsWith("components/CommunityFinder")) return "\0mock-context"
           if (source.endsWith(".css")) return "\0empty-css"
+        },
+        // Intercept only the final navigation so the offline browser test can
+        // keep running; the component and the reveal service otherwise run unchanged.
+        transform(code, id) {
+          if (id.replaceAll("\\", "/").endsWith("/src/components/ProtectedContactLink.jsx")) {
+            assert.ok(code.includes("window.location.assign(destination)"))
+            return code.replace("window.location.assign(destination)", "window.__navigate(destination)")
+          }
         },
         load(id) {
           if (id === "\0mock-supabase") return "export const supabase = { functions: { invoke: (...args) => window.__invoke(...args) } }"

@@ -26,6 +26,7 @@ function TurnstileWidget({ onVerify, onExpire, onError }) {
           sitekey: siteKey,
           theme: "auto",
           appearance: "interaction-only",
+          size: "compact",
           "response-field": false,
           retry: "never",
           callback: (token) => notify("onVerify", token),
