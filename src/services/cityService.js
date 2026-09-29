@@ -96,9 +96,7 @@ export async function getCities() {
     "jam_contacts"
   )
 
-  // ----------------------------------------------------------
   // Helpers
-  // ----------------------------------------------------------
 
   const getContact = (contactId) =>
     contacts.find((contact) => contact.id === contactId)
@@ -171,9 +169,7 @@ const getProtectedJamContacts = (jamId) =>
     )
     .sort((a, b) => a.sort_order - b.sort_order)
 
-  // ----------------------------------------------------------
   // Ricostruzione della vecchia struttura cities.json
-  // ----------------------------------------------------------
   
   return cities.map((city) => {
     const region = regions.find(

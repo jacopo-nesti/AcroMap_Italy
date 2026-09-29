@@ -1,4 +1,5 @@
 import { ProtectedContacts } from "./ProtectedContactLink"
+import { formatDay } from "../utils/formatDay"
 
 const seasonLabels = {
   summer: {
@@ -28,12 +29,13 @@ function CourseCard({ course }) {
   const hasTime = course.start_time || course.end_time
 
   const season = seasonLabels[course.season]
+  const dayLabel = formatDay(course.day)
 
   return (
     <article className="city-activity-card city-activity-card--course">
       <div className="city-activity-card__heading">
         <div>
-          {course.day && <p className="city-activity-card__day">{course.day}</p>}
+          {dayLabel && <p className="city-activity-card__day">{dayLabel}</p>}
           {course.name && <h5>{course.name}</h5>}
         </div>
         <i className="bi bi-mortarboard" aria-hidden="true"></i>

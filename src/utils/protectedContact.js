@@ -1,4 +1,3 @@
-// Only navigation schemes appropriate for a contact are allowed.
 export function contactDestination(type, value) {
   if (typeof value !== "string" || [...value].some((character) => character.charCodeAt(0) < 32 || character.charCodeAt(0) === 127)) {
     throw new Error("Invalid contact")

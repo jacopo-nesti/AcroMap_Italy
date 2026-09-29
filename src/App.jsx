@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router"
-import { CommunityFinder } from "./components/CommunityFinder" // Assicurati che il percorso sia corretto
+import { CommunityFinder } from "./components/CommunityFinder"
 import Contribute from "./pages/Contribute"
 import AboutUs from "./pages/AboutUs"
 import HomePage from "./pages/HomePage"

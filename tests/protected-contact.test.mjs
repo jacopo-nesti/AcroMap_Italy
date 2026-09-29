@@ -33,7 +33,6 @@ test("protected contacts navigate in the current tab without any popup workaroun
   assert.doesNotMatch(source, /window\.open|about:blank|popup|closePendingWindow/)
 })
 
-// Real React lifecycle test in local headless Chrome. All external services are mocked.
 test("protected contact browser flow", async (t) => {
   const { existsSync } = await import("node:fs")
   const { mkdtemp, writeFile, rm } = await import("node:fs/promises")
@@ -58,8 +57,7 @@ test("protected contact browser flow", async (t) => {
           if (source.endsWith("components/CommunityFinder")) return "\0mock-context"
           if (source.endsWith(".css")) return "\0empty-css"
         },
-        // Intercept only the final navigation so the offline browser test can
-        // keep running; the component and the reveal service otherwise run unchanged.
+
         transform(code, id) {
           if (id.replaceAll("\\", "/").endsWith("/src/components/ProtectedContactLink.jsx")) {
             assert.ok(code.includes("window.location.assign(destination)"))

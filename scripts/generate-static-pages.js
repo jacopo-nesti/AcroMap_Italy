@@ -22,8 +22,6 @@ async function loadSeoMetadata() {
     auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
   })
 
-  // Anonymous reads respect the same public RLS as the frontend. Never select
-  // contacts, courses, descriptions or the complete legacy data structure.
   async function readRows(table, columns, orderColumns, acceptedOnly = false) {
     const rows = []
     const pageSize = 500
@@ -38,7 +36,7 @@ async function loadSeoMetadata() {
       }
       rows.push(...data)
       if (rows.length >= count) return rows
-      // Fail rather than silently omit pages if the API row cap is too low.
+
       if (data.length < pageSize) throw new Error(`Risposta incompleta da ${table}: verificare il limite righe dell'API.`)
     }
   }

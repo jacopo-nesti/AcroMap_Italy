@@ -1,4 +1,5 @@
 import { ProtectedContacts } from "../components/ProtectedContactLink"
+import { formatDay } from "../utils/formatDay"
 import { Link, useParams } from "react-router"
 import { useMemo } from "react"
 import SEO from "../components/SEO"
@@ -99,6 +100,7 @@ function RegionJamsPage() {
           <div className="region-jams-grid">
             {jams.map((jam, index) => {
               const isVariable = jam.type === "variable"
+              const dayLabel = formatDay(jam.day)
               const isShared = jam.shared_id != null
 
               return (
@@ -157,10 +159,10 @@ function RegionJamsPage() {
                   <p className="region-jam-card__variable-copy">
                     Giorno, orario e luogo vengono definiti di volta in volta dalla community.
                   </p>
-                ) : jam.day && (
+                ) : dayLabel && (
                   <p className="region-jam-card__day">
                     <i className="bi bi-calendar-event" aria-hidden="true"></i>
-                    {jam.day}
+                    {dayLabel}
                   </p>
                 )}
 

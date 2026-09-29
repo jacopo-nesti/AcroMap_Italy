@@ -1,4 +1,5 @@
 import { ProtectedContacts } from "./ProtectedContactLink"
+import { formatDay } from "../utils/formatDay"
 
 const seasonLabels = {
   summer: {
@@ -24,6 +25,7 @@ function JamCard({ jam }) {
   const isVariable = jam.type === "variable"
   const hasTime = jam.start_time || jam.end_time
   const season = seasonLabels[jam.season]
+  const dayLabel = formatDay(jam.day)
 
   return (
     <article className={`city-activity-card city-activity-card--jam${isVariable ? " city-activity-card--variable" : ""}`}>
@@ -32,9 +34,9 @@ function JamCard({ jam }) {
           <span className="city-activity-card__variable-badge">Jam variabile</span>
           <i className="bi bi-calendar2-week" aria-hidden="true"></i>
         </div>
-      ) : (jam.day || hasTime) && (
+      ) : (dayLabel || hasTime) && (
         <div className="city-activity-card__heading">
-          {jam.day && <p className="city-activity-card__day">{jam.day}</p>}
+          {dayLabel && <p className="city-activity-card__day">{dayLabel}</p>}
           <i className="bi bi-calendar-event" aria-hidden="true"></i>
         </div>
       )}

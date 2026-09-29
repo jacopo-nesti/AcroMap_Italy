@@ -48,7 +48,7 @@ export default function ProtectedContactLink({ contactId, contactType, label, cl
     const attempt = attemptRef.current
     if (!attempt || attempt.requested) return
     attempt.requested = true
-    setPhase("revealing") // Unmount the widget; the token is used exactly once.
+    setPhase("revealing")
     try {
       const contact = await revealProtectedContact(contactId, token)
       if (attemptRef.current !== attempt) return
