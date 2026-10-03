@@ -69,8 +69,8 @@ function HomePage() {
 
       <section className="home-hero position-relative overflow-hidden">
         <picture className="home-hero__picture">
-          <source media="(min-width: 1400px)" srcSet={heroDesktopImage} />
-          <source media="(min-width: 576px)" srcSet={heroTabletImage} />
+          <source media="(min-width: 1200px)" srcSet={heroDesktopImage} />
+          <source media="(min-width: 768px)" srcSet={heroTabletImage} />
           <img
             src={heroMobileImage}
             alt="Due persone che praticano acroyoga in un paesaggio italiano"
@@ -86,7 +86,7 @@ function HomePage() {
               Trova la tua community di Acroyoga in tutta Italia!
             </h1>
             <p className="home-hero__subtitle mb-4">
-              Scopri jam, corsi e gruppi di Acroyoga. Scopri, connettiti e partecipa.
+              Scopri jam, corsi e gruppi, connettiti con la community e partecipa.
             </p>
 
             {isLoading ? (
@@ -116,18 +116,16 @@ function HomePage() {
           <span>Scorri per scoprire di più</span>
           <i className="bi bi-chevron-down"></i>
         </div>
-        
+        <div className="home-scroll-hint home-scroll-hint--desktop" aria-hidden="true">
+          <span>Scorri per scoprire di più</span>
+          <i className="bi bi-chevron-down"></i>
+        </div>
       </section>
 
       <section className="home-features-wrap" id="home-features">
         <div className="container">
 
           <FeatureHighlights />
-
-          <div className="home-scroll-hint home-scroll-hint--desktop" aria-hidden="true">
-            <span>Scorri per scoprire di più</span>
-            <i className="bi bi-chevron-down"></i>
-          </div>
 
         </div>
       </section>
