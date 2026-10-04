@@ -33,7 +33,7 @@ function Terms() {
             </h1>
 
             <p className="small" style={{ color: "#64748b" }}>
-              Ultimo aggiornamento: agosto 2026
+              Ultimo aggiornamento: 4 ottobre 2026
             </p>
           </div>
 
@@ -110,11 +110,18 @@ function Terms() {
                   messaggistica e altri canali esterni;
                 </li>
                 <li>una mappa delle community;</li>
+                <li>accesso ai recapiti messi a disposizione dalle community;</li>
                 <li>
                   strumenti per segnalare nuove community, modifiche, errori o
                   aggiornamenti.
                 </li>
               </ul>
+
+              <p style={{ color: "#334155" }}>
+                AcroFinder può collaborare con progetti e piattaforme affini
+                per favorire la scoperta delle community italiane anche al di
+                fuori del sito, mantenendo la propria finalità informativa.
+              </p>
 
               <p className="fw-semibold mb-0" style={{ color: "#1e293b" }}>
                 AcroFinder non costituisce una scuola di Acroyoga,
@@ -158,11 +165,23 @@ function Terms() {
                 </li>
               </ul>
 
-              <p className="mb-0" style={{ color: "#334155" }}>
+              <p style={{ color: "#334155" }}>
                 È vietato tentare di compromettere la sicurezza, il
                 funzionamento o l'integrità tecnica del sito o utilizzare
                 strumenti automatizzati in modo tale da interferire con il
                 normale funzionamento del servizio.
+              </p>
+
+              <p className="mb-0" style={{ color: "#334155" }}>
+                Non è consentito utilizzare sistemi automatizzati per
+                raccogliere in modo massivo dati o contatti, effettuare
+                scraping abusivo, aggirare sistemi anti-bot, limiti alle
+                richieste o altre misure di sicurezza, né tentare di ottenere
+                contatti protetti con modalità diverse da quelle offerte
+                dall'interfaccia di AcroFinder. Non è inoltre consentito
+                utilizzare API, endpoint o altri strumenti tecnici in modo da
+                compromettere la sicurezza, la disponibilità o il
+                funzionamento del servizio.
               </p>
             </section>
 
@@ -428,14 +447,28 @@ function Terms() {
 
               <p style={{ color: "#334155" }}>
                 Il soggetto che invia il materiale conserva gli eventuali
-                diritti di cui è titolare.
+                diritti di cui è titolare. L'autorizzazione non esclusiva non
+                trasferisce la proprietà dei contenuti.
               </p>
 
               <p style={{ color: "#334155" }}>
                 La presente autorizzazione è limitata alle finalità di
                 gestione, pubblicazione, aggiornamento e promozione del
-                progetto AcroFinder e non comporta il trasferimento della
-                proprietà dei contenuti.
+                progetto AcroFinder. Le informazioni chiaramente destinate
+                alla pubblicazione possono essere utilizzate anche nell'ambito
+                di collaborazioni con progetti affini e tramite piattaforme
+                partner coerenti con le finalità informative e comunitarie di
+                AcroFinder, per favorire la scoperta e la visibilità delle
+                community.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                L'autorizzazione riguarda soltanto contenuti destinati alla
+                pubblicazione: non comprende informazioni interne di gestione,
+                email personali usate solo per gestire una segnalazione,
+                numeri di telefono classificati come protetti, link WhatsApp,
+                Signal o altri canali classificati come privati o protetti, né
+                altri dati non destinati alla pubblicazione.
               </p>
 
               <p className="mb-0" style={{ color: "#334155" }}>
@@ -528,10 +561,49 @@ function Terms() {
                 soggetti ai propri termini, condizioni e informative privacy.
               </p>
 
-              <p className="mb-0" style={{ color: "#334155" }}>
+              <p style={{ color: "#334155" }}>
                 La presenza di un collegamento non implica automaticamente
                 approvazione, collaborazione o affiliazione con il relativo
-                soggetto.
+                soggetto, salvo che una collaborazione sia espressamente
+                indicata da AcroFinder.
+              </p>
+
+              <h3 className="h6 fw-bold text-dark mt-4 mb-2">
+                Collaborazione con AcroPassport
+              </h3>
+
+              <p style={{ color: "#334155" }}>
+                AcroFinder collabora con AcroPassport, progetto dedicato alla
+                scoperta di community e attività di Acroyoga a livello
+                internazionale. La collaborazione mira a far conoscere le
+                community italiane anche ai praticanti interessati
+                all'Acroyoga a livello internazionale.
+              </p>
+
+              <p className="mb-2" style={{ color: "#334155" }}>
+                Nell'ambito della collaborazione possono essere messe a
+                disposizione esclusivamente informazioni già pubbliche o
+                chiaramente destinate alla pubblicazione, tra cui:
+              </p>
+
+              <ul style={{ color: "#334155" }}>
+                <li>nome della community, città e regione;</li>
+                <li>descrizione pubblica, luoghi e coordinate delle attività;</li>
+                <li>informazioni pubbliche relative a corsi e jam;</li>
+                <li>siti web e profili social pubblici;</li>
+                <li>nomi di insegnanti o organizzatori già pubblicamente associati alle attività.</li>
+              </ul>
+
+              <p style={{ color: "#334155" }}>
+                AcroPassport è un progetto autonomo rispetto ad AcroFinder:
+                l'utilizzo del suo servizio è soggetto alle sue condizioni.
+                AcroFinder non è responsabile del funzionamento o dei contenuti
+                di AcroPassport nei limiti consentiti dalla legge.
+              </p>
+
+              <p className="mb-0" style={{ color: "#334155" }}>
+                Per i dettagli sul trattamento e sulla condivisione dei dati
+                personali si rimanda alla Privacy Policy di AcroFinder.
               </p>
             </section>
 
@@ -621,14 +693,24 @@ function Terms() {
               <p style={{ color: "#334155" }}>
                 La presenza su AcroFinder del nome, logo o collegamento di una
                 community non implica il trasferimento ad AcroFinder dei
-                relativi diritti.
+                relativi diritti. Le informazioni fattuali sulle community,
+                come nome, città, giorni, orari e attività pubbliche, non sono
+                presentate come proprietà esclusiva di AcroFinder.
               </p>
 
-              <p className="mb-0" style={{ color: "#334155" }}>
+              <p style={{ color: "#334155" }}>
                 Non è consentito presentare copie o riproduzioni sostanziali di
                 AcroFinder come se costituissero il progetto originale o
                 fossero ufficialmente autorizzate, fatti salvi gli utilizzi
                 consentiti dalla legge o dalle eventuali licenze applicabili.
+              </p>
+
+              <p className="mb-0" style={{ color: "#334155" }}>
+                Non è consentita l'estrazione sistematica o massiva dei
+                contenuti del servizio con modalità abusive o in violazione
+                delle misure tecniche predisposte da AcroFinder, in
+                particolare il tentativo di raccogliere massivamente i
+                contatti protetti.
               </p>
             </section>
 
@@ -668,10 +750,16 @@ function Terms() {
                 </li>
               </ul>
 
-              <p className="mb-0" style={{ color: "#334155" }}>
+              <p style={{ color: "#334155" }}>
                 AcroFinder può inoltre modificare, aggiungere o rimuovere
                 funzionalità quando ciò sia necessario per evolvere o
                 mantenere il progetto.
+              </p>
+
+              <p className="mb-0" style={{ color: "#334155" }}>
+                AcroFinder non può garantire la disponibilità, la continuità o
+                il corretto funzionamento dei servizi esterni o delle
+                piattaforme partner.
               </p>
             </section>
 
@@ -714,6 +802,11 @@ function Terms() {
                 </li>
                 <li>dall'utilizzo di siti o servizi esterni;</li>
                 <li>
+                  dal funzionamento, dai contenuti, dalle condizioni o
+                  dall'utilizzo di piattaforme partner e servizi esterni
+                  autonomi;
+                </li>
+                <li>
                   dalla partecipazione autonoma dell'utente ad attività
                   organizzate da soggetti indipendenti da AcroFinder.
                 </li>
@@ -755,6 +848,8 @@ function Terms() {
                 <li>le modalità di pubblicazione;</li>
                 <li>la conservazione;</li>
                 <li>i fornitori coinvolti;</li>
+                <li>la sicurezza e i contatti protetti;</li>
+                <li>l'eventuale condivisione di informazioni pubblicabili con piattaforme partner;</li>
                 <li>i diritti degli interessati.</li>
               </ul>
 
@@ -816,6 +911,7 @@ function Terms() {
               <ul style={{ color: "#334155" }}>
                 <li>modifiche delle funzionalità di AcroFinder;</li>
                 <li>introduzione di nuovi servizi;</li>
+                <li>introduzione, modifica o cessazione di collaborazioni e integrazioni con servizi o progetti terzi;</li>
                 <li>cambiamenti organizzativi;</li>
                 <li>esigenze di sicurezza;</li>
                 <li>modifiche normative.</li>

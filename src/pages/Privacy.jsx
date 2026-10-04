@@ -32,7 +32,7 @@ function Privacy() {
             </h1>
 
             <p className="small" style={{ color: "#64748b" }}>
-              Ultimo aggiornamento: agosto 2026
+              Ultimo aggiornamento: 4 ottobre 2026
             </p>
           </div>
 
@@ -117,6 +117,7 @@ function Privacy() {
                 <li>nome della community, dell'organizzazione o dell'associazione;</li>
                 <li>città e luoghi in cui vengono svolte le attività;</li>
                 <li>link a siti web, social network, gruppi o altri canali pubblici della community;</li>
+                <li>numeri di telefono, link WhatsApp e altri recapiti relativi alle community o alle loro attività;</li>
                 <li>informazioni relative a jam, corsi e altre attività di Acroyoga;</li>
                 <li>nome degli insegnanti o degli organizzatori;</li>
                 <li>
@@ -125,6 +126,13 @@ function Privacy() {
                 </li>
                 <li>eventuali ulteriori informazioni inserite volontariamente nel modulo.</li>
               </ul>
+
+              <p style={{ color: "#334155" }}>
+                Durante alcune funzionalità di sicurezza possono inoltre essere
+                trattati dati tecnici necessari a prevenire abusi, come
+                l'indirizzo IP, informazioni sul browser o sul dispositivo e
+                altri segnali tecnici.
+              </p>
 
               <p className="fw-semibold mb-0" style={{ color: "#1e293b" }}>
                 Si invita a non inserire dati personali non necessari, dati
@@ -144,9 +152,8 @@ function Privacy() {
               </h2>
 
               <p style={{ color: "#334155" }}>
-                I dati raccolti attraverso i moduli di contribuzione e di
-                contatto vengono trattati esclusivamente per finalità connesse
-                al funzionamento di AcroFinder e, in particolare, per:
+                I dati trattati da AcroFinder sono utilizzati per finalità
+                connesse al funzionamento del servizio e, in particolare, per:
               </p>
 
               <ul style={{ color: "#334155" }}>
@@ -157,6 +164,10 @@ function Privacy() {
                 <li>mantenere aggiornata la mappa e il database delle community;</li>
                 <li>prevenire o gestire segnalazioni manifestamente errate, abusive o non pertinenti;</li>
                 <li>gestire eventuali richieste di rettifica, aggiornamento o rimozione delle informazioni.</li>
+                <li>consentire agli utenti di accedere ai recapiti messi a disposizione dalle community;</li>
+                <li>proteggere eventuali recapiti personali mediante sistemi di verifica e limitazione delle richieste;</li>
+                <li>prevenire utilizzi automatizzati, scraping abusivo, richieste eccessive o altri comportamenti potenzialmente dannosi;</li>
+                <li>favorire, quando applicabile, la diffusione delle informazioni pubbliche sulle community italiane attraverso collaborazioni con progetti affini;</li>
                 <li>
                   rispondere a domande, richieste o comunicazioni inviate
                   attraverso il modulo Contatti.
@@ -174,9 +185,8 @@ function Privacy() {
               </h2>
 
               <p style={{ color: "#334155" }}>
-                Il trattamento dei dati forniti direttamente dalla persona che
-                utilizza il modulo è effettuato, a seconda delle circostanze,
-                sulla base:
+                Il trattamento dei dati personali è effettuato, a seconda
+                delle circostanze, sulla base:
               </p>
 
               <ul style={{ color: "#334155" }}>
@@ -191,6 +201,16 @@ function Privacy() {
                   fornire agli utenti informazioni utili sulle community di
                   Acroyoga.
                 </li>
+                <li>
+                  del legittimo interesse a proteggere il sito, i recapiti e
+                  l'infrastruttura da utilizzi automatizzati o abusivi;
+                </li>
+                <li>
+                  del legittimo interesse a diffondere informazioni già
+                  pubbliche o chiaramente destinate alla pubblicazione per
+                  favorire la conoscenza delle community di Acroyoga, nel
+                  rispetto dei diritti degli interessati.
+                </li>
               </ul>
 
               <p style={{ color: "#334155" }}>
@@ -201,9 +221,8 @@ function Privacy() {
               </p>
 
               <p className="mb-0" style={{ color: "#334155" }}>
-                AcroFinder non utilizza i dati raccolti attraverso i moduli per
-                attività di marketing, profilazione o invio di comunicazioni
-                commerciali.
+                AcroFinder non utilizza questi dati per attività di marketing,
+                profilazione o invio di comunicazioni commerciali.
               </p>
             </section>
 
@@ -213,7 +232,7 @@ function Privacy() {
             <section className="mb-4">
               <h2 className="h5 fw-bold text-dark d-flex align-items-center gap-2 mb-3">
                 <i className="bi bi-globe2" style={{ color: "#15803d" }}></i>
-                5. Dati destinati alla pubblicazione
+                5. Dati destinati alla pubblicazione e contatti protetti
               </h2>
 
               <p style={{ color: "#334155" }}>
@@ -241,10 +260,21 @@ function Privacy() {
                 la pubblicazione come contatto pubblico della community.
               </p>
 
-              <p className="mb-0" style={{ color: "#334155" }}>
+              <p style={{ color: "#334155" }}>
                 AcroFinder applica il principio di minimizzazione e cerca di
                 pubblicare esclusivamente le informazioni necessarie a
                 consentire agli utenti di conoscere e contattare le community.
+              </p>
+
+              <p className="mb-0" style={{ color: "#334155" }}>
+                Alcuni recapiti, come numeri di telefono personali o link
+                diretti a gruppi WhatsApp, possono essere classificati come
+                <strong> contatti protetti</strong>. Il loro valore non è incluso
+                nei normali dati pubblicamente accessibili o scaricabili dal
+                sito: viene comunicato soltanto quando l'utente sceglie
+                espressamente di accedere al contatto. L'accesso può richiedere
+                una verifica anti-bot ed essere soggetto a limiti sul numero
+                delle richieste.
               </p>
             </section>
 
@@ -349,11 +379,27 @@ function Privacy() {
                 o utilizzo improprio.
               </p>
 
-              <p className="mb-0" style={{ color: "#334155" }}>
+              <p style={{ color: "#334155" }}>
                 L'accesso alle informazioni ricevute tramite il modulo è
                 limitato ai soggetti che ne hanno necessità per la gestione del
                 progetto e ai fornitori tecnici utilizzati per l'erogazione dei
                 relativi servizi.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                I contatti protetti sono gestiti mediante misure tecniche che
+                ne impediscono l'esposizione attraverso le normali richieste
+                pubbliche al database. La loro visualizzazione può richiedere
+                una verifica anti-bot ed essere soggetta a limitazione delle
+                richieste.
+              </p>
+
+              <p className="mb-0" style={{ color: "#334155" }}>
+                Per limitare le richieste e prevenire abusi, l'indirizzo IP può
+                essere utilizzato per generare un identificativo pseudonimo
+                tramite una funzione crittografica. Questo identificativo è
+                utilizzato esclusivamente per la sicurezza, non per
+                profilazione o finalità commerciali.
               </p>
             </section>
 
@@ -395,6 +441,13 @@ function Privacy() {
                 stati raccolti vengono cancellati o resi anonimi.
               </p>
 
+              <p style={{ color: "#334155" }}>
+                Gli identificativi tecnici utilizzati per limitare le richieste
+                sono conservati esclusivamente per il tempo necessario al
+                funzionamento delle misure di sicurezza e prevenzione degli
+                abusi.
+              </p>
+
               <p className="mb-0" style={{ color: "#334155" }}>
                 L'interessato può in ogni momento richiedere la cancellazione
                 dei propri dati nei casi previsti dalla normativa applicabile.
@@ -409,6 +462,56 @@ function Privacy() {
                 <i className="bi bi-box-seam-fill" style={{ color: "#15803d" }}></i>
                 10. Fornitori tecnici e servizi di terze parti
               </h2>
+
+              <h3 className="h6 fw-bold text-dark mt-4 mb-2">Supabase</h3>
+
+              <p style={{ color: "#334155" }}>
+                AcroFinder utilizza Supabase come infrastruttura backend e
+                database per gestire informazioni relative a community, città,
+                corsi, jam, contatti e altri dati necessari al servizio.
+                Supabase è utilizzato anche per alcune funzionalità lato server
+                necessarie alla gestione sicura dei contatti protetti.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                Il progetto Supabase di AcroFinder è configurato nella regione
+                <strong> Central EU (Frankfurt – eu-central-1)</strong>. I dati
+                primari del progetto sono pertanto conservati e principalmente
+                trattati in tale regione.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                Supabase può avvalersi di propri sub-responsabili e, ove
+                necessario, effettuare ulteriori trattamenti o trasferimenti
+                nel rispetto della normativa applicabile e del proprio Data
+                Processing Addendum. AcroFinder non utilizza Supabase per
+                pubblicità o profilazione.
+              </p>
+
+              <h3 className="h6 fw-bold text-dark mt-4 mb-2">
+                Cloudflare Turnstile
+              </h3>
+
+              <p style={{ color: "#334155" }}>
+                AcroFinder utilizza Cloudflare Turnstile per proteggere alcune
+                funzionalità da bot, richieste automatizzate e utilizzi abusivi.
+                La verifica viene richiesta quando l'utente sceglie di accedere
+                a un contatto protetto.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                Durante la verifica Cloudflare può trattare segnali tecnici
+                necessari al rilevamento dei bot, come indirizzo IP,
+                user-agent, caratteristiche tecniche della connessione e del
+                browser, sitekey e origine della richiesta. La verifica produce
+                un token tecnico, validato lato server prima dell'accesso al
+                contatto.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                Questi dati sono utilizzati per la verifica di sicurezza e non
+                da AcroFinder per pubblicità, marketing o profilazione.
+              </p>
 
               <h3 className="h6 fw-bold text-dark mt-4 mb-2">Tally</h3>
 
@@ -576,10 +679,60 @@ function Privacy() {
                 situati al di fuori dell'Unione europea.
               </p>
 
-              <p className="mb-0" style={{ color: "#334155" }}>
+              <p style={{ color: "#334155" }}>
                 I dati utilizzati esclusivamente per la gestione interna delle
                 segnalazioni, come l'indirizzo email personale del
                 contributore, non vengono resi pubblici.
+              </p>
+
+              <h3 className="h6 fw-bold text-dark mt-4 mb-2">AcroPassport</h3>
+
+              <p style={{ color: "#334155" }}>
+                AcroFinder collabora con AcroPassport, un progetto dedicato
+                alla scoperta di community e attività di Acroyoga a livello
+                internazionale. Nell'ambito della collaborazione AcroFinder
+                potrà rendere disponibili ad AcroPassport esclusivamente
+                informazioni già pubbliche o chiaramente destinate alla
+                pubblicazione, per aumentare la visibilità delle community
+                italiane.
+              </p>
+
+              <p className="mb-2" style={{ color: "#334155" }}>
+                Tra le informazioni pubblicabili possono rientrare:
+              </p>
+
+              <ul style={{ color: "#334155" }}>
+                <li>nome della community, città e regione;</li>
+                <li>descrizione pubblica, luoghi e coordinate geografiche;</li>
+                <li>informazioni pubbliche relative a corsi e jam;</li>
+                <li>siti web, profili Instagram, Facebook e altri social pubblici;</li>
+                <li>nomi di insegnanti e organizzatori già pubblicamente associati all'attività;</li>
+                <li>altre informazioni chiaramente destinate alla presentazione pubblica della community.</li>
+              </ul>
+
+              <p className="mb-2" style={{ color: "#334155" }}>
+                Non vengono condivisi con AcroPassport:
+              </p>
+
+              <ul style={{ color: "#334155" }}>
+                <li>l'email personale del contributore;</li>
+                <li>numeri di telefono classificati come protetti;</li>
+                <li>link diretti a gruppi WhatsApp, link Signal o altri canali privati o protetti;</li>
+                <li>identificativi tecnici utilizzati per limitare le richieste;</li>
+                <li>informazioni interne relative alle segnalazioni;</li>
+                <li>qualsiasi altro dato non destinato alla pubblicazione.</li>
+              </ul>
+
+              <p style={{ color: "#334155" }}>
+                AcroPassport non riceve accesso diretto al database Supabase:
+                la collaborazione riguarda soltanto dati pubblicabili
+                selezionati da AcroFinder.
+              </p>
+
+              <p className="mb-0" style={{ color: "#334155" }}>
+                Gli interessati possono richiedere la rettifica o la rimozione
+                delle informazioni personali che li riguardano oppure, quando
+                applicabile, opporsi al trattamento.
               </p>
             </section>
 
@@ -595,6 +748,18 @@ function Privacy() {
               <p style={{ color: "#334155" }}>
                 AcroFinder privilegia, ove possibile, servizi che trattano i
                 dati all'interno dello Spazio Economico Europeo.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                Il progetto Supabase è configurato nella regione Central EU
+                (Frankfurt – eu-central-1). Tally dichiara di conservare in
+                Europa i dati raccolti tramite i moduli.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                Alcuni fornitori tecnici, tra cui Cloudflare e GitHub, possono
+                utilizzare infrastrutture o sub-responsabili anche al di fuori
+                dello Spazio Economico Europeo.
               </p>
 
               <p style={{ color: "#334155" }}>
@@ -633,6 +798,13 @@ function Privacy() {
                 AcroFinder non utilizza Google Analytics o GA4, Google Tag
                 Manager, Meta Pixel, strumenti pubblicitari, strumenti di
                 profilazione o sistemi di analytics comportamentali.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                Quando viene richiesta la verifica di un contatto protetto,
+                Cloudflare Turnstile può trattare segnali tecnici strettamente
+                necessari alla sicurezza. AcroFinder non usa questo trattamento
+                per analytics, marketing o profilazione.
               </p>
 
               <p style={{ color: "#334155" }}>
@@ -675,9 +847,15 @@ function Privacy() {
                 ai sensi dell'art. 22 GDPR.
               </p>
 
-              <p className="mb-0" style={{ color: "#334155" }}>
+              <p style={{ color: "#334155" }}>
                 Le segnalazioni ricevute possono essere sottoposte a verifica
                 prima della loro pubblicazione.
+              </p>
+
+              <p className="mb-0" style={{ color: "#334155" }}>
+                La verifica anti-bot e la limitazione delle richieste sono
+                sistemi tecnici di sicurezza: non producono decisioni aventi
+                effetti giuridici o analogamente significativi sugli utenti.
               </p>
             </section>
 
@@ -709,6 +887,14 @@ function Privacy() {
               <p style={{ color: "#334155" }}>
                 È inoltre possibile richiedere la modifica o la rimozione di
                 informazioni personali pubblicate su AcroFinder.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                Se informazioni personali pubbliche sono già state rese
+                disponibili ad AcroPassport, AcroFinder adotterà misure
+                ragionevoli per gestire eventuali richieste di rettifica o
+                rimozione anche rispetto ai dati condivisi, secondo le modalità
+                tecnicamente applicabili.
               </p>
 
               <p className="mb-2" style={{ color: "#334155" }}>
@@ -783,7 +969,8 @@ function Privacy() {
               <p style={{ color: "#334155" }}>
                 La presente Privacy Policy può essere aggiornata per riflettere
                 modifiche al funzionamento di AcroFinder, ai servizi utilizzati
-                o alla normativa applicabile.
+                o alla normativa applicabile, nonché l'introduzione o la
+                modifica di collaborazioni con altri progetti.
               </p>
 
               <p style={{ color: "#334155" }}>
