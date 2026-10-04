@@ -41,29 +41,31 @@ AcroFinder nasce per offrire un **punto di accesso unico alla community italiana
 
 ## Tecnologie
 
-AcroFinder è sviluppato come applicazione web frontend utilizzando:
+AcroFinder è sviluppato come applicazione web utilizzando:
 
 - **React** per la costruzione dell'interfaccia tramite componenti riutilizzabili
 - **React Router** per la gestione della navigazione e delle route dinamiche
 - **Bootstrap** per layout, responsive design e componenti di base
 - **Bootstrap Icons** per il sistema di icone dell'interfaccia
 - **Leaflet** e **React Leaflet** per la mappa interattiva
+- **Vite** per lo sviluppo e la build del frontend
 - **JavaScript** per la logica dell'applicazione
 - **CSS** per il design system e la personalizzazione dell'interfaccia
-- **JSON** come sorgente dati per città, community, jam e corsi
+- **Supabase** come piattaforma backend
+- **PostgreSQL** come database relazionale
+- **Supabase Edge Functions** per alcune funzionalità server-side
+- **Cloudflare Turnstile** per la verifica anti-bot nell'accesso ai contatti protetti
 
 Il progetto è stato sviluppato mantenendo separati dati, logica e componenti dell'interfaccia, in modo da facilitare l'aggiunta di nuove città e community senza dover costruire manualmente una nuova pagina per ciascuna di esse.
 
 
 ## Scelte architetturali
 
-AcroFinder è stato progettato come applicazione frontend statica, senza la necessità di un backend o di un database remoto.
+Il frontend di AcroFinder è una Single Page Application sviluppata con React e Vite, distribuita tramite GitHub Pages e accessibile dal dominio acrofinder.it.
 
-I dati pubblici delle community sono mantenuti in una struttura JSON centralizzata e vengono utilizzati dai componenti React per generare dinamicamente città, community, jam e corsi.
+Il backend utilizza Supabase e un database PostgreSQL remoto, che costituisce la fonte principale dei dati. Le informazioni sono organizzate in tabelle correlate. Il frontend le recupera attraverso il service layer dell'applicazione e le presenta nelle pagine dedicate a città, community, jam e corsi.
 
-Questa scelta mantiene l'infrastruttura semplice e i costi operativi ridotti, risultando adatta alle dimensioni e alle esigenze attuali del progetto.
-
-L'architettura può essere estesa in futuro introducendo un backend o un database qualora il volume dei dati o le funzionalità lo rendessero necessario.
+La separazione tra frontend e dati permette di aggiornare le informazioni senza modificare un file JSON locale e ridistribuire manualmente i dati nel frontend. La generazione delle pagine statiche per la SEO resta invece parte della build.
 
 
 ## Progettazione UI/UX
@@ -117,21 +119,24 @@ Durante lo sviluppo sono stati affrontati diversi problemi legati sia all'archit
 - progettazione responsive con art direction differenziata per gli asset della Hero;
 - organizzazione di jam e corsi con informazioni e stagionalità differenti;
 - gestione dello stato dell'interfaccia e dello scroll tra le diverse sezioni;
+- migrazione dei dati dal JSON locale a Supabase e normalizzazione in PostgreSQL;
+- integrazione tra frontend React e backend Supabase;
+- separazione dei dati pubblici dai contatti protetti, con verifica anti-bot e rate limiting per ridurre scraping e abusi;
 - progettazione dell'esperienza a partire da feedback di utenti reali;
 - deployment di una Single Page Application tramite GitHub Pages.
 
 
 ## Struttura e funzionamento dei dati
 
-AcroFinder utilizza una struttura dati centralizzata per rappresentare le community presenti sul territorio.
+AcroFinder organizza le informazioni sulle community in tabelle correlate in PostgreSQL tramite Supabase, anziché in un singolo file JSON.
 
-I dati sono organizzati principalmente per:
+Per l'utente, i contenuti seguono principalmente questo percorso:
 
 **Regione → Città → Community → Jam / Corsi**
 
-Ogni città può contenere una o più community.
+Il database comprende entità come regioni, città, community, gruppi, corsi, jam e contatti. Il service layer del frontend ricostruisce le informazioni necessarie alle pagine a partire da questi dati. Ogni città può avere una o più community.
 
-Le pagine vengono generate dinamicamente a partire dai dati disponibili. Questo permette, ad esempio, di aggiungere una nuova città al dataset senza dover creare manualmente una nuova pagina React dedicata.
+Le pagine vengono generate dinamicamente a partire dai dati disponibili. Questo permette, ad esempio, di aggiungere una nuova città senza dover creare manualmente una nuova pagina React dedicata.
 
 Una community può contenere informazioni come:
 
@@ -144,6 +149,13 @@ Una community può contenere informazioni come:
 - insegnanti e livelli, quando disponibili.
 
 L'interfaccia gestisce inoltre in modo differente città con una sola community e città con più community, riducendo le interazioni non necessarie.
+
+
+## Contatti pubblici e contatti protetti
+
+AcroFinder distingue le informazioni e i contatti pubblici da alcuni contatti personali classificati come protetti. Il valore dei contatti protetti non viene restituito durante il normale caricamento pubblico dei dati.
+
+L'accesso a un contatto protetto avviene tramite una funzione server-side, con verifica anti-bot tramite Cloudflare Turnstile e rate limiting per ridurre scraping e abusi.
 
 
 ## Architettura dell'interfaccia
@@ -194,6 +206,8 @@ npm run dev
 
 Nota: L'indirizzo locale dell'applicazione verrà mostrato nel terminale (es. http://localhost:5173).
 
+Per caricare i dati in locale è necessaria una configurazione Supabase valida per l'ambiente di sviluppo.
+
 
 ## Deployment
 
@@ -203,6 +217,8 @@ AcroFinder è pubblicato come applicazione web statica ed è accessibile tramite
 
 La build di produzione viene generata tramite Vite e distribuita tramite GitHub Pages.
 
+GitHub Pages ospita il frontend statico, che in produzione recupera i dati da Supabase. Anche alcune fasi della build, tra cui la generazione delle pagine e dei metadati SEO, utilizzano dati provenienti da Supabase.
+
 
 ## Stato del progetto
 
@@ -211,12 +227,14 @@ AcroFinder è online e utilizzabile pubblicamente.
 Il progetto continua a essere sviluppato e aggiornato attraverso:
 
 - inserimento e aggiornamento delle community;
+- gestione centralizzata dei dati tramite Supabase e PostgreSQL;
+- misure di sicurezza per i contatti protetti;
 - feedback degli utenti;
 - miglioramenti dell'esperienza utente;
 - ottimizzazione responsive;
 - accessibilità;
 - performance;
-- SEO e indicizzazione;
+- miglioramenti SEO e indicizzazione;
 - ottimizzazione degli asset e Lighthouse.
 
 Lo sviluppo segue quindi un approccio iterativo anche dopo la pubblicazione.
