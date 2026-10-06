@@ -1,0 +1,68 @@
+.collaboration-banner__section-title {
+  color: #233115;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.85rem, 4vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.collaboration-banner__section-subtitle {
+  max-width: 42rem;
+  color: #58685f;
+  line-height: 1.6;
+}
+
+.collaboration-banner__card {
+  width: min(100%, 48rem);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid rgba(56, 87, 40, 0.08);
+  border-radius: 1.15rem;
+  background: linear-gradient(110deg, #eef2e2 0%, #f4f4e9 52%, #e8efdd 100%);
+  color: #183b2e;
+}
+
+.collaboration-banner__content,
+.collaboration-banner__heading-copy {
+  min-width: 0;
+}
+
+.collaboration-banner__heading-copy {
+  max-width: 100%;
+}
+
+.collaboration-banner__logo {
+  display: block;
+  width: 100%;
+  max-width: 19rem;
+  height: auto;
+}
+
+.collaboration-banner__partner-subtitle {
+  color: #183b2e;
+  font-size: 1.05rem;
+}
+
+.collaboration-banner__badge {
+  margin-left: auto;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 253, 247, 0.68);
+  color: #183b2e;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.collaboration-banner__description {
+  max-width: 32rem;
+  color: #34472b;
+  line-height: 1.6;
+}
+
+.organizer-callout__button.collaboration-banner__button {
+  max-width: 100%;
+  min-height: 3rem;
+  padding-inline: 1.15rem;
+  justify-content: center;
+}

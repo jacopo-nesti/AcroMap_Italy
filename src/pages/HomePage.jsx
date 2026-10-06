@@ -2,6 +2,7 @@ import CommunityFinderSearchBar from "../components/CommunityFinderSearchBar"
 import CommunityStats from "../components/CommunityStats"
 import FeatureHighlights from "../components/FeatureHighlights"
 import OrganizerCallout from "../components/OrganizerCallout"
+import CollaborationBanner from "../components/CollaborationBanner"
 import SEO from "../components/SEO"
 import { useCommunityFinderContext } from "../components/CommunityFinder"
 import { useEffect, useState } from "react"
@@ -153,6 +154,8 @@ function HomePage() {
                   <OrganizerCallout />
                 </div>
               </div>
+
+              <CollaborationBanner />
 
               <div className="home-search-cta">
                 <button
