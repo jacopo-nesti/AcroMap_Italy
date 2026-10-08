@@ -29,3 +29,5 @@ local-data/
 *.njsproj
 *.sln
 *.sw?
+
+/acropassport-response.json
