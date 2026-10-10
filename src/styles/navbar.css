@@ -25,8 +25,8 @@
 }
 
 .community-navbar .home-navbar__logo {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 4.2rem;
+  height: 4.2rem;
   border-radius: 0.35rem;
 }
 
@@ -81,6 +81,11 @@
 @media (max-width: 991.98px) {
   .community-navbar {
     position: relative;
+  }
+
+  .community-navbar .home-navbar__logo {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .community-navbar > .container-fluid {
@@ -170,8 +175,8 @@
 }
 
 .home-navbar .home-navbar__logo {
-  width: 2.9rem;
-  height: 2.9rem;
+  width: 4.2rem;
+  height: 4.2rem;
 }
 
 .home-navbar__brand {
