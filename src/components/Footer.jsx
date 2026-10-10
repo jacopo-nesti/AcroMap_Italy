@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import logoImage from '../assets/logo/acrofinder-logo.webp'
+import logoImage from '../assets/logo/acrofinder-symbol.svg'
 
 const footerGroups = [
   {
