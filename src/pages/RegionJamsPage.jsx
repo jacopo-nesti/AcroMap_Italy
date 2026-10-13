@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router"
 import { useMemo } from "react"
 import SEO from "../components/SEO"
 import BackButton from "../components/BackButton"
+import ProtectedContactsInfoBadge from "../components/ProtectedContactsInfoBadge"
 import { useCommunityFinderContext } from "../components/CommunityFinder"
 import { groupSharedJams } from "../utils/jamHelpers"
 import { sortByDayAndTime } from "../utils/SortingHelper"
@@ -242,6 +243,7 @@ function RegionJamsPage() {
           </div>
         )}
       </div>
+      {jams.some((jam) => jam.protected_contacts?.length > 0) && <ProtectedContactsInfoBadge />}
     </div>
   )
 }

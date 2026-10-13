@@ -6,6 +6,7 @@ import SocialLinks from "../src/components/SocialLinks"
 import CourseCard from "../src/components/CourseCard"
 import JamCard from "../src/components/JamCard"
 import RegionJamsPage from "../src/pages/RegionJamsPage"
+import CityPage from "../src/pages/CityPage"
 import { MemoryRouter, Routes, Route } from "react-router"
 import { sortByDayAndTime } from "../src/utils/SortingHelper"
 
@@ -146,8 +147,60 @@ try {
   window.__cities = [{ name: "Test city", slug: "test", region: "Test region", communities: [{ id: 1, name: "Test group", jams: [{ id: 1, type: "recurring", day: "sunday", protected_contacts: [contact] }] }] }]
   await mount(<MemoryRouter initialEntries={["/region/test-region/jams"]}><Routes><Route path="/region/:regionSlug/jams" element={<RegionJamsPage />} /></Routes></MemoryRouter>)
   check(host.querySelector(".region-jam-card button"), "regional jam contact")
+  check(host.querySelector(".protected-contacts-info__trigger"), "regional jam page shows the protection badge")
   check(host.querySelector(".region-jam-card__day")?.textContent.trim() === "Domenica", "regional jam uses the Italian day formatter")
   check(window.__cities[0].communities[0].jams[0].day === "sunday", "source day remains normalized")
+  const badge = host.querySelector(".protected-contacts-info__trigger")
+  check(badge.getAttribute("aria-expanded") === "false", "protection badge starts closed")
+  flushSync(() => badge.click())
+  check(badge.getAttribute("aria-expanded") === "true" && !host.querySelector(".protected-contacts-info__panel").hidden, "badge opens its accessible panel")
+  check(host.querySelector('.protected-contacts-info__panel a[href="/privacy"]')?.textContent === "Scopri di più nella Privacy Policy di AcroFinder", "panel links to the privacy policy")
+  const turnstileInfoLink = host.querySelector('.protected-contacts-info__panel a[href="https://www.cloudflare.com/en-gb/application-services/products/turnstile/"]')
+  check(turnstileInfoLink?.textContent === "Cos'è Cloudflare Turnstile?" && turnstileInfoLink.target === "_blank" && turnstileInfoLink.rel === "noopener noreferrer", "Turnstile explanation opens safely in a new tab")
+  check(host.querySelector(".protected-contacts-info__panel p")?.textContent === "I numeri di telefono e i link WhatsApp protetti non vengono caricati pubblicamente. Per visualizzarli è richiesta una verifica anti-bot con Cloudflare Turnstile (Cos'è Cloudflare Turnstile?)", "popover copy matches approved text")
+  flushSync(() => badge.click())
+  check(badge.getAttribute("aria-expanded") === "false" && host.querySelector(".protected-contacts-info__panel").hidden, "second badge click closes panel")
+  flushSync(() => badge.click())
+  await tick()
+  document.dispatchEvent(new KeyboardEvent("keydown", { key: "Escape", bubbles: true }))
+  await tick()
+  check(badge.getAttribute("aria-expanded") === "false" && document.activeElement === badge, "Escape closes panel and restores focus")
+  flushSync(() => badge.click())
+  await tick()
+  document.body.dispatchEvent(new PointerEvent("pointerdown", { bubbles: true }))
+  await tick()
+  check(badge.getAttribute("aria-expanded") === "false", "outside tap closes panel")
+  flushSync(() => badge.click())
+  flushSync(() => host.querySelector(".protected-contacts-info__close").click())
+  check(badge.getAttribute("aria-expanded") === "false", "close button closes panel")
+  for (const eventName of ["scroll", "wheel", "touchmove"]) {
+    flushSync(() => badge.click())
+    await tick()
+    window.dispatchEvent(new Event(eventName))
+    await tick()
+    check(badge.getAttribute("aria-expanded") === "false", `${eventName} closes panel`)
+  }
+  flushSync(() => badge.click())
+  await tick()
+  window.dispatchEvent(new MouseEvent("mousemove"))
+  await tick()
+  check(badge.getAttribute("aria-expanded") === "true", "mouse movement alone does not close panel")
+  window.__cities = [{ name: "Test city", slug: "test", region: "Test region", communities: [{ id: 1, name: "Test group", jams: [{ id: 1, type: "recurring", day: "sunday", protected_contacts: [] }] }] }]
+  await mount(<MemoryRouter initialEntries={["/region/test-region/jams"]}><Routes><Route path="/region/:regionSlug/jams" element={<RegionJamsPage />} /></Routes></MemoryRouter>)
+  check(!host.querySelector(".protected-contacts-info"), "regional jam page without protected contacts has no badge")
+  const cityCommunities = [{ id: 1, name: "First group", protected_contacts: [], courses: [], jams: [] }, { id: 2, name: "Second group", protected_contacts: [], courses: [], jams: [] }]
+  for (const placement of ["group", "course", "jam"]) {
+    const protectedCommunity = { ...cityCommunities[0] }
+    if (placement === "group") protectedCommunity.protected_contacts = [contact]
+    if (placement === "course") protectedCommunity.courses = [{ id: 2, protected_contacts: [contact] }]
+    if (placement === "jam") protectedCommunity.jams = [{ id: 3, protected_contacts: [contact] }]
+    window.__cities = [{ name: "Test city", slug: "test", region: "Test region", communities: [protectedCommunity, cityCommunities[1]] }]
+    await mount(<MemoryRouter initialEntries={["/city/test"]}><Routes><Route path="/city/:slug" element={<CityPage />} /></Routes></MemoryRouter>)
+    check(host.querySelector(".protected-contacts-info__trigger"), `city page shows badge for protected ${placement} contact`)
+  }
+  window.__cities = [{ name: "Test city", slug: "test", region: "Test region", communities: cityCommunities }]
+  await mount(<MemoryRouter initialEntries={["/city/test"]}><Routes><Route path="/city/:slug" element={<CityPage />} /></Routes></MemoryRouter>)
+  check(!host.querySelector(".protected-contacts-info"), "city page without protected contacts has no badge")
   await mount(<CourseCard course={{ day: null }} />)
   check(!host.querySelector(".city-activity-card__day"), "missing day is not displayed")
   await mount(<JamCard jam={{ type: "recurring", day: "Prima domenica del mese" }} />)

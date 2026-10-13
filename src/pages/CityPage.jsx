@@ -5,6 +5,7 @@ import CommunityDetails from "../components/CommunityDetails"
 import CityHero from "../components/CityHero"
 import BackButton from "../components/BackButton"
 import SEO from "../components/SEO"
+import ProtectedContactsInfoBadge from "../components/ProtectedContactsInfoBadge"
 import { useCommunityFinderContext } from "../components/CommunityFinder"
 import { getCityIcon } from "../utils/cityPresentation"
 
@@ -63,6 +64,11 @@ function CityPage() {
   if (!city) return <p className="text-center mt-5 text-muted">Città non trovata.</p>
 
   const communities = city.communities || []
+  const hasProtectedContacts = communities.some((community) =>
+    community.protected_contacts?.length > 0 ||
+    community.courses?.some((course) => course.protected_contacts?.length > 0) ||
+    community.jams?.some((jam) => jam.protected_contacts?.length > 0)
+  )
   const communitiesCount = communities.length
   const jamsCount = communities.reduce((total, community) => total + (community.jams?.length || 0), 0)
   const coursesCount = communities.reduce((total, community) => total + (community.courses?.length || 0), 0)
@@ -147,6 +153,7 @@ function CityPage() {
         </section>
 
       </div>
+      {hasProtectedContacts && <ProtectedContactsInfoBadge />}
     </div>
   )
 }
