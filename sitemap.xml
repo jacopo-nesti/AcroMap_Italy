@@ -121,6 +121,15 @@
     <loc>https://acrofinder.it/city/treviso</loc>
   </url>
   <url>
+    <loc>https://acrofinder.it/city/galatina</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/city/olbia</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/city/trieste</loc>
+  </url>
+  <url>
     <loc>https://acrofinder.it/region/toscana/jams</loc>
   </url>
   <url>
@@ -158,5 +167,8 @@
   </url>
   <url>
     <loc>https://acrofinder.it/region/san-marino/jams</loc>
+  </url>
+  <url>
+    <loc>https://acrofinder.it/region/puglia/jams</loc>
   </url>
 </urlset>
