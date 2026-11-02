@@ -32,7 +32,7 @@ function Privacy() {
             </h1>
 
             <p className="small" style={{ color: "#64748b" }}>
-              Ultimo aggiornamento: 4 ottobre 2026
+              Ultimo aggiornamento: 2 novembre 2026
             </p>
           </div>
 
@@ -113,7 +113,7 @@ function Privacy() {
 
               <ul style={{ color: "#334155" }}>
                 <li>nome o altro identificativo del soggetto che invia la segnalazione;</li>
-                <li>indirizzo email utilizzato per eventuali comunicazioni relative alla segnalazione;</li>
+                <li>indirizzo email fornito facoltativamente per ricevere comunicazioni sull'esito della segnalazione;</li>
                 <li>nome della community, dell'organizzazione o dell'associazione;</li>
                 <li>città e luoghi in cui vengono svolte le attività;</li>
                 <li>link a siti web, social network, gruppi o altri canali pubblici della community;</li>
@@ -160,6 +160,7 @@ function Privacy() {
                 <li>ricevere e valutare segnalazioni relative alle community di Acroyoga;</li>
                 <li>verificare, correggere e aggiornare le informazioni presenti sul sito;</li>
                 <li>contattare, quando necessario, la persona che ha inviato una segnalazione per richiedere chiarimenti;</li>
+                <li>comunicare manualmente, a chi lo richiede, l'esito della segnalazione, inclusi la pubblicazione di una community, l'aggiornamento delle informazioni o l'eventuale mancata approvazione;</li>
                 <li>pubblicare sul sito le informazioni pertinenti relative a community, jam, corsi, insegnanti e organizzatori;</li>
                 <li>mantenere aggiornata la mappa e il database delle community;</li>
                 <li>prevenire o gestire segnalazioni manifestamente errate, abusive o non pertinenti;</li>
@@ -199,7 +200,8 @@ function Privacy() {
                   del legittimo interesse del Titolare a gestire, verificare,
                   mantenere aggiornato e proteggere il progetto AcroFinder e a
                   fornire agli utenti informazioni utili sulle community di
-                  Acroyoga.
+                  Acroyoga, nonché a dare riscontro sull'esito di una
+                  segnalazione a chi lo ha richiesto volontariamente.
                 </li>
                 <li>
                   del legittimo interesse a proteggere il sito, i recapiti e
@@ -254,10 +256,10 @@ function Privacy() {
               </ul>
 
               <p style={{ color: "#334155" }}>
-                Non viene invece pubblicato l'indirizzo email personale fornito
-                esclusivamente come recapito del soggetto che invia la
-                segnalazione, salvo che l'interessato ne richieda espressamente
-                la pubblicazione come contatto pubblico della community.
+                L'indirizzo email personale fornito per ricevere un riscontro
+                sull'esito della segnalazione non viene pubblicato. Un diverso
+                indirizzo email può essere pubblicato come contatto della
+                community solo se espressamente destinato a tale scopo.
               </p>
 
               <p style={{ color: "#334155" }}>
@@ -352,6 +354,14 @@ function Privacy() {
                 rendere impossibile verificare o pubblicare la segnalazione.
               </p>
 
+              <p style={{ color: "#334155" }}>
+                L'indirizzo email per ricevere un riscontro sull'esito della
+                segnalazione è completamente facoltativo. La sua mancata
+                indicazione non impedisce l'invio o la valutazione della
+                segnalazione, ma non consente di inviare un riscontro
+                individuale tramite questa funzionalità.
+              </p>
+
               <p className="mb-0" style={{ color: "#334155" }}>
                 L'utente è invitato a fornire esclusivamente i dati necessari
                 allo scopo della segnalazione.
@@ -419,26 +429,36 @@ function Privacy() {
               </p>
 
               <p style={{ color: "#334155" }}>
-                I dati personali utilizzati per gestire e verificare una
-                segnalazione, compreso l'indirizzo email del soggetto che la
-                invia, vengono conservati finché risultano ragionevolmente
-                necessari per valutare la segnalazione, documentarne l'origine
-                e supportare eventuali aggiornamenti delle informazioni
-                pubblicate.
+                Le segnalazioni inviate rimangono archiviate su Tally anche
+                dopo la loro gestione, per documentare il lavoro svolto e
+                consentire eventuali verifiche e aggiornamenti successivi.
+                Non è configurata una cancellazione automatica delle risposte.
+                L'indirizzo email fornito per ricevere un riscontro può essere
+                presente nello storico della segnalazione.
+              </p>
+
+              <p style={{ color: "#334155" }}>
+                I messaggi inviati manualmente al contributore e le eventuali
+                risposte rimangono nella casella Gmail del gestore come normale
+                corrispondenza.
               </p>
 
               <p style={{ color: "#334155" }}>
                 I dati inviati tramite il modulo Contatti vengono conservati
                 finché risultano ragionevolmente necessari per gestire la
-                richiesta e le eventuali comunicazioni successive. In entrambi
-                i casi può rendersi necessaria una conservazione ulteriore per
-                gestire contestazioni, richieste dell'interessato o obblighi di
-                legge.
+                richiesta e le eventuali comunicazioni successive. Per le
+                segnalazioni e le richieste di contatto può rendersi necessaria
+                una conservazione ulteriore per gestire contestazioni, richieste
+                dell'interessato o obblighi di legge.
               </p>
 
               <p style={{ color: "#334155" }}>
-                I dati non più necessari rispetto alle finalità per cui sono
-                stati raccolti vengono cancellati o resi anonimi.
+                La conservazione dei dati personali resta soggetta ai principi
+                di minimizzazione e limitazione della conservazione. La
+                necessità di mantenere dati identificativi e indirizzi email
+                va verificata periodicamente, distinguendoli dallo storico
+                delle segnalazioni; i dati personali non più necessari devono
+                essere cancellati o resi anonimi.
               </p>
 
               <p style={{ color: "#334155" }}>
@@ -524,6 +544,14 @@ function Privacy() {
               </p>
 
               <p style={{ color: "#334155" }}>
+                Nel modulo Contribuisci l'utente può indicare facoltativamente
+                un indirizzo email per ricevere un riscontro sull'esito della
+                segnalazione. Se lo indica, il modulo mostra un'informativa
+                sulla privacy con presa visione e link a questa Privacy Policy.
+                L'invio della segnalazione resta possibile anche senza email.
+              </p>
+
+              <p style={{ color: "#334155" }}>
                 I moduli non sono incorporati in AcroFinder tramite iframe o
                 script: vengono aperti sul dominio <strong>tally.so</strong>
                 soltanto dopo un'azione esplicita dell'utente. Da quel momento
@@ -547,9 +575,10 @@ function Privacy() {
                 risposte parziali, la cancellazione automatica delle
                 submission, le notifiche email automatiche al gestore o al
                 rispondente e la prevenzione degli invii duplicati. Le risposte
-                inviate vengono quindi gestite e cancellate in base ai criteri
-                di necessità descritti nella sezione 9, senza un termine
-                automatico preimpostato sulla piattaforma.
+                inviate rimangono archiviate su Tally anche dopo la gestione,
+                senza un termine di cancellazione automatico preimpostato.
+                L'eventuale riscontro al contributore è inviato manualmente
+                dal gestore, non da Tally.
               </p>
 
               <p style={{ color: "#334155" }}>
@@ -571,6 +600,17 @@ function Privacy() {
                   documentazione privacy di Tally
                 </a>{" "}
                 e le relative condizioni applicabili.
+              </p>
+
+              <h3 className="h6 fw-bold text-dark mt-4 mb-2">Google Gmail</h3>
+
+              <p style={{ color: "#334155" }}>
+                Il gestore utilizza un account Gmail personale per inviare
+                manualmente i riscontri richiesti dai contributori e gestire
+                le eventuali risposte. Google fornisce il servizio di posta
+                elettronica utilizzato per questa corrispondenza. Non sono
+                previste notifiche automatiche, newsletter o comunicazioni
+                promozionali.
               </p>
 
               <h3 className="h6 fw-bold text-dark mt-4 mb-2">
@@ -673,6 +713,12 @@ function Privacy() {
               </p>
 
               <p style={{ color: "#334155" }}>
+                Tra questi rientra Google, come fornitore del servizio Gmail
+                utilizzato per i riscontri inviati manualmente e per le
+                eventuali risposte dei contributori.
+              </p>
+
+              <p style={{ color: "#334155" }}>
                 Le informazioni espressamente destinate alla pubblicazione
                 diventano accessibili agli utenti del sito e, trattandosi di un
                 sito pubblico, possono essere visualizzate anche da soggetti
@@ -763,12 +809,19 @@ function Privacy() {
               </p>
 
               <p style={{ color: "#334155" }}>
+                Anche l'utilizzo di Gmail per la corrispondenza può comportare
+                trattamenti o trasferimenti internazionali secondo le
+                condizioni applicabili al servizio. Non si presume che i
+                messaggi siano conservati esclusivamente in Europa.
+              </p>
+
+              <p style={{ color: "#334155" }}>
                 Qualora uno dei fornitori tecnici utilizzati comporti il
                 trattamento o il trasferimento di dati personali verso Paesi
-                situati al di fuori dello Spazio Economico Europeo, il
-                trattamento avverrà nel rispetto delle condizioni previste dal
-                GDPR e, ove necessario, mediante gli strumenti di garanzia
-                previsti dalla normativa applicabile.
+                situati al di fuori dello Spazio Economico Europeo, devono
+                essere rispettate le condizioni previste dal GDPR e, ove
+                necessario, adottati gli strumenti di garanzia previsti dalla
+                normativa applicabile.
               </p>
 
               <p className="mb-0" style={{ color: "#334155" }}>
